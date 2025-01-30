@@ -4,5 +4,6 @@
   "/_not-found/page": "app/_not-found/page.js",
   "/edit-profile/page": "app/edit-profile/page.js",
   "/changepassword/page": "app/changepassword/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/insights/page": "app/insights/page.js"
 }

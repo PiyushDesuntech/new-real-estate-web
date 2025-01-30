@@ -24,9 +24,19 @@ export default function CategoriesSidebar() {
     <Box
       sx={{
         width: "100%",
+        minWidth: "51px",
         backgroundColor: "#fff",
-        borderRadius: "7.38px",
-        padding: { xs: "16px", sm: "20px 24px" },
+        borderRadius: { 
+          xs: "4px", 
+          sm: "5px", 
+          md: "7.38px" 
+        },
+        padding: { 
+          xs: "12px", 
+          sm: "16px", 
+          md: "20px", 
+          lg: "24px" 
+        },
         border: "1.5px solid #ebebeb",
         boxSizing: "border-box",
       }}
@@ -35,8 +45,17 @@ export default function CategoriesSidebar() {
         variant="h6"
         sx={{
           fontWeight: 700,
-          marginBottom: "16px",
-          fontSize: "23.08px",
+          marginBottom: { 
+            xs: "10px", 
+            sm: "12px", 
+            md: "16px" 
+          },
+          fontSize: { 
+            xs: "16px", 
+            sm: "18px", 
+            md: "20px", 
+            lg: "23.08px" 
+          },
           color: "#484848",
         }}
       >
@@ -48,36 +67,82 @@ export default function CategoriesSidebar() {
             <ListItem disablePadding>
               <ListItemButton
                 sx={{
-                  padding: "8px 0",
+                  padding: { 
+                    xs: "4px 0", 
+                    sm: "6px 0", 
+                    md: "8px 0" 
+                  },
                   display: "flex",
                   justifyContent: "space-between",
                   alignItems: "center",
                   color: "#555",
+                  transform: "translateX(0)",
+                  transition: "all 0.3s ease-in-out",
                   "&:hover": {
                     color: "#000",
+                    transform: "translateX(8px)",
+                    backgroundColor: "transparent",
+                    "& .category-arrow": {
+                      transform: "translateX(4px)",
+                    },
+                  },
+                  "@media (max-width: 600px)": {
+                    "&:hover": {
+                      transform: "translateX(4px)",
+                    },
                   },
                   wordWrap: "break-word",
                 }}
               >
-                <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                <Box sx={{ 
+                  display: "flex", 
+                  alignItems: "center", 
+                  gap: { 
+                    xs: 0.25, 
+                    sm: 0.5, 
+                    md: 1 
+                  }
+                }}>
                   <ArrowRightIcon
-                    sx={{ fontSize: 24, color: "#484848", fontWeight: 900 }}
+                    className="category-arrow"
+                    sx={{ 
+                      fontSize: { 
+                        xs: "18px", 
+                        sm: "20px", 
+                        md: "22px", 
+                        lg: "24px" 
+                      }, 
+                      color: "#484848", 
+                      fontWeight: 900,
+                      transition: "transform 0.3s ease-in-out",
+                    }}
                   />
                   <ListItemText
                     primary={category.name}
                     sx={{
-                      fontSize: "17.95px",
-                      color: "#484848",
-                      "& span": {
-                        fontSize: "17.95px",
+                      "& .MuiListItemText-primary": {
+                        fontSize: { 
+                          xs: "13px", 
+                          sm: "14px", 
+                          md: "16px", 
+                          lg: "17.95px" 
+                        },
+                        color: "#484848",
+                        transition: "color 0.3s ease-in-out",
                       },
                     }}
                   />
                 </Box>
                 <Typography
                   sx={{
-                    fontSize: "17.95px",
+                    fontSize: { 
+                      xs: "13px", 
+                      sm: "14px", 
+                      md: "16px", 
+                      lg: "17.95px" 
+                    },
                     color: "#484848",
+                    transition: "color 0.3s ease-in-out",
                   }}
                 >
                   ({category.count})

@@ -30,9 +30,19 @@ export default function LatestProperties() {
     <Box
       sx={{
         width: "100%",
+        minWidth: "51px",
         backgroundColor: "#fff",
-        borderRadius: "7.38px",
-        padding: { xs: "16px", sm: "20px 24px" },
+        borderRadius: { 
+          xs: "4px", 
+          sm: "5px", 
+          md: "7.38px" 
+        },
+        padding: { 
+          xs: "12px", 
+          sm: "16px", 
+          md: "20px", 
+          lg: "24px" 
+        },
         border: "1.5px solid #ebebeb",
         boxSizing: "border-box",
       }}
@@ -41,14 +51,23 @@ export default function LatestProperties() {
         variant="h6"
         sx={{
           fontWeight: 700,
-          marginBottom: "16px",
-          fontSize: "26.8px",
+          marginBottom: { 
+            xs: "10px", 
+            sm: "12px", 
+            md: "16px" 
+          },
+          fontSize: { 
+            xs: "18px", 
+            sm: "20px", 
+            md: "24px", 
+            lg: "26.8px" 
+          },
           color: "#484848",
         }}
       >
         Latest Properties
       </Typography>
-      <Grid container spacing={2}>
+      <Grid container spacing={{ xs: 1, sm: 1.5, md: 2 }}>
         {properties.map((property, index) => (
           <Grid item xs={12} key={index}>
             <Card
@@ -59,29 +78,72 @@ export default function LatestProperties() {
                 width: "100%",
                 boxShadow: "none",
                 backgroundColor: "transparent",
+                cursor: "pointer",
+                transform: "translateY(0)",
+                transition: "all 0.3s ease-in-out",
+                "&:hover": {
+                  transform: "translateY(-3px)",
+                  "& .property-image": {
+                    transform: "scale(1.05)",
+                  },
+                },
+                "@media (max-width: 600px)": {
+                  "&:hover": {
+                    transform: "translateY(-2px)",
+                  },
+                },
               }}
             >
               <Box
                 sx={{
                   position: "relative",
-                  width: "110.77px",
-                  height: "110.77px",
-                  marginRight: "16px",
-                  borderRadius: "7.38px",
+                  width: { 
+                    xs: "80px", 
+                    sm: "90px", 
+                    md: "100px", 
+                    lg: "110.77px" 
+                  },
+                  height: { 
+                    xs: "80px", 
+                    sm: "90px", 
+                    md: "100px", 
+                    lg: "110.77px" 
+                  },
+                  marginRight: { 
+                    xs: "10px", 
+                    sm: "12px", 
+                    md: "16px" 
+                  },
+                  borderRadius: { 
+                    xs: "4px", 
+                    sm: "5px", 
+                    md: "7.38px" 
+                  },
                   overflow: "hidden",
+                  flexShrink: 0,
                 }}
               >
-                <Image
-                  src={property.image}
-                  alt={property.title}
-                  fill
-                  sizes="110.77px"
-                  style={{
-                    objectFit: "cover",
+                <Box
+                  className="property-image"
+                  sx={{
+                    width: "100%",
+                    height: "100%",
+                    position: "relative",
+                    transition: "transform 0.3s ease-in-out",
                   }}
-                  priority={index === 0}
-                  unoptimized
-                />
+                >
+                  <Image
+                    src={property.image}
+                    alt={property.title}
+                    fill
+                    sizes="(max-width: 640px) 80px, (max-width: 768px) 90px, (max-width: 1024px) 100px, 110.77px"
+                    style={{
+                      objectFit: "cover",
+                    }}
+                    priority={index === 0}
+                    unoptimized
+                  />
+                </Box>
               </Box>
               <CardContent
                 sx={{
@@ -90,28 +152,56 @@ export default function LatestProperties() {
                   flexDirection: "column",
                   justifyContent: "center",
                   flex: 1,
-                  marginTop: "16px",
+                  marginTop: { 
+                    xs: "8px", 
+                    sm: "10px", 
+                    md: "12px", 
+                    lg: "16px" 
+                  },
+                  "&:last-child": { paddingBottom: 0 },
                 }}
               >
                 <Typography
                   sx={{
-                    fontSize: "20.52px",
+                    fontSize: { 
+                      xs: "14px", 
+                      sm: "16px", 
+                      md: "18px", 
+                      lg: "20.52px" 
+                    },
                     color: "#484848",
-                    marginBottom: "8px",
+                    marginBottom: { 
+                      xs: "2px", 
+                      sm: "4px", 
+                      md: "8px" 
+                    },
                     whiteSpace: "nowrap",
                     overflow: "hidden",
                     textOverflow: "ellipsis",
-                    maxWidth: "220px",
+                    maxWidth: "100%",
                     fontWeight: 700,
+                    transition: "color 0.3s ease",
+                    "&:hover": {
+                      color: "#000",
+                    },
                   }}
                 >
                   {property.title}
                 </Typography>
                 <Typography
                   sx={{
-                    fontSize: "20px",
+                    fontSize: { 
+                      xs: "14px", 
+                      sm: "16px", 
+                      md: "18px", 
+                      lg: "20px" 
+                    },
                     color: "#E8E1C4",
-                    marginBottom: "4px",
+                    marginBottom: { 
+                      xs: "2px", 
+                      sm: "2px", 
+                      md: "4px" 
+                    },
                     fontWeight: 700,
                   }}
                 >
@@ -120,7 +210,12 @@ export default function LatestProperties() {
                 <Typography
                   variant="body2"
                   sx={{
-                    fontSize: "17.95px",
+                    fontSize: { 
+                      xs: "12px", 
+                      sm: "14px", 
+                      md: "16px", 
+                      lg: "17.95px" 
+                    },
                     color: "#484848",
                     fontWeight: 400,
                   }}
