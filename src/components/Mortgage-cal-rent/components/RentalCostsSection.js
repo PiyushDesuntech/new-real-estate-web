@@ -7,22 +7,40 @@ const SectionContent = ({ heading, subheading, description, hasBottomMargin, isP
     <Box sx={{
       display: "flex",
       flexDirection: "column",
-      gap: "16px",
-      marginBottom: hasBottomMargin ? { xs: "24px", sm: "32px" } : "0px",
-      padding: { xs: "16px", sm: "20px", md: "0px" },
-      marginLeft: { xs: "-15px", sm: "0px", md: "42px" },
-      marginRight: { xs: "35px", sm: "0px", md: "0px" },
-      transition: "all 0.3s ease"
+      gap: { xs: "12px", sm: "14px", md: "16px" },
+      marginBottom: hasBottomMargin ? { xs: "20px", sm: "24px", md: "28px", lg: "32px" } : "0px",
+      padding: { 
+        xs: "12px 16px",
+        sm: "16px 20px",
+        md: "0px" 
+      },
+      marginLeft: { 
+        xs: "0px",
+        sm: "0px",
+        md: "42px" 
+      },
+      marginRight: { 
+        xs: "0px",
+        sm: "0px",
+        md: "42px" 
+      },
+      transition: "all 0.3s ease",
+      minWidth: "51px"
     }}>
       {heading && (
         <Typography
           variant="h2"
           sx={{
-            fontSize: { xs: "20px", sm: "24px", md: "31px" },
+            fontSize: { 
+              xs: "18px",
+              sm: "20px",
+              md: "24px",
+              lg: "31px" 
+            },
             fontWeight: 600,
             color: "#303030",
-            lineHeight: 1.2,
-            textAlign: { xs: "justify", sm: "left" },
+            lineHeight: { xs: 1.3, sm: 1.2 },
+            textAlign: { xs: "left", sm: "left" },
             transition: "font-size 0.3s ease"
           }}
         >
@@ -33,12 +51,17 @@ const SectionContent = ({ heading, subheading, description, hasBottomMargin, isP
         <Typography
           variant="h3"
           sx={{
-            fontSize: { xs: "16px", sm: "18px", md: "22px" },
+            fontSize: { 
+              xs: "15px",
+              sm: "16px",
+              md: "18px",
+              lg: "22px" 
+            },
             fontWeight: 700,
             color: "#314259",
             lineHeight: 1.2,
             display: 'inline',
-            textAlign: { xs: "justify", sm: "left" },
+            textAlign: { xs: "left", sm: "left" },
             transition: "font-size 0.3s ease"
           }}
         >
@@ -48,19 +71,26 @@ const SectionContent = ({ heading, subheading, description, hasBottomMargin, isP
       {description && isPriceRange ? (
         <Box sx={{ 
           width: "100%", 
-          textAlign: { xs: "justify", sm: "left" },
-          transition: "all 0.3s ease"
+          textAlign: { xs: "left", sm: "left" },
+          transition: "all 0.3s ease",
+          minWidth: "51px"
         }}>
           {description.map((item, index) => (
-            <Box key={index}>
+            <Box key={index} sx={{ marginBottom: { xs: "8px", sm: "12px" } }}>
               {item.boldText && (
                 <Typography
                   sx={{
-                    fontSize: { xs: "14px", sm: "16px", md: "17.78px" },
+                    fontSize: { 
+                      xs: "13px",
+                      sm: "14px",
+                      md: "16px",
+                      lg: "17.78px" 
+                    },
                     fontWeight: 700,
                     color: "#444444",
-                    textAlign: { xs: "justify", sm: "left" },
-                    transition: "font-size 0.3s ease"
+                    textAlign: { xs: "left", sm: "left" },
+                    transition: "font-size 0.3s ease",
+                    marginBottom: "4px"
                   }}
                 >
                   {item.boldText}
@@ -69,11 +99,17 @@ const SectionContent = ({ heading, subheading, description, hasBottomMargin, isP
               {item.text && (
                 <Typography
                   sx={{
-                    fontSize: { xs: "14px", sm: "16px", md: "17.78px" },
+                    fontSize: { 
+                      xs: "12px",
+                      sm: "13px",
+                      md: "15px",
+                      lg: "17.78px" 
+                    },
                     fontWeight: 400,
                     color: "#444444",
-                    textAlign: { xs: "justify", sm: "left" },
-                    transition: "font-size 0.3s ease"
+                    textAlign: { xs: "left", sm: "left" },
+                    transition: "font-size 0.3s ease",
+                    lineHeight: { xs: 1.5, sm: 1.6, md: 1.7 }
                   }}
                 >
                   {item.text}
@@ -85,19 +121,25 @@ const SectionContent = ({ heading, subheading, description, hasBottomMargin, isP
       ) : (
         <Box sx={{ 
           width: "100%", 
-          textAlign: { xs: "justify", sm: "left" },
-          transition: "all 0.3s ease"
+          textAlign: { xs: "left", sm: "left" },
+          transition: "all 0.3s ease",
+          minWidth: "51px"
         }}>
           {description.map((item, index) => (
-            <Box key={index}>
+            <Box key={index} sx={{ marginBottom: { xs: "8px", sm: "12px" } }}>
               {item.boldText && (
                 <Typography
                   sx={{
-                    fontSize: { xs: "14px", sm: "16px", md: "17.78px" },
+                    fontSize: { 
+                      xs: "13px",
+                      sm: "14px",
+                      md: "16px",
+                      lg: "17.78px" 
+                    },
                     fontWeight: 700,
                     color: "#444444",
                     display: "inline",
-                    textAlign: { xs: "justify", sm: "left" },
+                    textAlign: { xs: "left", sm: "left" },
                     transition: "font-size 0.3s ease"
                   }}
                 >
@@ -107,12 +149,18 @@ const SectionContent = ({ heading, subheading, description, hasBottomMargin, isP
               {item.text && (
                 <Typography
                   sx={{
-                    fontSize: { xs: "14px", sm: "16px", md: "17.78px" },
+                    fontSize: { 
+                      xs: "12px",
+                      sm: "13px",
+                      md: "15px",
+                      lg: "17.78px" 
+                    },
                     fontWeight: 400,
                     color: "#444444",
                     display: "inline",
-                    textAlign: { xs: "justify", sm: "left" },
-                    transition: "font-size 0.3s ease"
+                    textAlign: { xs: "left", sm: "left" },
+                    transition: "font-size 0.3s ease",
+                    lineHeight: { xs: 1.5, sm: 1.6, md: 1.7 }
                   }}
                 >
                   {item.text}
@@ -191,23 +239,32 @@ export default function RentalCostsSection() {
     <Box
       sx={{
         width: "100%",
-        maxWidth: { xs: "100%", sm: "1330px" },
+        maxWidth: { xs: "100%", sm: "100%", md: "1330px" },
         backgroundColor: "#F7F7F7",
         padding: { 
-          xs: "20px",
-          sm: "30px",
-          md: "40px" 
+          xs: "16px",
+          sm: "24px",
+          md: "32px",
+          lg: "40px" 
         },
         display: "flex",
         flexDirection: "column",
-        gap: { xs: "24px", sm: "32px" },
+        gap: { 
+          xs: "20px",
+          sm: "24px",
+          md: "28px",
+          lg: "32px" 
+        },
         margin: "auto",
-        transition: "all 0.3s ease"
+        transition: "all 0.3s ease",
+        minWidth: "51px",
+        boxSizing: "border-box"
       }}
     >
       <Box sx={{ 
         width: "100%",
-        transition: "all 0.3s ease"
+        transition: "all 0.3s ease",
+        minWidth: "51px"
       }}>
         {priceRangesSections.map((section, index) => (
           <SectionContent
@@ -221,11 +278,18 @@ export default function RentalCostsSection() {
         ))}
       </Box>
 
-      <Box sx={{ height: { xs: "12px", sm: "16px" } }} />
+      <Box sx={{ 
+        height: { 
+          xs: "8px",
+          sm: "12px",
+          md: "16px" 
+        } 
+      }} />
 
       <Box sx={{ 
         width: "100%",
-        transition: "all 0.3s ease"
+        transition: "all 0.3s ease",
+        minWidth: "51px"
       }}>
         {rentalCostsSections.map((section, index) => (
           <SectionContent

@@ -31,6 +31,17 @@ function Heading() {
         const displayName = segment.replace(/-/g, " ").replace(/\b\w/g, (char)=>char.toUpperCase());
         return isLast ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
             color: "text.primary",
+            sx: {
+                fontSize: {
+                    xs: '12px',
+                    sm: '13px',
+                    md: '14px',
+                    lg: '16px'
+                },
+                whiteSpace: 'nowrap',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis'
+            },
             children: displayName
         }, routePath, false, {
             fileName: "[project]/src/components/Mortgage-cal-rent/components/Heading.js",
@@ -41,19 +52,41 @@ function Heading() {
             href: routePath,
             underline: "hover",
             color: "inherit",
+            sx: {
+                fontSize: {
+                    xs: '12px',
+                    sm: '13px',
+                    md: '14px',
+                    lg: '16px'
+                },
+                whiteSpace: 'nowrap',
+                '&:hover': {
+                    color: '#3E4C66'
+                }
+            },
             children: displayName
         }, routePath, false, {
             fileName: "[project]/src/components/Mortgage-cal-rent/components/Heading.js",
-            lineNumber: 25,
+            lineNumber: 39,
             columnNumber: 7
         }, this);
     });
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
-            py: 4,
-            px: {
-                xs: 1,
-                sm: 3
+            minWidth: '51px',
+            padding: {
+                xs: '16px 12px',
+                sm: '20px 16px',
+                md: '24px 20px',
+                lg: '32px 24px'
+            },
+            display: 'flex',
+            flexDirection: 'column',
+            gap: {
+                xs: '12px',
+                sm: '16px',
+                md: '20px',
+                lg: '24px'
             }
         },
         children: [
@@ -61,49 +94,96 @@ function Heading() {
                 "aria-label": "breadcrumb",
                 separator: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$ArrowForwardIos$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                     sx: {
-                        fontSize: "10px"
+                        fontSize: {
+                            xs: '8px',
+                            sm: '9px',
+                            md: '10px'
+                        },
+                        color: '#666'
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/Mortgage-cal-rent/components/Heading.js",
-                    lineNumber: 39,
-                    columnNumber: 54
+                    lineNumber: 86,
+                    columnNumber: 11
                 }, void 0),
+                sx: {
+                    '& .MuiBreadcrumbs-ol': {
+                        flexWrap: 'nowrap',
+                        overflow: 'auto',
+                        msOverflowStyle: 'none',
+                        scrollbarWidth: 'none',
+                        '&::-webkit-scrollbar': {
+                            display: 'none'
+                        }
+                    },
+                    '& .MuiBreadcrumbs-li': {
+                        minWidth: 'auto',
+                        whiteSpace: 'nowrap'
+                    }
+                },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Link$2f$Link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Link$3e$__["Link"], {
                         component: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"],
                         href: "/",
                         underline: "hover",
                         color: "inherit",
+                        sx: {
+                            fontSize: {
+                                xs: '12px',
+                                sm: '13px',
+                                md: '14px',
+                                lg: '16px'
+                            },
+                            whiteSpace: 'nowrap',
+                            '&:hover': {
+                                color: '#3E4C66'
+                            }
+                        },
                         children: "Home"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Mortgage-cal-rent/components/Heading.js",
-                        lineNumber: 40,
-                        columnNumber: 7
+                        lineNumber: 113,
+                        columnNumber: 9
                     }, this),
                     breadcrumbLinks
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Mortgage-cal-rent/components/Heading.js",
-                lineNumber: 39,
-                columnNumber: 6
+                lineNumber: 83,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                 sx: {
-                    fontSize: "37px",
+                    fontSize: {
+                        xs: '24px',
+                        sm: '28px',
+                        md: '32px',
+                        lg: '37px'
+                    },
                     fontWeight: 600,
-                    color: "#484848"
+                    color: '#484848',
+                    lineHeight: {
+                        xs: 1.2,
+                        sm: 1.25,
+                        md: 1.3
+                    },
+                    letterSpacing: {
+                        xs: '-0.5px',
+                        sm: '-0.75px',
+                        md: '-1px'
+                    }
                 },
                 children: "Rent Affordability Calculators"
             }, void 0, false, {
                 fileName: "[project]/src/components/Mortgage-cal-rent/components/Heading.js",
-                lineNumber: 45,
-                columnNumber: 5
+                lineNumber: 136,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Mortgage-cal-rent/components/Heading.js",
-        lineNumber: 38,
-        columnNumber: 4
+        lineNumber: 64,
+        columnNumber: 5
     }, this);
 }
 const __TURBOPACK__default__export__ = Heading;
@@ -129,22 +209,23 @@ const RentRange = ({ title, percentage, amount, isHighRange, isMidRange })=>{
     const amountColor = isHighRange ? "#F8BF16" : isMidRange ? "#073E7A" : "#061C35";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
-            width: "100%"
+            width: "100%",
+            minWidth: "51px"
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     borderTop: {
                         xs: title !== "High Range" ? "1px solid #E5E5E5" : "none",
-                        md: "none"
+                        sm: "none"
                     },
                     display: {
                         xs: "block",
-                        md: "none"
+                        sm: "none"
                     },
                     mt: {
                         xs: 3,
-                        md: 0
+                        sm: 0
                     }
                 }
             }, void 0, false, {
@@ -156,61 +237,77 @@ const RentRange = ({ title, percentage, amount, isHighRange, isMidRange })=>{
                 sx: {
                     display: "flex",
                     flexDirection: "column",
-                    gap: "8px",
+                    gap: {
+                        xs: "8px",
+                        sm: "10px",
+                        md: "12px",
+                        lg: "16px"
+                    },
                     borderRight: {
-                        md: title !== "Low Range" ? "1px solid #E5E5E5" : "none"
+                        sm: title !== "Low Range" ? "1px solid #E5E5E5" : "none"
                     },
                     paddingRight: {
-                        md: title !== "Low Range" ? "48px" : "0"
+                        sm: title !== "Low Range" ? "24px" : "0",
+                        lg: title !== "Low Range" ? "48px" : "0"
                     },
                     height: "100%",
                     marginTop: {
                         xs: 3,
-                        md: 0
+                        sm: 0
                     },
                     paddingTop: {
                         xs: 0,
-                        md: "29px"
+                        sm: "20px",
+                        lg: "29px"
                     },
-                    marginBottom: "16px",
+                    marginBottom: {
+                        xs: "24px",
+                        sm: "16px"
+                    },
                     alignItems: {
                         xs: "center",
-                        md: "flex-start"
+                        sm: "center",
+                        lg: "flex-start"
                     },
                     maxWidth: {
-                        md: "350px"
+                        sm: "100%",
+                        lg: "350px"
                     }
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                         sx: {
                             fontSize: {
-                                xs: "20px",
-                                sm: "24.44px"
+                                xs: "18px",
+                                sm: "18px",
+                                md: "20px",
+                                lg: "24.44px"
                             },
                             fontWeight: "700",
                             color: "#0A2540",
                             textAlign: {
                                 xs: "center",
-                                md: "left"
+                                lg: "left"
                             }
                         },
                         children: title
                     }, void 0, false, {
                         fileName: "[project]/src/components/Mortgage-cal-rent/components/RentCalculator.js",
-                        lineNumber: 39,
+                        lineNumber: 40,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                         sx: {
                             color: "#666",
                             fontSize: {
-                                xs: "16px",
-                                sm: "17.78px"
+                                xs: "14px",
+                                sm: "14px",
+                                md: "15px",
+                                lg: "17.78px"
                             },
                             textAlign: {
                                 xs: "center",
-                                md: "left"
+                                lg: "left"
                             }
                         },
                         children: [
@@ -219,21 +316,27 @@ const RentRange = ({ title, percentage, amount, isHighRange, isMidRange })=>{
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Mortgage-cal-rent/components/RentCalculator.js",
-                        lineNumber: 49,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                         sx: {
                             fontSize: {
-                                xs: "36px",
-                                sm: "44.44px"
+                                xs: "28px",
+                                sm: "28px",
+                                md: "32px",
+                                lg: "44.44px"
                             },
                             fontWeight: "700",
                             color: amountColor,
-                            mb: 2,
+                            mb: {
+                                xs: 1,
+                                sm: 1.5,
+                                lg: 2
+                            },
                             textAlign: {
                                 xs: "center",
-                                md: "left"
+                                lg: "left"
                             }
                         },
                         children: [
@@ -242,7 +345,7 @@ const RentRange = ({ title, percentage, amount, isHighRange, isMidRange })=>{
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Mortgage-cal-rent/components/RentCalculator.js",
-                        lineNumber: 58,
+                        lineNumber: 59,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -250,12 +353,15 @@ const RentRange = ({ title, percentage, amount, isHighRange, isMidRange })=>{
                             backgroundColor: "#E8E1C4",
                             color: "#777777",
                             width: {
-                                xs: "80%",
-                                sm: "172.8px"
+                                xs: "200px",
+                                sm: "160px",
+                                md: "172.8px"
                             },
                             height: {
-                                xs: "40px",
-                                sm: "43.33px"
+                                xs: "36px",
+                                sm: "36px",
+                                md: "40px",
+                                lg: "43.33px"
                             },
                             borderRadius: "55.56px",
                             display: "flex",
@@ -269,19 +375,22 @@ const RentRange = ({ title, percentage, amount, isHighRange, isMidRange })=>{
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                             sx: {
                                 fontSize: {
-                                    xs: "14px",
-                                    sm: "15.56px"
-                                }
+                                    xs: "13px",
+                                    sm: "13px",
+                                    md: "14px",
+                                    lg: "15.56px"
+                                },
+                                whiteSpace: "nowrap"
                             },
                             children: "View Apartments"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Mortgage-cal-rent/components/RentCalculator.js",
-                            lineNumber: 85,
+                            lineNumber: 86,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Mortgage-cal-rent/components/RentCalculator.js",
-                        lineNumber: 69,
+                        lineNumber: 70,
                         columnNumber: 9
                     }, this)
                 ]
@@ -305,39 +414,50 @@ function RentCalculator() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
             width: {
-                xs: "90%",
-                sm: "900px",
-                md: "1300px"
+                xs: "100%",
+                sm: "100%",
+                md: "100%",
+                lg: "100%"
             },
+            maxWidth: "1300px",
             height: {
                 xs: "auto",
-                md: "431px"
+                lg: "431px"
             },
             backgroundColor: "#FFFFFF",
             borderRadius: {
-                xs: "8px",
-                sm: "11.11px"
+                xs: "6px",
+                sm: "8px",
+                md: "10px",
+                lg: "11.11px"
             },
             padding: {
                 xs: "16px",
-                sm: "24px",
-                md: "32px 32px 32px 24px"
+                sm: "20px",
+                md: "24px",
+                lg: "32px 32px 32px 24px"
             },
             boxSizing: "border-box",
             display: "flex",
             flexDirection: "column",
-            margin: {
-                xs: "auto",
-                md: "0"
-            }
+            margin: "0 auto",
+            minWidth: "51px",
+            overflow: "hidden"
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
+                sx: {
+                    width: "100%"
+                },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                     sx: {
                         display: "flex",
                         flexDirection: "column",
-                        mb: 2
+                        mb: {
+                            xs: 2,
+                            sm: 2.5,
+                            md: 3
+                        }
                     },
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                         sx: {
@@ -359,117 +479,152 @@ function RentCalculator() {
                             pb: {
                                 xs: 3,
                                 sm: 0
-                            }
+                            },
+                            gap: {
+                                xs: "16px",
+                                sm: "20px",
+                                md: "24px"
+                            },
+                            flexWrap: "wrap"
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                                 sx: {
-                                    width: "100%"
+                                    width: {
+                                        xs: "100%",
+                                        sm: "auto"
+                                    },
+                                    maxWidth: {
+                                        xs: "100%",
+                                        sm: "60%",
+                                        md: "50%"
+                                    }
                                 },
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                         sx: {
                                             fontSize: {
-                                                xs: "28px",
-                                                sm: "37.33px"
+                                                xs: "24px",
+                                                sm: "26px",
+                                                md: "32px",
+                                                lg: "37.33px"
                                             },
                                             fontWeight: "700",
                                             color: "#0A2540",
                                             mb: {
                                                 xs: "8px",
-                                                sm: "0"
-                                            }
+                                                sm: "6px",
+                                                md: "8px"
+                                            },
+                                            lineHeight: {
+                                                xs: 1.2,
+                                                sm: 1.25,
+                                                md: 1.3
+                                            },
+                                            whiteSpace: "nowrap"
                                         },
                                         children: "Rent Calculator"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Mortgage-cal-rent/components/RentCalculator.js",
-                                        lineNumber: 133,
+                                        lineNumber: 155,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                         sx: {
                                             color: "#666",
                                             fontSize: {
-                                                xs: "14px",
-                                                sm: "16px"
+                                                xs: "13px",
+                                                sm: "13.5px",
+                                                md: "14px",
+                                                lg: "16px"
                                             },
-                                            mb: {
-                                                xs: 2,
-                                                sm: 0
+                                            lineHeight: {
+                                                xs: 1.4,
+                                                sm: 1.45,
+                                                md: 1.5
                                             }
                                         },
                                         children: "How much do you (or your cosigner) earn each year before taxes?"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Mortgage-cal-rent/components/RentCalculator.js",
-                                        lineNumber: 143,
+                                        lineNumber: 167,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Mortgage-cal-rent/components/RentCalculator.js",
-                                lineNumber: 132,
+                                lineNumber: 151,
                                 columnNumber: 13
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$TextField$2f$TextField$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__TextField$3e$__["TextField"], {
-                                value: income,
-                                onChange: (e)=>setIncome(e.target.value),
-                                type: "number",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                                 sx: {
                                     width: {
                                         xs: "100%",
-                                        sm: "231.69px"
+                                        sm: "200px",
+                                        md: "220px",
+                                        lg: "231.69px"
                                     },
-                                    alignSelf: {
-                                        xs: "stretch",
-                                        sm: "flex-start"
-                                    },
-                                    mt: {
-                                        xs: 0,
-                                        sm: "20px"
-                                    },
-                                    position: {
-                                        xs: "static",
-                                        sm: "absolute"
-                                    },
-                                    top: {
-                                        sm: "5px"
-                                    },
-                                    right: {
-                                        sm: "500px"
-                                    },
-                                    "& .MuiOutlinedInput-root": {
-                                        borderRadius: "24px",
-                                        backgroundColor: "#F8F8F8",
-                                        height: "40px",
-                                        border: "1px solid #061C35",
-                                        boxShadow: "0px 0px 4px 0px #81C76F"
-                                    },
-                                    "& .MuiOutlinedInput-notchedOutline": {
-                                        border: "none"
-                                    },
-                                    "& .MuiInputBase-input": {
-                                        padding: "8px 16px"
+                                    marginLeft: {
+                                        sm: "auto"
                                     }
-                                }
+                                },
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$TextField$2f$TextField$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__TextField$3e$__["TextField"], {
+                                    value: income,
+                                    onChange: (e)=>setIncome(e.target.value),
+                                    type: "number",
+                                    sx: {
+                                        width: "100%",
+                                        "& .MuiOutlinedInput-root": {
+                                            borderRadius: "24px",
+                                            backgroundColor: "#F8F8F8",
+                                            height: {
+                                                xs: "36px",
+                                                sm: "38px",
+                                                md: "40px"
+                                            },
+                                            border: "1px solid #061C35",
+                                            boxShadow: "0px 0px 4px 0px #81C76F"
+                                        },
+                                        "& .MuiOutlinedInput-notchedOutline": {
+                                            border: "none"
+                                        },
+                                        "& .MuiInputBase-input": {
+                                            padding: {
+                                                xs: "6px 14px",
+                                                sm: "7px 15px",
+                                                md: "8px 16px"
+                                            },
+                                            fontSize: {
+                                                xs: "14px",
+                                                sm: "15px",
+                                                md: "16px"
+                                            }
+                                        }
+                                    }
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Mortgage-cal-rent/components/RentCalculator.js",
+                                    lineNumber: 181,
+                                    columnNumber: 15
+                                }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Mortgage-cal-rent/components/RentCalculator.js",
-                                lineNumber: 153,
+                                lineNumber: 177,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Mortgage-cal-rent/components/RentCalculator.js",
-                        lineNumber: 121,
+                        lineNumber: 138,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/Mortgage-cal-rent/components/RentCalculator.js",
-                    lineNumber: 116,
+                    lineNumber: 133,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Mortgage-cal-rent/components/RentCalculator.js",
-                lineNumber: 115,
+                lineNumber: 132,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -479,7 +634,13 @@ function RentCalculator() {
                     },
                     mt: {
                         xs: 0,
-                        sm: 2
+                        sm: 1,
+                        md: 2
+                    },
+                    pt: {
+                        xs: 2,
+                        sm: 1,
+                        md: 0
                     }
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -487,14 +648,16 @@ function RentCalculator() {
                         display: "grid",
                         gridTemplateColumns: {
                             xs: "1fr",
-                            md: "1fr 1fr 1fr"
+                            sm: "repeat(3, 1fr)"
                         },
                         gap: {
-                            xs: "0",
-                            md: "40px"
+                            xs: "24px",
+                            sm: "16px",
+                            md: "24px",
+                            lg: "40px"
                         },
                         maxWidth: {
-                            md: "1200px"
+                            lg: "1200px"
                         }
                     },
                     children: [
@@ -505,7 +668,7 @@ function RentCalculator() {
                             isHighRange: true
                         }, void 0, false, {
                             fileName: "[project]/src/components/Mortgage-cal-rent/components/RentCalculator.js",
-                            lineNumber: 197,
+                            lineNumber: 223,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(RentRange, {
@@ -515,7 +678,7 @@ function RentCalculator() {
                             isMidRange: true
                         }, void 0, false, {
                             fileName: "[project]/src/components/Mortgage-cal-rent/components/RentCalculator.js",
-                            lineNumber: 203,
+                            lineNumber: 229,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(RentRange, {
@@ -525,24 +688,24 @@ function RentCalculator() {
                             isHighRange: false
                         }, void 0, false, {
                             fileName: "[project]/src/components/Mortgage-cal-rent/components/RentCalculator.js",
-                            lineNumber: 209,
+                            lineNumber: 235,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Mortgage-cal-rent/components/RentCalculator.js",
-                    lineNumber: 186,
+                    lineNumber: 212,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Mortgage-cal-rent/components/RentCalculator.js",
-                lineNumber: 182,
+                lineNumber: 207,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Mortgage-cal-rent/components/RentCalculator.js",
-        lineNumber: 102,
+        lineNumber: 106,
         columnNumber: 5
     }, this);
 }
@@ -571,85 +734,105 @@ const HeroContent = ({ text })=>{
             display: "flex",
             flexDirection: "column",
             gap: {
-                xs: "16px",
-                sm: "24px"
+                xs: "12px",
+                sm: "16px",
+                md: "20px",
+                lg: "24px"
             },
             alignItems: {
                 xs: "flex-start",
-                sm: "flex-start"
+                lg: "flex-start"
             },
             width: {
                 xs: "100%",
-                sm: "auto"
+                lg: "auto"
             },
             paddingLeft: {
-                xs: "0",
-                sm: "50px"
-            } //  padding for desktop view
+                xs: "12px",
+                sm: "24px",
+                md: "32px",
+                lg: "50px"
+            },
+            paddingRight: {
+                xs: "12px",
+                sm: "24px",
+                md: "32px",
+                lg: "400px" // Space for image
+            },
+            minWidth: '51px'
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "900px"
+                        lg: "900px"
                     },
-                    maxWidth: "100%"
+                    maxWidth: "100%",
+                    minWidth: '51px'
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         color: "#444444",
                         fontSize: {
-                            xs: "14px",
-                            sm: "16px"
+                            xs: "12px",
+                            sm: "13px",
+                            md: "14px",
+                            lg: "16px"
                         },
                         lineHeight: {
-                            xs: "1.6",
-                            sm: "1.5"
+                            xs: "1.4",
+                            sm: "1.5",
+                            md: "1.6",
+                            lg: "1.5"
                         },
                         textAlign: {
                             xs: "justify",
-                            sm: "left"
+                            lg: "left"
                         },
                         display: "block",
                         width: "100%",
                         hyphens: {
                             xs: "auto",
-                            sm: "none"
+                            lg: "none"
                         },
                         letterSpacing: {
-                            xs: "0.5px",
-                            sm: "normal"
+                            xs: "0.3px",
+                            sm: "0.4px",
+                            md: "0.5px",
+                            lg: "normal"
                         },
                         wordSpacing: {
-                            xs: "1px",
-                            sm: "normal"
-                        },
-                        paddingRight: {
-                            xs: "8px",
-                            sm: "0"
+                            xs: "0.5px",
+                            sm: "0.7px",
+                            md: "1px",
+                            lg: "normal"
                         }
                     },
                     children: text
                 }, void 0, false, {
                     fileName: "[project]/src/components/Mortgage-cal-rent/components/HeroContent.js",
-                    lineNumber: 27,
+                    lineNumber: 51,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Mortgage-cal-rent/components/HeroContent.js",
-                lineNumber: 21,
+                lineNumber: 41,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
-                        xs: "193.24px",
-                        sm: "193.24px"
+                        xs: "140px",
+                        sm: "160px",
+                        md: "180px",
+                        lg: "193.24px"
                     },
                     height: {
-                        xs: "45px",
-                        sm: "55.56px"
+                        xs: "35px",
+                        sm: "40px",
+                        md: "45px",
+                        lg: "55.56px"
                     },
                     backgroundColor: "#3E4C66",
                     borderRadius: "6px",
@@ -659,26 +842,29 @@ const HeroContent = ({ text })=>{
                     cursor: "pointer",
                     "&:hover": {
                         opacity: 0.9
-                    }
+                    },
+                    minWidth: '51px'
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         color: "#FFFFFF",
                         fontSize: {
-                            xs: "14px",
-                            sm: "17.78px"
+                            xs: "12px",
+                            sm: "13px",
+                            md: "14px",
+                            lg: "17.78px"
                         },
                         fontWeight: 500
                     },
                     children: "Get Started!"
                 }, void 0, false, {
                     fileName: "[project]/src/components/Mortgage-cal-rent/components/HeroContent.js",
-                    lineNumber: 62,
+                    lineNumber: 119,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Mortgage-cal-rent/components/HeroContent.js",
-                lineNumber: 47,
+                lineNumber: 93,
                 columnNumber: 7
             }, this)
         ]
@@ -694,38 +880,52 @@ function HeroSection() {
         sx: {
             width: "100%",
             maxWidth: {
-                xs: "90%",
-                sm: "2500px"
+                xs: "100%",
+                sm: "100%",
+                md: "100%",
+                lg: "2500px"
             },
             height: {
                 xs: "auto",
-                sm: "431px"
+                lg: "431px"
             },
             backgroundColor: "#F7F7F7",
             borderRadius: {
-                xs: "8px",
-                sm: "11.11px"
+                xs: "6px",
+                sm: "8px",
+                md: "10px",
+                lg: "11.11px"
             },
             padding: {
                 xs: "16px",
-                sm: "24px",
-                md: "32px"
+                sm: "20px",
+                md: "24px",
+                lg: "32px"
             },
             boxSizing: "border-box",
             display: "flex",
             flexDirection: {
                 xs: "column",
-                sm: "row"
+                lg: "row"
             },
             alignItems: {
                 xs: "flex-start",
-                sm: "center"
+                lg: "center"
             },
             position: "relative",
             margin: "auto",
             gap: {
                 xs: "24px",
-                sm: 0
+                sm: "32px",
+                md: "40px",
+                lg: 0
+            },
+            minWidth: '51px',
+            marginTop: {
+                xs: "24px",
+                sm: "32px",
+                md: "40px",
+                lg: 0
             }
         },
         children: [
@@ -736,90 +936,100 @@ function HeroSection() {
                     justifyContent: "center",
                     width: {
                         xs: "100%",
-                        sm: "auto"
-                    }
+                        lg: "auto"
+                    },
+                    minWidth: '51px',
+                    position: "relative",
+                    zIndex: 1
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(HeroContent, {
                     text: content
                 }, void 0, false, {
                     fileName: "[project]/src/components/Mortgage-cal-rent/components/HeroContent.js",
-                    lineNumber: 107,
+                    lineNumber: 211,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Mortgage-cal-rent/components/HeroContent.js",
-                lineNumber: 99,
+                lineNumber: 197,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     position: {
-                        xs: "static",
-                        sm: "absolute"
+                        xs: "relative",
+                        lg: "absolute"
                     },
                     right: {
-                        sm: "120px"
+                        lg: "120px"
                     },
                     top: {
-                        sm: "50%"
+                        lg: "50%"
                     },
                     transform: {
-                        sm: "translateY(-50%)"
+                        lg: "translateY(-50%)"
                     },
                     width: {
                         xs: "100%",
-                        sm: "335px"
+                        sm: "280px",
+                        md: "300px",
+                        lg: "335px"
                     },
                     height: {
-                        xs: "200px",
-                        sm: "335px"
+                        xs: "160px",
+                        sm: "180px",
+                        md: "200px",
+                        lg: "335px"
                     },
                     maxWidth: {
-                        xs: "300px",
-                        sm: "335px"
+                        xs: "260px",
+                        sm: "280px",
+                        md: "300px",
+                        lg: "335px"
                     },
                     margin: {
-                        xs: "24px auto 0",
-                        sm: 0
+                        xs: "0 auto",
+                        lg: 0
                     },
-                    display: {
-                        xs: "block",
-                        sm: "block"
-                    }
+                    display: "block",
+                    minWidth: '51px',
+                    zIndex: 0
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                     sx: {
                         position: "relative",
                         width: "100%",
-                        height: "100%"
+                        height: "100%",
+                        minWidth: '51px'
                     },
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         src: "/Images/Figure → Rent-Calculator.png",
                         alt: "Hero illustration",
                         fill: true,
                         style: {
-                            objectFit: "contain"
+                            objectFit: "contain",
+                            objectPosition: "center"
                         },
                         priority: true
                     }, void 0, false, {
                         fileName: "[project]/src/components/Mortgage-cal-rent/components/HeroContent.js",
-                        lineNumber: 130,
+                        lineNumber: 264,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/Mortgage-cal-rent/components/HeroContent.js",
-                    lineNumber: 123,
+                    lineNumber: 256,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Mortgage-cal-rent/components/HeroContent.js",
-                lineNumber: 110,
+                lineNumber: 214,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Mortgage-cal-rent/components/HeroContent.js",
-        lineNumber: 82,
+        lineNumber: 144,
         columnNumber: 5
     }, this);
 }
@@ -845,42 +1055,53 @@ const SectionContent = ({ heading, subheading, description, hasBottomMargin, isP
         sx: {
             display: "flex",
             flexDirection: "column",
-            gap: "16px",
+            gap: {
+                xs: "12px",
+                sm: "14px",
+                md: "16px"
+            },
             marginBottom: hasBottomMargin ? {
-                xs: "24px",
-                sm: "32px"
+                xs: "20px",
+                sm: "24px",
+                md: "28px",
+                lg: "32px"
             } : "0px",
             padding: {
-                xs: "16px",
-                sm: "20px",
+                xs: "12px 16px",
+                sm: "16px 20px",
                 md: "0px"
             },
             marginLeft: {
-                xs: "-15px",
+                xs: "0px",
                 sm: "0px",
                 md: "42px"
             },
             marginRight: {
-                xs: "35px",
+                xs: "0px",
                 sm: "0px",
-                md: "0px"
+                md: "42px"
             },
-            transition: "all 0.3s ease"
+            transition: "all 0.3s ease",
+            minWidth: "51px"
         },
         children: [
             heading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                 variant: "h2",
                 sx: {
                     fontSize: {
-                        xs: "20px",
-                        sm: "24px",
-                        md: "31px"
+                        xs: "18px",
+                        sm: "20px",
+                        md: "24px",
+                        lg: "31px"
                     },
                     fontWeight: 600,
                     color: "#303030",
-                    lineHeight: 1.2,
+                    lineHeight: {
+                        xs: 1.3,
+                        sm: 1.2
+                    },
                     textAlign: {
-                        xs: "justify",
+                        xs: "left",
                         sm: "left"
                     },
                     transition: "font-size 0.3s ease"
@@ -888,23 +1109,24 @@ const SectionContent = ({ heading, subheading, description, hasBottomMargin, isP
                 children: heading
             }, void 0, false, {
                 fileName: "[project]/src/components/Mortgage-cal-rent/components/RentalCostsSection.js",
-                lineNumber: 18,
+                lineNumber: 31,
                 columnNumber: 9
             }, this),
             subheading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                 variant: "h3",
                 sx: {
                     fontSize: {
-                        xs: "16px",
-                        sm: "18px",
-                        md: "22px"
+                        xs: "15px",
+                        sm: "16px",
+                        md: "18px",
+                        lg: "22px"
                     },
                     fontWeight: 700,
                     color: "#314259",
                     lineHeight: 1.2,
                     display: 'inline',
                     textAlign: {
-                        xs: "justify",
+                        xs: "left",
                         sm: "left"
                     },
                     transition: "font-size 0.3s ease"
@@ -912,95 +1134,118 @@ const SectionContent = ({ heading, subheading, description, hasBottomMargin, isP
                 children: subheading
             }, void 0, false, {
                 fileName: "[project]/src/components/Mortgage-cal-rent/components/RentalCostsSection.js",
-                lineNumber: 33,
+                lineNumber: 51,
                 columnNumber: 9
             }, this),
             description && isPriceRange ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: "100%",
                     textAlign: {
-                        xs: "justify",
+                        xs: "left",
                         sm: "left"
                     },
-                    transition: "all 0.3s ease"
+                    transition: "all 0.3s ease",
+                    minWidth: "51px"
                 },
                 children: description.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
+                        sx: {
+                            marginBottom: {
+                                xs: "8px",
+                                sm: "12px"
+                            }
+                        },
                         children: [
                             item.boldText && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                 sx: {
                                     fontSize: {
-                                        xs: "14px",
-                                        sm: "16px",
-                                        md: "17.78px"
+                                        xs: "13px",
+                                        sm: "14px",
+                                        md: "16px",
+                                        lg: "17.78px"
                                     },
                                     fontWeight: 700,
                                     color: "#444444",
                                     textAlign: {
-                                        xs: "justify",
+                                        xs: "left",
                                         sm: "left"
                                     },
-                                    transition: "font-size 0.3s ease"
+                                    transition: "font-size 0.3s ease",
+                                    marginBottom: "4px"
                                 },
                                 children: item.boldText
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Mortgage-cal-rent/components/RentalCostsSection.js",
-                                lineNumber: 57,
+                                lineNumber: 81,
                                 columnNumber: 17
                             }, this),
                             item.text && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                 sx: {
                                     fontSize: {
-                                        xs: "14px",
-                                        sm: "16px",
-                                        md: "17.78px"
+                                        xs: "12px",
+                                        sm: "13px",
+                                        md: "15px",
+                                        lg: "17.78px"
                                     },
                                     fontWeight: 400,
                                     color: "#444444",
                                     textAlign: {
-                                        xs: "justify",
+                                        xs: "left",
                                         sm: "left"
                                     },
-                                    transition: "font-size 0.3s ease"
+                                    transition: "font-size 0.3s ease",
+                                    lineHeight: {
+                                        xs: 1.5,
+                                        sm: 1.6,
+                                        md: 1.7
+                                    }
                                 },
                                 children: item.text
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Mortgage-cal-rent/components/RentalCostsSection.js",
-                                lineNumber: 70,
+                                lineNumber: 100,
                                 columnNumber: 17
                             }, this)
                         ]
                     }, index, true, {
                         fileName: "[project]/src/components/Mortgage-cal-rent/components/RentalCostsSection.js",
-                        lineNumber: 55,
+                        lineNumber: 79,
                         columnNumber: 13
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/components/Mortgage-cal-rent/components/RentalCostsSection.js",
-                lineNumber: 49,
+                lineNumber: 72,
                 columnNumber: 9
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: "100%",
                     textAlign: {
-                        xs: "justify",
+                        xs: "left",
                         sm: "left"
                     },
-                    transition: "all 0.3s ease"
+                    transition: "all 0.3s ease",
+                    minWidth: "51px"
                 },
                 children: description.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
+                        sx: {
+                            marginBottom: {
+                                xs: "8px",
+                                sm: "12px"
+                            }
+                        },
                         children: [
                             item.boldText && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                 sx: {
                                     fontSize: {
-                                        xs: "14px",
-                                        sm: "16px",
-                                        md: "17.78px"
+                                        xs: "13px",
+                                        sm: "14px",
+                                        md: "16px",
+                                        lg: "17.78px"
                                     },
                                     fontWeight: 700,
                                     color: "#444444",
                                     display: "inline",
                                     textAlign: {
-                                        xs: "justify",
+                                        xs: "left",
                                         sm: "left"
                                     },
                                     transition: "font-size 0.3s ease"
@@ -1008,40 +1253,46 @@ const SectionContent = ({ heading, subheading, description, hasBottomMargin, isP
                                 children: item.boldText
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Mortgage-cal-rent/components/RentalCostsSection.js",
-                                lineNumber: 94,
+                                lineNumber: 131,
                                 columnNumber: 17
                             }, this),
                             item.text && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                 sx: {
                                     fontSize: {
-                                        xs: "14px",
-                                        sm: "16px",
-                                        md: "17.78px"
+                                        xs: "12px",
+                                        sm: "13px",
+                                        md: "15px",
+                                        lg: "17.78px"
                                     },
                                     fontWeight: 400,
                                     color: "#444444",
                                     display: "inline",
                                     textAlign: {
-                                        xs: "justify",
+                                        xs: "left",
                                         sm: "left"
                                     },
-                                    transition: "font-size 0.3s ease"
+                                    transition: "font-size 0.3s ease",
+                                    lineHeight: {
+                                        xs: 1.5,
+                                        sm: 1.6,
+                                        md: 1.7
+                                    }
                                 },
                                 children: item.text
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Mortgage-cal-rent/components/RentalCostsSection.js",
-                                lineNumber: 108,
+                                lineNumber: 150,
                                 columnNumber: 17
                             }, this)
                         ]
                     }, index, true, {
                         fileName: "[project]/src/components/Mortgage-cal-rent/components/RentalCostsSection.js",
-                        lineNumber: 92,
+                        lineNumber: 129,
                         columnNumber: 13
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/components/Mortgage-cal-rent/components/RentalCostsSection.js",
-                lineNumber: 86,
+                lineNumber: 122,
                 columnNumber: 9
             }, this)
         ]
@@ -1139,28 +1390,35 @@ function RentalCostsSection() {
             width: "100%",
             maxWidth: {
                 xs: "100%",
-                sm: "1330px"
+                sm: "100%",
+                md: "1330px"
             },
             backgroundColor: "#F7F7F7",
             padding: {
-                xs: "20px",
-                sm: "30px",
-                md: "40px"
+                xs: "16px",
+                sm: "24px",
+                md: "32px",
+                lg: "40px"
             },
             display: "flex",
             flexDirection: "column",
             gap: {
-                xs: "24px",
-                sm: "32px"
+                xs: "20px",
+                sm: "24px",
+                md: "28px",
+                lg: "32px"
             },
             margin: "auto",
-            transition: "all 0.3s ease"
+            transition: "all 0.3s ease",
+            minWidth: "51px",
+            boxSizing: "border-box"
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: "100%",
-                    transition: "all 0.3s ease"
+                    transition: "all 0.3s ease",
+                    minWidth: "51px"
                 },
                 children: priceRangesSections.map((section, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SectionContent, {
                         heading: section.heading,
@@ -1170,30 +1428,32 @@ function RentalCostsSection() {
                         isPriceRange: true
                     }, index, false, {
                         fileName: "[project]/src/components/Mortgage-cal-rent/components/RentalCostsSection.js",
-                        lineNumber: 213,
+                        lineNumber: 270,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/components/Mortgage-cal-rent/components/RentalCostsSection.js",
-                lineNumber: 208,
+                lineNumber: 264,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     height: {
-                        xs: "12px",
-                        sm: "16px"
+                        xs: "8px",
+                        sm: "12px",
+                        md: "16px"
                     }
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/Mortgage-cal-rent/components/RentalCostsSection.js",
-                lineNumber: 224,
+                lineNumber: 281,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: "100%",
-                    transition: "all 0.3s ease"
+                    transition: "all 0.3s ease",
+                    minWidth: "51px"
                 },
                 children: rentalCostsSections.map((section, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SectionContent, {
                         heading: section.heading,
@@ -1202,18 +1462,18 @@ function RentalCostsSection() {
                         isPriceRange: false
                     }, index, false, {
                         fileName: "[project]/src/components/Mortgage-cal-rent/components/RentalCostsSection.js",
-                        lineNumber: 231,
+                        lineNumber: 295,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/components/Mortgage-cal-rent/components/RentalCostsSection.js",
-                lineNumber: 226,
+                lineNumber: 289,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Mortgage-cal-rent/components/RentalCostsSection.js",
-        lineNumber: 191,
+        lineNumber: 239,
         columnNumber: 5
     }, this);
 }
@@ -1246,12 +1506,15 @@ function MortgageCalRent() {
         sx: {
             backgroundColor: '#F7F7F7',
             minHeight: '100vh',
+            minWidth: '51px',
             width: '100%',
             display: 'flex',
             flexDirection: 'column',
             gap: {
-                xs: '32px',
-                sm: '48px'
+                xs: '24px',
+                sm: '32px',
+                md: '40px',
+                lg: '48px'
             },
             overflow: 'hidden',
             position: 'relative'
@@ -1260,125 +1523,140 @@ function MortgageCalRent() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     paddingLeft: {
-                        xs: '26px',
-                        sm: '57px',
-                        lg: '80px'
+                        xs: '20px',
+                        sm: '40px',
+                        md: '80px',
+                        lg: '50px'
                     },
                     paddingRight: {
-                        xs: '26px',
-                        sm: '57px',
-                        lg: '80px'
+                        xs: '20px',
+                        sm: '40px',
+                        md: '80px',
+                        lg: '120px'
                     },
                     paddingTop: {
-                        xs: '24px',
-                        sm: '32px'
+                        xs: '16px',
+                        sm: '24px',
+                        md: '32px'
                     },
                     marginBottom: {
-                        xs: '0px',
-                        sm: '-140px'
+                        xs: '0',
+                        sm: '0',
+                        md: '0',
+                        lg: '-140px'
                     },
-                    zIndex: {
-                        sm: 2
-                    },
-                    width: {
-                        xs: '100%',
-                        lg: 'auto'
-                    },
+                    zIndex: 2,
+                    width: '100%',
                     boxSizing: 'border-box'
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Mortgage$2d$cal$2d$rent$2f$components$2f$Heading$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/components/Mortgage-cal-rent/MortgageCalRent.js",
-                    lineNumber: 30,
+                    lineNumber: 56,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Mortgage-cal-rent/MortgageCalRent.js",
-                lineNumber: 21,
+                lineNumber: 28,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
-                    zIndex: {
-                        sm: 1
-                    },
+                    zIndex: 1,
                     width: '100%',
                     paddingLeft: {
-                        xs: '0px',
-                        md: '20px'
-                    },
-                    transition: 'padding 0.3s ease'
-                },
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Mortgage$2d$cal$2d$rent$2f$components$2f$HeroContent$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                    fileName: "[project]/src/components/Mortgage-cal-rent/MortgageCalRent.js",
-                    lineNumber: 39,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/src/components/Mortgage-cal-rent/MortgageCalRent.js",
-                lineNumber: 33,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
-                sx: {
-                    paddingLeft: {
                         xs: '20px',
-                        sm: '60px',
-                        lg: '80px'
+                        sm: '40px',
+                        md: '50px',
+                        lg: '0px'
                     },
                     paddingRight: {
                         xs: '20px',
-                        sm: '60px',
-                        lg: '80px'
+                        sm: '40px',
+                        md: '80px',
+                        lg: '120px'
                     },
+                    paddingTop: {
+                        md: '10px'
+                    },
+                    transition: 'padding 0.3s ease',
+                    boxSizing: 'border-box'
+                },
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Mortgage$2d$cal$2d$rent$2f$components$2f$HeroContent$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                    fileName: "[project]/src/components/Mortgage-cal-rent/MortgageCalRent.js",
+                    lineNumber: 82,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/Mortgage-cal-rent/MortgageCalRent.js",
+                lineNumber: 60,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
+                sx: {
                     width: '100%',
+                    paddingLeft: {
+                        xs: '20px',
+                        sm: '40px',
+                        md: '80px',
+                        lg: '60px'
+                    },
+                    paddingRight: {
+                        xs: '20px',
+                        sm: '40px',
+                        md: '80px',
+                        lg: '120px'
+                    },
                     boxSizing: 'border-box'
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Mortgage$2d$cal$2d$rent$2f$components$2f$RentCalculator$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/components/Mortgage-cal-rent/MortgageCalRent.js",
-                    lineNumber: 48,
+                    lineNumber: 102,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Mortgage-cal-rent/MortgageCalRent.js",
-                lineNumber: 42,
+                lineNumber: 86,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     paddingLeft: {
                         xs: '20px',
-                        sm: '0px'
+                        sm: '0'
                     },
                     paddingRight: {
                         xs: '20px',
-                        sm: '0px'
+                        sm: '0'
                     },
                     marginLeft: {
-                        xs: '0px',
-                        sm: '-57px',
-                        lg: '-80px'
+                        xs: '0',
+                        sm: '-40px',
+                        md: '-80px',
+                        lg: '-173px'
                     },
                     width: {
                         xs: 'auto',
-                        sm: 'calc(100% + 57px)',
-                        lg: 'calc(100% + 80px)'
+                        sm: 'calc(100% + 80px)',
+                        md: 'calc(100% + 160px)',
+                        lg: 'calc(100% + 240px)'
                     },
                     transition: 'all 0.3s ease',
                     boxSizing: 'border-box',
                     maxWidth: {
                         xs: '100%',
-                        sm: 'calc(100% + 57px)',
-                        lg: 'calc(100% + 80px)'
+                        sm: 'calc(100% + 80px)',
+                        md: 'calc(100% + 160px)',
+                        lg: 'calc(100% + 240px)'
                     }
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Mortgage$2d$cal$2d$rent$2f$components$2f$RentalCostsSection$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/components/Mortgage-cal-rent/MortgageCalRent.js",
-                    lineNumber: 60,
+                    lineNumber: 136,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Mortgage-cal-rent/MortgageCalRent.js",
-                lineNumber: 51,
+                lineNumber: 106,
                 columnNumber: 7
             }, this)
         ]
