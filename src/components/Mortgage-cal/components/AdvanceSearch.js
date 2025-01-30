@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { Grid, Box, Typography } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -9,15 +9,18 @@ export default function AdvancedSearch() {
   return (
     <Box
       sx={{
-        width: { xs: "355px", sm: "340px", md: "449px" },
-        height: { xs: "80px", sm: "90px", md: "100px" },
-        ml:{xs: "-4px", sm: "-5px", md: "-10px"},
+        width: "100%",
+        height: { xs: "70px", sm: "90px", md: "100px" },
         backgroundColor: "#fff",
-        borderRadius: "8.12px",
-        padding: { xs: "17px", sm: "24px", md: "20px" },
+        borderRadius: { xs: "6px", sm: "8.12px" },
+        padding: { xs: "12px 16px", sm: "17px", md: "20px" },
         boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.1)",
         cursor: "pointer",
-        transition: "all 0.2s ease-in-out"
+        transition: "all 0.2s ease-in-out",
+        "&:hover": {
+          boxShadow: "0px 2px 6px rgba(0, 0, 0, 0.15)",
+          transform: "translateY(-2px)",
+        }
       }}
       onClick={() => setIsOpen(!isOpen)}
     >
@@ -25,11 +28,12 @@ export default function AdvancedSearch() {
         <Grid item>
           <Typography
             sx={{
-              fontSize: { xs: "16px", sm: "24.37px" },
+              fontSize: { xs: "16px", sm: "20px", md: "24.37px" },
               fontWeight: "400",
               color: "#314259",
               fontFamily: "system-ui, -apple-system, sans-serif",
-              letterSpacing: "-0.5px"
+              letterSpacing: "-0.5px",
+              transition: "color 0.2s ease-in-out",
             }}
           >
             Advanced Search
@@ -38,20 +42,26 @@ export default function AdvancedSearch() {
         <Grid item>
           <Box
             sx={{
-              width: "48px",
-              height: "48px",
+              width: { xs: "40px", sm: "44px", md: "48px" },
+              height: { xs: "40px", sm: "44px", md: "48px" },
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               borderRadius: "50%",
               border: "1.5px solid #E5E5E5",
-              transition: "transform 0.2s ease-in-out",
+              transition: "all 0.2s ease-in-out",
+              "&:hover": {
+                backgroundColor: "#f5f5f5",
+                borderColor: "#d5d5d5",
+              },
             }}
           >
             <ExpandMoreIcon
               sx={{
-                fontSize: { xs: "16px", sm: "24px", md: "24px" },
-                color: "#666666"
+                fontSize: { xs: "20px", sm: "22px", md: "24px" },
+                color: "#666666",
+                transition: "transform 0.2s ease-in-out",
+                transform: isOpen ? "rotate(180deg)" : "rotate(0)",
               }}
             />
           </Box>

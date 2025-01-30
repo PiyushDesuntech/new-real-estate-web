@@ -5,5 +5,7 @@
   "/edit-profile/page": "app/edit-profile/page.js",
   "/changepassword/page": "app/changepassword/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/insights/page": "app/insights/page.js"
+  "/insights/page": "app/insights/page.js",
+  "/mortgage-cal/page": "app/mortgage-cal/page.js",
+  "/mortgage-cal-rent/page": "app/mortgage-cal-rent/page.js"
 }
