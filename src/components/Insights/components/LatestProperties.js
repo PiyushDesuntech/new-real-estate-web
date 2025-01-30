@@ -159,9 +159,16 @@ export default function LatestProperties() {
                     lg: "16px" 
                   },
                   "&:last-child": { paddingBottom: 0 },
+                  maxWidth: {
+                    xs: "calc(100% - 90px)", // Account for image width and margin on mobile
+                    sm: "calc(100% - 102px)", // Account for image width and margin on tablet
+                    md: "calc(100% - 116px)", // Account for image width and margin on desktop
+                    lg: "calc(100% - 126.77px)", // Account for image width and margin on large screens
+                  },
                 }}
               >
                 <Typography
+                  component="div"
                   sx={{
                     fontSize: { 
                       xs: "14px", 
@@ -175,15 +182,20 @@ export default function LatestProperties() {
                       sm: "4px", 
                       md: "8px" 
                     },
-                    whiteSpace: "nowrap",
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                    maxWidth: "100%",
                     fontWeight: 700,
                     transition: "color 0.3s ease",
                     "&:hover": {
                       color: "#000",
                     },
+                    display: "-webkit-box",
+                    WebkitLineClamp: {
+                      xs: 2, // 2 lines on mobile
+                      sm: 1, // 1 line on larger screens
+                    },
+                    WebkitBoxOrient: "vertical",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                    lineHeight: 1.2,
                   }}
                 >
                   {property.title}

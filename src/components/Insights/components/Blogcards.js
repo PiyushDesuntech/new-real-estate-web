@@ -104,7 +104,7 @@ export default function BlogCards() {
                     padding: "12px",
                     borderRadius: "4px",
                     "&:hover": {
-                      transform: "translateY(-3px)", // Smaller lift on mobile
+                      transform: "translateY(-3px)",
                       boxShadow: "0 6px 12px rgba(0,0,0,0.1)",
                     },
                   }
@@ -245,9 +245,9 @@ export default function BlogCards() {
                       justifyContent: "space-between",
                       alignItems: "center",
                       '@media (max-width: 600px)': {
-                        flexDirection: "column",
-                        alignItems: "flex-start",
-                        gap: "8px",
+                        flexDirection: "row", // Keep row direction for mobile
+                        alignItems: "center",
+                        justifyContent: "space-between", // Maintain space between items
                       }
                     }}
                   >
@@ -304,6 +304,9 @@ export default function BlogCards() {
                             transform: "translateX(4px)",
                           },
                         },
+                        '@media (max-width: 600px)': {
+                          marginLeft: "auto", // Push to the right
+                        }
                       }}
                     >
                       <Typography 
