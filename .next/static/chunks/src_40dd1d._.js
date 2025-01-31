@@ -1429,7 +1429,7 @@ function CategoriesSidebar() {
         columnNumber: 5
     }, this);
 }
-_s(CategoriesSidebar, "7TK00tQm+GyplakPtNAA/clyOyQ=");
+_s(CategoriesSidebar, "yYr7uwuSHvGxtFubfI3SlElPoVw=");
 _c = CategoriesSidebar;
 var _c;
 __turbopack_refresh__.register(_c, "CategoriesSidebar");

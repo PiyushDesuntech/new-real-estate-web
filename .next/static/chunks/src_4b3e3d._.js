@@ -524,7 +524,7 @@ function LoanCalculator() {
         columnNumber: 5
     }, this);
 }
-_s(LoanCalculator, "Ei0pxhKfi3PDRte5e+cUxtA9DdU=");
+_s(LoanCalculator, "ZhrAfu7sBkdxdmqqsI75TvrMMNQ=");
 _c1 = LoanCalculator;
 var _c, _c1;
 __turbopack_refresh__.register(_c, "LoanDoughnutChart");
