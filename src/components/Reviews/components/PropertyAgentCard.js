@@ -157,7 +157,7 @@ const PropertyAgentCard = () => {
 
         <Box
           sx={{
-            p: { xs: 1.5, sm: 2 },
+            p: { xs: 1, sm: 1.5 }, // Reduced padding here
             borderTop: "1px solid #eee",
             textAlign: "right",
           }}

@@ -131,6 +131,8 @@ __turbopack_esm__({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$useTheme$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__useTheme$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/styles/useTheme.js [app-client] (ecmascript) <export default as useTheme>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$useMediaQuery$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__useMediaQuery$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/useMediaQuery/index.js [app-client] (ecmascript) <export default as useMediaQuery>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Box/Box.js [app-client] (ecmascript) <export default as Box>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Typography/Typography.js [app-client] (ecmascript) <export default as Typography>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Grid/Grid.js [app-client] (ecmascript) <export default as Grid>");
@@ -139,33 +141,60 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Checkbox$2f$Checkbox$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Checkbox$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Checkbox/Checkbox.js [app-client] (ecmascript) <export default as Checkbox>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Button/Button.js [app-client] (ecmascript) <export default as Button>");
 ;
-var _s = __turbopack_refresh__.signature();
+var _s = __turbopack_refresh__.signature(), _s1 = __turbopack_refresh__.signature();
 ;
 ;
 const StarRating = ({ label, value, onChange })=>{
+    _s();
+    const theme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$useTheme$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__useTheme$3e$__["useTheme"])();
+    const isMobile = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$useMediaQuery$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__useMediaQuery$3e$__["useMediaQuery"])(theme.breakpoints.down('sm'));
+    const isTablet = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$useMediaQuery$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__useMediaQuery$3e$__["useMediaQuery"])(theme.breakpoints.between('sm', 'md'));
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
             display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
+            flexDirection: {
+                xs: 'column',
+                sm: 'row'
+            },
+            alignItems: {
+                xs: 'flex-start',
+                sm: 'center'
+            },
             justifyContent: "space-between",
-            marginBottom: "12px",
-            paddingRight: "65%",
-            gap: "4px"
+            marginBottom: {
+                xs: '16px',
+                sm: '12px'
+            },
+            paddingRight: {
+                xs: '0',
+                sm: '30%',
+                md: '65%'
+            },
+            gap: {
+                xs: '8px',
+                sm: '4px'
+            }
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                 variant: "body2",
                 sx: {
-                    fontSize: "16px",
+                    fontSize: {
+                        xs: '14px',
+                        sm: '15px',
+                        md: '16px'
+                    },
                     fontWeight: "400",
                     color: "#484848",
-                    minWidth: "140px"
+                    minWidth: {
+                        xs: 'auto',
+                        sm: '140px'
+                    }
                 },
                 children: label
             }, void 0, false, {
                 fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                lineNumber: 17,
+                lineNumber: 21,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -178,7 +207,7 @@ const StarRating = ({ label, value, onChange })=>{
                 ].map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         style: {
                             color: value > i ? "#FFB903" : "transparent",
-                            fontSize: "25px",
+                            fontSize: isMobile ? "22px" : isTablet ? "23px" : "25px",
                             cursor: "pointer",
                             WebkitTextStroke: "1px #FFB903"
                         },
@@ -186,32 +215,92 @@ const StarRating = ({ label, value, onChange })=>{
                         children: "★"
                     }, i, false, {
                         fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                        lineNumber: 30,
+                        lineNumber: 34,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                lineNumber: 28,
+                lineNumber: 32,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-        lineNumber: 6,
+        lineNumber: 10,
         columnNumber: 5
     }, this);
 };
+_s(StarRating, "pEtn243F11WevAJscUcDMSck+m8=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$useTheme$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__useTheme$3e$__["useTheme"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$useMediaQuery$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__useMediaQuery$3e$__["useMediaQuery"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$useMediaQuery$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__useMediaQuery$3e$__["useMediaQuery"]
+    ];
+});
 _c = StarRating;
 const ReviewForm = ()=>{
-    _s();
+    _s1();
+    const theme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$useTheme$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__useTheme$3e$__["useTheme"])();
+    const isMobile = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$useMediaQuery$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__useMediaQuery$3e$__["useMediaQuery"])(theme.breakpoints.down('sm'));
+    const isTablet = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$useMediaQuery$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__useMediaQuery$3e$__["useMediaQuery"])(theme.breakpoints.between('sm', 'md'));
     const [overallRating, setOverallRating] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(5);
     const [localKnowledge, setLocalKnowledge] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const [processExpertise, setProcessExpertise] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const [responsiveness, setResponsiveness] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const [responsiveness1, setResponsiveness1] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const [recommendation, setRecommendation] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
+    // Add new state variables for form data
+    const [review, setReview] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [address, setAddress] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [isVisible, setIsVisible] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     const handleClick = ()=>{
-        alert("Link clicked!"); // Replace this with actual navigation logic if needed
+        alert("Link clicked!");
+    };
+    // Add submit handler
+    const handleSubmit = async ()=>{
+        // Validate required fields
+        if (!overallRating || !recommendation || !localKnowledge || !processExpertise || !responsiveness || !review || !address) {
+            alert("Please fill in all required fields");
+            return;
+        }
+        const reviewData = {
+            overallRating,
+            recommendation,
+            localKnowledge,
+            processExpertise,
+            responsiveness,
+            responsiveness1,
+            review,
+            address,
+            isVisible,
+            timestamp: new Date().toISOString()
+        };
+        try {
+            // Replace with your API endpoint
+            const response = await fetch('/api/submit-review', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(reviewData)
+            });
+            if (!response.ok) {
+                throw new Error('Failed to submit review');
+            }
+            alert('Review submitted successfully!');
+            // Reset form
+            setOverallRating(5);
+            setLocalKnowledge(0);
+            setProcessExpertise(0);
+            setResponsiveness(0);
+            setResponsiveness1(0);
+            setRecommendation(0);
+            setReview("");
+            setAddress("");
+            setIsVisible(true);
+        } catch (error) {
+            alert('Failed to submit review: ' + error.message);
+        }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
@@ -219,18 +308,22 @@ const ReviewForm = ()=>{
             maxWidth: "800px",
             margin: "auto",
             textAlign: "left",
-            padding: "20px 14px",
+            padding: {
+                xs: '16px 10px',
+                sm: '18px 12px',
+                md: '20px 14px'
+            },
             backgroundColor: "#FFFFFF",
-            border: "#EBEBEB",
-            borderRadius: "8px",
-            boxShadow: "none",
-            '@media (max-width: 600px)': {
-                padding: "16px 1px"
-            }
+            border: "1px solid #EBEBEB",
+            boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
+            borderRadius: "8px"
         },
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
             container: true,
-            spacing: 2,
+            spacing: {
+                xs: 1.5,
+                sm: 2
+            },
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
                     item: true,
@@ -238,7 +331,10 @@ const ReviewForm = ()=>{
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
                         container: true,
                         alignItems: "center",
-                        spacing: 1,
+                        spacing: {
+                            xs: 1,
+                            sm: 1
+                        },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
                                 item: true,
@@ -248,19 +344,27 @@ const ReviewForm = ()=>{
                                     variant: "body1",
                                     sx: {
                                         width: "100%",
-                                        fontSize: "18px",
+                                        fontSize: {
+                                            xs: '16px',
+                                            sm: '17px',
+                                            md: '18px'
+                                        },
                                         fontWeight: "400",
-                                        color: "#777777"
+                                        color: "#777777",
+                                        marginBottom: {
+                                            xs: '10px',
+                                            sm: '0'
+                                        }
                                     },
                                     children: "Tom Willson ratings for Colonial Reality World"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                                    lineNumber: 81,
+                                    lineNumber: 144,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                                lineNumber: 80,
+                                lineNumber: 143,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
@@ -268,13 +372,20 @@ const ReviewForm = ()=>{
                                 xs: 12,
                                 md: 4,
                                 container: true,
-                                justifyContent: "flex-end",
+                                justifyContent: {
+                                    xs: 'flex-start',
+                                    md: 'flex-end'
+                                },
                                 alignItems: "center",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                                     sx: {
                                         display: "flex",
                                         alignItems: "center",
-                                        gap: "4px"
+                                        gap: "4px",
+                                        marginLeft: {
+                                            xs: '-4px',
+                                            md: '0'
+                                        }
                                     },
                                     children: [
                                         [
@@ -282,7 +393,7 @@ const ReviewForm = ()=>{
                                         ].map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 style: {
                                                     color: overallRating > i ? "#FFB903" : "transparent",
-                                                    fontSize: "25px",
+                                                    fontSize: isMobile ? "22px" : isTablet ? "23px" : "25px",
                                                     cursor: "pointer",
                                                     WebkitTextStroke: "1px #FFB903"
                                                 },
@@ -290,13 +401,17 @@ const ReviewForm = ()=>{
                                                 children: "★"
                                             }, i, false, {
                                                 fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                                                lineNumber: 96,
+                                                lineNumber: 165,
                                                 columnNumber: 19
                                             }, this)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                             variant: "body2",
                                             sx: {
-                                                fontSize: "25px",
+                                                fontSize: {
+                                                    xs: '22px',
+                                                    sm: '23px',
+                                                    md: '25px'
+                                                },
                                                 fontWeight: "400",
                                                 color: "#484848",
                                                 marginLeft: "8px"
@@ -307,29 +422,29 @@ const ReviewForm = ()=>{
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                                            lineNumber: 109,
+                                            lineNumber: 178,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                                    lineNumber: 94,
+                                    lineNumber: 158,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                                lineNumber: 93,
+                                lineNumber: 157,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                        lineNumber: 79,
+                        lineNumber: 142,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                    lineNumber: 78,
+                    lineNumber: 141,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
@@ -340,29 +455,43 @@ const ReviewForm = ()=>{
                             variant: "body2",
                             sx: {
                                 width: "100%",
-                                fontSize: "18px",
+                                fontSize: {
+                                    xs: '16px',
+                                    sm: '17px',
+                                    md: '18px'
+                                },
                                 fontWeight: "400",
                                 color: "#777777",
-                                marginBottom: "12px"
+                                marginBottom: {
+                                    xs: '8px',
+                                    sm: '12px'
+                                }
                             },
                             children: "How would you like to recommend the service?"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                            lineNumber: 127,
+                            lineNumber: 195,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                             sx: {
                                 display: "flex",
                                 gap: "4px",
-                                marginBottom: "16px"
+                                marginBottom: {
+                                    xs: '12px',
+                                    sm: '16px'
+                                },
+                                marginLeft: {
+                                    xs: '-4px',
+                                    sm: '0'
+                                }
                             },
                             children: [
                                 ...Array(5)
                             ].map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     style: {
                                         color: recommendation > i ? "#FFB903" : "transparent",
-                                        fontSize: "25px",
+                                        fontSize: isMobile ? "22px" : isTablet ? "23px" : "25px",
                                         cursor: "pointer",
                                         WebkitTextStroke: "1px #FFB903"
                                     },
@@ -370,25 +499,28 @@ const ReviewForm = ()=>{
                                     children: "★"
                                 }, i, false, {
                                     fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                                    lineNumber: 141,
+                                    lineNumber: 214,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                            lineNumber: 139,
+                            lineNumber: 207,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                    lineNumber: 126,
+                    lineNumber: 194,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
                     item: true,
                     xs: 12,
                     sx: {
-                        maxWidth: "600px"
+                        maxWidth: {
+                            xs: '100%',
+                            sm: '600px'
+                        }
                     },
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StarRating, {
@@ -397,7 +529,7 @@ const ReviewForm = ()=>{
                             onChange: setLocalKnowledge
                         }, void 0, false, {
                             fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                            lineNumber: 159,
+                            lineNumber: 231,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StarRating, {
@@ -406,7 +538,7 @@ const ReviewForm = ()=>{
                             onChange: setProcessExpertise
                         }, void 0, false, {
                             fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                            lineNumber: 164,
+                            lineNumber: 236,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StarRating, {
@@ -415,7 +547,7 @@ const ReviewForm = ()=>{
                             onChange: setResponsiveness
                         }, void 0, false, {
                             fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                            lineNumber: 169,
+                            lineNumber: 241,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StarRating, {
@@ -424,13 +556,13 @@ const ReviewForm = ()=>{
                             onChange: setResponsiveness1
                         }, void 0, false, {
                             fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                            lineNumber: 174,
+                            lineNumber: 246,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                    lineNumber: 158,
+                    lineNumber: 230,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
@@ -441,28 +573,44 @@ const ReviewForm = ()=>{
                             variant: "body2",
                             sx: {
                                 width: "100%",
-                                fontSize: "18px",
+                                fontSize: {
+                                    xs: '16px',
+                                    sm: '17px',
+                                    md: '18px'
+                                },
                                 fontWeight: "400",
                                 color: "#777777",
-                                marginBottom: "12px"
+                                marginBottom: {
+                                    xs: '8px',
+                                    sm: '12px'
+                                }
                             },
                             children: "How was your experience working with Patrick?"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                            lineNumber: 183,
+                            lineNumber: 254,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$TextField$2f$TextField$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TextField$3e$__["TextField"], {
+                            value: review,
+                            onChange: (e)=>setReview(e.target.value),
                             placeholder: "Write Your review here...",
                             multiline: true,
-                            rows: 12,
+                            rows: isMobile ? 8 : 12,
                             variant: "outlined",
                             fullWidth: true,
                             sx: {
                                 backgroundColor: "#fff",
                                 borderRadius: "10px",
-                                height: "310px",
-                                marginBottom: "12px",
+                                height: {
+                                    xs: '250px',
+                                    sm: '280px',
+                                    md: '310px'
+                                },
+                                marginBottom: {
+                                    xs: '8px',
+                                    sm: '12px'
+                                },
                                 '& .MuiOutlinedInput-root': {
                                     borderRadius: '10px'
                                 },
@@ -472,13 +620,13 @@ const ReviewForm = ()=>{
                             }
                         }, void 0, false, {
                             fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                            lineNumber: 195,
+                            lineNumber: 266,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                    lineNumber: 182,
+                    lineNumber: 253,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
@@ -489,25 +637,37 @@ const ReviewForm = ()=>{
                             variant: "body1",
                             sx: {
                                 width: "100%",
-                                fontSize: "26px",
+                                fontSize: {
+                                    xs: '22px',
+                                    sm: '24px',
+                                    md: '26px'
+                                },
                                 fontWeight: "400",
                                 color: "#484848",
-                                marginBottom: "20px"
+                                marginBottom: {
+                                    xs: '16px',
+                                    sm: '20px'
+                                }
                             },
                             children: "Complete Address:"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                            lineNumber: 218,
+                            lineNumber: 290,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$TextField$2f$TextField$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TextField$3e$__["TextField"], {
+                            value: address,
+                            onChange: (e)=>setAddress(e.target.value),
                             placeholder: "Enter Address Here...",
                             variant: "outlined",
                             fullWidth: true,
                             sx: {
                                 backgroundColor: "#fff",
                                 borderRadius: "10px",
-                                marginBottom: "12px",
+                                marginBottom: {
+                                    xs: '8px',
+                                    sm: '12px'
+                                },
                                 '& .MuiOutlinedInput-root': {
                                     borderRadius: '10px'
                                 },
@@ -517,13 +677,13 @@ const ReviewForm = ()=>{
                             }
                         }, void 0, false, {
                             fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                            lineNumber: 230,
+                            lineNumber: 302,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                    lineNumber: 217,
+                    lineNumber: 289,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
@@ -531,36 +691,58 @@ const ReviewForm = ()=>{
                     xs: 12,
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$FormControlLabel$2f$FormControlLabel$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FormControlLabel$3e$__["FormControlLabel"], {
                         control: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Checkbox$2f$Checkbox$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Checkbox$3e$__["Checkbox"], {
+                            checked: isVisible,
+                            onChange: (e)=>setIsVisible(e.target.checked),
                             defaultChecked: true
                         }, void 0, false, {
                             fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                            lineNumber: 251,
-                            columnNumber: 22
+                            lineNumber: 325,
+                            columnNumber: 15
                         }, void 0),
                         label: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                             sx: {
                                 display: "flex",
-                                alignItems: "center"
+                                flexDirection: {
+                                    xs: 'column',
+                                    sm: 'row'
+                                },
+                                alignItems: {
+                                    xs: 'flex-start',
+                                    sm: 'center'
+                                },
+                                gap: {
+                                    xs: '4px',
+                                    sm: '0'
+                                }
                             },
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                     variant: "body2",
                                     sx: {
-                                        fontSize: "14px",
+                                        fontSize: {
+                                            xs: '13px',
+                                            sm: '14px'
+                                        },
                                         color: "#777777"
                                     },
                                     children: "Make this review visible in the profile."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                                    lineNumber: 254,
+                                    lineNumber: 338,
                                     columnNumber: 17
                                 }, void 0),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                     variant: "body2",
                                     sx: {
-                                        fontSize: "14px",
+                                        fontSize: {
+                                            xs: '13px',
+                                            sm: '14px'
+                                        },
                                         color: "#1E22EC",
-                                        marginLeft: "4px",
+                                        marginLeft: {
+                                            xs: '0',
+                                            sm: '4px'
+                                        },
                                         cursor: "pointer",
                                         textDecoration: "underline"
                                     },
@@ -568,23 +750,23 @@ const ReviewForm = ()=>{
                                     children: "Agree to Terms & Conditions"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                                    lineNumber: 263,
+                                    lineNumber: 347,
                                     columnNumber: 17
                                 }, void 0)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                            lineNumber: 253,
+                            lineNumber: 332,
                             columnNumber: 15
                         }, void 0)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                        lineNumber: 250,
+                        lineNumber: 323,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                    lineNumber: 249,
+                    lineNumber: 322,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
@@ -592,49 +774,63 @@ const ReviewForm = ()=>{
                     xs: 12,
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
                         variant: "contained",
+                        onClick: handleSubmit,
                         sx: {
-                            width: "240px",
-                            height: "48px",
+                            width: {
+                                xs: '100%',
+                                sm: '220px',
+                                md: '240px'
+                            },
+                            height: {
+                                xs: '45px',
+                                sm: '46px',
+                                md: '48px'
+                            },
                             borderRadius: "4px",
                             backgroundColor: "#E8E1C4",
                             color: "#777777",
                             fontWeight: "400",
-                            fontSize: "15px",
+                            fontSize: {
+                                xs: '14px',
+                                sm: '14px',
+                                md: '15px'
+                            },
                             boxShadow: "none",
                             textTransform: "none",
                             "&:hover": {
                                 backgroundColor: "#E8E1C4"
-                            },
-                            '@media (max-width: 600px)': {
-                                width: "100%",
-                                height: "45px",
-                                fontSize: "14px"
                             }
                         },
                         children: "Submit Review"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                        lineNumber: 283,
+                        lineNumber: 366,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-                    lineNumber: 282,
+                    lineNumber: 365,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-            lineNumber: 77,
+            lineNumber: 140,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/Reviews/components/ReviewForm.js",
-        lineNumber: 61,
+        lineNumber: 127,
         columnNumber: 5
     }, this);
 };
-_s(ReviewForm, "+ynqOFvPrOl91DsKVvYwjpTTypo=");
+_s1(ReviewForm, "80h4+evnbrZ+MHLw3qB3nAJpngI=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$useTheme$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__useTheme$3e$__["useTheme"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$useMediaQuery$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__useMediaQuery$3e$__["useMediaQuery"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$useMediaQuery$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__useMediaQuery$3e$__["useMediaQuery"]
+    ];
+});
 _c1 = ReviewForm;
 const __TURBOPACK__default__export__ = ReviewForm;
 var _c, _c1;
@@ -656,7 +852,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Reviews$2f$components$2f$Heading$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/Reviews/components/Heading.js [app-client] (ecmascript)");
 (()=>{
-    const e = new Error("Cannot find module './components/MostLikedReviews'");
+    const e = new Error("Cannot find module './components/PropertAgentCard'");
     e.code = 'MODULE_NOT_FOUND';
     throw e;
 })();
@@ -742,12 +938,12 @@ function Reviews() {
                     pl: {
                         xs: 2,
                         sm: 4,
-                        md: 6
+                        md: 7.1
                     },
                     mt: {
                         xs: 0,
                         sm: 0,
-                        md: 0
+                        md: 2
                     },
                     flexDirection: {
                         xs: 'column',
@@ -827,7 +1023,7 @@ function Reviews() {
                             mt: {
                                 xs: -2,
                                 sm: -4,
-                                md: -43.5
+                                md: -80
                             },
                             pl: {
                                 xs: 0,
@@ -845,7 +1041,7 @@ function Reviews() {
                                 width: '100%'
                             }
                         },
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MostLikedReviews, {}, void 0, false, {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PropertyAgentCard, {}, void 0, false, {
                             fileName: "[project]/src/components/Reviews/reviews.js",
                             lineNumber: 111,
                             columnNumber: 11

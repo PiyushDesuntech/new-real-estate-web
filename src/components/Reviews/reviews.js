@@ -2,7 +2,7 @@
 import React from "react";
 import { Box } from "@mui/material";
 import Heading from "./components/Heading";
-import PropertyAgentCard from "./components/PropertAgentCard";
+import PropertyAgentCard from "./components/PropertyAgentCard";
 import ReviewForm from "./components/ReviewForm";
 
 export default function Reviews() {

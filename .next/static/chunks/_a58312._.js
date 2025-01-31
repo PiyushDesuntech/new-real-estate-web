@@ -1,4 +1,4 @@
-(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/_4c362f._.js", {
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/_a58312._.js", {
 
 "[project]/src/components/Reviews/components/Heading.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
@@ -121,7 +121,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
-"[project]/src/components/Reviews/components/PropertAgentCard.js [app-client] (ecmascript)": ((__turbopack_context__) => {
+"[project]/src/components/Reviews/components/PropertyAgentCard.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, k: __turbopack_refresh__, m: module, z: __turbopack_require_stub__ } = __turbopack_context__;
@@ -163,7 +163,7 @@ const PropertyAgentCard = ()=>{
             margin: "auto",
             height: {
                 xs: "auto",
-                sm: "3%"
+                sm: "37%"
             }
         },
         children: [
@@ -182,7 +182,7 @@ const PropertyAgentCard = ()=>{
                 },
                 children: "Your Property Agent"
             }, void 0, false, {
-                fileName: "[project]/src/components/Reviews/components/PropertAgentCard.js",
+                fileName: "[project]/src/components/Reviews/components/PropertyAgentCard.js",
                 lineNumber: 27,
                 columnNumber: 7
             }, this),
@@ -224,12 +224,12 @@ const PropertyAgentCard = ()=>{
                                 height: 'auto'
                             }
                         }, void 0, false, {
-                            fileName: "[project]/src/components/Reviews/components/PropertAgentCard.js",
+                            fileName: "[project]/src/components/Reviews/components/PropertyAgentCard.js",
                             lineNumber: 55,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
-                        fileName: "[project]/src/components/Reviews/components/PropertAgentCard.js",
+                        fileName: "[project]/src/components/Reviews/components/PropertyAgentCard.js",
                         lineNumber: 50,
                         columnNumber: 9
                     }, this),
@@ -265,7 +265,7 @@ const PropertyAgentCard = ()=>{
                                 },
                                 children: "Tom Willson"
                             }, void 0, false, {
-                                fileName: "[project]/src/components/Reviews/components/PropertAgentCard.js",
+                                fileName: "[project]/src/components/Reviews/components/PropertyAgentCard.js",
                                 lineNumber: 74,
                                 columnNumber: 11
                             }, this),
@@ -281,7 +281,7 @@ const PropertyAgentCard = ()=>{
                                 },
                                 children: "Marketing"
                             }, void 0, false, {
-                                fileName: "[project]/src/components/Reviews/components/PropertAgentCard.js",
+                                fileName: "[project]/src/components/Reviews/components/PropertyAgentCard.js",
                                 lineNumber: 84,
                                 columnNumber: 11
                             }, this),
@@ -317,7 +317,7 @@ const PropertyAgentCard = ()=>{
                                         },
                                         children: "Phone:"
                                     }, void 0, false, {
-                                        fileName: "[project]/src/components/Reviews/components/PropertAgentCard.js",
+                                        fileName: "[project]/src/components/Reviews/components/PropertyAgentCard.js",
                                         lineNumber: 102,
                                         columnNumber: 13
                                     }, this),
@@ -338,7 +338,7 @@ const PropertyAgentCard = ()=>{
                                                 },
                                                 children: isPhoneVisible ? "91 456 9876" : "91 456 9***"
                                             }, void 0, false, {
-                                                fileName: "[project]/src/components/Reviews/components/PropertAgentCard.js",
+                                                fileName: "[project]/src/components/Reviews/components/PropertyAgentCard.js",
                                                 lineNumber: 114,
                                                 columnNumber: 15
                                             }, this),
@@ -362,19 +362,19 @@ const PropertyAgentCard = ()=>{
                                                 },
                                                 children: isPhoneVisible ? "Hide" : "Show"
                                             }, void 0, false, {
-                                                fileName: "[project]/src/components/Reviews/components/PropertAgentCard.js",
+                                                fileName: "[project]/src/components/Reviews/components/PropertyAgentCard.js",
                                                 lineNumber: 117,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
-                                        fileName: "[project]/src/components/Reviews/components/PropertAgentCard.js",
+                                        fileName: "[project]/src/components/Reviews/components/PropertyAgentCard.js",
                                         lineNumber: 108,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
-                                fileName: "[project]/src/components/Reviews/components/PropertAgentCard.js",
+                                fileName: "[project]/src/components/Reviews/components/PropertyAgentCard.js",
                                 lineNumber: 92,
                                 columnNumber: 11
                             }, this),
@@ -409,7 +409,7 @@ const PropertyAgentCard = ()=>{
                                         },
                                         children: "Email:"
                                     }, void 0, false, {
-                                        fileName: "[project]/src/components/Reviews/components/PropertAgentCard.js",
+                                        fileName: "[project]/src/components/Reviews/components/PropertyAgentCard.js",
                                         lineNumber: 143,
                                         columnNumber: 13
                                     }, this),
@@ -423,27 +423,27 @@ const PropertyAgentCard = ()=>{
                                         },
                                         children: "infoagent@example.com"
                                     }, void 0, false, {
-                                        fileName: "[project]/src/components/Reviews/components/PropertAgentCard.js",
+                                        fileName: "[project]/src/components/Reviews/components/PropertyAgentCard.js",
                                         lineNumber: 149,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
-                                fileName: "[project]/src/components/Reviews/components/PropertAgentCard.js",
+                                fileName: "[project]/src/components/Reviews/components/PropertyAgentCard.js",
                                 lineNumber: 136,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
-                        fileName: "[project]/src/components/Reviews/components/PropertAgentCard.js",
+                        fileName: "[project]/src/components/Reviews/components/PropertyAgentCard.js",
                         lineNumber: 69,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                         sx: {
                             p: {
-                                xs: 1.5,
-                                sm: 2
+                                xs: 1,
+                                sm: 1.5
                             },
                             borderTop: "1px solid #eee",
                             textAlign: "right"
@@ -463,24 +463,24 @@ const PropertyAgentCard = ()=>{
                             },
                             children: "View My Listings"
                         }, void 0, false, {
-                            fileName: "[project]/src/components/Reviews/components/PropertAgentCard.js",
+                            fileName: "[project]/src/components/Reviews/components/PropertyAgentCard.js",
                             lineNumber: 165,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
-                        fileName: "[project]/src/components/Reviews/components/PropertAgentCard.js",
+                        fileName: "[project]/src/components/Reviews/components/PropertyAgentCard.js",
                         lineNumber: 158,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "[project]/src/components/Reviews/components/PropertAgentCard.js",
+                fileName: "[project]/src/components/Reviews/components/PropertyAgentCard.js",
                 lineNumber: 40,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
-        fileName: "[project]/src/components/Reviews/components/PropertAgentCard.js",
+        fileName: "[project]/src/components/Reviews/components/PropertyAgentCard.js",
         lineNumber: 16,
         columnNumber: 5
     }, this);
@@ -1230,7 +1230,7 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Reviews$2f$components$2f$Heading$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/Reviews/components/Heading.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Reviews$2f$components$2f$PropertAgentCard$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/Reviews/components/PropertAgentCard.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Reviews$2f$components$2f$PropertyAgentCard$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/Reviews/components/PropertyAgentCard.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Reviews$2f$components$2f$ReviewForm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/Reviews/components/ReviewForm.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Box/Box.js [app-client] (ecmascript) <export default as Box>");
 ;
@@ -1416,7 +1416,7 @@ function Reviews() {
                                 width: '100%'
                             }
                         },
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Reviews$2f$components$2f$PropertAgentCard$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Reviews$2f$components$2f$PropertyAgentCard$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/src/components/Reviews/reviews.js",
                             lineNumber: 111,
                             columnNumber: 11
@@ -3056,4 +3056,4 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 }}),
 }]);
 
-//# sourceMappingURL=_4c362f._.js.map
+//# sourceMappingURL=_a58312._.js.map
