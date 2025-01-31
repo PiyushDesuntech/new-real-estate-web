@@ -43,7 +43,7 @@ function Heading() {
     <Box 
       sx={{ 
         py: { xs: 2, sm: 3, md: 4 }, 
-        px: { xs: 2, sm: 3, md: 4 },
+        px: { xs: 1, sm: 2, lg: 4 },
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
