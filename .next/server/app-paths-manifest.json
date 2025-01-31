@@ -10,5 +10,6 @@
   "/reviews/page": "app/reviews/page.js",
   "/profile/page": "app/profile/page.js",
   "/changepassword/page": "app/changepassword/page.js",
-  "/agents/page": "app/agents/page.js"
+  "/agents/page": "app/agents/page.js",
+  "/property-list/page": "app/property-list/page.js"
 }
