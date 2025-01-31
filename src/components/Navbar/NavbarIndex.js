@@ -236,13 +236,13 @@ const NavbarIndex = () => {
                   borderRadius: "30px",
                   textTransform: "none",
                   px: { xs: 2, sm: 2, md: 2, lg: "25px" },
-                  py: "10px",
+                  py: {xs: "5px",lg: "10px"},
                   // mr: 3,
                   width: "fit-content",
                   whiteSpace: "nowrap",
-                  fontSize: { xs: "12px", md: "16px" },
+                  fontSize: { xs: "12px", lg: "16px" },
                   fontWeight: 500,
-                  height: "50px",
+                  height: {xs: "30px", lg: "50px"},
                 }}
               >
                 Login/Register

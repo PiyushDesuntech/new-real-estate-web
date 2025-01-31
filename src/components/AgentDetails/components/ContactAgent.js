@@ -16,10 +16,10 @@ function ContactAgent() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        gap: 3,
+        gap: {xs:2, sm: 3},
         // maxWidth: 400,
         margin: "auto",
-        padding: 4,
+        padding: {xs: 2, sm: 4},
         borderRadius: "8px",
         border: "2px solid #EBEBEB",
       }}
@@ -145,8 +145,8 @@ function ContactAgent() {
           // maxWidth: "411.88px",
           // fullWidth
           width: "100%",
-          mt: 2,
-          mb: 1,
+          mt: {xs: 0, sm: 2},
+          mb: {xs: 0, sm: 1},
         }}
       >
         {/* Checkbox and Text */}
@@ -208,12 +208,16 @@ function ContactAgent() {
         fullWidth
         variant="contained"
         sx={{
-          mt: 2,
+          mt: {xs: 0, sm: 2},
           bgcolor: "#E8E1C4",
           color: "#484848",
           boxShadow: "none",
           py: 2,
-          "&:hover": { bgcolor: "#fff", color: "#484848", boxShadow: "none" },
+         "&:hover": {
+            backgroundColor: "#3E4C66",
+            color: "#fff",
+            boxShadow: "none"
+          },
           fontSize: "20px",
           textTransform: "none",
           borderRadius: "8px",

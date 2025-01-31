@@ -26,7 +26,7 @@ export default function OurMission() {
     <Container
       maxWidth="xl"
       sx={{
-        px: { lg: 7, md: 3, xs: 1 },
+        px: { lg: 7, md: 3, xs: 2 },
         mt: { xs: "20px", md: "40px", lg: "60px" },
       }}
     >

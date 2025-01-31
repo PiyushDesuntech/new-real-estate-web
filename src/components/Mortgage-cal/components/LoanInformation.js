@@ -8,16 +8,16 @@ export default function LoanInformation() {
       sx={{
         width: "100%",
         backgroundColor: "#F7F7F7",
-        padding: { xs: "24px", sm: "32px", md: "40px" },
+        padding: { xs: 1, sm: 2, lg: "40px" },
         marginTop: { xs: "24px", sm: "32px", md: "40px" },
       }}
     >
       <Grid container spacing={{ xs: 3, sm: 4 }} sx={{ width: "100%" }}>
-        <Grid item xs={12} md={7.5}>
+        <Grid item xs={12} lg={7.5}>
           <Typography
             sx={{
               fontSize: { xs: "20px", sm: "22px", md: "24px" },
-              fontWeight: "600",
+              fontWeight: 800,
               color: "#314259",
               marginBottom: { xs: "16px", sm: "20px", md: "24px" },
               fontFamily: "'Inter', sans-serif",
@@ -28,12 +28,14 @@ export default function LoanInformation() {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: "14px", sm: "15px", md: "16px" },
+              fontSize: { xs: "12px", sm: "14px", md: "16px" },
               color: "#314259",
               lineHeight: { xs: 1.6, sm: 1.8, md: 2 },
               fontFamily: "'Inter', sans-serif",
               marginBottom: { xs: "20px", sm: "24px", md: "24px" },
               opacity: 0.9,
+              color: "#9092A3",
+              fontWeight: 500
             }}
           >
             The loan against property is secured against an asset such as a
@@ -54,11 +56,11 @@ export default function LoanInformation() {
             property EMI will remain constant across the tenure of the loan.
           </Typography>
         </Grid>
-        <Grid item xs={12} md={7.5}>
+        <Grid item xs={12} lg={7.5}>
           <Typography
             sx={{
               fontSize: { xs: "20px", sm: "22px", md: "24px" },
-              fontWeight: "600",
+              fontWeight: 800,
               color: "#314259",
               marginBottom: { xs: "16px", sm: "20px", md: "24px" },
               fontFamily: "'Inter', sans-serif",
@@ -69,12 +71,14 @@ export default function LoanInformation() {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: "14px", sm: "15px", md: "16px" },
+              fontSize: { xs: "12px", sm: "14px", md: "16px" },
               color: "#314259",
               lineHeight: { xs: 1.6, sm: 1.8, md: 2 },
               fontFamily: "'Inter', sans-serif",
               marginBottom: { xs: "20px", sm: "24px", md: "24px" },
               opacity: 0.9,
+              color: "#9092A3",
+              fontWeight: 500
             }}
           >
             The loan against property EMI calculator is a utility tool that shows

@@ -10,23 +10,26 @@ import LoanInformation from "./components/LoanInformation";
 
 export default function Mortgage() {
   return (
-    <Box sx={{ backgroundColor: "#F7F7F7", minHeight: "100vh", minWidth: "51px" }}>
+    <Box sx={{ backgroundColor: "#F7F7F7", minWidth: "51px" }}>
       <Container
         maxWidth="xl"
         sx={{
-          padding: { 
-            xs: "24px 16px", 
-            sm: "32px 24px", 
-            md: "48px 32px" 
+          px: { 
+            xs: 2, 
+            // sm: "32px 24px", 
+            lg: 6 
           },
           minWidth: "51px",
-          paddingLeft: { md: "24px", lg: "50px" },
+          // paddingLeft: { md: "24px", lg: "50px" },
+          py: 3
         }}
       >
         {/* Page Heading */}
         <Box sx={{ 
-          marginBottom: { xs: 3, md: 4 },
-          paddingLeft: { xs: 0, md: "-20px" },
+          marginBottom: { xs: 3, lg: 2 },
+          // paddingLeft: { xs: 0, lg: "-10px" },
+          px: {xs: 0,sm: 2, md: 2}
+
         }}>
           <Heading />
         </Box>
@@ -37,9 +40,10 @@ export default function Mortgage() {
             display: "grid",
             gridTemplateColumns: {
               xs: "1fr",
-              lg: "minmax(680px, 2fr) minmax(300px, 1fr)"
+              md: "minmax(500px, 2fr) minmax(400px, 1fr)",
+              lg: "minmax(680px, 2fr) minmax(300px, 1fr)",
             },
-            gap: { xs: 3, sm: 4, md: 5, lg: 6 },
+            gap: { xs: 3, sm: 4, md: 1, lg: 6 },
             marginBottom: { xs: 4, md: 6 }
           }}
         >
@@ -47,7 +51,8 @@ export default function Mortgage() {
           <Box sx={{ 
             paddingLeft: { xs: 0, lg: "110px" },
             display: 'flex',
-            justifyContent: { xs: 'center', lg: 'flex-start' }
+            justifyContent: { xs: 'center', lg: 'flex-start' },
+            px: {xs: 1,sm: 3, md: 0}
           }}>
             <LoanAmount />
           </Box>
@@ -59,9 +64,10 @@ export default function Mortgage() {
               flexDirection: "column",
               gap: 3,
               alignItems: "center",
-              width: { xs: "100%", lg: "auto" },
-              maxWidth: { xs: "680px", lg: "none" },
-              margin: { xs: "0 auto", lg: 0 }
+              width: { xs: "100%", md: "auto" },
+              maxWidth: { xs: "100%", md: "none" },
+              margin: { xs: "0 auto", md: 0 },
+              px: {xs: 1,sm: 3, md: 2}
             }}
           >
             <Box sx={{ width: "100%" }}>
@@ -77,10 +83,10 @@ export default function Mortgage() {
         <Box
           sx={{
             width: "100%",
-            maxWidth: { lg: "calc(100% - 130px)" },
+            maxWidth: { lg: "calc(100% - 130px)", md: "100%" },
             marginTop: { xs: 4, lg: -13 },
             marginLeft: { xs: 0, lg: "70px" },
-            paddingRight: { lg: "45px" }
+            paddingRight: { lg: "45px", md: 0 }
           }}
         >
           <LoanInformation />

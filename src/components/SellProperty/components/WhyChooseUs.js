@@ -34,10 +34,10 @@ const WhyChooseUs = () => {
   return (
     <Box>
       <Box sx={{ padding: {md: 4}, mt: 2 }}>
-        <Typography sx={{fontSize: "36.92px", fontWeight: 700, color: "#484848"}} align="center" gutterBottom>
+        <Typography sx={{fontSize: {xs: "30px", sm: "32px", md: "34px", lg: "36.92px"}, fontWeight: 700, color: "#484848"}} align="center" gutterBottom>
           Why Choose Us
         </Typography>
-        <Typography sx={{fontSize: "19.69px", fontWeight: 400, color: "#484848"}} align="center" gutterBottom>
+        <Typography sx={{fontSize: {xs: "14px", sm: "16px", md: "17px", lg: "19.69px"}, fontWeight: 400, color: "#484848"}} align="center" gutterBottom>
           We provide full service at every step
         </Typography>
         <Grid container spacing={4} mt={2}>
@@ -88,12 +88,12 @@ const WhyChooseUs = () => {
                     />
                   </Box>
                  <Box>
-                 <Typography sx={{fontSize: "25.75px", fontWeight: 700, }} gutterBottom>
+                 <Typography sx={{fontSize: {xs: "20px", sm: "22px", md: "23px", lg: "25.75px"}, fontWeight: 700, }} gutterBottom>
                     {item.title}
                   </Typography>
                  </Box>
                   <Box>
-                  <Typography sx={{fontSize: "17.92px", fontWeight: 400, }} >
+                  <Typography sx={{fontSize: {xs: "14px", sm: "15px", md: "16px", lg: "17.23px"}, fontWeight: 400, }} >
                     {item.description} <Image
                       src="/Images/starWhy.svg"
                       alt="star"

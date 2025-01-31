@@ -17,7 +17,7 @@ const ContactUs = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   return (
-    <Container maxWidth="xl" sx={{ px: { lg: 8,sm: 3, xs: 2 }, mt: {xs: "20px", md: "90px"} }}>
+    <Container maxWidth="xl" sx={{ px: { lg: 8,sm: 3, xs: 3 }, mt: {xs: "20px", md: "90px"} }}>
       <Box
         sx={
           {
@@ -209,7 +209,7 @@ const ContactUs = () => {
                     By checking this box I consent to receiving text messages
                     from Colonial Realty. Reply STOP to opt-out.{" "}
                     <Link
-                      href="#"
+                      href="/terms-&-conditions"
                       sx={{
                         fontSize: {xs:"12px",md: "16px"},
                         fontWeight: 500,
@@ -224,7 +224,7 @@ const ContactUs = () => {
                     </Link>{" "}
                     |{" "}
                     <Link
-                      href="#"
+                      href="/terms-&-conditions"
                       sx={{
                         fontSize: {xs:"12px",md: "16px"},
                         fontWeight: 500,
@@ -239,7 +239,7 @@ const ContactUs = () => {
                   </Typography>
                 }
               />
-            </Grid>
+            </Grid>  
             <Grid item xs={12}>
               <Button
                 variant="contained"

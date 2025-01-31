@@ -25,7 +25,7 @@ function AboutHeading() {
       .replace(/\b\w/g, (char) => char.toUpperCase()); // Capitalize each word
 
     return isLast ? (
-      <Typography key={routePath} color="#B3A87A" sx={{fontSize: "21.67px", fontWeight: 400}}>
+      <Typography key={routePath} color="#B3A87A" sx={{fontSize: "17.67px", fontWeight: 400}}>
         {displayName}
       </Typography>
     ) : (
@@ -57,7 +57,7 @@ function AboutHeading() {
     >
       <Container
         maxWidth="xl"
-        sx={{ px: { xs: 0, lg: 7 }, position: "relative", height: "100%" }}
+        sx={{ px: { xs: 1, lg: 7 }, position: "relative", height: "100%" }}
       >
         <Box  sx={{
             position: "absolute",
@@ -68,7 +68,7 @@ function AboutHeading() {
             alignItems: "center",
             padding: 2,
           }}>
-            <Typography sx={{fontSize: "55px", fontWeight: 700, color: "#ffffff"}}>
+            <Typography sx={{fontSize: {xs: "36px", sm: "46px", md: "52px", lg: "56px"}, fontWeight: 700, color: "#ffffff"}}>
               About
             </Typography>
         </Box>
@@ -92,7 +92,7 @@ function AboutHeading() {
               component={Link}
               href="/"
               underline="hover"
-              sx={{ color: "#fff", fontWeight: 400, fontSize: "21.67px" }}
+              sx={{ color: "#fff", fontWeight: 400, fontSize: "17.67px", textDecoration: "none" }}
             >
               Home
             </MuiLink>

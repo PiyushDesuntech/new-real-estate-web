@@ -68,7 +68,7 @@ function ContactUsHeading() {
             alignItems: "center",
             padding: 2,
           }}>
-            <Typography sx={{fontSize: "55px", fontWeight: 700, color: "#ffffff"}}>
+            <Typography sx={{fontSize: {xs: "36px", sm: "46px", md: "52px", lg: "56px"}, fontWeight: 700, color: "#ffffff"}}>
               Contact
             </Typography>
         </Box>
@@ -76,7 +76,7 @@ function ContactUsHeading() {
           sx={{
             position: "absolute",
             bottom: 0,
-            right: 50,
+            right: {xs: "none", md: 10, lg: 50},
             display: "flex",
             justifyContent: "flex-end",
             alignItems: "baseline",

@@ -70,7 +70,7 @@ const AgentReviews = () => {
           color: "#2A2A33",}}  gutterBottom>
         Tom Willson's reviews ({reviewsData.length})
       </Typography>
-      <Button sx={{border: "1.13px solid #A7A6AB", fontSize: "15.87px", fontWeight: 700, color: "#2A2A33", textTransform:"none", width: "263px"}}>
+      <Button sx={{border: "1.13px solid #A7A6AB", fontSize: "15.87px", fontWeight: 700, color: "#2A2A33", textTransform:"none", width: {xs: "100%", sm: "263px"}}}>
         Write a Review
       </Button>
       </Box>
@@ -145,94 +145,97 @@ const AgentReviews = () => {
             key={review.id}
             sx={{ marginBottom: "20px", borderTop: "1.13px solid #D1D1D5" }}
           >
-            <CardContent>
+            <Box sx={{pt: 1}}>
               <Stack direction="row" justifyContent="space-between" mb={1}>
                 <Typography
                   sx={{
-                    fontSize: "27.21px",
+                    fontSize: {xs: "16px", sm: "20px", md: "27.21px"},
                     fontWeight: 700,
                     color: "#2A2A33",
                   }}
                 >
                   {review.recommendation}
                 </Typography>
+                <Box sx={{display: "flex", flexDirection: {xs: "column", sm: "row"}, alignItems: {xs: "flex-end", sm: "center"}, width: "50%", justifyContent: "space-between"}}>
                 <Typography
                   sx={{
-                    fontSize: "27.21px",
+                    fontSize: {xs: "16px", sm: "20px", md: "27.21px"},
                     fontWeight: 700,
                     color: "#2A2A33",
                     display: "flex",
                     alignItems: "baseline",
                   }}
                 >
-                  5.0 <StarIcon sx={{ color: "#FFB903" }} />
+                  5.0 <StarIcon sx={{ color: "#FFB903", fontSize: {xs: "16px", sm: "20px", md: "27.21px"} }} />
                 </Typography>
                 <Typography
                   sx={{
-                    fontSize: "15.87px",
+                    fontSize: {xs: "12px", sm: "14px", md: "15.21px"},
                     fontWeight: 400,
                     color: "#393939",
+                    whiteSpace: "nowrap"
                   }}
                 >
                   Report a problem
                 </Typography>
+                </Box>
               </Stack>
 
               <Typography
-                sx={{ fontSize: "15.87px", fontWeight: 400, color: "#596B82" }}
+                sx={{ fontSize: {xs: "12px", sm: "14px", md: "15.21px"}, fontWeight: 400, color: "#596B82" }}
               >
                 {review.date} - {review.reviewer}
               </Typography>
               <Typography
-                sx={{ fontSize: "15.87px", fontWeight: 400, color: "#596B82" }}
+                sx={{ fontSize: {xs: "12px", sm: "14px", md: "15.21px"}, fontWeight: 400, color: "#596B82" }}
               >
                 {review.details}
               </Typography>
 
-              <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
+              <Box sx={{ display: "flex", flexDirection: "column", gap: 1, mt: 1 }}>
                 <Box sx={{ display: "flex", gap: 1 }}>
-                  <Rating value={review.rating} readOnly precision={0.5} />{" "}
+                  <Rating value={review.rating} readOnly precision={0.5} sx={{fontSize: {xs: "16px", sm: "18px", md: "24.21px"},}} />{" "}
                   <Typography
                     sx={{
                       color: "#2A2A33",
                       fontWeight: 400,
-                      fontSize: "13.61px",
+                      fontSize: {xs: "10px", sm: "12px", md: "13.62px"},
                     }}
                   >
                     Local knowledge
                   </Typography>
                 </Box>
                 <Box sx={{ display: "flex", gap: 1 }}>
-                  <Rating value={review.rating} readOnly precision={0.5} />{" "}
+                  <Rating value={review.rating} readOnly precision={0.5} sx={{fontSize: {xs: "16px", sm: "18px", md: "24.21px"},}}/>{" "}
                   <Typography
                     sx={{
                       color: "#2A2A33",
                       fontWeight: 400,
-                      fontSize: "13.61px",
+                      fontSize: {xs: "10px", sm: "12px", md: "13.62px"},
                     }}
                   >
                     Process expertise
                   </Typography>
                 </Box>
                 <Box sx={{ display: "flex", gap: 1 }}>
-                  <Rating value={review.rating} readOnly precision={0.5} />{" "}
+                  <Rating value={review.rating} readOnly precision={0.5} sx={{fontSize: {xs: "16px", sm: "18px", md: "24.21px"},}}/>{" "}
                   <Typography
                     sx={{
                       color: "#2A2A33",
                       fontWeight: 400,
-                      fontSize: "13.61px",
+                      fontSize: {xs: "10px", sm: "12px", md: "13.62px"},
                     }}
                   >
                     Responsiveness
                   </Typography>
                 </Box>
                 <Box sx={{ display: "flex", gap: 1 }}>
-                  <Rating value={review.rating} readOnly precision={0.5} />{" "}
+                  <Rating value={review.rating} readOnly precision={0.5} sx={{fontSize: {xs: "16px", sm: "18px", md: "24.21px"},}}/>{" "}
                   <Typography
                     sx={{
                       color: "#2A2A33",
                       fontWeight: 400,
-                      fontSize: "13.61px",
+                      fontSize: {xs: "10px", sm: "12px", md: "13.62px"},
                     }}
                   >
                     Negotiation skills
@@ -242,11 +245,11 @@ const AgentReviews = () => {
 
               <Typography
                 mt={2}
-                sx={{ fontSize: "18.14px", fontWeight: 400, color: "#2A2A33" }}
+                sx={{ fontSize: {xs: "14px", sm: "16px", md: "17.21px"}, fontWeight: 400, color: "#2A2A33" }}
               >
                 {review.feedback}
               </Typography>
-            </CardContent>
+            </Box>
           </Box>
         ))}
       </Box>

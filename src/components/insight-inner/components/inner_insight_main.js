@@ -11,6 +11,8 @@ import {
   FormControlLabel,
   Checkbox,
   Avatar,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import { ArrowBack, ArrowForward } from "@mui/icons-material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -25,6 +27,8 @@ import BlogCard from "./Blogcardsformain";
 import Image from "next/image";
 
 const Main = () => {
+  const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Box
       sx={{
@@ -32,10 +36,9 @@ const Main = () => {
         // maxWidth: "923.08px",
         minHeight: "100vh", // Make sure it fills the screen
         margin: "0 auto",
-        padding: { xs: 2, sm: 3 },
+        padding: { xs: 0, lg: 3 },
         // overflowX: "hidden",  // Prevent horizontal overflow
         display: "flex",
-        // border: "1px solid red",
         flexDirection: "column", // Stack elements vertically
       }}
     >
@@ -43,8 +46,7 @@ const Main = () => {
       <Box>
         <Typography
           sx={{
-            font: "Nunito",
-            fontSize: { xs: "20px", sm: "27.08px" }, // Adjust font size for mobile
+            fontSize: { xs: "22px", sm: "27.08px" }, // Adjust font size for mobile
             fontWeight: 700,
             lineHeight: { xs: "30px", sm: "37.91px" }, // Adjust line height for mobile
             textAlign: { xs: "center", sm: "left" }, // Center text on mobile
@@ -69,33 +71,30 @@ const Main = () => {
         <Stack
           direction={{ xs: "column", sm: "row" }}
           spacing={2}
-          alignItems="center"
+          alignItems={isMobile? "unset": "center"}
         >
           <Box display="flex" alignItems="center" gap={2}>
-            <Avatar
-              src="/Images/insightAdmin.svg"
-              sx={{ width: 49.23, height: 49.23 }}
-            />
+            <Avatar src="/Images/insightAdmin.svg" sx={{ width: {xs: 40, sm: 49.23}, height: {xs: 40, sm: 49.23} }} />
             <Typography>Admin</Typography>
           </Box>
 
-          <Box display="flex" alignItems="center">
+          <Box display="flex" >
             <Image
               src="/Images/calendar.svg"
               alt="Admin Icon"
-              width={25.21}
-              height={25.21}
+              width={isMobile? 20: 25.21}
+              height={isMobile? 20: 25.21}
               style={{ marginRight: "8px" }}
             />
             <Typography>Jan 20, 2025</Typography>
           </Box>
 
-          <Box display="flex" alignItems="center">
+          <Box display="flex" >
             <Image
               src="/Images/comment.svg"
               alt="Admin Icon"
-              width={25.21}
-              height={25.21}
+              width={isMobile? 20: 25.21}
+              height={isMobile? 20: 25.21}
               style={{ marginRight: "8px" }}
             />
             <Typography>Comment</Typography>
@@ -104,28 +103,14 @@ const Main = () => {
       </Box>
 
       {/* Main Image */}
-     
-      <Box
-        sx={{
-          width: "100%",
-          maxWidth: "100%",
-          overflow: "hidden", 
-          display: "flex",
-          justifyContent: "center", // Ensures the image stays within bounds
-        }}
-      >
+      <Box sx={{ width: "100%", height: "auto", maxWidth: "923.08px" }}>
         <Image
           src="/Images/InsightInnerBlog.svg"
           alt="property image"
-          width={0}
-          height={0}
-          sizes="100vw"
-          style={{
-            width: "100%",
-            maxWidth: "923.08px",
-            height: "auto",
-            borderRadius: "7.38px",
-          }}
+          layout="responsive"
+          width={898.46}
+          height={487.38}
+          style={{ borderRadius: "7.38px" }}
         />
       </Box>
 
@@ -136,7 +121,7 @@ const Main = () => {
             font: "Nunito",
             fontSize: { xs: "14px", sm: "17.23px" },
             fontWeight: 400,
-            lineHeight: "30.15px",
+            lineHeight: {xs: "20px", sm: "30.15px"},
             color: "#484848",
           }}
         >
@@ -158,7 +143,7 @@ const Main = () => {
             font: "Nunito",
             fontSize: { xs: "14px", sm: "17.23px" },
             fontWeight: 400,
-            lineHeight: "30.15px",
+            lineHeight: {xs: "20px", sm: "30.15px"},
             color: "#484848",
           }}
         >
@@ -220,7 +205,7 @@ const Main = () => {
             fontSize: { xs: "16px", sm: "18px" },
             fontStyle: "italic",
             color: "#333333",
-            lineHeight: "1.5",
+            lineHeight: {xs: "20px", sm: "30.15px"},
             maxWidth: "80%",
             textAlign: "left",
           }}
@@ -238,7 +223,7 @@ const Main = () => {
             font: "Nunito",
             fontSize: { xs: "14px", sm: "17.23px" },
             fontWeight: 400,
-            lineHeight: "30.15px",
+            lineHeight: {xs: "20px", sm: "30.15px"},
           }}
         >
           Duis mattis laoreet neque, et ornare neque sollicitudin at. Proin
@@ -256,7 +241,7 @@ const Main = () => {
             font: "Nunito",
             fontSize: { xs: "14px", sm: "17.23px" },
             fontWeight: 400,
-            lineHeight: "30.15px",
+            lineHeight: {xs: "20px", sm: "30.15px"},
           }}
         >
           Duis mattis laoreet neque, et ornare neque sollicitudin at. Proin
@@ -283,7 +268,7 @@ const Main = () => {
         }}
       >
         {/* Share Link Section */}
-        <Box display="flex" alignItems="center" gap={2}>
+        <Box display="flex" alignItems="center" gap={2} sx={{flexWrap: "wrap"}}>
           <Typography
             sx={{ fontWeight: "700", color: "#484848", fontSize: "17.23px" }}
           >
@@ -323,22 +308,21 @@ const Main = () => {
         sx={{
           width: "100%",
           maxWidth: "923.08px",
-          margin: "0 auto",
+          // margin: "0 auto",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          // border:"1px solid red",
           gap: 2,
-          paddingX: 2,
-          flexDirection: { xs: "column", sm: "row", md:"row" }, // Stack pagination vertically on mobile
+          // px: 2,
+          // flexDirection: { xs: "column", sm: "row" }, // Stack pagination vertically on mobile
         }}
       >
         {/* Previous Section */}
         <Box display="flex" alignItems="center" gap={2}>
           <Box
             sx={{
-              width: "50px",
-              height: "50px",
+              width: {xs: "30px", sm: "50px"},
+              height: {xs: "30px", sm: "50px"},
               backgroundColor: "#E0E0E0",
               borderRadius: "50%",
               display: "flex",
@@ -346,10 +330,10 @@ const Main = () => {
               justifyContent: "center",
             }}
           >
-            <ArrowBack sx={{ color: "#333" }} />
+            <ArrowBack fontSize={isMobile? "small": "medium"} sx={{ color: "#333" }} />
           </Box>
           <Box>
-            <Typography sx={{ fontWeight: "bold", color: "#484848" }}>
+            <Typography sx={{ fontWeight: 700, color: "#484848", fontSize: {xs: "14px", sm: "19px"} }}>
               Prev
             </Typography>
             <Typography
@@ -358,7 +342,9 @@ const Main = () => {
                 whiteSpace: "nowrap",
                 overflow: "hidden",
                 textOverflow: "ellipsis",
-                maxWidth: "200px",
+                maxWidth: {xs: "70px", sm: "200px"},
+                fontWeight: 400,
+                fontSize: {xs: "12px", sm: "17px"}
               }}
             >
               Redfin Unveils the Best Canadian Cities for...
@@ -369,7 +355,7 @@ const Main = () => {
         {/* Next Section */}
         <Box display="flex" alignItems="center" gap={2}>
           <Box textAlign="right">
-            <Typography sx={{ fontWeight: "bold", color: "#484848" }}>
+            <Typography sx={{ fontWeight: 700, color: "#484848", fontSize: {xs: "14px", sm: "19px"} }}>
               Next
             </Typography>
             <Typography
@@ -378,7 +364,9 @@ const Main = () => {
                 whiteSpace: "nowrap",
                 overflow: "hidden",
                 textOverflow: "ellipsis",
-                maxWidth: "200px",
+                maxWidth: {xs: "70px", sm: "200px"},
+                fontWeight: 400,
+                fontSize: {xs: "12px", sm: "17px"}
               }}
             >
               Redfin Ranks the Most Competitive
@@ -386,8 +374,8 @@ const Main = () => {
           </Box>
           <Box
             sx={{
-              width: "50px",
-              height: "50px",
+              width: {xs: "30px", sm: "50px"},
+              height: {xs: "30px", sm: "50px"},
               backgroundColor: "#E0E0E0",
               borderRadius: "50%",
               display: "flex",
@@ -395,14 +383,132 @@ const Main = () => {
               justifyContent: "center",
             }}
           >
-            <ArrowForward sx={{ color: "#333" }} />
+            <ArrowForward fontSize={isMobile? "small": "medium"} sx={{ color: "#333" }} />
           </Box>
         </Box>
       </Box>
 
       <Divider sx={{ marginY: 3 }} />
-      
-      {/* Blog Card */}
+
+      {/* Comment Section */}
+      {/* <Typography
+        sx={{
+          fontWeight: 500,
+          fontSize: { xs: "18px", sm: "22.15px" },
+          marginTop: 6,
+          bottom: 5,
+        }}
+      >
+        Leave a Comment
+      </Typography>
+
+      <Box
+        sx={{
+          width: '100%',
+          // height: '565.54px',
+          margin: "0 auto",
+          display: "flex",
+          flexDirection: "column",
+          gap: 2,
+        }}
+      >
+        <Box
+          sx={{ display: "flex", justifyContent: "space-between", gap: "36.92px", mt: 3 }}
+        >
+          <TextField
+            placeholder="Name"
+            fullWidth
+            sx={{
+              // width: '443.08px',
+              height: "61.54px",
+              borderRadius: "7.38px",
+              "& .MuiOutlinedInput-root": { border: "1.23px solid #D8D8D8", background: "#fff" },
+            }}
+          />
+          <TextField
+          fullWidth
+            placeholder="Email"
+            sx={{
+              // width: '443.08px',
+              height: "61.54px",
+              borderRadius: "7.38px",
+              "& .MuiOutlinedInput-root": { border: "1.23px solid #D8D8D8", background: "#fff"},
+            }}
+          />
+        </Box>
+
+        <FormControlLabel
+        sx={{pl: 2}}
+          control={
+            <Checkbox
+              sx={{
+                width: "16px",
+                height: "16px",
+                borderRadius: "3.08px",
+                border: "1.23px solid #D8D8D8",
+                padding: "0",
+                marginRight: "8px",
+              }}
+            />
+          }
+          label={
+            <Typography
+              sx={{
+                color: "#484848",
+                font: "Nunito",
+                fontWeight: "400",
+                fontSize: "14px",
+                display: "inline-flex",
+                alignItems: "center",
+                maxWidth: "calc(100% - 24px)",
+                overflowWrap: "break-word",
+              }}
+            >
+              Save my name, email, and website in this browser for the next time
+              I comment.
+            </Typography>
+          }
+        />
+
+        <TextField
+          placeholder="Write Your Comment"
+          multiline
+          fullWidth
+          rows={10}
+          sx={{
+            // maxWidth: "923.08px",
+            // height: "307.69px",
+            borderRadius: "7.38px",
+            "& .MuiOutlinedInput-root": { border: "1.23px solid #D8D8D8", background: "#fff" },
+          }}
+        />
+
+        <Button
+          sx={{
+            width: "260.11px",
+            height: "64px",
+            backgroundColor: "#ECE5CE",
+            color: "#E8E1C4",
+            fontWeight: "bold",
+            border: "1.23px",
+            borderColor: "#E8E1C4",
+            borderRadius: "7.38px",
+            marginTop: "16px",
+            textTransform: "none",
+          }}
+        >
+          <Typography
+            sx={{
+              color: "#00000080",
+              fontSize: "19.69px",
+              fontWeight: "700px",
+            }}
+          >
+            Submit Comment
+          </Typography>
+        </Button>
+      </Box> */}
+
       <Typography
         sx={{
           fontWeight: 500,

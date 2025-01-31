@@ -23,7 +23,7 @@ export default function LoanAmount() {
   return (
     <Box
       sx={{
-        width: { xs: "100%", sm: "680px" },
+        width: { xs: "100%",md: "530px", lg: "680px" },
         maxWidth: "100%",
         height: { xs: "auto", md: "450px" },
         minHeight: { xs: "470px", md: "350px" },

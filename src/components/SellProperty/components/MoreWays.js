@@ -45,16 +45,16 @@ const MoreWays = () => {
     <Box p={1}>
       <Box sx={{ border: "1px solid #b1b1b1", borderRadius: "10px", mt: 10 }}>
         <Box sx={{ display: "flex", justifyContent: "center" }}>
-          <Box sx={{ maxWidth: 840, mt: "69px" }}>
+          <Box sx={{ maxWidth: 840, mt: "69px", px: 2 }}>
             <Typography
               align="center"
-              sx={{ fontSize: "40px", fontWeight: 500 }}
+              sx={{ fontSize:{xs: "26px", sm: "34px", md: "38px", lg: "40px"}, fontWeight: 500 }}
               gutterBottom
             >
               More Ways to Sell. More ways to save.
             </Typography>
             <Typography
-              sx={{ fontSize: "17.23px", fontWeight: 400, color: "#484848" }}
+              sx={{ fontSize: {xs: "14px", sm: "15px", md: "16px", lg: "17.23px"}, fontWeight: 400, color: "#484848" }}
               align="center"
               gutterBottom
             >
@@ -103,7 +103,7 @@ const MoreWays = () => {
                         style={{ objectFit: "contain" }}
                       />
                     </Box>
-                    <Typography sx={{fontSize: "17.23px", fontWeight: 700, color: "#484848"}}>Colonial Reality Listing</Typography>
+                    <Typography sx={{fontSize: {xs: "12px", sm: "15px", md: "16px", lg: "17.23px"}, fontWeight: 700, color: "#484848"}}>Colonial Reality Listing</Typography>
                   </Box>
                 </TableCell>
                 <TableCell align="center">
@@ -132,7 +132,7 @@ const MoreWays = () => {
                         style={{ objectFit: "contain" }}
                       />
                     </Box>
-                    <Typography sx={{fontSize: "17.23px", fontWeight: 700, color: "#484848"}}>Colonial Reality Concierge Listing</Typography>
+                    <Typography sx={{fontSize: {xs: "12px", sm: "15px", md: "16px", lg: "17.23px"}, fontWeight: 700, color: "#484848"}}>Colonial Reality Concierge Listing</Typography>
                   </Box>
                 </TableCell>
               </TableRow>
@@ -142,7 +142,7 @@ const MoreWays = () => {
                 <TableRow key={index} sx={{ background: "#D9D9D933" }}>
                   <TableCell
                     sx={{
-                      fontSize: "17.23px",
+                      fontSize: {xs: "12px", sm: "15px", md: "16px", lg: "17.23px"},
                       fontWeight: 400,
                       color: "#484848",
                     }}
@@ -163,7 +163,7 @@ const MoreWays = () => {
       </Box>
       <Box sx={{px: {xs: 1, md: 6}, py: 2}}>
       <Typography
-        sx={{ fontSize: "17.23px", fontWeight: 400, color: "#484848" }}
+        sx={{ fontSize: {xs: "12px", sm: "15px", md: "16px", lg: "17.23px"}, fontWeight: 400, color: "#484848" }}
         align="center"
         gutterBottom
       >

@@ -20,11 +20,14 @@ export default function SellIndex() {
   return (
     <Box>
       {!showSellPropertyForm ? (
-        <Container maxWidth="xl" sx={{ px: { xs: 1, lg: 6 } }}>
+        <Box>
+        <Container maxWidth="xl" sx={{ px: { xs: 3, lg: 6 } }}>
           <SellHeading />
           <SellYourHome />
           <MostExperience />
+          </Container>
           <OurAgents />
+          <Container maxWidth="xl" sx={{ px: { xs: 3, lg: 6 } }}>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <Button
               variant="contained"
@@ -74,7 +77,7 @@ export default function SellIndex() {
               }}
             >
               <Typography
-                sx={{ fontSize: "36px", fontWeight: 700, color: "#333333" }}
+                sx={{ fontSize: {xs: "26px",md: "36px"}, fontWeight: 700, color: "#333333" }}
               >
                 Ready to sell your home?
               </Typography>
@@ -103,6 +106,7 @@ export default function SellIndex() {
             </Box>
           </Box>
         </Container>
+        </Box>
       ) : (
         <Box sx={{ background: "#F7F7F7" }}>
           <Container maxWidth="xl" sx={{ px: { xs: 1, lg: 6 } }}>

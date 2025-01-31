@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Box, Typography, TextField } from "@mui/material";
+import { Box, Typography, TextField, Container } from "@mui/material";
 
 const RentRange = ({ title, percentage, amount, isHighRange, isMidRange }) => {
   const amountColor = isHighRange ? "#F8BF16" : isMidRange ? "#073E7A" : "#061C35";
@@ -69,8 +69,8 @@ const RentRange = ({ title, percentage, amount, isHighRange, isMidRange }) => {
         </Typography>
         <Box
           sx={{
-            backgroundColor: "#E8E1C4",
-            color: "#777777",
+            // backgroundColor: "#E8E1C4",
+            // color: "#777777",
             width: { xs: "200px", sm: "160px", md: "172.8px" },
             height: { xs: "36px", sm: "36px", md: "40px", lg: "43.33px" },
             borderRadius: "55.56px",
@@ -78,9 +78,12 @@ const RentRange = ({ title, percentage, amount, isHighRange, isMidRange }) => {
             alignItems: "center",
             justifyContent: "center",
             cursor: "pointer",
-            "&:hover": {
-              backgroundColor: "#EAEAE6"
-            }
+            backgroundColor: "#E0D8C3",
+                  "&:hover": {
+                    backgroundColor: "#3E4C66",
+                    color: "#fff",
+                  },
+                  color: "#000",
           }}
         >
           <Typography sx={{ 
@@ -103,7 +106,8 @@ export default function RentCalculator() {
   };
 
   return (
-    <Box
+    <Container maxWidth="xl" sx={{px: {xs: 3, lg: 8}}}>
+      <Box
       sx={{
         width: { 
           xs: "100%",
@@ -111,7 +115,7 @@ export default function RentCalculator() {
           md: "100%",
           lg: "100%" 
         },
-        maxWidth: "1300px",
+        // maxWidth: "1300px",
         height: { xs: "auto", lg: "431px" },
         backgroundColor: "#FFFFFF",
         borderRadius: { xs: "6px", sm: "8px", md: "10px", lg: "11.11px" },
@@ -241,5 +245,6 @@ export default function RentCalculator() {
         </Box>
       </Box>
     </Box>
+    </Container>
   );
 }

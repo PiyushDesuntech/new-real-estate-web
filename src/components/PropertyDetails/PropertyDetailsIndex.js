@@ -8,7 +8,7 @@ export default function PropertyDetailsIndex() {
   return (
     <Box sx={{pb:{md: 20, xs: 2}}}>
       <PropertyHero/>
-      <Container maxWidth="xl" sx={{px: {lg: 7, xs: 1}, mt: 8}}>
+      <Container maxWidth="xl" sx={{px: {lg: 7, xs: 3}, mt: 8}}>
         <Grid container spacing={4}>
             <Grid item xs={12} sm={12} md={8}>
                 <Overview/>

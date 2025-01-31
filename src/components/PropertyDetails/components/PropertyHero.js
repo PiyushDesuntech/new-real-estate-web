@@ -13,7 +13,7 @@ export default function PropertyHero() {
   return (
     <Box
       sx={{
-        backgroundImage: "url(/Images/PropertyDetailsBG.svg)",
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/Images/PropertyDetailsBG.svg)`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
@@ -21,7 +21,7 @@ export default function PropertyHero() {
         width: "100%",
       }}
     >
-      <Container maxWidth="xl" sx={{ px: { lg: 7, xs: 1 } }}>
+      <Container maxWidth="xl" sx={{ px: { lg: 7, xs: 2.5 } }}>
         <Box
           sx={{
             display: "flex",
@@ -30,7 +30,7 @@ export default function PropertyHero() {
             height: "450px",
           }}
         >
-          <Box sx={{ display: "flex", justifyContent: "flex-end", p: 2, gap: "30px", flexWrap: "wrap" }}>
+          <Box sx={{ display: "flex", justifyContent: {xs:"center", sm: "flex-end"}, px: {xs: 0, sm: 2}, gap: {xs: "10px", sm: "30px"},pt: 2  }}>
             <Button
               // onClick={() => router.back()}
               // startIcon={<WestIcon sx={{ fontSize: "30px" }} />}
@@ -43,11 +43,13 @@ export default function PropertyHero() {
                   boxShadow: "none"
                 },
                 color: "#00000099",
-                minWidth: "233px",
-                height: "53px",
+                minWidth: {xs: "120px", sm: "233px"},
+                height: {xs: "40px", sm: "53px"},
                 textTransform: "none",
                 boxShadow: "none",
-                borderRadius: "6px"
+                borderRadius: "6px",
+                fontSize: {xs: "12px", sm: "16px"},
+                fontWeight: 500,
               }}
             >
               Make A Home Tour
@@ -64,11 +66,13 @@ export default function PropertyHero() {
                   boxShadow: "none"
                 },
                 color: "#00000099",
-                minWidth: "233px",
-                height: "53px",
+                minWidth: {xs: "120px", sm: "233px"},
+                height: {xs: "40px", sm: "53px"},
                 textTransform: "none",
                 boxShadow: "none",
-                borderRadius: "6px"
+                borderRadius: "6px",
+                fontSize: {xs: "12px", sm: "16px"},
+                fontWeight: 500,
               }}
             >
               Back To Search

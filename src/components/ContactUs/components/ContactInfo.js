@@ -34,10 +34,10 @@ export default function ContactInfo() {
           <Box
             sx={{
               display: "flex",
-              flexDirection: { xs: "column", md: "row" },
-              maxWidth: 950,
+              flexDirection: { xs: "column", sm: "row" },
+              maxWidth: {xs: "100%", sm: "80%", md: 950},
               justifyContent: "center",
-              mt: { xs: 3, md: -20 },
+              mt: { xs: 3, sm: -20, md: -20 },
               // p: { xs: 0, sm: 2, md: 0 },
               boxShadow: "0px 1px 2px rgba(0, 0, 0, 0.1)",
               mb: 6,
@@ -47,7 +47,7 @@ export default function ContactInfo() {
             {/* Left Section */}
             <Box
               sx={{
-                width: { xs: "100%", md: "40%" },
+                width: { xs: "100%",sm: "50%", md: "40%" },
                 backgroundColor: "#E8E1C4",
                 padding: 3,
                 borderRadius: { xs: "5px 5px 0px 0px", md: "5px 0px 0px 5px" },
@@ -141,7 +141,7 @@ export default function ContactInfo() {
             {/* Right Section */}
             <Box
               sx={{
-                width: { xs: "100%", md: "60%" },
+                width: { xs: "100%",sm: "50%", md: "60%" },
                 padding: 3,
                 background: "#fff",
                 borderRadius: { xs: "0px 0px 5px 5px", md: "0px 5px 5px 0px" },

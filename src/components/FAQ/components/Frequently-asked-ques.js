@@ -20,7 +20,7 @@ export default function Frequently_asked_ques() {
     <Typography
       sx={{
         fontFamily: "Lato",
-        fontSize: { xs: "32px", sm: "45.9px" },
+        fontSize: { xs: "32px",md: "40px", lg: "45.9px" },
         fontWeight: 700,
         lineHeight: "61.2px",
         textAlign: "center", 

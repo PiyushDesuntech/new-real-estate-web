@@ -34,13 +34,13 @@ export default function PropertiesSearchIndex() {
       >
         <Box>
           <Typography
-            sx={{ fontSize: "37px", fontWeight: 600, color: "#484848" }}
+            sx={{ fontSize: {xs:"26px", sm: "30px",md: "37px"}, fontWeight: 600, color: "#484848" }}
           >
-            Properties – Search
+            Properties Search
           </Typography>
         </Box>
-        <Box sx={{ display: "flex", gap: 2 }}>
-          <Button
+        <Box sx={{ display: {xs: "none", md: "flex"}, gap: 2 }}>
+          {/* <Button
             startIcon={<FavoriteBorderIcon />}
             sx={{
               textTransform: "none",
@@ -54,7 +54,7 @@ export default function PropertiesSearchIndex() {
             }}
           >
             Save Search
-          </Button>
+          </Button> */}
           <IconButton
             onClick={() => setViewMode("grid")}
             sx={{
@@ -95,7 +95,7 @@ export default function PropertiesSearchIndex() {
           </IconButton>
         </Box>
       </Box>
-      <Grid container spacing={2} mt={4}>
+      <Grid container spacing={2} >
         <Grid item xs={12} sm={12} md={4}>
           <AdvancedSearch />
           <NearbyProperties />

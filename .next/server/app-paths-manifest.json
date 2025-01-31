@@ -4,5 +4,7 @@
   "/reviews/page": "app/reviews/page.js",
   "/insights/page": "app/insights/page.js",
   "/property-list/page": "app/property-list/page.js",
-  "/agents/page": "app/agents/page.js"
+  "/agents/page": "app/agents/page.js",
+  "/page": "app/page.js",
+  "/welcome-onboard/page": "app/welcome-onboard/page.js"
 }

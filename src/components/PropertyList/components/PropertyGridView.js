@@ -9,6 +9,8 @@ import {
   IconButton,
   Divider,
   Avatar,
+  useTheme,
+  useMediaQuery,
 } from "@mui/material";
 import { useRouter } from "next/navigation";
 import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
@@ -19,6 +21,8 @@ import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
 const PropertyGridView = ({properties}) => {
   const [currentPage, setCurrentPage] = useState(1);
   const router = useRouter();
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
   const handlePageChange = (event, page) => {
     setCurrentPage(page);
@@ -79,7 +83,7 @@ const PropertyGridView = ({properties}) => {
                   sx={{
                     height:{xs: "220px", md:  "273px"},
                     width: { xs: "100%", sm: "100%" },
-                    backgroundImage: `url(${property.image})`,
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${property.image})`,
                     borderRadius: 2,
                     p: 1,
                     display: "flex",
@@ -98,6 +102,10 @@ const PropertyGridView = ({properties}) => {
                         width: "fit-content",
                         borderRadius: 1,
                         fontSize: "14px",
+                        "&:hover": {
+                            background: "#E0D8C3",
+                            color: "#4D4D4D",
+                          },
                       }}
                     />
                     <Chip
@@ -108,6 +116,10 @@ const PropertyGridView = ({properties}) => {
                         width: "fit-content",
                         borderRadius: 1,
                         fontSize: "14px",
+                        "&:hover": {
+                            background: "#3E4C66",
+                            color: "#fff",
+                          },
                       }}
                     />
                   </Box>
@@ -138,7 +150,7 @@ const PropertyGridView = ({properties}) => {
                           },
                         }}
                       >
-                        <FavoriteBorderIcon sx={{fontSize: {xs: "small", sm: "medium"}}}/>
+                        <FavoriteBorderIcon sx={{ fontSize: isSmallScreen? "16px" : "24px" }}/>
                       </IconButton>
                       <IconButton
                         sx={{
@@ -151,7 +163,7 @@ const PropertyGridView = ({properties}) => {
                           },
                         }}
                       >
-                        <SyncAltOutlinedIcon sx={{fontSize: {xs: "small", sm: "medium"}}}/>
+                        <SyncAltOutlinedIcon sx={{ fontSize: isSmallScreen? "16px" : "24px" }}/>
                       </IconButton>
                       <IconButton
                         sx={{
@@ -173,7 +185,7 @@ const PropertyGridView = ({properties}) => {
                 {/* Details Section */}
                 <Box
                   sx={{
-                    padding: 2,
+                    pt: 2,
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
@@ -186,18 +198,18 @@ const PropertyGridView = ({properties}) => {
                     {property.type}
                   </Typography>
                   <Typography
-                    sx={{ fontWeight: 600, fontSize: {xs: "20px", md: "26px",lg: "30px"}, color: "#484848" }}
+                    sx={{ fontWeight: 700, fontSize: {xs: "20px", md: "26px",lg: "30px"}, color: "#484848", "&:hover":{color: "#B3A87A"} }}
                   >
                     {property.title}
                   </Typography>
                   <Typography
-                    variant="body2"
                     sx={{
                       display: "flex",
                       alignItems: "center",
                       mb: 1,
                       color: "#484848",
-                      fontSize: {xs: "16px", md: "18px",lg: "21px"}
+                      fontSize: {xs: "16px", md: "18px",lg: "20px"},
+                      fontWeight: 400
                     }}
                   >
                     <PlaceOutlinedIcon fontSize="small" sx={{ mr: 0.5 }} />
@@ -213,7 +225,7 @@ const PropertyGridView = ({properties}) => {
                     <Typography
                       variant="body2"
                       sx={{
-                        fontSize: {xs: "16px", md: "18px",lg: "21px"},
+                        fontSize: {xs: "16px", md: "18px",lg: "20px"},
                         fontWeight: 400,
                         color: "#484848",
                       }}
@@ -223,7 +235,7 @@ const PropertyGridView = ({properties}) => {
                     <Typography
                       variant="body2"
                       sx={{
-                        fontSize: {xs: "16px", md: "18px",lg: "21px"},
+                        fontSize: {xs: "16px", md: "18px",lg: "20px"},
                         fontWeight: 400,
                         color: "#484848",
                       }}
@@ -233,7 +245,7 @@ const PropertyGridView = ({properties}) => {
                     <Typography
                       variant="body2"
                       sx={{
-                        fontSize: {xs: "16px", md: "18px",lg: "21px"},
+                        fontSize: {xs: "16px", md: "18px",lg: "20px"},
                         fontWeight: 400,
                         color: "#484848",
                       }}
@@ -259,7 +271,7 @@ const PropertyGridView = ({properties}) => {
                   <Avatar
                     src={property.avatar}
                     alt={property.name}
-                    sx={{ width: 63, height: 63 }}
+                    sx={{ width: {xs: 40, sm: 50, md: 55, lg: 63}, height: {xs: 40, sm: 50, md: 55, lg: 63} }}
                   />
                   <Typography
                     sx={{

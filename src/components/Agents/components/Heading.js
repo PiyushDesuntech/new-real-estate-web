@@ -36,7 +36,7 @@ function Heading() {
   });
 
   return (
-   <Box sx={{ mt: 4, px: 3}}>
+   <Box sx={{ mt: 4, px: {xs: 1.5, sm: 2,lg: 3}}}>
      <Breadcrumbs aria-label="breadcrumb" separator={<ArrowForwardIosIcon sx={{fontSize: "10px"}}/>}>
       <MuiLink component={Link} href="/" underline="hover" color="inherit">
         Home

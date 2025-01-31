@@ -2,7 +2,7 @@
 import React from "react";
 import Main from "./components/inner_insight_main";
 import Side from "./components/inner_insight_side";
-import { Box, Container, Grid } from "@mui/material";
+import { Box, Container, Grid, useTheme, useMediaQuery, } from "@mui/material";
 import Heading from "./components/Heading";
 import SearchBar from "../Insights/components/SearchBar";
 import CategoriesSidebar from "../Insights/components/CategoriesSidebar";
@@ -16,6 +16,9 @@ const theme = createTheme({
 });
 
 export default function InnerInsights() {
+  const theme = useTheme();
+      const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
+
   React.useEffect(() => {
     const link = document.createElement("link");
     link.href =
@@ -29,10 +32,10 @@ export default function InnerInsights() {
   }, []);
   return (
     <Box sx={{ backgroundColor: "#f5f5f5" }}>
-      <Container maxWidth="xl" sx={{ px: { xs: 1, lg: 6 } }}>
+      <Container maxWidth="xl" sx={{ px: { xs: 3, lg: 6 } }}>
         <Heading />
         <ThemeProvider theme={theme}>
-          <Grid container spacing={8}>
+          <Grid container spacing={isMobile? 2 : 8}>
             {/* Main Content */}
             <Grid item xs={12} md={8}>
               <Main />
@@ -42,7 +45,7 @@ export default function InnerInsights() {
               item
               xs={12}
               md={4}
-              sx={{ display: "flex", flexDirection: "column", gap: 4 }}
+              sx={{ display: "flex", flexDirection: "column", gap: 4, pb: 3 }}
             >
               {/* <Side /> */}
               <SearchBar />

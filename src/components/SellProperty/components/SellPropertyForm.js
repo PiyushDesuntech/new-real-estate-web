@@ -14,6 +14,8 @@ import {
   IconButton,
   Divider,
   InputAdornment,
+  useTheme,
+  useMediaQuery,
 } from "@mui/material";
 import { Icon } from "@iconify/react";
 import { useRouter } from "next/navigation";
@@ -22,6 +24,8 @@ const SellPropertyForm = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
   const [openDialog, setOpenDialog] = useState(false);
   const router = useRouter();
+  const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   const onSubmit = (data) => {
     console.log("data :>> ", data);
@@ -42,20 +46,20 @@ const SellPropertyForm = () => {
           mx: "auto",
           my: 1,
           py: 6,
-          px: {xs:2, md: 24},
+          px: {xs:2, md: 16, lg: 24},
           borderRadius: "10px",
           background: "#fff",
         }}
       >
         <Typography
-          sx={{ fontWeight: 600, fontSize: "40px" }}
+          sx={{ fontWeight: 600, fontSize: {xs: "26px", sm: "34px", md: "38px", lg: "40px"} }}
           align="center"
           gutterBottom
         >
           Let’s Verify Some Home Facts
         </Typography>
         <Typography
-          sx={{ fontWeight: 400, fontSize: "17.23px", color: "#484848" }}
+          sx={{ fontWeight: 400, fontSize: {xs: "14px", sm: "15px", md: "16px", lg: "17.23px"}, color: "#484848" }}
           align="center"
           gutterBottom
         >
@@ -64,11 +68,11 @@ const SellPropertyForm = () => {
         </Typography>
 
         <form onSubmit={handleSubmit(onSubmit)}>
-          <Grid container spacing={4} sx={{ mt: "50px" }}>
+          <Grid container spacing={isMobile? 2 : 4} sx={{ mt: {xs: "20px", md: "50px"} }}>
             <Grid item xs={12} sm={6}>
               <Typography
                 sx={{
-                  fontSize: "20px",
+                  fontSize: {xs: "16px", md: "20px"},
                   color: "#484848",
                   fontWeight: 500,
                   mb: 1,
@@ -78,6 +82,7 @@ const SellPropertyForm = () => {
                 <span style={{ color: "#48484880" }}>(optional)</span>
               </Typography>
               <TextField
+              size={isMobile? "small" : "medium"}
                 fullWidth
                 {...register("finishedSqFt")}
                 sx={{
@@ -105,7 +110,7 @@ const SellPropertyForm = () => {
             <Grid item xs={12} sm={6}>
               <Typography
                 sx={{
-                  fontSize: "20px",
+                  fontSize: {xs: "16px", md: "20px"},
                   color: "#484848",
                   fontWeight: 500,
                   mb: 1,
@@ -114,6 +119,7 @@ const SellPropertyForm = () => {
                 Lot Size <span style={{ color: "#48484880" }}>(optional)</span>
               </Typography>
               <TextField
+              size={isMobile? "small" : "medium"}
                 fullWidth
                 // InputProps={{
                 //   endAdornment: (
@@ -135,8 +141,8 @@ const SellPropertyForm = () => {
                               boxShadow: "none",
                             },
                             color: "#000",
-                            minWidth: "118px",
-                            height: "55px",
+                            minWidth:{xs: "80px", md:  "118px"},
+                            height: {xs: "100%", md: "55px"},
                             mr: -1.7,
                             borderRadius: "0px 8.63px 8.63px 0px",
                             boxShadow: "none", 
@@ -180,7 +186,7 @@ const SellPropertyForm = () => {
             <Grid item xs={12} sm={6}>
               <Typography
                 sx={{
-                  fontSize: "20px",
+                  fontSize: {xs: "16px", md: "20px"},
                   color: "#484848",
                   fontWeight: 500,
                   mb: 1,
@@ -189,6 +195,7 @@ const SellPropertyForm = () => {
                 Year Built<span style={{ color: "red" }}>*</span>{" "}
               </Typography>
               <TextField
+              size={isMobile? "small" : "medium"}
                 fullWidth
                 {...register("yearBuilt", {
                   required: "Year Built is required",
@@ -220,7 +227,7 @@ const SellPropertyForm = () => {
             <Grid item xs={12} sm={6}>
               <Typography
                 sx={{
-                  fontSize: "20px",
+                  fontSize: {xs: "16px", md: "20px"},
                   color: "#484848",
                   fontWeight: 500,
                   mb: 1,
@@ -229,6 +236,7 @@ const SellPropertyForm = () => {
                 Bedrooms <span style={{ color: "red" }}>*</span>
               </Typography>
               <TextField
+              size={isMobile? "small" : "medium"}
                 fullWidth
                 {...register("bedrooms", { required: "Bedrooms are required" })}
                 error={!!errors.bedrooms}
@@ -258,7 +266,7 @@ const SellPropertyForm = () => {
             <Grid item xs={12} sm={6}>
               <Typography
                 sx={{
-                  fontSize: "20px",
+                  fontSize: {xs: "16px", md: "20px"},
                   color: "#484848",
                   fontWeight: 500,
                   mb: 1,
@@ -267,6 +275,7 @@ const SellPropertyForm = () => {
                 Bathroooms <span style={{ color: "red" }}>*</span>
               </Typography>
               <TextField
+              size={isMobile? "small" : "medium"}
                 fullWidth
                 {...register("bathrooms", {
                   required: "Bathrooms are required",
@@ -298,7 +307,7 @@ const SellPropertyForm = () => {
             <Grid item xs={12} sm={6}>
               <Typography
                 sx={{
-                  fontSize: "20px",
+                  fontSize: {xs: "16px", md: "20px"},
                   color: "#484848",
                   fontWeight: 500,
                   mb: 1,
@@ -307,6 +316,7 @@ const SellPropertyForm = () => {
                 Expected Price <span style={{ color: "red" }}>*</span>
               </Typography>
               <TextField
+              size={isMobile? "small" : "medium"}
                 fullWidth
                 {...register("expectedPrice", {
                   required: "Expected Price is required",
@@ -347,7 +357,7 @@ const SellPropertyForm = () => {
                 color: "#484848",
                 "&:hover": { boxShadow: "none" },
                 textTransform: "none",
-                fontSize: "20px",
+                fontSize: {xs: "16px", md: "20px"},
                 fontWeight: 500,
               }}
             >

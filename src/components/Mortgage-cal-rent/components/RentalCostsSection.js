@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 
 const SectionContent = ({ heading, subheading, description, hasBottomMargin, isPriceRange }) => {
   return (
@@ -9,21 +9,21 @@ const SectionContent = ({ heading, subheading, description, hasBottomMargin, isP
       flexDirection: "column",
       gap: { xs: "12px", sm: "14px", md: "16px" },
       marginBottom: hasBottomMargin ? { xs: "20px", sm: "24px", md: "28px", lg: "32px" } : "0px",
-      padding: { 
-        xs: "12px 16px",
-        sm: "16px 20px",
-        md: "0px" 
-      },
-      marginLeft: { 
-        xs: "0px",
-        sm: "0px",
-        md: "42px" 
-      },
-      marginRight: { 
-        xs: "0px",
-        sm: "0px",
-        md: "42px" 
-      },
+      // padding: { 
+      //   xs: "12px 16px",
+      //   sm: "16px 20px",
+      //   md: "0px" 
+      // },
+      // marginLeft: { 
+      //   xs: "0px",
+      //   sm: "0px",
+      //   md: "42px" 
+      // },
+      // marginRight: { 
+      //   xs: "0px",
+      //   sm: "0px",
+      //   md: "42px" 
+      // },
       transition: "all 0.3s ease",
       minWidth: "51px"
     }}>
@@ -236,17 +236,18 @@ export default function RentalCostsSection() {
   ];
 
   return (
-    <Box
+    <Container maxWidth="xl" sx={{px: {xs: 3, lg: 8}}}>
+      <Box
       sx={{
         width: "100%",
-        maxWidth: { xs: "100%", sm: "100%", md: "1330px" },
+        // maxWidth: { xs: "100%", sm: "100%", md: "1330px" },
         backgroundColor: "#F7F7F7",
-        padding: { 
-          xs: "16px",
-          sm: "24px",
-          md: "32px",
-          lg: "40px" 
-        },
+        // padding: { 
+        //   xs: "16px",
+        //   sm: "24px",
+        //   md: "32px",
+        //   lg: "40px" 
+        // },
         display: "flex",
         flexDirection: "column",
         gap: { 
@@ -302,5 +303,6 @@ export default function RentalCostsSection() {
         ))}
       </Box>
     </Box>
+    </Container>
   );
 }

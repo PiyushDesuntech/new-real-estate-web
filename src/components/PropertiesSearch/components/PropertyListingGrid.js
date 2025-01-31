@@ -217,7 +217,7 @@ const PropertyListingGrid = () => {
     index < menuOptions.length - 1 && <Divider key={`divider-${index}`} />,
   ]);
 
-  const itemsPerPage = 9;
+  const itemsPerPage = 8;
   const totalPages = Math.ceil(properties.length / itemsPerPage);
 
   const currentProperties = properties.slice(
@@ -239,37 +239,37 @@ const PropertyListingGrid = () => {
           py: 2,
           background: "#fff",
           flexWrap: "wrap",
-          gap: 2,
+          gap: 0,
         }}
       >
-        <Typography variant="body1">
+        <Typography sx={{fontSize: {xs: "14px", md: "17px"}, fontWeight: 400, color: "#484848"}}>
           Showing 1 – {properties.length} of {properties.length} results
         </Typography>
         <Box
           sx={{
             display: "flex",
-            gap: 2,
+            gap: 1,
             alignItems: "center",
             flexWrap: "wrap",
           }}
         >
-          <Typography>Sort By</Typography>
+          <Typography sx={{fontSize: {xs: "14px", md: "17px"}, fontWeight: 700, color: "#484848"}}>Sort By</Typography>
           <FormControl
             variant="outlined"
             size="small"
             sx={{
               "& .MuiOutlinedInput-notchedOutline": {
-                border: "none", // No border around the field
+                border: "none", 
               },
               "& .MuiOutlinedInput-root": {
-                paddingRight: "8px", // Adjust padding for the dropdown icon
+                paddingRight: "8px", 
               },
               "& .MuiSelect-icon": {
-                top: "calc(50% - 12px)", // Center align the arrow icon
-                right: "8px", // Align icon to the right
+                top: "calc(50% - 12px)", 
+                right: "8px", 
               },
               "& .Mui-focused .MuiOutlinedInput-notchedOutline": {
-                border: "none", // No border on focus
+                border: "none", 
               },
             }}
           >
@@ -351,14 +351,15 @@ const PropertyListingGrid = () => {
               >
                 <Box
                   sx={{
-                    height: {xs: "220px", md: "273px"},
+                    height: {xs: "180px",md: "220px", lg: "273px"},
                     width: { xs: "100%", sm: "100%" },
-                    backgroundImage: `url(${property.image})`,
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${property.image})`,
                     borderRadius: 2,
                     p: 1,
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
+                    backgroundRepeat: "no-repeat",
                   }}
                 >
                   <Box sx={{ display: "flex", gap: 2 }}>
@@ -370,6 +371,10 @@ const PropertyListingGrid = () => {
                         width: "fit-content",
                         borderRadius: 1,
                         fontSize: "14px",
+                        "&:hover": {
+                            background: "#E0D8C3",
+                            color: "#4D4D4D",
+                          },
                       }}
                     />
                     <Chip
@@ -380,6 +385,10 @@ const PropertyListingGrid = () => {
                         width: "fit-content",
                         borderRadius: 1,
                         fontSize: "14px",
+                        "&:hover": {
+                            background: "#3E4C66",
+                            color: "#fff",
+                          },
                       }}
                     />
                   </Box>
@@ -459,7 +468,7 @@ const PropertyListingGrid = () => {
                 {/* Details Section */}
                 <Box
                   sx={{
-                    padding: 2,
+                    py: 2,
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
@@ -472,7 +481,7 @@ const PropertyListingGrid = () => {
                     {property.type}
                   </Typography>
                   <Typography
-                    sx={{ fontWeight: 600, fontSize: {xs: "16px", md: "18px",lg: "22px"}, color: "#484848" }}
+                    sx={{ fontWeight: 600, fontSize: {xs: "16px", md: "18px",lg: "22px"}, color: "#484848", "&:hover": {color: "#B3A87A"} }}
                   >
                     {property.title}
                   </Typography>

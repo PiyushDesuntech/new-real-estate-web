@@ -174,7 +174,7 @@ export default function AgentListView() {
       </Box>
 
       {/* Grid Display */}
-      <Grid container spacing={3}>
+      <Grid container spacing={4} mt={3}>
         {paginatedAgents.map((agent) => (
           <Grid item xs={12} sm={12} md={12} key={agent.id}>
             <Card

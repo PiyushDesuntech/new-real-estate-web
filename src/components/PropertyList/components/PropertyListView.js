@@ -80,7 +80,7 @@ const PropertyListView = ({ properties }) => {
                   sx={{
                     height: { xs: "200px",sm: "250px", md: "249px" },
                     width: { xs: "100%", md: "304px" },
-                    backgroundImage: `url(${property.image})`,
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${property.image})`,
                     borderRadius: "12px",
                     p: 1,
                     display: "flex",
@@ -99,6 +99,10 @@ const PropertyListView = ({ properties }) => {
                         width: "fit-content",
                         borderRadius: 1,
                         fontSize: "14px",
+                        "&:hover": {
+                            background: "#E0D8C3",
+                            color: "#4D4D4D",
+                          },
                       }}
                     />
                     {/* <Chip
@@ -129,14 +133,14 @@ const PropertyListView = ({ properties }) => {
                     sx={{
                       display: "flex",
                       justifyContent: "space-between",
-                      flexWrap: "wrap-reverse",
+                      // flexWrap: "wrap-reverse",
                       alignItems: "center",
                     }}
                   >
                     <Typography
                       sx={{
                         fontWeight: 600,
-                        fontSize: { xs: "24px", sm: "30px" },
+                        fontSize: { xs: "24px", lg: "30px" },
                         color: "#484848",
                       }}
                     >
@@ -238,7 +242,7 @@ const PropertyListView = ({ properties }) => {
                       sx={{
                         display: "flex",
                         alignItems: "center",
-                        fontSize: { xs: "18px", sm: "21px" }, // Adjust font size
+                        fontSize: { xs: "18px", lg: "21px" }, // Adjust font size
                         fontWeight: 400,
                         color: "#484848",
                       }}
@@ -258,11 +262,10 @@ const PropertyListView = ({ properties }) => {
                     />
 
                     <Typography
-                      variant="body2"
                       sx={{
                         display: "flex",
                         alignItems: "center",
-                        fontSize: { xs: "18px", sm: "21px" },
+                        fontSize: { xs: "18px", lg: "21px" },
                         fontWeight: 400,
                         color: "#484848",
                       }}
@@ -273,22 +276,20 @@ const PropertyListView = ({ properties }) => {
                   </Box>
 
                   <Typography
-                    variant="body2"
                     sx={{
                       display: "flex",
                       alignItems: "center",
                       color: "#484848",
-                      fontSize: { xs: "14px", sm: "21px" },
+                      fontSize: { xs: "14px", lg: "21px" },
                     }}
                   >
                     <PlaceOutlinedIcon fontSize="small" sx={{ mr: 0.5 }} />
                     {property.location}
                   </Typography>
                   <Typography
-                    variant="body2"
                     sx={{
                       color: "#484848",
-                      fontSize: { xs: "14px", sm: "21px" },
+                      fontSize: { xs: "14px", lg: "21px" },
                     }}
                   >
                     2BHK Apartment available for sale at garia please contact

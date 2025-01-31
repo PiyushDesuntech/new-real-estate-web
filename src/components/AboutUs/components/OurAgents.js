@@ -112,7 +112,7 @@ const OurAgents = () => {
 
   return (
     <Box sx={{background: "#F7F7F7"}}>
-      <Container maxWidth="xl" sx={{px:{xs: 2, lg: 7}, mt: {xs: 3, md: 0}, py: {xs: 2, md: 5}}}>
+      <Container maxWidth="xl" sx={{px:{xs: 3, lg: 7}, mt: {xs: 3, md: 0}, py: {xs: 2, md: 5}}}>
       <Box sx={{ textAlign: "center",  }}>
       <Typography sx={{ fontWeight: 500, fontSize: {xs:"26px", md: "40px"}, color: "#484848"}} gutterBottom>
         Our Agents

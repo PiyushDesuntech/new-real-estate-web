@@ -37,6 +37,7 @@ export default function Overview() {
   ];
 
   const [activeTab, setActiveTab] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   const handleTabChange = (event, newValue) => {
     setActiveTab(newValue);
@@ -71,14 +72,22 @@ export default function Overview() {
           id="panel1a-header"
         >
           <Typography
-            sx={{ color: "#484848", fontSize: {xs: "18px", md: '22px'}, fontWeight: 600 }}
+            sx={{
+              color: "#484848",
+              fontSize: { xs: "18px", md: "22px" },
+              fontWeight: 600,
+            }}
           >
             Overview
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography
-            sx={{ fontSize: {xs: "14px", md: "17px"}, fontWeight: 400, color: "#484848" }}
+            sx={{
+              fontSize: { xs: "14px", md: "17px" },
+              fontWeight: 400,
+              color: "#484848",
+            }}
           >
             Evans Tower very high demand corner junior one bedroom plus a large
             balcony boasting full open NYC views. You need to see the views to
@@ -134,7 +143,11 @@ export default function Overview() {
           id="panel2a-header"
         >
           <Typography
-            sx={{ color: "#484848", fontSize: {xs: "18px", md: '22px'}, fontWeight: 600 }}
+            sx={{
+              color: "#484848",
+              fontSize: { xs: "18px", md: "22px" },
+              fontWeight: 600,
+            }}
           >
             Amenities
           </Typography>
@@ -191,7 +204,11 @@ export default function Overview() {
           id="panel3a-header"
         >
           <Typography
-            sx={{ color: "#484848", fontSize: {xs: "18px", md: '22px'}, fontWeight: 600 }}
+            sx={{
+              color: "#484848",
+              fontSize: { xs: "18px", md: "22px" },
+              fontWeight: 600,
+            }}
           >
             Location
           </Typography>
@@ -243,7 +260,11 @@ export default function Overview() {
           id="panel4a-header"
         >
           <Typography
-            sx={{ color: "#484848", fontSize: {xs: "18px", md: '22px'}, fontWeight: 600 }}
+            sx={{
+              color: "#484848",
+              fontSize: { xs: "18px", md: "22px" },
+              fontWeight: 600,
+            }}
           >
             Floor Plans
           </Typography>
@@ -277,7 +298,7 @@ export default function Overview() {
                   <Typography
                     sx={{
                       color: "#484848",
-                      fontSize: {xs: "18px", md: '22px'},
+                      fontSize: { xs: "18px", md: "22px" },
                       fontWeight: 600,
                     }}
                   >
@@ -323,7 +344,11 @@ export default function Overview() {
                     />
                   </Box>
                   <Typography
-                    sx={{ fontSize: {xs: "14px", md: "17px"}, fontWeight: 400, color: "#484848" }}
+                    sx={{
+                      fontSize: { xs: "14px", md: "17px" },
+                      fontWeight: 400,
+                      color: "#484848",
+                    }}
                   >
                     Evans Tower very high demand corner junior one bedroom plus
                     a large balcony boasting full open NYC views. You need to
@@ -360,7 +385,7 @@ export default function Overview() {
                   <Typography
                     sx={{
                       color: "#484848",
-                      fontSize: {xs: "18px", md: '22px'},
+                      fontSize: { xs: "18px", md: "22px" },
                       fontWeight: 600,
                     }}
                   >
@@ -406,7 +431,11 @@ export default function Overview() {
                     />
                   </Box>
                   <Typography
-                    sx={{ fontSize: {xs: "14px", md: "17px"}, fontWeight: 400, color: "#484848" }}
+                    sx={{
+                      fontSize: { xs: "14px", md: "17px" },
+                      fontWeight: 400,
+                      color: "#484848",
+                    }}
                   >
                     Evans Tower very high demand corner junior one bedroom plus
                     a large balcony boasting full open NYC views. You need to
@@ -419,143 +448,279 @@ export default function Overview() {
           </Box>
         </AccordionDetails>
       </Accordion>
-      <Box
-        sx={{
-          width: "100%",
-          borderRadius: "8px",
-          border: "2px solid #EBEBEB",
-          mb: 2,
-        }}
-      >
-        <Tabs
-          value={activeTab}
-          onChange={handleTabChange}
-          sx={{
-            "& .MuiTabs-indicator": {
-              backgroundColor: "grey",
-            },
-            "& .MuiTab-root": {  
-              color: "grey",
-            },
-            "& .MuiTab-root.Mui-selected": {
-              color: "black",
-              fontWeight: "bold",
-            },
-            p: 2,
-          }}
-        >
-          <Tab
-            label="Property Video"
-            sx={{ textTransform: "none", fontSize: {xs: "18px", md: '22px'} }}
-          />
-          <Tab
-            label="Virtual Tour"
-            sx={{ textTransform: "none", fontSize: {xs: "18px", md: '22px'} }}
-          />
-        </Tabs>
 
-        <Box sx={{ p: 3 }}>
-          {activeTab === 0 && (
-            <Box>
-              <Box
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  width: "100%",
-                  padding: "1rem",
-                }}
-              >
-                <Image
-                  src="/Images/youtube.svg"
-                  alt="Floor1"
-                  layout="responsive"
-                  width={890}
-                  height={500}
-                  style={{ objectFit: "contain", borderRadius: "8px" }}
-                />
-              </Box>
-            </Box>
-          )}
-          {activeTab === 1 && (
-            <Box>
-              <Box
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  width: "100%",
-                  padding: "1rem",
-                }}
-              >
-                <Image
-                  src="/Images/youtube.svg"
-                  alt="Floor1"
-                  layout="responsive"
-                  width={890}
-                  height={500}
-                  style={{ objectFit: "contain", borderRadius: "8px" }}
-                />
-              </Box>
-            </Box>
-          )}
-        </Box>
-      </Box>
-      <Box
+      <Accordion
         sx={{
-          width: "100%",
+          marginBottom: "16px",
           borderRadius: "8px",
+          overflow: "hidden",
+          width: "100%",
+          boxShadow: "none",
           border: "2px solid #EBEBEB",
-          mb: 2,
-          p: 3,
+          p: 1,
         }}
       >
-        <Typography sx={{fontSize: {xs: "18px", md: '22px'}, color: "#484848", fontWeight: 600, mb: 4}}>Facilities</Typography>
-        <Grid container spacing={2}>
-          <Grid item xs={12} sm={6}>
-            <Box
+        <AccordionSummary
+          expandIcon={
+            <ExpandMoreIcon
               sx={{
-                display: "flex",
-                justifyContent: "space-between",
-                width: "60%",
-                color: "#484848",
-                fontSize: {xs: "14px", md: "17px"}
+                border: "2px solid #EBEBEB",
+                borderRadius: "50%",
+                color: "#EBEBEB",
+                fontSize: "24px",
+                "&:hover": { color: "#484848", background: "#BFBDBD" },
+              }}
+            />
+          }
+          aria-controls="panel3a-content"
+          id="panel3a-header"
+        >
+          <Typography
+            sx={{
+              color: "#484848",
+              fontSize: { xs: "18px", md: "22px" },
+              fontWeight: 600,
+            }}
+          >
+            Property Tour
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails sx={{ p: 0 }}>
+          <Box
+            sx={{
+              width: "100%",
+              borderRadius: "8px",
+              // border: "2px solid #EBEBEB",
+              mb: 2,
+            }}
+          >
+            <Tabs
+              value={activeTab}
+              onChange={handleTabChange}
+              sx={{
+                "& .MuiTabs-indicator": {
+                  backgroundColor: "grey",
+                },
+                "& .MuiTab-root": {
+                  color: "grey",
+                },
+                "& .MuiTab-root.Mui-selected": {
+                  color: "black",
+                  fontWeight: "bold",
+                },
+                // p: 2,
               }}
             >
-              <Typography>City center</Typography>
-              <Typography sx={{fontWeight: 600}}>4 km</Typography>
+              <Tab
+                label="Property Video"
+                sx={{
+                  textTransform: "none",
+                  fontSize: { xs: "18px", md: "22px" },
+                }}
+              />
+              <Tab
+                label="Virtual Tour"
+                sx={{
+                  textTransform: "none",
+                  fontSize: { xs: "18px", md: "22px" },
+                }}
+              />
+            </Tabs>
+
+            <Box sx={{ p: 2 }}>
+              {activeTab === 0 && (
+                <Box>
+                  <Box
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      width: "100%",
+                      // padding: "1rem",
+                    }}
+                  >
+                    {isPlaying ? (
+                      <div
+                        style={{
+                          position: "relative",
+                          width: "100%",
+                          paddingTop: "56.25%",
+                        }}
+                      >
+                        <iframe
+                          src="https://www.youtube.com/embed/JnTmPSswgzs?autoplay=1"
+                          title="YouTube video player"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          style={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            width: "100%",
+                            height: "100%",
+                            borderRadius: "8px",
+                          }}
+                        ></iframe>
+                      </div>
+                    ) : (
+                      <Image
+                        src="/Images/youtube.svg"
+                        alt="YouTube Thumbnail"
+                        layout="responsive"
+                        width={16}
+                        height={9}
+                        style={{
+                          objectFit: "contain",
+                          borderRadius: "8px",
+                          cursor: "pointer",
+                        }}
+                        onClick={() => setIsPlaying(true)}
+                      />
+                    )}
+                  </Box>
+                </Box>
+              )}
+              {activeTab === 1 && (
+                <Box>
+                  <Box
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      width: "100%",
+                      // padding: "1rem",
+                    }}
+                  >
+                    {isPlaying ? (
+                      <div
+                        style={{
+                          position: "relative",
+                          width: "100%",
+                          paddingTop: "56.25%",
+                        }}
+                      >
+                        <iframe
+                          src="https://www.youtube.com/embed/JnTmPSswgzs?autoplay=1"
+                          title="YouTube video player"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          style={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            width: "100%",
+                            height: "100%",
+                            borderRadius: "8px",
+                          }}
+                        ></iframe>
+                      </div>
+                    ) : (
+                      <Image
+                        src="/Images/youtube.svg"
+                        alt="YouTube Thumbnail"
+                        layout="responsive"
+                        width={16}
+                        height={9}
+                        style={{
+                          objectFit: "contain",
+                          borderRadius: "8px",
+                          cursor: "pointer",
+                        }}
+                        onClick={() => setIsPlaying(true)}
+                      />
+                    )}
+                  </Box>
+                </Box>
+              )}
             </Box>
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <Box
+          </Box>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion
+        sx={{
+          marginBottom: "16px",
+          borderRadius: "8px",
+          overflow: "hidden",
+          width: "100%",
+          boxShadow: "none",
+          border: "2px solid #EBEBEB",
+          p: 1,
+        }}
+      >
+        <AccordionSummary
+          expandIcon={
+            <ExpandMoreIcon
               sx={{
-                display: "flex",
-                justifyContent: "space-between",
-                width: "60%",
-                color: "#484848",
-                fontSize: {xs: "14px", md: "17px"}
+                border: "2px solid #EBEBEB",
+                borderRadius: "50%",
+                color: "#EBEBEB",
+                fontSize: "24px",
+                "&:hover": { color: "#484848", background: "#BFBDBD" },
               }}
-            >
-              <Typography>Hospital</Typography>
-              <Typography sx={{fontWeight: 600}}>2 km</Typography>
-            </Box>
+            />
+          }
+          aria-controls="panel3a-content"
+          id="panel3a-header"
+        >
+          <Typography
+            sx={{
+              color: "#484848",
+              fontSize: { xs: "18px", md: "22px" },
+              fontWeight: 600,
+            }}
+          >
+            Facilities
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails sx={{ p: 4 }}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} sm={6}>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  width: "60%",
+                  color: "#484848",
+                  fontSize: { xs: "14px", md: "17px" },
+                }}
+              >
+                <Typography>City center</Typography>
+                <Typography sx={{ fontWeight: 600 }}>4 km</Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  width: "60%",
+                  color: "#484848",
+                  fontSize: { xs: "14px", md: "17px" },
+                }}
+              >
+                <Typography>Hospital</Typography>
+                <Typography sx={{ fontWeight: 600 }}>2 km</Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  width: "60%",
+                  color: "#484848",
+                  fontSize: { xs: "14px", md: "17px" },
+                }}
+              >
+                <Typography>Shop</Typography>
+                <Typography sx={{ fontWeight: 600 }}>2.5 km</Typography>
+              </Box>
+            </Grid>
           </Grid>
-          <Grid item xs={12} sm={6}>
-            <Box
-              sx={{
-                display: "flex",
-                justifyContent: "space-between",
-                width: "60%",
-                color: "#484848",
-                fontSize: {xs: "14px", md: "17px"}
-              }}
-            >
-              <Typography>Shop</Typography>
-              <Typography sx={{fontWeight: 600}}>2.5 km</Typography>
-            </Box>
-          </Grid>
-        </Grid>
-      </Box>
+        </AccordionDetails>
+      </Accordion>
     </Box>
   );
 }
