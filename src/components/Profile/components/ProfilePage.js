@@ -84,6 +84,9 @@ export default function ProfilePage() {
   const router = useRouter();
   const fileInputRef = useRef(null);
   const [profileImage, setProfileImage] = useState("/api/placeholder/220/220");
+  const isClient = typeof window !== "undefined";
+const detailsToShow = isClient && window.innerWidth < 900 ? mobileDetails : desktopDetails;
+
 
   const handleEditProfile = () => {
     router.push('/edit-profile');
@@ -216,7 +219,7 @@ export default function ProfilePage() {
               mt: { xs: 6, md: -7 },
               mb: { xs: 4, md: 9 }
             }}>
-              {(window?.innerWidth < 900 ? mobileDetails : desktopDetails).map((detail, index) => (
+              {detailsToShow.map((detail, index) => (
                 <Box
                   key={index}
                   sx={{

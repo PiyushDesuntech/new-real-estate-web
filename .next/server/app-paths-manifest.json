@@ -1,10 +1,1 @@
-{
-  "/insight-inner/page": "app/insight-inner/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/reviews/page": "app/reviews/page.js",
-  "/insights/page": "app/insights/page.js",
-  "/property-list/page": "app/property-list/page.js",
-  "/agents/page": "app/agents/page.js",
-  "/page": "app/page.js",
-  "/welcome-onboard/page": "app/welcome-onboard/page.js"
-}
+{}
