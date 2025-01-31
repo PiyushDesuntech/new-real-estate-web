@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import Dropdown from "./dropdowns.js";
+import Dropdowns from "./Dropdowns";
 
 export default function Questions_container() {
   return (
@@ -20,7 +20,7 @@ export default function Questions_container() {
         width: "100%"
       }}
     >
-      <Dropdown />
+      <Dropdowns />
     </Box>
   );
 }

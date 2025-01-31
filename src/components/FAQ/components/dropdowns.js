@@ -37,14 +37,14 @@ export default function Dropdowns() {
           id="panel1a-header"
         >
           <Typography
-            sx={{ color: "#484848", fontSize: "22px", fontWeight: 600 }}
+            sx={{ color: "#484848", fontSize: {md:"22px", xs:"17px"}, fontWeight: 600 }}
           >
             there are many variations of passages  of lorem
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography
-            sx={{ fontSize: "17px", fontWeight: 400, color: "#484848" }}
+            sx={{ fontSize: {md:"17px", xs:"12px"}, fontWeight: 400, color: "#484848" }}
           >
             Evans Tower very high demand corner junior one bedroom plus a large
             balcony boasting full open NYC views. You need to see the views to
@@ -94,14 +94,14 @@ export default function Dropdowns() {
           id="panel1a-header"
         >
           <Typography
-            sx={{ color: "#484848", fontSize: "22px", fontWeight: 600 }}
+            sx={{ color: "#484848", fontSize: {md:"22px", xs:"17px"}, fontWeight: 600 }}
           >
          Model sentence structres to generate
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography
-            sx={{ fontSize: "17px", fontWeight: 400, color: "#484848" }}
+            sx={{fontSize: {md:"17px", xs:"12px"}, fontWeight: 400, color: "#484848" }}
           >
             Evans Tower very high demand corner junior one bedroom plus a large
             balcony boasting full open NYC views. You need to see the views to
@@ -150,14 +150,14 @@ export default function Dropdowns() {
           id="panel1a-header"
         >
           <Typography
-            sx={{ color: "#484848", fontSize: "22px", fontWeight: 600 }}
+            sx={{ color: "#484848", fontSize: {md:"22px", xs:"17px"}, fontWeight: 600 }}
           >
           The first line of Lorem ipsum
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography
-            sx={{ fontSize: "17px", fontWeight: 400, color: "#484848" }}
+            sx={{ fontSize: {md:"17px", xs:"12px"}, fontWeight: 400, color: "#484848" }}
           >
             Evans Tower very high demand corner junior one bedroom plus a large
             balcony boasting full open NYC views. You need to see the views to
@@ -206,7 +206,7 @@ export default function Dropdowns() {
           id="panel1a-header"
         >
           <Typography
-            sx={{ color: "#484848", fontSize: "22px", fontWeight: 600 }}
+            sx={{ color: "#484848", fontSize: {md:"22px", xs:"17px"}, fontWeight: 600 }}
           >
           Letrasheet sheets containing lorem ipsum pages
 
@@ -214,7 +214,7 @@ export default function Dropdowns() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography
-            sx={{ fontSize: "17px", fontWeight: 400, color: "#484848" }}
+            sx={{ fontSize: {md:"17px", xs:"12px"}, fontWeight: 400, color: "#484848" }}
           >
             Evans Tower very high demand corner junior one bedroom plus a large
             balcony boasting full open NYC views. You need to see the views to
@@ -264,14 +264,14 @@ export default function Dropdowns() {
           id="panel1a-header"
         >
           <Typography
-            sx={{ color: "#484848", fontSize: "22px", fontWeight: 600 }}
+            sx={{ color: "#484848", fontSize: {md:"22px", xs:"17px"}, fontWeight: 600 }}
           >
             what are the houses review
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography
-            sx={{ fontSize: "17px", fontWeight: 400, color: "#484848" }}
+            sx={{ fontSize: {md:"17px", xs:"12px"}, fontWeight: 400, color: "#484848" }}
           >
             Evans Tower very high demand corner junior one bedroom plus a large
             balcony boasting full open NYC views. You need to see the views to

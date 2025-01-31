@@ -35,6 +35,7 @@ const Main = () => {
         padding: { xs: 2, sm: 3 },
         // overflowX: "hidden",  // Prevent horizontal overflow
         display: "flex",
+        // border: "1px solid red",
         flexDirection: "column", // Stack elements vertically
       }}
     >
@@ -71,7 +72,10 @@ const Main = () => {
           alignItems="center"
         >
           <Box display="flex" alignItems="center" gap={2}>
-            <Avatar src="/Images/insightAdmin.svg" sx={{ width: 49.23, height: 49.23 }} />
+            <Avatar
+              src="/Images/insightAdmin.svg"
+              sx={{ width: 49.23, height: 49.23 }}
+            />
             <Typography>Admin</Typography>
           </Box>
 
@@ -100,13 +104,28 @@ const Main = () => {
       </Box>
 
       {/* Main Image */}
-      <Box sx={{ width: "100%", height: "auto", maxWidth: "923.08px" }}>
+     
+      <Box
+        sx={{
+          width: "100%",
+          maxWidth: "100%",
+          overflow: "hidden", 
+          display: "flex",
+          justifyContent: "center", // Ensures the image stays within bounds
+        }}
+      >
         <Image
           src="/Images/InsightInnerBlog.svg"
           alt="property image"
-          width={898.46}
-          height={487.38}
-          style={{ borderRadius: "7.38px" }}
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{
+            width: "100%",
+            maxWidth: "923.08px",
+            height: "auto",
+            borderRadius: "7.38px",
+          }}
         />
       </Box>
 
@@ -308,9 +327,10 @@ const Main = () => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          // border:"1px solid red",
           gap: 2,
           paddingX: 2,
-          flexDirection: { xs: "column", sm: "row" }, // Stack pagination vertically on mobile
+          flexDirection: { xs: "column", sm: "row", md:"row" }, // Stack pagination vertically on mobile
         }}
       >
         {/* Previous Section */}
@@ -381,130 +401,7 @@ const Main = () => {
       </Box>
 
       <Divider sx={{ marginY: 3 }} />
-
-      {/* Comment Section */}
-      <Typography
-        sx={{
-          fontWeight: 500,
-          fontSize: { xs: "18px", sm: "22.15px" },
-          marginTop: 6,
-          bottom: 5,
-        }}
-      >
-        Leave a Comment
-      </Typography>
-
-      <Box
-        sx={{
-          width: '100%',
-          // height: '565.54px',
-          margin: "0 auto",
-          display: "flex",
-          flexDirection: "column",
-          gap: 2,
-        }}
-      >
-        {/* Input Fields (Name & Email) */}
-        <Box
-          sx={{ display: "flex", justifyContent: "space-between", gap: "36.92px", mt: 3 }}
-        >
-          <TextField
-            placeholder="Name"
-            fullWidth
-            sx={{
-              // width: '443.08px',
-              height: "61.54px",
-              borderRadius: "7.38px",
-              "& .MuiOutlinedInput-root": { border: "1.23px solid #D8D8D8", background: "#fff" },
-            }}
-          />
-          <TextField
-          fullWidth
-            placeholder="Email"
-            sx={{
-              // width: '443.08px',
-              height: "61.54px",
-              borderRadius: "7.38px",
-              "& .MuiOutlinedInput-root": { border: "1.23px solid #D8D8D8", background: "#fff"},
-            }}
-          />
-        </Box>
-
-        {/* Checkbox */}
-        <FormControlLabel
-        sx={{pl: 2}}
-          control={
-            <Checkbox
-              sx={{
-                width: "16px",
-                height: "16px",
-                borderRadius: "3.08px",
-                border: "1.23px solid #D8D8D8",
-                padding: "0",
-                marginRight: "8px",
-              }}
-            />
-          }
-          label={
-            <Typography
-              sx={{
-                color: "#484848",
-                font: "Nunito",
-                fontWeight: "400",
-                fontSize: "14px",
-                display: "inline-flex",
-                alignItems: "center",
-                maxWidth: "calc(100% - 24px)",
-                overflowWrap: "break-word",
-              }}
-            >
-              Save my name, email, and website in this browser for the next time
-              I comment.
-            </Typography>
-          }
-        />
-
-        {/* Text Area */}
-        <TextField
-          placeholder="Write Your Comment"
-          multiline
-          fullWidth
-          rows={10}
-          sx={{
-            // maxWidth: "923.08px",
-            // height: "307.69px",
-            borderRadius: "7.38px",
-            "& .MuiOutlinedInput-root": { border: "1.23px solid #D8D8D8", background: "#fff" },
-          }}
-        />
-
-        {/* Submit Button */}
-        <Button
-          sx={{
-            width: "260.11px",
-            height: "64px",
-            backgroundColor: "#ECE5CE",
-            color: "#E8E1C4",
-            fontWeight: "bold",
-            border: "1.23px",
-            borderColor: "#E8E1C4",
-            borderRadius: "7.38px",
-            marginTop: "16px",
-            textTransform: "none",
-          }}
-        >
-          <Typography
-            sx={{
-              color: "#00000080",
-              fontSize: "19.69px",
-              fontWeight: "700px",
-            }}
-          >
-            Submit Comment
-          </Typography>
-        </Button>
-      </Box>
-
+      
       {/* Blog Card */}
       <Typography
         sx={{
