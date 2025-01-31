@@ -8,4 +8,6 @@
   "/insights/page": "app/insights/page.js",
   "/mortgage-cal/page": "app/mortgage-cal/page.js",
   "/mortgage-cal-rent/page": "app/mortgage-cal-rent/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/map-view/page": "app/map-view/page.js"
 }

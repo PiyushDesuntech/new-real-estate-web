@@ -177,7 +177,7 @@ const MapViewIndex = () => {
           sx={{
             display: "flex",
             flexWrap: "wrap-reverse",
-            mt: -5,
+            mt: -1,
             height: { xs: "100%", md: "100vh" },
           }}
         >
@@ -191,7 +191,7 @@ const MapViewIndex = () => {
               overflowY: "auto",
               display: "flex",
               flexDirection: "column",
-              pt: 2,
+              py: 2,
               scrollbarWidth: "none",
               "&::-webkit-scrollbar": {
                 display: "none",
@@ -212,12 +212,12 @@ const MapViewIndex = () => {
               >
                 Pleasant Hill, A
               </Typography>
-              <HomeOptions
+              {/* <HomeOptions
                 totalHomes={filteredProperties.length}
                 currentView={currentView}
                 onSortChange={handleSortChange}
                 onViewChange={handleViewChange}
-              />
+              /> */}
             </Box>
             <Grid container spacing={2}>
               {filteredProperties.map((property) => (
