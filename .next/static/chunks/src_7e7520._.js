@@ -143,71 +143,82 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Box/Box.js [app-client] (ecmascript) <export default as Box>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Accordion$2f$Accordion$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Accordion$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Accordion/Accordion.js [app-client] (ecmascript) <export default as Accordion>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$AccordionSummary$2f$AccordionSummary$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AccordionSummary$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/AccordionSummary/AccordionSummary.js [app-client] (ecmascript) <export default as AccordionSummary>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$ExpandMore$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/icons-material/esm/ExpandMore.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Typography/Typography.js [app-client] (ecmascript) <export default as Typography>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$AccordionDetails$2f$AccordionDetails$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AccordionDetails$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/AccordionDetails/AccordionDetails.js [app-client] (ecmascript) <export default as AccordionDetails>");
 ;
+var _s = __turbopack_refresh__.signature();
+"use client";
 ;
 ;
 ;
 function Dropdowns() {
+    _s();
+    const [expanded, setExpanded] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const handleChange = (panel)=>(event, isExpanded)=>{
+            setExpanded(isExpanded ? panel : false);
+        };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Accordion$2f$Accordion$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Accordion$3e$__["Accordion"], {
+                expanded: expanded === "panel1",
+                onChange: handleChange("panel1"),
                 sx: {
                     marginBottom: "16px",
                     borderRadius: "8px",
                     overflow: "hidden",
                     boxShadow: "none",
-                    border: "2px solid #EBEBEB",
+                    // border: "2px solid #EBEBEB",
                     p: 1
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$AccordionSummary$2f$AccordionSummary$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AccordionSummary$3e$__["AccordionSummary"], {
-                        expandIcon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$ExpandMore$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            sx: {
-                                border: "2px solid #EBEBEB",
-                                borderRadius: "50%",
-                                color: "#EBEBEB",
-                                fontSize: "24px",
-                                "&:hover": {
-                                    color: "#484848",
-                                    background: "#BFBDBD"
-                                }
-                            }
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                            lineNumber: 26,
-                            columnNumber: 13
-                        }, void 0),
-                        "aria-controls": "panel1a-content",
-                        id: "panel1a-header",
+                        // expandIcon={
+                        //   <ExpandMoreIcon
+                        //     sx={{
+                        // border: "2px solid #EBEBEB",
+                        //       borderRadius: "50%",
+                        //       color: "#EBEBEB",
+                        //       fontSize: "24px",
+                        //       "&:hover": { color: "#484848", background: "#BFBDBD" },
+                        //     }}
+                        //   />
+                        // }
+                        "aria-controls": "panel1-content",
+                        id: "panel1-header",
+                        sx: {
+                            border: "1.53px solid",
+                            borderColor: expanded === "panel1" ? "#484848" : "#EBEBEB",
+                            borderRadius: "8px"
+                        },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                             sx: {
                                 color: "#484848",
                                 fontSize: {
-                                    md: "22px",
-                                    xs: "17px"
+                                    xs: "16px",
+                                    sm: "18px",
+                                    lg: "22px"
                                 },
-                                fontWeight: 600
+                                fontWeight: 700
                             },
-                            children: "there are many variations of passages  of lorem"
+                            children: "There are many variations of passages  of lorem"
                         }, void 0, false, {
                             fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                            lineNumber: 39,
+                            lineNumber: 51,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                        lineNumber: 24,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$AccordionDetails$2f$AccordionDetails$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AccordionDetails$3e$__["AccordionDetails"], {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                             sx: {
                                 fontSize: {
-                                    md: "17px",
-                                    xs: "12px"
+                                    xs: "12px",
+                                    sm: "14px",
+                                    md: "16px",
+                                    lg: "17px"
                                 },
                                 fontWeight: 400,
                                 color: "#484848"
@@ -216,87 +227,92 @@ function Dropdowns() {
                                 "Evans Tower very high demand corner junior one bedroom plus a large balcony boasting full open NYC views. You need to see the views to believe them. Mint condition with new hardwood floors. Lots of closets plus washer and dryer.",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                                    lineNumber: 53,
+                                    lineNumber: 65,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                                    lineNumber: 54,
+                                    lineNumber: 66,
                                     columnNumber: 13
                                 }, this),
                                 "Fully furnished. Elegantly appointed condominium unit situated on premier location. PS6. The wide entry hall leads to a large living room with dining area. This expansive 2 bedroom and 2 renovated marble bathroom apartment has great windows. Despite the interior views, the apartments Southern and Eastern exposures allow for lovely natural light to fill every room. The master suite is surrounded by handcrafted milkwork and features incredible walk-in closet and storage space."
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                            lineNumber: 46,
+                            lineNumber: 58,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                        lineNumber: 45,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                lineNumber: 12,
+                lineNumber: 19,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Accordion$2f$Accordion$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Accordion$3e$__["Accordion"], {
+                expanded: expanded === "panel2",
+                onChange: handleChange("panel2"),
                 sx: {
                     marginBottom: "16px",
                     borderRadius: "8px",
                     overflow: "hidden",
                     boxShadow: "none",
-                    border: "2px solid #EBEBEB",
+                    // border: "2px solid #EBEBEB",
                     p: 1
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$AccordionSummary$2f$AccordionSummary$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AccordionSummary$3e$__["AccordionSummary"], {
-                        expandIcon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$ExpandMore$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            sx: {
-                                border: "2px solid #EBEBEB",
-                                borderRadius: "50%",
-                                color: "#EBEBEB",
-                                fontSize: "24px",
-                                "&:hover": {
-                                    color: "#484848",
-                                    background: "#BFBDBD"
-                                }
-                            }
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                            lineNumber: 83,
-                            columnNumber: 13
-                        }, void 0),
-                        "aria-controls": "panel1a-content",
-                        id: "panel1a-header",
+                        // expandIcon={
+                        //   <ExpandMoreIcon
+                        //     sx={{
+                        // border: "2px solid #EBEBEB",
+                        //       borderRadius: "50%",
+                        //       color: "#EBEBEB",
+                        //       fontSize: "24px",
+                        //       "&:hover": { color: "#484848", background: "#BFBDBD" },
+                        //     }}
+                        //   />
+                        // }
+                        "aria-controls": "panel2-content",
+                        id: "panel2-header",
+                        sx: {
+                            border: "1.53px solid",
+                            borderColor: expanded === "panel2" ? "#484848" : "#EBEBEB",
+                            borderRadius: "8px"
+                        },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                             sx: {
                                 color: "#484848",
                                 fontSize: {
-                                    md: "22px",
-                                    xs: "17px"
+                                    xs: "16px",
+                                    sm: "18px",
+                                    lg: "22px"
                                 },
-                                fontWeight: 600
+                                fontWeight: 700
                             },
                             children: "Model sentence structres to generate"
                         }, void 0, false, {
                             fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                            lineNumber: 96,
+                            lineNumber: 113,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                        lineNumber: 81,
+                        lineNumber: 95,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$AccordionDetails$2f$AccordionDetails$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AccordionDetails$3e$__["AccordionDetails"], {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                             sx: {
                                 fontSize: {
-                                    md: "17px",
-                                    xs: "12px"
+                                    xs: "12px",
+                                    sm: "14px",
+                                    md: "16px",
+                                    lg: "17px"
                                 },
                                 fontWeight: 400,
                                 color: "#484848"
@@ -305,87 +321,92 @@ function Dropdowns() {
                                 "Evans Tower very high demand corner junior one bedroom plus a large balcony boasting full open NYC views. You need to see the views to believe them. Mint condition with new hardwood floors. Lots of closets plus washer and dryer.",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                                    lineNumber: 110,
+                                    lineNumber: 127,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                                    lineNumber: 111,
+                                    lineNumber: 128,
                                     columnNumber: 13
                                 }, this),
                                 "Fully furnished. Elegantly appointed condominium unit situated on premier location. PS6. The wide entry hall leads to a large living room with dining area. This expansive 2 bedroom and 2 renovated marble bathroom apartment has great windows. Despite the interior views, the apartments Southern and Eastern exposures allow for lovely natural light to fill every room. The master suite is surrounded by handcrafted milkwork and features incredible walk-in closet and storage space."
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                            lineNumber: 103,
+                            lineNumber: 120,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                        lineNumber: 102,
+                        lineNumber: 119,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                lineNumber: 69,
+                lineNumber: 81,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Accordion$2f$Accordion$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Accordion$3e$__["Accordion"], {
+                expanded: expanded === "panel3",
+                onChange: handleChange("panel3"),
                 sx: {
                     marginBottom: "16px",
                     borderRadius: "8px",
                     overflow: "hidden",
                     boxShadow: "none",
-                    border: "2px solid #EBEBEB",
+                    // border: "2px solid #EBEBEB",
                     p: 1
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$AccordionSummary$2f$AccordionSummary$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AccordionSummary$3e$__["AccordionSummary"], {
-                        expandIcon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$ExpandMore$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            sx: {
-                                border: "2px solid #EBEBEB",
-                                borderRadius: "50%",
-                                color: "#EBEBEB",
-                                fontSize: "24px",
-                                "&:hover": {
-                                    color: "#484848",
-                                    background: "#BFBDBD"
-                                }
-                            }
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                            lineNumber: 139,
-                            columnNumber: 13
-                        }, void 0),
-                        "aria-controls": "panel1a-content",
-                        id: "panel1a-header",
+                        // expandIcon={
+                        //   <ExpandMoreIcon
+                        //     sx={{
+                        // border: "2px solid #EBEBEB",
+                        //       borderRadius: "50%",
+                        //       color: "#EBEBEB",
+                        //       fontSize: "24px",
+                        //       "&:hover": { color: "#484848", background: "#BFBDBD" },
+                        //     }}
+                        //   />
+                        // }
+                        "aria-controls": "panel3-content",
+                        id: "panel3-header",
+                        sx: {
+                            border: "1.53px solid",
+                            borderColor: expanded === "panel3" ? "#484848" : "#EBEBEB",
+                            borderRadius: "8px"
+                        },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                             sx: {
                                 color: "#484848",
                                 fontSize: {
-                                    md: "22px",
-                                    xs: "17px"
+                                    xs: "16px",
+                                    sm: "18px",
+                                    lg: "22px"
                                 },
-                                fontWeight: 600
+                                fontWeight: 700
                             },
                             children: "The first line of Lorem ipsum"
                         }, void 0, false, {
                             fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                            lineNumber: 152,
+                            lineNumber: 174,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                        lineNumber: 137,
+                        lineNumber: 156,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$AccordionDetails$2f$AccordionDetails$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AccordionDetails$3e$__["AccordionDetails"], {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                             sx: {
                                 fontSize: {
-                                    md: "17px",
-                                    xs: "12px"
+                                    xs: "12px",
+                                    sm: "14px",
+                                    md: "16px",
+                                    lg: "17px"
                                 },
                                 fontWeight: 400,
                                 color: "#484848"
@@ -394,87 +415,92 @@ function Dropdowns() {
                                 "Evans Tower very high demand corner junior one bedroom plus a large balcony boasting full open NYC views. You need to see the views to believe them. Mint condition with new hardwood floors. Lots of closets plus washer and dryer.",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                                    lineNumber: 166,
+                                    lineNumber: 188,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                                    lineNumber: 167,
+                                    lineNumber: 189,
                                     columnNumber: 13
                                 }, this),
                                 "Fully furnished. Elegantly appointed condominium unit situated on premier location. PS6. The wide entry hall leads to a large living room with dining area. This expansive 2 bedroom and 2 renovated marble bathroom apartment has great windows. Despite the interior views, the apartments Southern and Eastern exposures allow for lovely natural light to fill every room. The master suite is surrounded by handcrafted milkwork and features incredible walk-in closet and storage space."
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                            lineNumber: 159,
+                            lineNumber: 181,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                        lineNumber: 158,
+                        lineNumber: 180,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                lineNumber: 125,
+                lineNumber: 142,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Accordion$2f$Accordion$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Accordion$3e$__["Accordion"], {
+                expanded: expanded === "panel4",
+                onChange: handleChange("panel4"),
                 sx: {
                     marginBottom: "16px",
                     borderRadius: "8px",
                     overflow: "hidden",
                     boxShadow: "none",
-                    border: "2px solid #EBEBEB",
+                    // border: "2px solid #EBEBEB",
                     p: 1
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$AccordionSummary$2f$AccordionSummary$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AccordionSummary$3e$__["AccordionSummary"], {
-                        expandIcon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$ExpandMore$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            sx: {
-                                border: "2px solid #EBEBEB",
-                                borderRadius: "50%",
-                                color: "#EBEBEB",
-                                fontSize: "24px",
-                                "&:hover": {
-                                    color: "#484848",
-                                    background: "#BFBDBD"
-                                }
-                            }
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                            lineNumber: 195,
-                            columnNumber: 13
-                        }, void 0),
-                        "aria-controls": "panel1a-content",
-                        id: "panel1a-header",
+                        // expandIcon={
+                        //   <ExpandMoreIcon
+                        //     sx={{
+                        // border: "2px solid #EBEBEB",
+                        //       borderRadius: "50%",
+                        //       color: "#EBEBEB",
+                        //       fontSize: "24px",
+                        //       "&:hover": { color: "#484848", background: "#BFBDBD" },
+                        //     }}
+                        //   />
+                        // }
+                        "aria-controls": "panel4-content",
+                        id: "panel4-header",
+                        sx: {
+                            border: "1.53px solid",
+                            borderColor: expanded === "panel4" ? "#484848" : "#EBEBEB",
+                            borderRadius: "8px"
+                        },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                             sx: {
                                 color: "#484848",
                                 fontSize: {
-                                    md: "22px",
-                                    xs: "17px"
+                                    xs: "16px",
+                                    sm: "18px",
+                                    lg: "22px"
                                 },
-                                fontWeight: 600
+                                fontWeight: 700
                             },
                             children: "Letrasheet sheets containing lorem ipsum pages"
                         }, void 0, false, {
                             fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                            lineNumber: 208,
+                            lineNumber: 235,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                        lineNumber: 193,
+                        lineNumber: 217,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$AccordionDetails$2f$AccordionDetails$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AccordionDetails$3e$__["AccordionDetails"], {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                             sx: {
                                 fontSize: {
-                                    md: "17px",
-                                    xs: "12px"
+                                    xs: "12px",
+                                    sm: "14px",
+                                    md: "16px",
+                                    lg: "17px"
                                 },
                                 fontWeight: 400,
                                 color: "#484848"
@@ -483,92 +509,97 @@ function Dropdowns() {
                                 "Evans Tower very high demand corner junior one bedroom plus a large balcony boasting full open NYC views. You need to see the views to believe them. Mint condition with new hardwood floors. Lots of closets plus washer and dryer.",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                                    lineNumber: 223,
+                                    lineNumber: 250,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                                    lineNumber: 224,
+                                    lineNumber: 251,
                                     columnNumber: 13
                                 }, this),
                                 "Fully furnished. Elegantly appointed condominium unit situated on premier location. PS6. The wide entry hall leads to a large living room with dining area. This expansive 2 bedroom and 2 renovated marble bathroom apartment has great windows. Despite the interior views, the apartments Southern and Eastern exposures allow for lovely natural light to fill every room. The master suite is surrounded by handcrafted milkwork and features incredible walk-in closet and storage space.",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                                    lineNumber: 233,
+                                    lineNumber: 260,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                            lineNumber: 216,
+                            lineNumber: 243,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                        lineNumber: 215,
+                        lineNumber: 242,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                lineNumber: 181,
+                lineNumber: 203,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Accordion$2f$Accordion$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Accordion$3e$__["Accordion"], {
+                expanded: expanded === "panel5",
+                onChange: handleChange("panel5"),
                 sx: {
                     marginBottom: "px",
                     borderRadius: "8px",
                     overflow: "hidden",
                     boxShadow: "none",
-                    border: "2px solid #EBEBEB",
+                    // border: "2px solid #EBEBEB",
                     p: 1
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$AccordionSummary$2f$AccordionSummary$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AccordionSummary$3e$__["AccordionSummary"], {
-                        expandIcon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$ExpandMore$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            sx: {
-                                border: "2px solid #EBEBEB",
-                                borderRadius: "50%",
-                                color: "#EBEBEB",
-                                fontSize: "24px",
-                                "&:hover": {
-                                    color: "#484848",
-                                    background: "#BFBDBD"
-                                }
-                            }
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                            lineNumber: 253,
-                            columnNumber: 13
-                        }, void 0),
-                        "aria-controls": "panel1a-content",
-                        id: "panel1a-header",
+                        // expandIcon={
+                        //   <ExpandMoreIcon
+                        //     sx={{
+                        // border: "2px solid #EBEBEB",
+                        //       borderRadius: "50%",
+                        //       color: "#EBEBEB",
+                        //       fontSize: "24px",
+                        //       "&:hover": { color: "#484848", background: "#BFBDBD" },
+                        //     }}
+                        //   />
+                        // }
+                        "aria-controls": "panel5-content",
+                        id: "panel5-header",
+                        sx: {
+                            border: "1.53px solid",
+                            borderColor: expanded === "panel5" ? "#484848" : "#EBEBEB",
+                            borderRadius: "8px"
+                        },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                             sx: {
                                 color: "#484848",
                                 fontSize: {
-                                    md: "22px",
-                                    xs: "17px"
+                                    xs: "16px",
+                                    sm: "18px",
+                                    lg: "22px"
                                 },
-                                fontWeight: 600
+                                fontWeight: 700
                             },
                             children: "what are the houses review"
                         }, void 0, false, {
                             fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                            lineNumber: 266,
+                            lineNumber: 298,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                        lineNumber: 251,
+                        lineNumber: 280,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$AccordionDetails$2f$AccordionDetails$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AccordionDetails$3e$__["AccordionDetails"], {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                             sx: {
                                 fontSize: {
-                                    md: "17px",
-                                    xs: "12px"
+                                    xs: "12px",
+                                    sm: "14px",
+                                    md: "16px",
+                                    lg: "17px"
                                 },
                                 fontWeight: 400,
                                 color: "#484848"
@@ -577,39 +608,40 @@ function Dropdowns() {
                                 "Evans Tower very high demand corner junior one bedroom plus a large balcony boasting full open NYC views. You need to see the views to believe them. Mint condition with new hardwood floors. Lots of closets plus washer and dryer.",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                                    lineNumber: 280,
+                                    lineNumber: 312,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                                    lineNumber: 281,
+                                    lineNumber: 313,
                                     columnNumber: 13
                                 }, this),
                                 "Fully furnished. Elegantly appointed condominium unit situated on premier location. PS6. The wide entry hall leads to a large living room with dining area. This expansive 2 bedroom and 2 renovated marble bathroom apartment has great windows. Despite the interior views, the apartments Southern and Eastern exposures allow for lovely natural light to fill every room. The master suite is surrounded by handcrafted milkwork and features incredible walk-in closet and storage space."
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                            lineNumber: 273,
+                            lineNumber: 305,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                        lineNumber: 272,
+                        lineNumber: 304,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-                lineNumber: 239,
+                lineNumber: 266,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/FAQ/components/Dropdowns.js",
-        lineNumber: 11,
+        lineNumber: 18,
         columnNumber: 5
     }, this);
 }
+_s(Dropdowns, "DuL5jiiQQFgbn7gBKAyxwS/H4Ek=");
 _c = Dropdowns;
 var _c;
 __turbopack_refresh__.register(_c, "Dropdowns");
