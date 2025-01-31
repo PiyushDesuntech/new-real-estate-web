@@ -18,9 +18,9 @@ const PropertyAgentCard = () => {
         maxWidth: {
           xs: '100%',
           sm: 350,
-          md: 400
+          md: "100%"
         },
-        margin: "auto",
+        // margin: "auto",
         //height: { xs: "auto", sm: "37%" }
       }}
     >

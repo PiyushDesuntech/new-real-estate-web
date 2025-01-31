@@ -1,117 +1,35 @@
 "use client";
 import React from "react";
-import { Box } from "@mui/material";
+import { Box, Container, Grid } from "@mui/material";
 import Heading from "./components/Heading";
 import PropertyAgentCard from "./components/PropertyAgentCard";
 import ReviewForm from "./components/ReviewForm";
 
 export default function Reviews() {
   React.useEffect(() => {
-    const link = document.createElement('link');
-    link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap';
-    link.rel = 'stylesheet';
+    const link = document.createElement("link");
+    link.href =
+      "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap";
+    link.rel = "stylesheet";
     document.head.appendChild(link);
     return () => document.head.removeChild(link);
   }, []);
 
   return (
-    <Box sx={{
-      backgroundColor: '#F7F7F7',
-      minHeight: '100vh',
-      width: '100%',
-      display: 'flex',
-      flexDirection: 'column',
-      gap: { xs: '32px', sm: '48px' },
-      overflow: 'hidden',
-      position: 'relative',
-      padding: { xs: '20px', sm: '40px', lg: '60px' },
-      '@media (max-width: 600px)': {
-        padding: '10px',
-        gap: '16px',
-      },
-      '@media (min-width: 601px) and (max-width: 960px)': {
-        padding: '20px',
-        gap: '24px',
-      }
-    }}>
-      <Box sx={{
-        ml: { xs: -2, sm: -4, md: -2 },
-        '@media (max-width: 600px)': {
-          ml: 0,
-        },
-        '@media (min-width: 601px) and (max-width: 960px)': {
-          ml: 0,
-        },
-        mt: -6.5,  // Adjust the margin-top to move the heading upwards
-      }}>
+    <Box sx={{ backgroundColor: "#F7F7F7" }}>
+      <Container maxWidth="xl" sx={{ px: { xs: 2, lg: 8 } }}>
         <Heading />
-      </Box>
-      <Box sx={{
-        display: 'flex',
-        justifyContent: 'flex-start',
-        pl: { xs: 2, sm: 4, md: 7.1 },
-        mt: { xs: 0, sm: 0, md: 2 },
-        flexDirection: { xs: 'column', sm: 'row' },
-        '@media (max-width: 600px)': {
-          pl: 0,
-          flexDirection: 'column',
-          alignItems: 'center',
-          px: '16px', // Added horizontal padding for mobile
-        },
-        '@media (min-width: 601px) and (max-width: 960px)': {
-          pl: 0,
-          flexDirection: 'column',
-          alignItems: 'center',
-          px: '24px', // Added horizontal padding for tablet
-        }
-      }}>
-        <Box sx={{
-          display: 'flex',
-          justifyContent: 'flex-start',
-          pl: { xs: 0, sm: 2, md: 4 },
-          ml: { xs: -2, sm: -4, md: -10.5 },
-          mt: { xs: -2, sm: -4, md: -10 },
-          mr: { xs: 2, sm: 4, md: 3.5 },
-          '@media (max-width: 600px)': {
-            pl: 0,
-            pr: 0,
-            ml: 0,
-            mt: 0,
-            mr: 0,
-            width: '100%',
-            justifyContent: 'center',
-          },
-          '@media (min-width: 601px) and (max-width: 960px)': {
-            pl: 0,
-            pr: 0,
-            ml: 0,
-            mt: 0,
-            mr: 0,
-            width: '100%',
-            justifyContent: 'center',
-          }
-        }}>
+        <Grid container spacing={4} pb={8}>
+          <Grid item xs={12} md={8}>
           <ReviewForm />
-        </Box>
-        <Box sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          mt: { xs: -2, sm: -4, md: -78 },
-          pl: { xs: 0, sm: 2, md: 4 },
-          '@media (max-width: 600px)': {
-            mt: '16px',
-            pl: 0,
-            width: '100%',
-          },
-          '@media (min-width: 601px) and (max-width: 960px)': {
-            mt: '24px',
-            pl: 0,
-            width: '100%',
-          }
-        }}>
-          <PropertyAgentCard />
-        </Box>
-      </Box>
+          </Grid>
+          <Grid item xs={12} md={4} >
+         <Box sx={{mt: {xs:0, md: "-60px"}}}>
+         <PropertyAgentCard />
+         </Box>
+          </Grid>
+        </Grid>
+      </Container>
     </Box>
   );
 }

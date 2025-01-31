@@ -127,7 +127,7 @@ const ReviewForm = () => {
     <Box
       sx={{
         width: "100%",
-        maxWidth: "800px",
+        // maxWidth: "800px",
         margin: "auto",
         textAlign: "left",
         padding: { xs: '16px 10px', sm: '18px 12px', md: '20px 14px' },
