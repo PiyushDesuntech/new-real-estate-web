@@ -38,7 +38,7 @@ const WhyUs = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Container maxWidth="xl">
-      <Box sx={{ padding: {md: 0.5,lg: 6}, mt: {xs: 3, sm: 3, md: 2} }}>
+      <Box sx={{ padding: {xs: 1,md: 0.5,lg: 6}, mt: {xs: 3, sm: 3, md: 2} }}>
         <Typography sx={{ fontWeight: 500, fontSize: {xs:"26px", md: "40px"}, color: "#484848"}} align="center" gutterBottom>
           Why Choose Us
         </Typography>

@@ -5,7 +5,7 @@ export default function ReadyToSell() {
   return (
     <Box sx={{display: "flex", justifyContent: "center", width: "100%", mt: 10, mb: 10}}>
       <Box sx={{maxWidth: 1250, minHeight: 224, border: "1px solid #BD8F81", borderRadius: "12px", width: "100%", textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center", alignItems:"center"}}>
-        <Typography sx={{fontSize: "36px", fontWeight: 700, color: "#333333"}}>Ready to sell your home?</Typography>
+        <Typography sx={{fontSize: {xs: "26px",md: "36px"}, fontWeight: 700, color: "#333333"}}>Ready to sell your home?</Typography>
         <Button  variant="contained"
           sx={{
             display: "flex",

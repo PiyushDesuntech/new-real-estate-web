@@ -4,8 +4,8 @@ import TermsAndconditions from "./components/TermsAndconditions";
 import JoinUs from "../Home/compoments/JoinUs";
 export default function Terms_conditions() {
   return (
-    <Box sx={{ backgroundColor: "#F7F7F7", minHeight: "100vh" }}>
-      <Container maxWidth="xl">
+    <Box sx={{ backgroundColor: "#F7F7F7", }}>
+      <Container maxWidth="xl" sx={{px: {xs: 2, lg: 6}}}>
         <Heading />
         <TermsAndconditions />
       </Container>

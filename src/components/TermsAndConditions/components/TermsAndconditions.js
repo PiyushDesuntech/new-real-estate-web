@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 
 export default function TermsAndconditions() {
   return (
-    <Box sx={{ px: { xs: 2, md: 0 } }}>
+    <Box sx={{ px: { xs: 2, md: 3 }, pb: 5 }}>
       <Box
         sx={{
           width: { xs: "100%", sm: "401.53px" }, // 100% width on small screens, fixed width on larger screens
@@ -34,7 +34,7 @@ export default function TermsAndconditions() {
         {/* First Paragraph */}
         <Box
           sx={{
-            width: { xs: "100%", sm: "90%" }, // Responsive width
+            width: { xs: "100%", sm: "100%" }, // Responsive width
             margin: "40px auto 10px auto", // Center horizontally with specific margins
             textAlign: "center", // Center the text inside the box
           }}
@@ -79,7 +79,7 @@ export default function TermsAndconditions() {
         {/* Second Paragraph */}
         <Box
           sx={{
-            width: { xs: "100%", sm: "90%" }, // Responsive width
+            width: { xs: "100%", sm: "100%" }, // Responsive width
             margin: "40px auto 10px auto", // Center horizontally with specific margins
             textAlign: "center", // Center the text inside the box
           }}
@@ -105,7 +105,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -125,7 +125,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -153,8 +153,8 @@ export default function TermsAndconditions() {
         sx={{
           width: { xs: "100%", sm: "401.53px" }, // 100% width on small screens, fixed width on larger screens
           // height: "61.2px",
-          top: "120.6px",
-          left: { xs: "0", sm: "570.05px" }, // Full width on small screens, specific left value on larger screens
+          // top: "120.6px",
+          // left: { xs: "0", sm: "570.05px" }, // Full width on small screens, specific left value on larger screens
 
           margin: "3px auto",
           display: "flex",
@@ -177,7 +177,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -227,7 +227,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -283,7 +283,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -314,7 +314,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -365,7 +365,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -418,7 +418,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -469,7 +469,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -501,7 +501,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -556,7 +556,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -590,7 +590,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -625,7 +625,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -685,7 +685,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -744,7 +744,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -773,7 +773,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "20px auto 10px auto", // Center horizontally with specific margins
           textAlign: "left", // Align the text to the left (use justify for full width)
         }}
@@ -813,7 +813,7 @@ export default function TermsAndconditions() {
       </Box>
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -865,7 +865,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -924,7 +924,7 @@ export default function TermsAndconditions() {
       </Box>
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -952,7 +952,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -987,7 +987,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "20px auto 10px auto", // Center horizontally with specific margins
           textAlign: "left", // Align the text to the left (use justify for full width)
         }}
@@ -1030,7 +1030,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -1080,7 +1080,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -1140,7 +1140,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -1174,7 +1174,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -1239,7 +1239,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -1274,7 +1274,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -1342,7 +1342,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}

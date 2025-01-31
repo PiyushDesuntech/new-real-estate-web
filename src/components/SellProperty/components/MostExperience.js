@@ -9,22 +9,23 @@ export default function MostExperience() {
         <Grid item xs={12} md={6} sx={{display: "flex", flexDirection: "column", justifyContent: "center", py: 3}}>
           <Typography
             sx={{
-              fontSize: "40px",
+              fontSize:{xs: "30px", sm: "34px", md: "38px", lg: "40px"},
               fontWeight: 500,
               color: "#000000",
               maxWidth: 464,
-              lineHeight: "50px",
+              lineHeight: {xs: "34px", sm: "34px", md: "50px"},
+              mt: {xs: 2}
             }}
           >
             Work with the most experienced agents in Canada
           </Typography>
           <Typography
-            sx={{ fontSize: "19.69px", fontWeight: 700, color: "#484848" }}
+            sx={{ fontSize:{xs: "15px", sm: "16px", md: "18px", lg: "19.69px"}, fontWeight: 700, color: "#484848", mt: {xs: 1, sm: 3, md: 0} }}
           >
             Lorem ipsum dolor sit ame adipiscing elit.
           </Typography>
           <Typography
-            sx={{ fontSize: "17.23px", fontWeight: 400, color: "#484848" }}
+            sx={{ fontSize:{xs: "14px", sm: "15px", md: "16px", lg: "17.69px"}, fontWeight: 400, color: "#484848", mt: {xs: 1, sm: 3, md: 0} }}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             quis ligula eu lectus vulputate porttitor sed feugiat nunc. Mauris
@@ -34,7 +35,7 @@ export default function MostExperience() {
           </Typography>
         </Grid>
         <Grid item xs={12} md={6} >
-          <Box sx={{display: "flex", justifyContent: {xs: "flex-start", md: "flex-end"}, py: 10}}>
+          <Box sx={{display: "flex", justifyContent: {xs: "flex-start", md: "flex-end"}, py: {xs: 3, md: 10}}}>
             <Box
               style={{
                 display: "flex",

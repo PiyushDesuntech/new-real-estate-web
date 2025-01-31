@@ -33,7 +33,7 @@ const AdvancedSearch = () => {
      <Box
       sx={{
         // width: "300px",
-        padding: "30px",
+        padding: {xs: "20px", lg: "30px"},
         borderRadius: "8px",
         // boxShadow: 1,
         border: "2px solid #D8D8D8",
@@ -210,12 +210,12 @@ const AdvancedSearch = () => {
       />
 
       {/* Advanced Options */}
-      <Box display="flex" justifyContent="space-between" alignItems="center">
+      {/* <Box display="flex" justifyContent="space-between" alignItems="center">
         <Typography variant="body2">Advanced</Typography>
         <IconButton>
           <MoreVertIcon />
         </IconButton>
-      </Box>
+      </Box> */}
 
       {/* Find Property Button */}
       <Button
@@ -227,7 +227,10 @@ const AdvancedSearch = () => {
           color: "#484848",
           boxShadow: "none",
           py:2,
-          "&:hover": { bgcolor: "#fff", color: "#484848", boxShadow: "none", },
+          "&:hover": {
+            backgroundColor: "#3E4C66",
+            color: "#fff",
+          },
           fontSize: "20px",
           textTransform: "none",
           borderRadius: "8px"

@@ -48,7 +48,7 @@ export default function PropertyListIndex() {
       ]);
   return (
    <Box sx={{backgroundColor: "#F7F7F7"}}>
-     <Container maxWidth="xl" sx={{ px: { lg: 7, xs: 1 } }} >
+     <Container maxWidth="xl" sx={{ px: { lg: 6,md: 1, xs: 2 } }} >
       <Heading/>
       <Box sx={{px: {xs: 1, sm: 3}}}>
       <Box
@@ -66,7 +66,7 @@ export default function PropertyListIndex() {
           gap: 2,
         }}
       >
-        <Typography variant="body1">
+        <Typography sx={{fontSize: {xs: "14px", md: "17px"}, color: "#616161", fontWeight: 500}}>
           Showing 1 – {properties.length} of {properties.length} results
         </Typography>
         <Box
@@ -77,7 +77,7 @@ export default function PropertyListIndex() {
             flexWrap: "wrap",
           }}
         >
-          <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
+          <Box sx={{ display: {xs: "none", md: "flex"}, gap: 2, alignItems: "center" }}>
           <IconButton
             onClick={() => setViewMode("grid")}
             sx={{
@@ -116,7 +116,7 @@ export default function PropertyListIndex() {
           >
             <FormatListBulletedIcon />
           </IconButton>
-            <Button
+            {/* <Button
               startIcon={<FavoriteBorderIcon />}
               sx={{
                 textTransform: "none",
@@ -130,9 +130,9 @@ export default function PropertyListIndex() {
               }}
             >
               Save Search
-            </Button>
+            </Button> */}
           </Box>
-          <Typography>Sort By</Typography>
+          <Typography sx={{fontSize: {xs: "14px", md: "17px"}, color: "#616161", fontWeight: 500}}>Sort By</Typography>
           <FormControl
             variant="outlined"
             size="small"

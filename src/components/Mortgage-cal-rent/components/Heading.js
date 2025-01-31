@@ -1,6 +1,6 @@
 "use client";
 
-import { Breadcrumbs, Typography, Link as MuiLink, Box } from "@mui/material";
+import { Breadcrumbs, Typography, Link as MuiLink, Box, Container } from "@mui/material";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
@@ -61,23 +61,24 @@ function Heading() {
   });
 
   return (
-    <Box 
+    <Container maxWidth="xl" sx={{px: {xs: 3, lg: 8}}}>
+      <Box 
       sx={{ 
         minWidth: '51px',
-        padding: {
-          xs: '16px 12px',
-          sm: '20px 16px',
-          md: '24px 20px',
-          lg: '32px 24px'
-        },
+        // padding: {
+        //   xs: '16px 12px',
+        //   sm: '20px 16px',
+        //   md: '24px 20px',
+        //   lg: '32px 24px'
+        // },
         display: 'flex',
         flexDirection: 'column',
-        gap: {
-          xs: '12px',
-          sm: '16px',
-          md: '20px',
-          lg: '24px'
-        }
+        // gap: {
+        //   xs: '12px',
+        //   sm: '16px',
+        //   md: '20px',
+        //   lg: '24px'
+        // }
       }}
     >
       <Breadcrumbs 
@@ -158,6 +159,7 @@ function Heading() {
         Rent Affordability Calculators
       </Typography>
     </Box>
+    </Container>
   );
 }
 

@@ -42,14 +42,14 @@ function Heading() {
     .replace(/\b\w/g, (char) => char.toUpperCase()); // Capitalize each word
 
   return (
-    <Box sx={{ mt: 4, px: 1 }}>
+    <Box sx={{ my: 4, px: 1 }}>
       <Breadcrumbs aria-label="breadcrumb" separator={<ArrowForwardIosIcon sx={{ fontSize: "10px" }} />}>
         <MuiLink component={Link} href="/" underline="hover" color="inherit" sx={{ fontWeight: 400, fontSize: "17.23px" }}>
           Home
         </MuiLink>
         {breadcrumbLinks}
       </Breadcrumbs>
-      <Typography sx={{ mt: 2, fontWeight: 700, fontSize: "36px", color: "#484848" }}>
+      <Typography sx={{ fontWeight: 700, fontSize: "36px", color: "#484848" }}>
         {lastSegmentDisplay}
       </Typography>
     </Box>

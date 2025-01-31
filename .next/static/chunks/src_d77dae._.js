@@ -1714,7 +1714,7 @@ const FeatureProperties = ()=>{
                                                                     alignItems: "center",
                                                                     gap: {
                                                                         xs: 1,
-                                                                        md: 4
+                                                                        md: 3
                                                                     }
                                                                 },
                                                                 children: [
@@ -1803,11 +1803,9 @@ const FeatureProperties = ()=>{
                                                                                     }
                                                                                 },
                                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$FavoriteBorder$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                                                    // fontSize={isSmallScreen? "small" : "medium"}
                                                                                     sx: {
-                                                                                        fontSize: {
-                                                                                            xs: "small",
-                                                                                            md: "medium"
-                                                                                        }
+                                                                                        fontSize: isSmallScreen ? "16px" : "24px"
                                                                                     }
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/Home/compoments/FeatureProperties.js",
@@ -1836,12 +1834,12 @@ const FeatureProperties = ()=>{
                                                                                     }
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/Home/compoments/FeatureProperties.js",
-                                                                                    lineNumber: 448,
+                                                                                    lineNumber: 449,
                                                                                     columnNumber: 29
                                                                                 }, this)
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/Home/compoments/FeatureProperties.js",
-                                                                                lineNumber: 436,
+                                                                                lineNumber: 437,
                                                                                 columnNumber: 27
                                                                             }, this)
                                                                         ]
@@ -1916,12 +1914,12 @@ const FeatureProperties = ()=>{
                                 children: "View More"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Home/compoments/FeatureProperties.js",
-                                lineNumber: 471,
+                                lineNumber: 472,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/Home/compoments/FeatureProperties.js",
-                            lineNumber: 464,
+                            lineNumber: 465,
                             columnNumber: 11
                         }, this)
                     ]
@@ -2255,6 +2253,7 @@ const WhyUs = ()=>{
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
             sx: {
                 padding: {
+                    xs: 1,
                     md: 0.5,
                     lg: 6
                 },
@@ -3455,7 +3454,7 @@ const PopularBoston = ()=>{
                         flexWrap: "wrap",
                         alignItems: "baseline",
                         px: {
-                            xs: 0,
+                            xs: 2,
                             sm: 4,
                             lg: 2
                         }
@@ -3724,7 +3723,7 @@ const ContactUs = ()=>{
             px: {
                 lg: 8,
                 sm: 3,
-                xs: 2
+                xs: 3
             },
             mt: {
                 xs: "20px",
@@ -4087,7 +4086,7 @@ const ContactUs = ()=>{
                                             "By checking this box I consent to receiving text messages from Colonial Realty. Reply STOP to opt-out.",
                                             " ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Link$2f$Link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Link$3e$__["Link"], {
-                                                href: "#",
+                                                href: "/terms-&-conditions",
                                                 sx: {
                                                     fontSize: {
                                                         xs: "12px",
@@ -4110,7 +4109,7 @@ const ContactUs = ()=>{
                                             "|",
                                             " ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Link$2f$Link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Link$3e$__["Link"], {
-                                                href: "#",
+                                                href: "/terms-&-conditions",
                                                 sx: {
                                                     fontSize: {
                                                         xs: "12px",

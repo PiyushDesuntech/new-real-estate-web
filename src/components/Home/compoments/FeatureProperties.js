@@ -385,7 +385,7 @@ const FeatureProperties = () => {
                           display: "flex",
                           // justifyContent: "space-between",
                           alignItems: "center",
-                          gap: { xs: 1, md: 4 },
+                          gap: { xs: 1, md: 3 },
                         }}
                       >
                         <Box sx={{ display: "flex", gap: { xs: 1, md: 2 } }}>
@@ -430,7 +430,8 @@ const FeatureProperties = () => {
                             }}
                           >
                             <FavoriteBorderIcon
-                              sx={{ fontSize: { xs: "small", md: "medium" } }}
+                            // fontSize={isSmallScreen? "small" : "medium"}
+                              sx={{ fontSize: isSmallScreen? "16px" : "24px" }}
                             />
                           </IconButton>
                           <IconButton

@@ -2017,16 +2017,22 @@ const NavbarIndex = ()=>{
                                                 md: 2,
                                                 lg: "25px"
                                             },
-                                            py: "10px",
+                                            py: {
+                                                xs: "5px",
+                                                lg: "10px"
+                                            },
                                             // mr: 3,
                                             width: "fit-content",
                                             whiteSpace: "nowrap",
                                             fontSize: {
                                                 xs: "12px",
-                                                md: "16px"
+                                                lg: "16px"
                                             },
                                             fontWeight: 500,
-                                            height: "50px"
+                                            height: {
+                                                xs: "30px",
+                                                lg: "50px"
+                                            }
                                         },
                                         children: "Login/Register"
                                     }, void 0, false, {
@@ -2289,7 +2295,8 @@ const FooterIndex = ()=>{
                     maxWidth: "xl",
                     sx: {
                         px: {
-                            lg: 8
+                            lg: 8,
+                            xs: 3
                         },
                         pb: 6
                     },
@@ -2882,7 +2889,8 @@ const FooterIndex = ()=>{
                     maxWidth: "xl",
                     sx: {
                         px: {
-                            lg: 8
+                            lg: 8,
+                            xs: 3
                         }
                     },
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {

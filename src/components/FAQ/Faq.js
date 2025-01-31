@@ -7,8 +7,8 @@ import JoinUs from "../Home/compoments/JoinUs";
 
 export default function Faq() {
   return (
-    <Box sx={{backgroundColor: "#F7F7F7"}}>
-      <Container maxWidth="xl" sx={{ minHeight: "100vh", pb: 10, px: {xs: 1, md: 4 } }}>
+    <Box>
+      <Container maxWidth="xl" sx={{ minHeight: "100vh", pb: 10, px: {xs: 3, md: 4 } }}>
         <Heading />
         <Frequently_asked_ques />
         <Box sx={{px: {xs: 0, md: 4}}}>

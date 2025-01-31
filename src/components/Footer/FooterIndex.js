@@ -28,7 +28,7 @@ const FooterIndex = () => {
           py: 2,
         }}
       >
-        <Container maxWidth="xl" sx={{ px: { lg: 8 }, pb: 6 }}>
+        <Container maxWidth="xl" sx={{ px: { lg: 8, xs: 3 }, pb: 6 }}>
           <Grid container spacing={4}>
             {/* Logo and About */}
             <Grid item xs={12} sm={6} md={3.5}>
@@ -277,7 +277,7 @@ const FooterIndex = () => {
         </Container>
       </Box>
       <Box sx={{ background: "#323C52" }}>
-        <Container maxWidth="xl" sx={{ px: { lg: 8 } }}>
+        <Container maxWidth="xl" sx={{ px: { lg: 8, xs: 3 } }}>
           <Box
             sx={{
               pt: 5,

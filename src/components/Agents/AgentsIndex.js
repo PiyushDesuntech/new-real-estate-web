@@ -1,5 +1,5 @@
 "use client"
-import { Box, Container, IconButton } from "@mui/material";
+import { Box, Container, IconButton, } from "@mui/material";
 import React, { useState } from "react";
 import Heading from "./components/Heading";
 import GridViewIcon from "@mui/icons-material/GridView";
@@ -11,12 +11,12 @@ import AgentListView from "./components/AgentListView";
 export default function AgentsIndex() {
     const [viewMode, setViewMode] = useState("grid");
   return (
-    <Container maxWidth="xl" sx={{ px: { lg: 7, xs: 1 } }}>
+    <Container maxWidth="xl" sx={{ px: { lg: 7, xs: 2 } }}>
       <Heading />
-      <Box
+      {/* <Box
         sx={{
           width: "100%",
-          display: "flex",
+          display: {xs: "none", md: "flex"},
           gap: {xs: 1, md: 2},
           justifyContent: "flex-end",
           mt: -7,
@@ -61,12 +61,12 @@ export default function AgentsIndex() {
         >
           <FormatListBulletedIcon />
         </IconButton>
-      </Box>
-      {viewMode === "grid" ? (
-            <AgentsGridView  view="grid" />
-          ) : (
-            <AgentListView  view="list" />
-          )}
+      </Box> */}
+      {/* {viewMode === "grid" ? ( */}
+            <AgentsGridView  />
+          {/* ) : ( */}
+            {/* <AgentListView  view="list" /> */}
+          {/* )} */}
           
     </Container>
   );

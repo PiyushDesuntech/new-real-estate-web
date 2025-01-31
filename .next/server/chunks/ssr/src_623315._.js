@@ -128,6 +128,8 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/navigation.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$useTheme$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__useTheme$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/styles/useTheme.js [app-ssr] (ecmascript) <export default as useTheme>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$useMediaQuery$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__useMediaQuery$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/useMediaQuery/index.js [app-ssr] (ecmascript) <export default as useMediaQuery>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Box/Box.js [app-ssr] (ecmascript) <export default as Box>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Grid/Grid.js [app-ssr] (ecmascript) <export default as Grid>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Chip$2f$Chip$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Chip$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Chip/Chip.js [app-ssr] (ecmascript) <export default as Chip>");
@@ -152,6 +154,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 const PropertyGridView = ({ properties })=>{
     const [currentPage, setCurrentPage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(1);
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
+    const theme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$useTheme$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__useTheme$3e$__["useTheme"])();
+    const isSmallScreen = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$useMediaQuery$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__useMediaQuery$3e$__["useMediaQuery"])(theme.breakpoints.down("sm"));
     const handlePageChange = (event, page)=>{
         setCurrentPage(page);
     };
@@ -217,7 +221,7 @@ const PropertyGridView = ({ properties })=>{
                                                     xs: "100%",
                                                     sm: "100%"
                                                 },
-                                                backgroundImage: `url(${property.image})`,
+                                                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${property.image})`,
                                                 borderRadius: 2,
                                                 p: 1,
                                                 display: "flex",
@@ -240,11 +244,15 @@ const PropertyGridView = ({ properties })=>{
                                                                 color: "#fff",
                                                                 width: "fit-content",
                                                                 borderRadius: 1,
-                                                                fontSize: "14px"
+                                                                fontSize: "14px",
+                                                                "&:hover": {
+                                                                    background: "#E0D8C3",
+                                                                    color: "#4D4D4D"
+                                                                }
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                                            lineNumber: 93,
+                                                            lineNumber: 97,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Chip$2f$Chip$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Chip$3e$__["Chip"], {
@@ -254,17 +262,21 @@ const PropertyGridView = ({ properties })=>{
                                                                 color: "#4D4D4D",
                                                                 width: "fit-content",
                                                                 borderRadius: 1,
-                                                                fontSize: "14px"
+                                                                fontSize: "14px",
+                                                                "&:hover": {
+                                                                    background: "#3E4C66",
+                                                                    color: "#fff"
+                                                                }
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                                            lineNumber: 103,
+                                                            lineNumber: 111,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                                    lineNumber: 92,
+                                                    lineNumber: 96,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -291,12 +303,12 @@ const PropertyGridView = ({ properties })=>{
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                                                lineNumber: 118,
+                                                                lineNumber: 130,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                                            lineNumber: 117,
+                                                            lineNumber: 129,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -317,19 +329,16 @@ const PropertyGridView = ({ properties })=>{
                                                                     },
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$FavoriteBorder$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                                         sx: {
-                                                                            fontSize: {
-                                                                                xs: "small",
-                                                                                sm: "medium"
-                                                                            }
+                                                                            fontSize: isSmallScreen ? "16px" : "24px"
                                                                         }
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                                                        lineNumber: 141,
+                                                                        lineNumber: 153,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                                                    lineNumber: 130,
+                                                                    lineNumber: 142,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$IconButton$2f$IconButton$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconButton$3e$__["IconButton"], {
@@ -344,19 +353,16 @@ const PropertyGridView = ({ properties })=>{
                                                                     },
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$SyncAltOutlined$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                                         sx: {
-                                                                            fontSize: {
-                                                                                xs: "small",
-                                                                                sm: "medium"
-                                                                            }
+                                                                            fontSize: isSmallScreen ? "16px" : "24px"
                                                                         }
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                                                        lineNumber: 154,
+                                                                        lineNumber: 166,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                                                    lineNumber: 143,
+                                                                    lineNumber: 155,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$IconButton$2f$IconButton$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconButton$3e$__["IconButton"], {
@@ -379,35 +385,35 @@ const PropertyGridView = ({ properties })=>{
                                                                         }
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                                                        lineNumber: 167,
+                                                                        lineNumber: 179,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                                                    lineNumber: 156,
+                                                                    lineNumber: 168,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                                            lineNumber: 129,
+                                                            lineNumber: 141,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                                    lineNumber: 114,
+                                                    lineNumber: 126,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                            lineNumber: 78,
+                                            lineNumber: 82,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                                             sx: {
-                                                padding: 2,
+                                                pt: 2,
                                                 display: "flex",
                                                 flexDirection: "column",
                                                 justifyContent: "center"
@@ -422,27 +428,29 @@ const PropertyGridView = ({ properties })=>{
                                                     children: property.type
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                                    lineNumber: 182,
+                                                    lineNumber: 194,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                                     sx: {
-                                                        fontWeight: 600,
+                                                        fontWeight: 700,
                                                         fontSize: {
                                                             xs: "20px",
                                                             md: "26px",
                                                             lg: "30px"
                                                         },
-                                                        color: "#484848"
+                                                        color: "#484848",
+                                                        "&:hover": {
+                                                            color: "#B3A87A"
+                                                        }
                                                     },
                                                     children: property.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                                    lineNumber: 188,
+                                                    lineNumber: 200,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                                                    variant: "body2",
                                                     sx: {
                                                         display: "flex",
                                                         alignItems: "center",
@@ -451,8 +459,9 @@ const PropertyGridView = ({ properties })=>{
                                                         fontSize: {
                                                             xs: "16px",
                                                             md: "18px",
-                                                            lg: "21px"
-                                                        }
+                                                            lg: "20px"
+                                                        },
+                                                        fontWeight: 400
                                                     },
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$PlaceOutlined$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -462,14 +471,14 @@ const PropertyGridView = ({ properties })=>{
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                                            lineNumber: 203,
+                                                            lineNumber: 215,
                                                             columnNumber: 21
                                                         }, this),
                                                         property.location
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                                    lineNumber: 193,
+                                                    lineNumber: 205,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -485,7 +494,7 @@ const PropertyGridView = ({ properties })=>{
                                                                 fontSize: {
                                                                     xs: "16px",
                                                                     md: "18px",
-                                                                    lg: "21px"
+                                                                    lg: "20px"
                                                                 },
                                                                 fontWeight: 400,
                                                                 color: "#484848"
@@ -496,7 +505,7 @@ const PropertyGridView = ({ properties })=>{
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                                            lineNumber: 213,
+                                                            lineNumber: 225,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -505,7 +514,7 @@ const PropertyGridView = ({ properties })=>{
                                                                 fontSize: {
                                                                     xs: "16px",
                                                                     md: "18px",
-                                                                    lg: "21px"
+                                                                    lg: "20px"
                                                                 },
                                                                 fontWeight: 400,
                                                                 color: "#484848"
@@ -516,7 +525,7 @@ const PropertyGridView = ({ properties })=>{
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                                            lineNumber: 223,
+                                                            lineNumber: 235,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -525,7 +534,7 @@ const PropertyGridView = ({ properties })=>{
                                                                 fontSize: {
                                                                     xs: "16px",
                                                                     md: "18px",
-                                                                    lg: "21px"
+                                                                    lg: "20px"
                                                                 },
                                                                 fontWeight: 400,
                                                                 color: "#484848"
@@ -536,30 +545,30 @@ const PropertyGridView = ({ properties })=>{
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                                            lineNumber: 233,
+                                                            lineNumber: 245,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                                    lineNumber: 206,
+                                                    lineNumber: 218,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                            lineNumber: 174,
+                                            lineNumber: 186,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                    lineNumber: 71,
+                                    lineNumber: 75,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Divider$2f$Divider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Divider$3e$__["Divider"], {}, void 0, false, {
                                     fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                    lineNumber: 246,
+                                    lineNumber: 258,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -582,12 +591,22 @@ const PropertyGridView = ({ properties })=>{
                                                     src: property.avatar,
                                                     alt: property.name,
                                                     sx: {
-                                                        width: 63,
-                                                        height: 63
+                                                        width: {
+                                                            xs: 40,
+                                                            sm: 50,
+                                                            md: 55,
+                                                            lg: 63
+                                                        },
+                                                        height: {
+                                                            xs: 40,
+                                                            sm: 50,
+                                                            md: 55,
+                                                            lg: 63
+                                                        }
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                                    lineNumber: 259,
+                                                    lineNumber: 271,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -602,13 +621,13 @@ const PropertyGridView = ({ properties })=>{
                                                     children: property.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                                    lineNumber: 264,
+                                                    lineNumber: 276,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                            lineNumber: 258,
+                                            lineNumber: 270,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -627,29 +646,29 @@ const PropertyGridView = ({ properties })=>{
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                            lineNumber: 273,
+                                            lineNumber: 285,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                                    lineNumber: 247,
+                                    lineNumber: 259,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                            lineNumber: 52,
+                            lineNumber: 56,
                             columnNumber: 13
                         }, this)
                     }, property.id, false, {
                         fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                        lineNumber: 43,
+                        lineNumber: 47,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                lineNumber: 41,
+                lineNumber: 45,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -686,20 +705,20 @@ const PropertyGridView = ({ properties })=>{
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                        lineNumber: 288,
+                        lineNumber: 300,
                         columnNumber: 9
                     }, this),
                     " "
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-                lineNumber: 287,
+                lineNumber: 299,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/PropertyList/components/PropertyGridView.js",
-        lineNumber: 40,
+        lineNumber: 44,
         columnNumber: 5
     }, this);
 };
@@ -812,7 +831,7 @@ const PropertyListView = ({ properties })=>{
                                                     xs: "100%",
                                                     md: "304px"
                                                 },
-                                                backgroundImage: `url(${property.image})`,
+                                                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${property.image})`,
                                                 borderRadius: "12px",
                                                 p: 1,
                                                 display: "flex",
@@ -833,7 +852,11 @@ const PropertyListView = ({ properties })=>{
                                                         color: "#fff",
                                                         width: "fit-content",
                                                         borderRadius: 1,
-                                                        fontSize: "14px"
+                                                        fontSize: "14px",
+                                                        "&:hover": {
+                                                            background: "#E0D8C3",
+                                                            color: "#4D4D4D"
+                                                        }
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
@@ -864,7 +887,7 @@ const PropertyListView = ({ properties })=>{
                                                     sx: {
                                                         display: "flex",
                                                         justifyContent: "space-between",
-                                                        flexWrap: "wrap-reverse",
+                                                        // flexWrap: "wrap-reverse",
                                                         alignItems: "center"
                                                     },
                                                     children: [
@@ -873,14 +896,14 @@ const PropertyListView = ({ properties })=>{
                                                                 fontWeight: 600,
                                                                 fontSize: {
                                                                     xs: "24px",
-                                                                    sm: "30px"
+                                                                    lg: "30px"
                                                                 },
                                                                 color: "#484848"
                                                             },
                                                             children: property.title
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                                            lineNumber: 136,
+                                                            lineNumber: 140,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -907,12 +930,12 @@ const PropertyListView = ({ properties })=>{
                                                                     },
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$FavoriteBorder$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                                         fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                                                        lineNumber: 165,
+                                                                        lineNumber: 169,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                                                    lineNumber: 152,
+                                                                    lineNumber: 156,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$IconButton$2f$IconButton$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconButton$3e$__["IconButton"], {
@@ -929,12 +952,12 @@ const PropertyListView = ({ properties })=>{
                                                                     },
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$SyncAltOutlined$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                                         fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                                                        lineNumber: 180,
+                                                                        lineNumber: 184,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                                                    lineNumber: 167,
+                                                                    lineNumber: 171,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$IconButton$2f$IconButton$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconButton$3e$__["IconButton"], {
@@ -955,24 +978,24 @@ const PropertyListView = ({ properties })=>{
                                                                         }
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                                                        lineNumber: 195,
+                                                                        lineNumber: 199,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                                                    lineNumber: 182,
+                                                                    lineNumber: 186,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                                            lineNumber: 145,
+                                                            lineNumber: 149,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                                    lineNumber: 128,
+                                                    lineNumber: 132,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1019,7 +1042,7 @@ const PropertyListView = ({ properties })=>{
                                                                     }
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                                                    lineNumber: 223,
+                                                                    lineNumber: 227,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 " Beds: ",
@@ -1027,7 +1050,7 @@ const PropertyListView = ({ properties })=>{
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                                            lineNumber: 213,
+                                                            lineNumber: 217,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Divider$2f$Divider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Divider$3e$__["Divider"], {
@@ -1043,7 +1066,7 @@ const PropertyListView = ({ properties })=>{
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                                            lineNumber: 226,
+                                                            lineNumber: 230,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -1053,7 +1076,7 @@ const PropertyListView = ({ properties })=>{
                                                                 alignItems: "center",
                                                                 fontSize: {
                                                                     xs: "18px",
-                                                                    sm: "21px"
+                                                                    lg: "21px"
                                                                 },
                                                                 fontWeight: 400,
                                                                 color: "#484848"
@@ -1065,7 +1088,7 @@ const PropertyListView = ({ properties })=>{
                                                                     }
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                                                    lineNumber: 246,
+                                                                    lineNumber: 250,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 " Baths:",
@@ -1074,7 +1097,7 @@ const PropertyListView = ({ properties })=>{
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                                            lineNumber: 236,
+                                                            lineNumber: 240,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Divider$2f$Divider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Divider$3e$__["Divider"], {
@@ -1090,17 +1113,16 @@ const PropertyListView = ({ properties })=>{
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                                            lineNumber: 250,
+                                                            lineNumber: 254,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                                                            variant: "body2",
                                                             sx: {
                                                                 display: "flex",
                                                                 alignItems: "center",
                                                                 fontSize: {
                                                                     xs: "18px",
-                                                                    sm: "21px"
+                                                                    lg: "21px"
                                                                 },
                                                                 fontWeight: 400,
                                                                 color: "#484848"
@@ -1112,7 +1134,7 @@ const PropertyListView = ({ properties })=>{
                                                                     }
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                                                    lineNumber: 270,
+                                                                    lineNumber: 273,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 " Sqft:",
@@ -1121,24 +1143,23 @@ const PropertyListView = ({ properties })=>{
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                                            lineNumber: 260,
+                                                            lineNumber: 264,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                                    lineNumber: 200,
+                                                    lineNumber: 204,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                                                    variant: "body2",
                                                     sx: {
                                                         display: "flex",
                                                         alignItems: "center",
                                                         color: "#484848",
                                                         fontSize: {
                                                             xs: "14px",
-                                                            sm: "21px"
+                                                            lg: "21px"
                                                         }
                                                     },
                                                     children: [
@@ -1149,35 +1170,34 @@ const PropertyListView = ({ properties })=>{
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                                            lineNumber: 284,
+                                                            lineNumber: 286,
                                                             columnNumber: 21
                                                         }, this),
                                                         property.location
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                                    lineNumber: 275,
+                                                    lineNumber: 278,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                                                    variant: "body2",
                                                     sx: {
                                                         color: "#484848",
                                                         fontSize: {
                                                             xs: "14px",
-                                                            sm: "21px"
+                                                            lg: "21px"
                                                         }
                                                     },
                                                     children: "2BHK Apartment available for sale at garia please contact for more details."
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                                    lineNumber: 287,
+                                                    lineNumber: 289,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                            lineNumber: 118,
+                                            lineNumber: 122,
                                             columnNumber: 17
                                         }, this)
                                     ]
@@ -1229,7 +1249,7 @@ const PropertyListView = ({ properties })=>{
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                            lineNumber: 315,
+                                            lineNumber: 316,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1263,7 +1283,7 @@ const PropertyListView = ({ properties })=>{
                                                     children: "Know More"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                                    lineNumber: 328,
+                                                    lineNumber: 329,
                                                     columnNumber: 16
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
@@ -1289,19 +1309,19 @@ const PropertyListView = ({ properties })=>{
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                                    lineNumber: 347,
+                                                    lineNumber: 348,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                            lineNumber: 325,
+                                            lineNumber: 326,
                                             columnNumber: 16
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                                    lineNumber: 299,
+                                    lineNumber: 300,
                                     columnNumber: 15
                                 }, this)
                             ]
@@ -1354,14 +1374,14 @@ const PropertyListView = ({ properties })=>{
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                        lineNumber: 377,
+                        lineNumber: 378,
                         columnNumber: 9
                     }, this),
                     " "
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/PropertyList/components/PropertyListView.js",
-                lineNumber: 376,
+                lineNumber: 377,
                 columnNumber: 7
             }, this)
         ]
@@ -1396,8 +1416,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$IconButton$2f$IconButton$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconButton$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/IconButton/IconButton.js [app-ssr] (ecmascript) <export default as IconButton>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$GridView$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/icons-material/esm/GridView.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$FormatListBulleted$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/icons-material/esm/FormatListBulleted.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Button/Button.js [app-ssr] (ecmascript) <export default as Button>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$FavoriteBorder$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/icons-material/esm/FavoriteBorder.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$FormControl$2f$FormControl$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__FormControl$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/FormControl/FormControl.js [app-ssr] (ecmascript) <export default as FormControl>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Select$2f$Select$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Select$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Select/Select.js [app-ssr] (ecmascript) <export default as Select>");
 "use client";
@@ -1491,8 +1509,9 @@ function PropertyListIndex() {
             maxWidth: "xl",
             sx: {
                 px: {
-                    lg: 7,
-                    xs: 1
+                    lg: 6,
+                    md: 1,
+                    xs: 2
                 }
             },
             children: [
@@ -1524,7 +1543,14 @@ function PropertyListIndex() {
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                                variant: "body1",
+                                sx: {
+                                    fontSize: {
+                                        xs: "14px",
+                                        md: "17px"
+                                    },
+                                    color: "#616161",
+                                    fontWeight: 500
+                                },
                                 children: [
                                     "Showing 1 – ",
                                     properties.length,
@@ -1547,7 +1573,10 @@ function PropertyListIndex() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                                         sx: {
-                                            display: "flex",
+                                            display: {
+                                                xs: "none",
+                                                md: "flex"
+                                            },
                                             gap: 2,
                                             alignItems: "center"
                                         },
@@ -1599,28 +1628,6 @@ function PropertyListIndex() {
                                                 fileName: "[project]/src/components/PropertyList/PropertyListIndex.js",
                                                 lineNumber: 100,
                                                 columnNumber: 11
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
-                                                startIcon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$FavoriteBorder$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                                                    fileName: "[project]/src/components/PropertyList/PropertyListIndex.js",
-                                                    lineNumber: 120,
-                                                    columnNumber: 26
-                                                }, void 0),
-                                                sx: {
-                                                    textTransform: "none",
-                                                    borderRadius: "8px",
-                                                    color: "#4D4D4D",
-                                                    "&:hover": {
-                                                        background: "#E3E3E3",
-                                                        color: "#4D4D4D"
-                                                    },
-                                                    height: "42px"
-                                                },
-                                                children: "Save Search"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/PropertyList/PropertyListIndex.js",
-                                                lineNumber: 119,
-                                                columnNumber: 13
                                             }, this)
                                         ]
                                     }, void 0, true, {
@@ -1629,6 +1636,14 @@ function PropertyListIndex() {
                                         columnNumber: 11
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
+                                        sx: {
+                                            fontSize: {
+                                                xs: "14px",
+                                                md: "17px"
+                                            },
+                                            color: "#616161",
+                                            fontWeight: 500
+                                        },
                                         children: "Sort By"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/PropertyList/PropertyListIndex.js",

@@ -182,7 +182,7 @@ const PropertyListing = () => {
     },
   ];
 
-  const itemsPerPage = 9;
+  const itemsPerPage = 8;
   const totalPages = Math.ceil(properties.length / itemsPerPage);
 
   // Slice properties for the current page
@@ -274,7 +274,7 @@ const PropertyListing = () => {
                   sx={{
                     height: { xs: "220px", sm: "303px" },
                     width: { xs: "100%", sm: "328px" },
-                    backgroundImage: `url(${property.image})`,
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${property.image})`,
                     borderRadius: 2,
                     p: 1,
                     display: "flex",
@@ -291,6 +291,10 @@ const PropertyListing = () => {
                         width: "fit-content",
                         borderRadius: 1,
                         fontSize: "14px",
+                        "&:hover": {
+                            background: "#E0D8C3",
+                            color: "#4D4D4D",
+                          },
                       }}
                     />
                   </Box>
@@ -365,7 +369,7 @@ const PropertyListing = () => {
                     {property.type}
                   </Typography>
                   <Typography
-                    sx={{ fontWeight: 600, fontSize: {xs: "16px", md: "18px",lg: "22px"}, color: "#484848" }}
+                    sx={{ fontWeight: 600, fontSize: {xs: "16px", md: "18px",lg: "22px"}, color: "#484848", "&:hover": {color: "#B3A87A"} }}
                   >
                     {property.title}
                   </Typography>
