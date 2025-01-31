@@ -35,13 +35,14 @@ export default function Reviews() {
       }
     }}>
       <Box sx={{
-        ml: { xs: -2, sm: -4, md: -2.5 },
+        ml: { xs: -2, sm: -4, md: -2 },
         '@media (max-width: 600px)': {
           ml: 0,
         },
         '@media (min-width: 601px) and (max-width: 960px)': {
           ml: 0,
-        }
+        },
+        mt: -6.5,  // Adjust the margin-top to move the heading upwards
       }}>
         <Heading />
       </Box>
@@ -95,7 +96,7 @@ export default function Reviews() {
         <Box sx={{
           display: 'flex',
           justifyContent: 'center',
-          mt: { xs: -2, sm: -4, md: -80 },
+          mt: { xs: -2, sm: -4, md: -78 },
           pl: { xs: 0, sm: 2, md: 4 },
           '@media (max-width: 600px)': {
             mt: '16px',

@@ -21,7 +21,7 @@ const PropertyAgentCard = () => {
           md: 400
         },
         margin: "auto",
-        height: { xs: "auto", sm: "37%" }
+        //height: { xs: "auto", sm: "37%" }
       }}
     >
       <Typography

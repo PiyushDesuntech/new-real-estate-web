@@ -25,18 +25,23 @@ var _s = __turbopack_refresh__.signature();
 ;
 function Heading() {
     _s();
-    const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
-    const pathSegments = pathname.split("/").filter(Boolean);
+    const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])(); // Get the current path
+    const pathSegments = pathname.split("/").filter(Boolean); // Split and filter empty segments
     const breadcrumbLinks = pathSegments.map((segment, index)=>{
         const isLast = index === pathSegments.length - 1;
         const routePath = "/" + pathSegments.slice(0, index + 1).join("/");
+        // Capitalize the segment for display
         const displayName = segment.replace(/-/g, " ").replace(/\b\w/g, (char)=>char.toUpperCase());
         return isLast ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-            color: "text.primary",
+            sx: {
+                color: "#B3A87A",
+                fontWeight: 400,
+                fontSize: "21.67px"
+            },
             children: displayName
         }, routePath, false, {
             fileName: "[project]/src/components/Reviews/components/Heading.js",
-            lineNumber: 21,
+            lineNumber: 22,
             columnNumber: 7
         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Link$2f$Link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Link$3e$__["Link"], {
             component: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"],
@@ -46,7 +51,7 @@ function Heading() {
             children: displayName
         }, routePath, false, {
             fileName: "[project]/src/components/Reviews/components/Heading.js",
-            lineNumber: 25,
+            lineNumber: 26,
             columnNumber: 7
         }, this);
     });
@@ -67,7 +72,7 @@ function Heading() {
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/Reviews/components/Heading.js",
-                    lineNumber: 39,
+                    lineNumber: 40,
                     columnNumber: 54
                 }, void 0),
                 children: [
@@ -76,17 +81,21 @@ function Heading() {
                         href: "/",
                         underline: "hover",
                         color: "inherit",
+                        sx: {
+                            fontWeight: 400,
+                            fontSize: "21.67px"
+                        },
                         children: "Home"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Reviews/components/Heading.js",
-                        lineNumber: 40,
+                        lineNumber: 41,
                         columnNumber: 7
                     }, this),
                     breadcrumbLinks
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Reviews/components/Heading.js",
-                lineNumber: 39,
+                lineNumber: 40,
                 columnNumber: 6
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -98,13 +107,13 @@ function Heading() {
                 children: "Write A Review"
             }, void 0, false, {
                 fileName: "[project]/src/components/Reviews/components/Heading.js",
-                lineNumber: 45,
+                lineNumber: 46,
                 columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Reviews/components/Heading.js",
-        lineNumber: 38,
+        lineNumber: 39,
         columnNumber: 4
     }, this);
 }
@@ -160,11 +169,7 @@ const PropertyAgentCard = ()=>{
                 sm: 350,
                 md: 400
             },
-            margin: "auto",
-            height: {
-                xs: "auto",
-                sm: "37%"
-            }
+            margin: "auto"
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -1287,18 +1292,19 @@ function Reviews() {
                     ml: {
                         xs: -2,
                         sm: -4,
-                        md: -2.5
+                        md: -2
                     },
                     '@media (max-width: 600px)': {
                         ml: 0
                     },
                     '@media (min-width: 601px) and (max-width: 960px)': {
                         ml: 0
-                    }
+                    },
+                    mt: -6.5
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Reviews$2f$components$2f$Heading$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/components/Reviews/reviews.js",
-                    lineNumber: 46,
+                    lineNumber: 47,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
@@ -1383,12 +1389,12 @@ function Reviews() {
                         },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Reviews$2f$components$2f$ReviewForm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/src/components/Reviews/reviews.js",
-                            lineNumber: 93,
+                            lineNumber: 94,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Reviews/reviews.js",
-                        lineNumber: 67,
+                        lineNumber: 68,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1398,7 +1404,7 @@ function Reviews() {
                             mt: {
                                 xs: -2,
                                 sm: -4,
-                                md: -80
+                                md: -78
                             },
                             pl: {
                                 xs: 0,
@@ -1418,18 +1424,18 @@ function Reviews() {
                         },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Reviews$2f$components$2f$PropertyAgentCard$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/src/components/Reviews/reviews.js",
-                            lineNumber: 111,
+                            lineNumber: 112,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Reviews/reviews.js",
-                        lineNumber: 95,
+                        lineNumber: 96,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Reviews/reviews.js",
-                lineNumber: 48,
+                lineNumber: 49,
                 columnNumber: 7
             }, this)
         ]
