@@ -26,10 +26,10 @@ const Filter = ({ filters, setFilters }) => {
   };
 
   return (
-    <Box sx={{ mb: 3 }}>
+    <Box >
       <Grid container spacing={1}>
         {/* Individual Filters */}
-        <Grid item xs={6} sm={6} md={1}>
+        <Grid item xs={6} sm={6} md={1.2}>
           <FormControl fullWidth size="small">
             <InputLabel
               sx={{
@@ -71,7 +71,7 @@ const Filter = ({ filters, setFilters }) => {
           </FormControl>
         </Grid>
 
-        <Grid item xs={6} sm={6} md={1}>
+        <Grid item xs={6} sm={6} md={1.2}>
           <FormControl fullWidth size="small">
             <InputLabel  sx={{
                 color: "#222222", 
@@ -110,7 +110,7 @@ const Filter = ({ filters, setFilters }) => {
           </FormControl>
         </Grid>
 
-        <Grid item xs={6} sm={6} md={1}>
+        <Grid item xs={6} sm={6} md={1.2}>
           <FormControl fullWidth size="small">
             <InputLabel  sx={{
                 color: "#222222", 
@@ -149,7 +149,7 @@ const Filter = ({ filters, setFilters }) => {
           </FormControl>
         </Grid>
 
-        <Grid item xs={6} sm={6} md={1}>
+        <Grid item xs={6} sm={6} md={1.2}>
           <FormControl fullWidth size="small">
             <InputLabel  sx={{
                 color: "#222222", 
@@ -189,7 +189,7 @@ const Filter = ({ filters, setFilters }) => {
         </Grid>
 
         {/* All Filters Button */}
-        <Grid item xs={6} sm={6} md={1}>
+        {/* <Grid item xs={6} sm={6} md={1.2}>
           <Button
             // onClick={() => setFilterDialogOpen(true)}
             fullWidth
@@ -216,8 +216,8 @@ const Filter = ({ filters, setFilters }) => {
           >
             All Filters
           </Button>
-        </Grid>
-        <Grid item xs={6} sm={6} md={1}>
+        </Grid> */}
+        <Grid item xs={12} sm={6} md={1.2}>
           <Button
             fullWidth
             variant="contained"
@@ -237,13 +237,13 @@ const Filter = ({ filters, setFilters }) => {
               whiteSpace: "nowrap",
               fontSize: {xs: "14px", md: "12px", lg: "16px"},
               fontWeight: 500,
-              py: {xs: 1, md: 1, lg: 0.6}
+              py: {xs: 1, md: 1, lg: 0.8}
             }}
           >
             Save Search
           </Button>
         </Grid>
-        <Grid item xs={12} sm={12} md={6} sx={{mb: {xs: 2, md: 0}, pl: {xs: 0, md: 1}}}>
+        <Grid item xs={12} sm={6} md={6} sx={{mb: {xs: 2, md: 0}, pl: {xs: 0, md: 1}}}>
           <TextField
             size="small"
             label="Search by Address"

@@ -3,7 +3,7 @@ import React from "react";
 
 export default function MapView({ locationSrc }) {
   return (
-    <Box sx={{ height: {xs: 300, md: "100%"}, width: "100%" }}>
+    <Box sx={{ height: {xs: 200, md: "100%"}, width: "100%" }}>
       <Box
         sx={{
         //   boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)", 
