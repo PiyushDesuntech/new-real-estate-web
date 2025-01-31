@@ -2,7 +2,7 @@
 import React from "react";
 import { Box } from "@mui/material";
 import Heading from "./components/Heading";
-import MostLikedReviews from "./components/MostLikedReviews";
+import PropertyAgentCard from "./components/PropertyAgentCard";
 import ReviewForm from "./components/ReviewForm";
 
 export default function Reviews() {
@@ -48,8 +48,8 @@ export default function Reviews() {
       <Box sx={{
         display: 'flex',
         justifyContent: 'flex-start',
-        pl: { xs: 2, sm: 4, md: 6 },
-        mt: { xs: 0, sm: 0, md: 0 },
+        pl: { xs: 2, sm: 4, md: 7.1 },
+        mt: { xs: 0, sm: 0, md: 2 },
         flexDirection: { xs: 'column', sm: 'row' },
         '@media (max-width: 600px)': {
           pl: 0,
@@ -95,7 +95,7 @@ export default function Reviews() {
         <Box sx={{
           display: 'flex',
           justifyContent: 'center',
-          mt: { xs: -2, sm: -4, md: -43.5 },
+          mt: { xs: -2, sm: -4, md: -80 },
           pl: { xs: 0, sm: 2, md: 4 },
           '@media (max-width: 600px)': {
             mt: '16px',
@@ -108,7 +108,7 @@ export default function Reviews() {
             width: '100%',
           }
         }}>
-          <MostLikedReviews />
+          <PropertyAgentCard />
         </Box>
       </Box>
     </Box>
