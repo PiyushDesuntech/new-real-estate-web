@@ -22,7 +22,7 @@ const LoanDoughnutChart = ({ principal, interest }) => {
   const options = {
     rotation: -90,
     circumference: 180,
-    cutout: "50%",
+    cutout: "60%",
     plugins: {
       legend: {
         display: false,
@@ -46,10 +46,11 @@ const LoanDoughnutChart = ({ principal, interest }) => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        width: "230px",
-        height: "140px",
+        width: { xs: "180px", sm: "220px", md: "260px" },
+        height: { xs: "100px", sm: "120px", md: "140px" },
         margin: "0 auto",
-        gap: "3px",
+        position: "relative",
+        maxWidth: "100%",
       }}
     >
       <Doughnut data={data} options={options} />
@@ -69,24 +70,32 @@ export default function LoanCalculator() {
     <Box
       sx={{
         width: "100%",
-        maxWidth: { xs: "90%", sm: "500px", md: "500px" },
-        height: "auto",
-        ml:{sm: "-5px", md: "-10px"},
+        minWidth: "51px",
         backgroundColor: "#fff",
-        borderRadius: "8px",
-        padding: { xs: "24px", sm: "32px" },
+        borderRadius: { xs: "6px", sm: "8px" },
+        padding: { xs: "16px", sm: "24px", md: "32px" },
         boxSizing: "border-box",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
         boxShadow: "0px 6px 24px rgb(230, 230, 230)",
-        margin: "auto",
-        "@media (min-width: 960px)": {
-          height: "auto",
+        transition: "all 0.3s ease-in-out",
+        overflow: "hidden",
+        "&:hover": {
+          boxShadow: "0px 8px 28px rgb(220, 220, 220)",
+          transform: { xs: "translateY(-2px)", md: "translateY(-4px)" },
         },
       }}
     >
-      <Box sx={{ flex: 1 }}>
+      <Box 
+        sx={{ 
+          flex: "1 0 auto",
+          display: "flex",
+          flexDirection: "column",
+          width: "100%",
+          overflow: "hidden",
+        }}
+      >
         <LoanDoughnutChart
           principal={loanDetails.principal}
           interest={loanDetails.interest}
@@ -96,97 +105,101 @@ export default function LoanCalculator() {
           sx={{
             display: "flex",
             justifyContent: "center",
-            gap: "24px",
-            marginTop: "40px",
-            marginBottom: "70px",
-            marginLeft: { xs: "0", md: "16px" },
-            marginRight: { xs: "0", md: "16px" },
+            gap: { xs: "16px", sm: "24px", md: "32px" },
+            marginTop: { xs: "24px", sm: "32px", md: "40px" },
+            marginBottom: { xs: "32px", sm: "40px", md: "48px" },
+            flexWrap: "wrap",
+            padding: "0 8px",
           }}
         >
           <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
             <Box
               sx={{
-                width: "16px",
-                height: "16px",
+                width: { xs: "12px", sm: "16px", md: "20px" },
+                height: { xs: "12px", sm: "16px", md: "20px" },
                 backgroundColor: "#4ade80",
                 borderRadius: "4px",
+                flexShrink: 0,
               }}
             />
-            <Typography sx={{ color: "#314259", fontSize: "12px" }}>
+            <Typography sx={{ 
+              color: "#314259", 
+              fontSize: { xs: "12px", sm: "14px", md: "16px" },
+              fontWeight: "500",
+              whiteSpace: "nowrap"
+            }}>
               Principal
             </Typography>
           </Box>
           <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
             <Box
               sx={{
-                width: "16px",
-                height: "16px",
+                width: { xs: "12px", sm: "16px", md: "20px" },
+                height: { xs: "12px", sm: "16px", md: "20px" },
                 backgroundColor: "#E6E6FA",
                 borderRadius: "4px",
+                flexShrink: 0,
               }}
             />
-            <Typography sx={{ color: "#314259", fontSize: "12px" }}>
+            <Typography sx={{ 
+              color: "#314259", 
+              fontSize: { xs: "12px", sm: "14px", md: "16px" },
+              fontWeight: "500",
+              whiteSpace: "nowrap"
+            }}>
               Interest
             </Typography>
           </Box>
         </Box>
       </Box>
 
-      <Box sx={{ display: "flex", flexDirection: "column", gap: "24px" }}>
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            borderBottom: "1px solid #ebebeb",
-            paddingBottom: "20px",
-            marginLeft: { xs: "0", md: "18px" },
-            marginRight: { xs: "0", md: "18px" },
-          }}
-        >
-          <Typography sx={{ color: "#314259", fontSize: "14px" }}>
-            Monthly EMI Is
-          </Typography>
-          <Typography sx={{ color: "#314259", fontSize: "16px" }}>
-            ₹{loanDetails.monthlyEMI.toLocaleString("en-IN")}
-          </Typography>
-        </Box>
-
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            borderBottom: "1px solid #ebebeb",
-            paddingBottom: "20px",
-            marginLeft: { xs: "0", md: "18px" },
-            marginRight: { xs: "0", md: "18px" },
-          }}
-        >
-          <Typography sx={{ color: "#314259", fontSize: "14px" }}>
-            Total Amount Payable Is
-          </Typography>
-          <Typography sx={{ color: "#314259", fontSize: "16px" }}>
-            ₹{loanDetails.totalAmount.toLocaleString("en-IN")}
-          </Typography>
-        </Box>
-
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            marginLeft: { xs: "0", md: "18px" },
-            marginRight: { xs: "0", md: "18px" },
-          }}
-        >
-          <Typography sx={{ color: "#314259", fontSize: "14px" }}>
-            Interest Component
-          </Typography>
-          <Typography sx={{ color: "#314259", fontSize: "16px" }}>
-            ₹{loanDetails.interest.toLocaleString("en-IN")}
-          </Typography>
-        </Box>
+      <Box 
+        sx={{ 
+          display: "flex", 
+          flexDirection: "column", 
+          gap: { xs: "16px", sm: "20px", md: "24px" },
+          marginTop: { xs: "auto", md: "0" },
+          flexShrink: 0,
+          width: "100%",
+          paddingBottom: { xs: "8px", sm: "12px", md: "16px" },
+        }}
+      >
+        {[
+          { label: "Monthly EMI Is", value: loanDetails.monthlyEMI },
+          { label: "Total Amount Payable Is", value: loanDetails.totalAmount },
+          { label: "Interest Component", value: loanDetails.interest }
+        ].map((item, index) => (
+          <Box
+            key={item.label}
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              borderBottom: "1px solid #ebebeb",
+              paddingBottom: { xs: "16px", sm: "20px", md: "24px" },
+              padding: { xs: "0 12px", sm: "0 16px", md: "0 24px" },
+              flexWrap: "wrap",
+              gap: { xs: "8px", sm: "12px" },
+            }}
+          >
+            <Typography sx={{ 
+              color: "#314259", 
+              fontSize: { xs: "12px", sm: "14px", md: "16px" },
+              fontWeight: "500",
+              minWidth: { xs: "120px", sm: "auto" },
+            }}>
+              {item.label}
+            </Typography>
+            <Typography sx={{ 
+              color: "#314259", 
+              fontSize: { xs: "14px", sm: "16px", md: "18px" },
+              fontWeight: "600",
+              marginLeft: "auto",
+            }}>
+              ₹{item.value.toLocaleString("en-IN")}
+            </Typography>
+          </Box>
+        ))}
       </Box>
     </Box>
   );

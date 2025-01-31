@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Box, Typography, useTheme } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 
 const HeroContent = ({ text }) => {
@@ -9,36 +9,82 @@ const HeroContent = ({ text }) => {
       sx={{
         display: "flex",
         flexDirection: "column",
-        gap: { xs: "16px", sm: "24px" },
+        gap: { 
+          xs: "12px",
+          sm: "16px",
+          md: "20px",
+          lg: "24px" 
+        },
         alignItems: {
           xs: "flex-start", 
-          sm: "flex-start"
+          lg: "flex-start"
         },
-        width: { xs: "100%", sm: "auto" },
-        paddingLeft: { xs: "0", sm: "50px" }  //  padding for desktop view
+        width: { 
+          xs: "100%",
+          lg: "auto" 
+        },
+        paddingLeft: { 
+          xs: "12px",
+          sm: "24px",
+          md: "32px",
+          lg: "50px" 
+        },
+        paddingRight: {
+          xs: "12px",
+          sm: "24px",
+          md: "32px",
+          lg: "400px" // Space for image
+        },
+        minWidth: '51px'
       }}
     >
       <Box
         sx={{
-          width: { xs: "100%", sm: "900px" },
+          width: { 
+            xs: "100%",
+            lg: "900px" 
+          },
           maxWidth: "100%",
+          minWidth: '51px'
         }}
       >
         <Typography
           sx={{
             color: "#444444",
-            fontSize: { xs: "14px", sm: "16px" },
-            lineHeight: { 
-              xs: "1.6",
-              sm: "1.5" 
+            fontSize: { 
+              xs: "12px",
+              sm: "13px",
+              md: "14px",
+              lg: "16px" 
             },
-            textAlign: { xs: "justify", sm: "left" },
+            lineHeight: { 
+              xs: "1.4",
+              sm: "1.5",
+              md: "1.6",
+              lg: "1.5" 
+            },
+            textAlign: { 
+              xs: "justify",
+              lg: "left" 
+            },
             display: "block",
             width: "100%",
-            hyphens: { xs: "auto", sm: "none" },
-            letterSpacing: { xs: "0.5px", sm: "normal" },
-            wordSpacing: { xs: "1px", sm: "normal" },
-            paddingRight: { xs: "8px", sm: "0" },
+            hyphens: { 
+              xs: "auto",
+              lg: "none" 
+            },
+            letterSpacing: { 
+              xs: "0.3px",
+              sm: "0.4px",
+              md: "0.5px",
+              lg: "normal" 
+            },
+            wordSpacing: { 
+              xs: "0.5px",
+              sm: "0.7px",
+              md: "1px",
+              lg: "normal" 
+            }
           }}
         >
           {text}
@@ -46,8 +92,18 @@ const HeroContent = ({ text }) => {
       </Box>
       <Box
         sx={{
-          width: { xs: "193.24px", sm: "193.24px" },
-          height: { xs: "45px", sm: "55.56px" },
+          width: { 
+            xs: "140px",
+            sm: "160px",
+            md: "180px",
+            lg: "193.24px" 
+          },
+          height: { 
+            xs: "35px",
+            sm: "40px",
+            md: "45px",
+            lg: "55.56px" 
+          },
           backgroundColor: "#3E4C66",
           borderRadius: "6px",
           display: "flex",
@@ -57,12 +113,18 @@ const HeroContent = ({ text }) => {
           "&:hover": {
             opacity: 0.9,
           },
+          minWidth: '51px'
         }}
       >
         <Typography
           sx={{
             color: "#FFFFFF",
-            fontSize: { xs: "14px", sm: "17.78px" },
+            fontSize: { 
+              xs: "12px",
+              sm: "13px",
+              md: "14px",
+              lg: "17.78px" 
+            },
             fontWeight: 500,
           }}
         >
@@ -82,18 +144,54 @@ export default function HeroSection() {
     <Box
       sx={{
         width: "100%",
-        maxWidth: { xs: "90%", sm: "2500px" },
-        height: { xs: "auto", sm: "431px" },
+        maxWidth: { 
+          xs: "100%",
+          sm: "100%",
+          md: "100%",
+          lg: "2500px" 
+        },
+        height: { 
+          xs: "auto",
+          lg: "431px" 
+        },
         backgroundColor: "#F7F7F7",
-        borderRadius: { xs: "8px", sm: "11.11px" },
-        padding: { xs: "16px", sm: "24px", md: "32px" },
+        borderRadius: { 
+          xs: "6px",
+          sm: "8px",
+          md: "10px",
+          lg: "11.11px" 
+        },
+        padding: { 
+          xs: "16px",
+          sm: "20px",
+          md: "24px",
+          lg: "32px" 
+        },
         boxSizing: "border-box",
         display: "flex",
-        flexDirection: { xs: "column", sm: "row" },
-        alignItems: { xs: "flex-start", sm: "center" },
+        flexDirection: { 
+          xs: "column",
+          lg: "row" 
+        },
+        alignItems: { 
+          xs: "flex-start",
+          lg: "center" 
+        },
         position: "relative",
         margin: "auto",
-        gap: { xs: "24px", sm: 0 },
+        gap: { 
+          xs: "24px",
+          sm: "32px",
+          md: "40px",
+          lg: 0 
+        },
+        minWidth: '51px',
+        marginTop: {
+          xs: "24px",
+          sm: "32px",
+          md: "40px",
+          lg: 0
+        }
       }}
     >
       <Box
@@ -101,7 +199,13 @@ export default function HeroSection() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          width: { xs: "100%", sm: "auto" },
+          width: { 
+            xs: "100%",
+            lg: "auto" 
+          },
+          minWidth: '51px',
+          position: "relative",
+          zIndex: 1
         }}
       >
         <HeroContent text={content} />
@@ -109,15 +213,44 @@ export default function HeroSection() {
 
       <Box
         sx={{
-          position: { xs: "static", sm: "absolute" },
-          right: { sm: "120px" },  // Image left
-          top: { sm: "50%" },
-          transform: { sm: "translateY(-50%)" },
-          width: { xs: "100%", sm: "335px" },
-          height: { xs: "200px", sm: "335px" },
-          maxWidth: { xs: "300px", sm: "335px" },
-          margin: { xs: "24px auto 0", sm: 0 },
-          display: { xs: "block", sm: "block" },
+          position: { 
+            xs: "relative",
+            lg: "absolute" 
+          },
+          right: { 
+            lg: "120px" 
+          },
+          top: { 
+            lg: "50%" 
+          },
+          transform: { 
+            lg: "translateY(-50%)" 
+          },
+          width: { 
+            xs: "100%",
+            sm: "280px",
+            md: "300px",
+            lg: "335px" 
+          },
+          height: { 
+            xs: "160px",
+            sm: "180px",
+            md: "200px",
+            lg: "335px" 
+          },
+          maxWidth: { 
+            xs: "260px",
+            sm: "280px",
+            md: "300px",
+            lg: "335px" 
+          },
+          margin: { 
+            xs: "0 auto",
+            lg: 0 
+          },
+          display: "block",
+          minWidth: '51px',
+          zIndex: 0
         }}
       >
         <Box
@@ -125,13 +258,17 @@ export default function HeroSection() {
             position: "relative",
             width: "100%",
             height: "100%",
+            minWidth: '51px'
           }}
         >
           <Image
             src="/Images/Figure → Rent-Calculator.png"
             alt="Hero illustration"
             fill
-            style={{ objectFit: "contain" }}
+            style={{ 
+              objectFit: "contain",
+              objectPosition: "center"
+            }}
             priority
           />
         </Box>
@@ -139,5 +276,3 @@ export default function HeroSection() {
     </Box>
   );
 }
-
-

@@ -14,10 +14,20 @@ export default function SearchBar() {
   return (
     <Box
       sx={{
-        padding: { xs: "16px", sm: "39px" },
+        padding: { 
+          xs: "12px", 
+          sm: "16px", 
+          md: "24px", 
+          lg: "39px" 
+        },
         backgroundColor: "#fff",
-        borderRadius: "7.38px",
+        borderRadius: { 
+          xs: "4px", 
+          sm: "5px", 
+          md: "7.38px" 
+        },
         width: "100%",
+        minWidth: "51px",
         border: "1.5px solid #ebebeb",
         boxSizing: "border-box",
       }}
@@ -27,7 +37,11 @@ export default function SearchBar() {
           display: "flex",
           alignItems: "center",
           border: "2px solid #D8D8D8",
-          borderRadius: "7.38px",
+          borderRadius: { 
+            xs: "4px", 
+            sm: "5px", 
+            md: "7.38px" 
+          },
           width: "100%",
           backgroundColor: "#fff",
           overflow: "hidden",
@@ -36,12 +50,24 @@ export default function SearchBar() {
         <InputBase
           sx={{
             flex: 1,
-            padding: "16px 20px",
-            fontSize: "16px",
+            padding: { 
+              xs: "8px 12px", 
+              sm: "12px 16px", 
+              md: "16px 20px" 
+            },
+            fontSize: { 
+              xs: "13px", 
+              sm: "14px", 
+              md: "16px" 
+            },
             color: "#484848",
             "&::placeholder": {
               color: "#666",
-              fontSize: "16px", // Standardized font-size
+              fontSize: { 
+                xs: "13px", 
+                sm: "14px", 
+                md: "16px" 
+              },
               fontWeight: 400,
             },
             "& input": {
@@ -55,13 +81,21 @@ export default function SearchBar() {
         <IconButton
           onClick={handleSearch}
           sx={{
-            padding: "12px 16px",
+            padding: { 
+              xs: "6px 10px", 
+              sm: "8px 12px", 
+              md: "12px 16px" 
+            },
             color: "#484848",
             "&:hover": {
               backgroundColor: "transparent",
             },
             "& .MuiSvgIcon-root": {
-              fontSize: "28px",
+              fontSize: { 
+                xs: "20px", 
+                sm: "24px", 
+                md: "28px" 
+              },
             },
           }}
         >

@@ -10,9 +10,19 @@ export default function Tags() {
     <Box
       sx={{
         width: "100%",
+        minWidth: "51px",
         backgroundColor: "#fff",
-        borderRadius: "7.38px", 
-        padding: { xs: "16px", sm: "20px 24px" },
+        borderRadius: { 
+          xs: "4px", 
+          sm: "5px", 
+          md: "7.38px" 
+        },
+        padding: { 
+          xs: "12px", 
+          sm: "16px", 
+          md: "20px", 
+          lg: "24px" 
+        },
         border: "1.5px solid #ebebeb",
         boxSizing: "border-box",
       }}
@@ -21,8 +31,17 @@ export default function Tags() {
         variant="h6"
         sx={{
           fontWeight: 700,
-          marginBottom: "16px",
-          fontSize: "22.15px",
+          marginBottom: { 
+            xs: "10px", 
+            sm: "12px", 
+            md: "16px" 
+          },
+          fontSize: { 
+            xs: "16px", 
+            sm: "18px", 
+            md: "20px", 
+            lg: "22.15px" 
+          },
           color: "#484848",
         }}
       >
@@ -32,7 +51,11 @@ export default function Tags() {
         sx={{
           display: "flex",
           flexWrap: "wrap",
-          gap: 1,
+          gap: { 
+            xs: 0.5, 
+            sm: 0.75, 
+            md: 1 
+          },
         }}
       >
         {tags.map((tag, index) => (
@@ -40,16 +63,49 @@ export default function Tags() {
             key={index}
             label={tag}
             sx={{
-              fontSize: "17.23px",
+              fontSize: { 
+                xs: "12px", 
+                sm: "14px", 
+                md: "16px", 
+                lg: "17.23px" 
+              },
               backgroundColor: "#f5f5f5",
               color: "#484848",
-              borderRadius: "8px",
-              padding: "8px 16px",
+              borderRadius: { 
+                xs: "4px", 
+                sm: "6px", 
+                md: "8px" 
+              },
+              padding: { 
+                xs: "4px 8px", 
+                sm: "6px 12px", 
+                md: "8px 16px" 
+              },
               cursor: "pointer",
+              transform: "scale(1)",
+              transition: "all 0.3s ease-in-out",
               "&:hover": {
                 backgroundColor: "#e0e0e0",
+                transform: "scale(1.05)",
+                boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
               },
-              height: "49px"
+              "@media (max-width: 600px)": {
+                "&:hover": {
+                  transform: "scale(1.03)",
+                  boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
+                },
+              },
+              height: { 
+                xs: "32px", 
+                sm: "36px", 
+                md: "40px", 
+                lg: "49px" 
+              },
+              margin: { 
+                xs: "2px", 
+                sm: "2px", 
+                md: "0" 
+              },
             }}
           />
         ))}

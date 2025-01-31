@@ -9,13 +9,20 @@ import CategoriesSidebar from "./components/CategoriesSidebar";
 import Heading from "./components/Heading";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
-
 const theme = createTheme({
   typography: {
     fontFamily: "Nunito, Arial, sans-serif",
   },
+  breakpoints: {
+    values: {
+      xs: 51,  // Minimum width
+      sm: 600,
+      md: 900,
+      lg: 1200,
+      xl: 1536,
+    },
+  },
 });
-
 
 export default function Insights() {
   React.useEffect(() => {
@@ -25,58 +32,71 @@ export default function Insights() {
     document.head.appendChild(link);
 
     return () => {
-      document.head.removeChild(link); // Clean up after component unmount
+      document.head.removeChild(link);
     };
   }, []);
   
   return (
-    <Box sx={{ backgroundColor: "#F7F7F7", minHeight: "100vh" }}>
+    <Box sx={{ backgroundColor: "#F7F7F7", minHeight: "100vh", minWidth: "51px" }}>
       <Container
         maxWidth="xl"
         sx={{
-          px: {xs: 1, lg: 8 },
+          px: { xs: 1, sm: 2, md: 4 },
+          pb: { xs: 6, sm: 8, md: 10 }, // Added bottom padding
+          minWidth: "51px",
+          maxWidth: "100% !important",
+          overflowX: "hidden",
+          ml: { xs: 0, sm: 1, md: 2 },
         }}
       >
         <Heading />
         <ThemeProvider theme={theme}>
-        <Box
-          sx={{
-            display: "grid",
-            gridTemplateColumns: { xs: "1fr", md: "2fr 1fr" },
-            gap: { xs: 4, md: 4 },
-            mt: -1,
-            px: {xs: 0, lg: 2}
-          }}
-        >
-          {/* Main Content */}
-          <Box>
-            <BlogCard />
-          </Box>
-
-          {/* Sidebar */}
           <Box
             sx={{
-              display: "flex",
-              flexDirection: "column",
-              gap: 4,
-              mt: 3,
+              display: "grid",
+              gridTemplateColumns: { xs: "1fr", md: "2fr 1fr" },
+              gap: { xs: 2, sm: 3, md: 4 },
+              mt: -1,
+              px: { xs: 1, sm: 2, md: 3 },
+              minWidth: "51px",
             }}
           >
-            {/* Search */}
-            <Box>
-              <SearchBar />
+            {/* Main Content */}
+            <Box sx={{ minWidth: "51px" }}>
+              <BlogCard />
             </Box>
 
-            {/* Categories */}
-            <CategoriesSidebar />
+            {/* Sidebar */}
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                gap: { xs: 2, sm: 3, md: 4 },
+                mt: { xs: 1, sm: 2, md: 3 },
+                minWidth: "51px",
+              }}
+            >
+              {/* Search */}
+              <Box sx={{ minWidth: "51px" }}>
+                <SearchBar />
+              </Box>
 
-            {/* Latest Properties */}
-            <LatestProperties />
+              {/* Categories */}
+              <Box sx={{ minWidth: "51px" }}>
+                <CategoriesSidebar />
+              </Box>
 
-            {/* Tags */}
-            <Tags />
+              {/* Latest Properties */}
+              <Box sx={{ minWidth: "51px" }}>
+                <LatestProperties />
+              </Box>
+
+              {/* Tags */}
+              <Box sx={{ minWidth: "51px" }}>
+                <Tags />
+              </Box>
+            </Box>
           </Box>
-        </Box>
         </ThemeProvider>
       </Container>
     </Box>
