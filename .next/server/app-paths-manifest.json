@@ -5,5 +5,10 @@
   "/FAQ/page": "app/FAQ/page.js",
   "/insights/page": "app/insights/page.js",
   "/insight-inner/page": "app/insight-inner/page.js",
-  "/properties-image-viewer/page": "app/properties-image-viewer/page.js"
+  "/properties-image-viewer/page": "app/properties-image-viewer/page.js",
+  "/mortgage-cal-rent/page": "app/mortgage-cal-rent/page.js",
+  "/reviews/page": "app/reviews/page.js",
+  "/profile/page": "app/profile/page.js",
+  "/changepassword/page": "app/changepassword/page.js",
+  "/agents/page": "app/agents/page.js"
 }
