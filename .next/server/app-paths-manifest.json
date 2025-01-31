@@ -1,10 +1,9 @@
 {
-  "/page": "app/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/map-view/page": "app/map-view/page.js",
-  "/mortgage-cal/page": "app/mortgage-cal/page.js",
-  "/mortgage-cal-rent/page": "app/mortgage-cal-rent/page.js",
-  "/insights/page": "app/insights/page.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/insight-inner/page": "app/insight-inner/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/FAQ/page": "app/FAQ/page.js",
+  "/insights/page": "app/insights/page.js",
+  "/insight-inner/page": "app/insight-inner/page.js",
+  "/properties-image-viewer/page": "app/properties-image-viewer/page.js"
 }
