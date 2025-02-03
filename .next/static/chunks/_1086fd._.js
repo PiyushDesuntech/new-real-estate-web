@@ -154,7 +154,7 @@ function Heading() {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontSize: {
-                            xs: '24px',
+                            xs: '26px',
                             sm: '28px',
                             md: '32px',
                             lg: '37px'
@@ -209,7 +209,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, k: __turbopack_refresh__, m: module, z: __turbopack_require_stub__ } = __turbopack_context__;
 {
 __turbopack_esm__({
-    "default": (()=>Main_image)
+    "default": (()=>MainImage)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
@@ -224,53 +224,80 @@ var _s = __turbopack_refresh__.signature();
 ;
 ;
 ;
-function Main_image() {
+function MainImage() {
     _s();
     const images = [
         "/Images/imageviewmain.png",
         "/Images/view_imagechanger2.png",
-        "/Images/Popular3.svg"
+        "/Images/Popular3.svg",
+        "/Images/imageviewmain.png",
+        "/Images/imageviewmain.png",
+        "/Images/view_imagechanger2.png",
+        "/Images/Popular3.svg",
+        "/Images/imageviewmain.png",
+        "/Images/imageviewmain.png",
+        "/Images/view_imagechanger2.png",
+        "/Images/Popular3.svg",
+        "/Images/imageviewmain.png",
+        "/Images/imageviewmain.png",
+        "/Images/view_imagechanger2.png",
+        "/Images/Popular3.svg",
+        "/Images/imageviewmain.png",
+        "/Images/imageviewmain.png",
+        "/Images/view_imagechanger2.png",
+        "/Images/Popular3.svg",
+        "/Images/imageviewmain.png",
+        "/Images/imageviewmain.png",
+        "/Images/view_imagechanger2.png",
+        "/Images/Popular3.svg",
+        "/Images/imageviewmain.png",
+        "/Images/imageviewmain.png",
+        "/Images/view_imagechanger2.png",
+        "/Images/Popular3.svg",
+        "/Images/imageviewmain.png",
+        "/Images/imageviewmain.png",
+        "/Images/view_imagechanger2.png",
+        "/Images/Popular3.svg",
+        "/Images/imageviewmain.png",
+        "/Images/imageviewmain.png",
+        "/Images/view_imagechanger2.png",
+        "/Images/Popular3.svg",
+        "/Images/imageviewmain.png"
     ];
-    const imageSets = [
-        [
-            "/Images/imageviewmain.png",
-            "/Images/view_imagechanger2.png",
-            "/Images/Popular3.svg"
-        ],
-        [
-            "/Images/view_imagechanger2.png",
-            "/Images/imageviewmain.png",
-            "/Images/Popular3.svg"
-        ],
-        [
-            "/Images/Popular3.svg",
-            "/Images/view_imagechanger2.png",
-            "/Images/imageviewmain.png"
-        ]
-    ];
+    // Paginate images into sets of 4
+    const imageSets = [];
+    for(let i = 0; i < images.length; i += 4){
+        imageSets.push(images.slice(i, i + 4));
+    }
     const [currentImageIndex, setCurrentImageIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const [currentImageSetIndex, setCurrentImageSetIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
-    const [activeButton, setActiveButton] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
-    const [activelowButton, setActivelowButton] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const handlePrevClick = ()=>{
-        setCurrentImageIndex((prevIndex)=>prevIndex === 0 ? images.length - 1 : prevIndex - 1);
-        setActiveButton("prev");
-    // setTimeout(() => setActiveButton(null), 10000);
+        const newIndex = currentImageIndex === 0 ? images.length - 1 : currentImageIndex - 1;
+        setCurrentImageIndex(newIndex);
+        // Update image set index based on the new image index
+        const newSetIndex = Math.floor(newIndex / 4);
+        setCurrentImageSetIndex(newSetIndex);
     };
     const handleNextClick = ()=>{
-        setCurrentImageIndex((prevIndex)=>prevIndex === images.length - 1 ? 0 : prevIndex + 1);
-        setActiveButton("next");
-    // setTimeout(() => setActiveButton(null), 10000);
+        const newIndex = currentImageIndex === images.length - 1 ? 0 : currentImageIndex + 1;
+        setCurrentImageIndex(newIndex);
+        // Update image set index based on the new image index
+        const newSetIndex = Math.floor(newIndex / 4);
+        setCurrentImageSetIndex(newSetIndex);
     };
     const handlePrevImageSetClick = ()=>{
-        setCurrentImageSetIndex((prevIndex)=>prevIndex === 0 ? imageSets.length - 1 : prevIndex - 1);
-        setActivelowButton("prev");
-    // setTimeout(() => setActivelowButton(null), 10000);
+        const newSetIndex = currentImageSetIndex === 0 ? imageSets.length - 1 : currentImageSetIndex - 1;
+        setCurrentImageSetIndex(newSetIndex);
+        // Update current image index to the first image in the new set
+        const newImageIndex = newSetIndex * 4;
+        setCurrentImageIndex(newImageIndex);
     };
     const handleNextImageSetClick = ()=>{
-        setCurrentImageSetIndex((prevIndex)=>prevIndex === imageSets.length - 1 ? 0 : prevIndex + 1);
-        setActivelowButton("next");
-    // setTimeout(() => setActivelowButton(null), 10000);
+        const newSetIndex = currentImageSetIndex === imageSets.length - 1 ? 0 : currentImageSetIndex + 1;
+        setCurrentImageSetIndex(newSetIndex);
+        // Update current image index to the first image in the new set
+        const newImageIndex = newSetIndex * 4;
+        setCurrentImageIndex(newImageIndex);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
@@ -284,11 +311,14 @@ function Main_image() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
-                    width: "100%",
+                    width: {
+                        xs: "100%",
+                        sm: "100%",
+                        lg: "1530px"
+                    },
                     display: "flex",
                     gap: "1px",
                     position: "relative",
-                    //  border:"1px solid blue",
                     justifyContent: "center",
                     alignItems: "center"
                 },
@@ -323,9 +353,8 @@ function Main_image() {
                                 borderRadius: "50%",
                                 display: "flex",
                                 justifyContent: "center",
-                                background: activeButton === "prev" ? "#E8E1C4" : "transparent",
                                 alignItems: "center",
-                                flexShrink: 0
+                                cursor: "pointer"
                             },
                             onClick: handlePrevClick,
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -335,12 +364,12 @@ function Main_image() {
                                 height: 24
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                lineNumber: 121,
+                                lineNumber: 129,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                            lineNumber: 107,
+                            lineNumber: 116,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -350,17 +379,11 @@ function Main_image() {
                                 maxWidth: "100%",
                                 minHeight: "200px",
                                 height: "100%",
-                                width: {
-                                    xs: "100%",
-                                    sm: "95%",
-                                    md: "100%"
-                                },
                                 aspectRatio: {
                                     xs: "4/3",
                                     sm: "16/9",
                                     md: "1440/588"
                                 },
-                                // border:"1px solid yellow",
                                 borderRadius: "10px",
                                 display: "flex",
                                 justifyContent: "center",
@@ -375,12 +398,12 @@ function Main_image() {
                                 objectFit: "cover"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                lineNumber: 148,
+                                lineNumber: 147,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                            lineNumber: 129,
+                            lineNumber: 131,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -396,12 +419,11 @@ function Main_image() {
                                     md: "53px"
                                 },
                                 border: "1px solid #ADADAD",
-                                background: activeButton === "next" ? "#E8E1C4" : "transparent",
                                 borderRadius: "50%",
                                 display: "flex",
                                 justifyContent: "center",
                                 alignItems: "center",
-                                flexShrink: 0
+                                cursor: "pointer"
                             },
                             onClick: handleNextClick,
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -411,23 +433,23 @@ function Main_image() {
                                 height: 24
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                lineNumber: 170,
+                                lineNumber: 167,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                            lineNumber: 156,
+                            lineNumber: 154,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                    lineNumber: 95,
+                    lineNumber: 105,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                lineNumber: 83,
+                lineNumber: 95,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -450,7 +472,6 @@ function Main_image() {
                         xs: "2px",
                         sm: "2px"
                     },
-                    // border:"1px solid brown",
                     alignItems: "center",
                     gap: {
                         md: "90px",
@@ -462,7 +483,6 @@ function Main_image() {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                         sx: {
-                            // border:"1px solid red",
                             position: "relative",
                             mt: "10px",
                             mb: "10px",
@@ -471,11 +491,9 @@ function Main_image() {
                                 sm: "1px",
                                 xs: "1px"
                             },
-                            // top:{sm:"2px",xs:"2px", md:"0px"},
                             left: {
                                 md: "20px"
                             },
-                            // width: "30%",
                             display: "flex",
                             flexDirection: {
                                 md: "column",
@@ -505,7 +523,7 @@ function Main_image() {
                                 children: "$5500"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                lineNumber: 213,
+                                lineNumber: 199,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -524,7 +542,7 @@ function Main_image() {
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                        lineNumber: 230,
+                                        lineNumber: 203,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -539,13 +557,13 @@ function Main_image() {
                                         children: "22-05 Astoria Blvd, Astoria"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                        lineNumber: 231,
+                                        lineNumber: 204,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                lineNumber: 223,
+                                lineNumber: 202,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -566,7 +584,7 @@ function Main_image() {
                                         children: "Beds: 4"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                        lineNumber: 250,
+                                        lineNumber: 209,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -580,19 +598,19 @@ function Main_image() {
                                         children: "Baths: 2"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                        lineNumber: 258,
+                                        lineNumber: 210,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                lineNumber: 243,
+                                lineNumber: 208,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                        lineNumber: 196,
+                        lineNumber: 186,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -643,7 +661,6 @@ function Main_image() {
                                             },
                                             border: "1px solid #ADADAD",
                                             borderRadius: "50%",
-                                            background: activelowButton === "prev" ? "#E8E1C4" : "transparent",
                                             display: "flex",
                                             justifyContent: "center",
                                             alignItems: "center",
@@ -658,68 +675,52 @@ function Main_image() {
                                             height: 14
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                            lineNumber: 310,
-                                            columnNumber: 7
+                                            lineNumber: 251,
+                                            columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                        lineNumber: 295,
-                                        columnNumber: 5
+                                        lineNumber: 237,
+                                        columnNumber: 13
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
-                                        sx: {
-                                            display: "flex",
-                                            gap: {
-                                                xs: "5px",
-                                                sm: "10px",
-                                                md: "15px"
-                                            },
-                                            overflowX: "auto",
-                                            scrollbarWidth: "none",
-                                            "&::-webkit-scrollbar": {
-                                                display: "none"
-                                            }
-                                        },
-                                        children: imageSets[currentImageSetIndex].map((image, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
-                                                sx: {
-                                                    width: {
-                                                        xs: "50px",
-                                                        sm: "60px",
-                                                        md: "167px"
-                                                    },
-                                                    height: {
-                                                        xs: "40px",
-                                                        sm: "50px",
-                                                        md: "127px"
-                                                    },
-                                                    border: currentImageIndex === index ? "2px solid #E8E1C4" : "1px solid",
-                                                    position: "relative",
-                                                    borderRadius: "4px",
-                                                    overflow: "hidden",
-                                                    cursor: "pointer",
-                                                    flexShrink: 0
+                                    imageSets[currentImageSetIndex].map((image, index)=>{
+                                        const absoluteIndex = currentImageSetIndex * 4 + index;
+                                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
+                                            sx: {
+                                                width: {
+                                                    xs: "50px",
+                                                    sm: "60px",
+                                                    md: "167px"
                                                 },
-                                                onClick: ()=>setCurrentImageIndex(index),
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                    src: image,
-                                                    alt: `Image ${index + 1}`,
-                                                    layout: "fill",
-                                                    objectFit: "cover"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                                    lineNumber: 338,
-                                                    columnNumber: 11
-                                                }, this)
-                                            }, index, false, {
+                                                height: {
+                                                    xs: "40px",
+                                                    sm: "50px",
+                                                    md: "127px"
+                                                },
+                                                border: currentImageIndex === absoluteIndex ? "2px solid #E8E1C4" : "1px solid",
+                                                position: "relative",
+                                                borderRadius: "4px",
+                                                overflow: "hidden",
+                                                cursor: "pointer",
+                                                flexShrink: 0
+                                            },
+                                            onClick: ()=>setCurrentImageIndex(absoluteIndex),
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                src: image,
+                                                alt: `Image ${absoluteIndex + 1}`,
+                                                layout: "fill",
+                                                objectFit: "cover"
+                                            }, void 0, false, {
                                                 fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                                lineNumber: 324,
-                                                columnNumber: 9
-                                            }, this))
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                        lineNumber: 314,
-                                        columnNumber: 5
-                                    }, this),
+                                                lineNumber: 270,
+                                                columnNumber: 19
+                                            }, this)
+                                        }, absoluteIndex, false, {
+                                            fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
+                                            lineNumber: 256,
+                                            columnNumber: 17
+                                        }, this);
+                                    }),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                                         sx: {
                                             width: {
@@ -731,7 +732,6 @@ function Main_image() {
                                                 md: "33px"
                                             },
                                             border: "1px solid #ADADAD",
-                                            background: activelowButton === "next" ? "#E8E1C4" : "transparent",
                                             borderRadius: "50%",
                                             display: "flex",
                                             justifyContent: "center",
@@ -747,19 +747,19 @@ function Main_image() {
                                             height: 14
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                            lineNumber: 359,
-                                            columnNumber: 7
+                                            lineNumber: 288,
+                                            columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                        lineNumber: 344,
-                                        columnNumber: 5
+                                        lineNumber: 274,
+                                        columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                lineNumber: 283,
-                                columnNumber: 3
+                                lineNumber: 226,
+                                columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                 sx: {
@@ -777,36 +777,36 @@ function Main_image() {
                                 children: [
                                     currentImageIndex + 1,
                                     "/",
-                                    imageSets[currentImageSetIndex].length
+                                    images.length
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                lineNumber: 364,
-                                columnNumber: 3
+                                lineNumber: 291,
+                                columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                        lineNumber: 270,
+                        lineNumber: 214,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                lineNumber: 181,
+                lineNumber: 172,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-        lineNumber: 76,
+        lineNumber: 93,
         columnNumber: 5
     }, this);
 }
-_s(Main_image, "yGCnLb0RTAlo09wr/lmCB5KN2ek=");
-_c = Main_image;
+_s(MainImage, "LWR453d35DbfE3a6K1ieTJOqK10=");
+_c = MainImage;
 var _c;
-__turbopack_refresh__.register(_c, "Main_image");
+__turbopack_refresh__.register(_c, "MainImage");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
 }
