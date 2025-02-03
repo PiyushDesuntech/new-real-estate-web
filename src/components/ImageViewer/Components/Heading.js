@@ -125,7 +125,7 @@ function Heading() {
       <Typography 
         sx={{ 
           fontSize: { 
-            xs: '24px',
+            xs: '26px',
             sm: '28px',
             md: '32px',
             lg: '37px' 

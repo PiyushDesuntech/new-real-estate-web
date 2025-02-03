@@ -1,10 +1,6 @@
 {
   "/page": "app/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/property-compare/page": "app/property-compare/page.js",
-  "/reviews/page": "app/reviews/page.js",
-  "/insights/page": "app/insights/page.js",
-  "/FAQ/page": "app/FAQ/page.js",
   "/properties-image-viewer/page": "app/properties-image-viewer/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/_not-found/page": "app/_not-found/page.js"
 }

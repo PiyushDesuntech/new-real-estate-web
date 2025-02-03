@@ -52,10 +52,10 @@ function Heading() {
     });
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
-            py: 4,
+            py: 3,
             px: {
                 xs: 1,
-                sm: 3
+                lg: 2
             }
         },
         children: [
@@ -524,7 +524,7 @@ function LoanCalculator() {
         columnNumber: 5
     }, this);
 }
-_s(LoanCalculator, "ZhrAfu7sBkdxdmqqsI75TvrMMNQ=");
+_s(LoanCalculator, "Ei0pxhKfi3PDRte5e+cUxtA9DdU=");
 _c1 = LoanCalculator;
 var _c, _c1;
 __turbopack_refresh__.register(_c, "LoanDoughnutChart");
@@ -577,7 +577,8 @@ function LoanAmount() {
         sx: {
             width: {
                 xs: "100%",
-                sm: "680px"
+                md: "530px",
+                lg: "680px"
             },
             maxWidth: "100%",
             height: {
@@ -1172,9 +1173,9 @@ function LoanInformation() {
             width: "100%",
             backgroundColor: "#F7F7F7",
             padding: {
-                xs: "24px",
-                sm: "32px",
-                md: "40px"
+                xs: 1,
+                sm: 2,
+                lg: "40px"
             },
             marginTop: {
                 xs: "24px",
@@ -1195,7 +1196,7 @@ function LoanInformation() {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
                     item: true,
                     xs: 12,
-                    md: 7.5,
+                    lg: 7.5,
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                             sx: {
@@ -1204,7 +1205,7 @@ function LoanInformation() {
                                     sm: "22px",
                                     md: "24px"
                                 },
-                                fontWeight: "600",
+                                fontWeight: 800,
                                 color: "#314259",
                                 marginBottom: {
                                     xs: "16px",
@@ -1223,8 +1224,8 @@ function LoanInformation() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                             sx: {
                                 fontSize: {
-                                    xs: "14px",
-                                    sm: "15px",
+                                    xs: "12px",
+                                    sm: "14px",
                                     md: "16px"
                                 },
                                 color: "#314259",
@@ -1239,7 +1240,9 @@ function LoanInformation() {
                                     sm: "24px",
                                     md: "24px"
                                 },
-                                opacity: 0.9
+                                opacity: 0.9,
+                                color: "#9092A3",
+                                fontWeight: 500
                             },
                             children: "The loan against property is secured against an asset such as a residential house or a commercial premise. The loan against property EMIs are made up of both, the principal and the interest portions. The pledged asset remains as collateral with the lender until you repay the total loan against the property amount. The loan against property interest rates are lower as compared to an unsecured loan such as a personal loan. The loan against property has no end-use restrictions, and you may use the loan for individual needs. The loan against property is also called the mortgage loan as it is secured against immovable property. The calculation of the loan against the property schedule is based on amortization. The interest component would constitute a larger part of the EMIs during the initial stages as compared to the principal portion. However, as you continue repaying the EMIs, the interest portion reduces, and the principal component of your EMI goes up. The total value of the loan against property EMI will remain constant across the tenure of the loan."
                         }, void 0, false, {
@@ -1256,7 +1259,7 @@ function LoanInformation() {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
                     item: true,
                     xs: 12,
-                    md: 7.5,
+                    lg: 7.5,
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                             sx: {
@@ -1265,7 +1268,7 @@ function LoanInformation() {
                                     sm: "22px",
                                     md: "24px"
                                 },
-                                fontWeight: "600",
+                                fontWeight: 800,
                                 color: "#314259",
                                 marginBottom: {
                                     xs: "16px",
@@ -1278,14 +1281,14 @@ function LoanInformation() {
                             children: "What is the Loan Against Property EMI Calculator?"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Mortgage-cal/components/LoanInformation.js",
-                            lineNumber: 58,
+                            lineNumber: 60,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                             sx: {
                                 fontSize: {
-                                    xs: "14px",
-                                    sm: "15px",
+                                    xs: "12px",
+                                    sm: "14px",
                                     md: "16px"
                                 },
                                 color: "#314259",
@@ -1300,18 +1303,20 @@ function LoanInformation() {
                                     sm: "24px",
                                     md: "24px"
                                 },
-                                opacity: 0.9
+                                opacity: 0.9,
+                                color: "#9092A3",
+                                fontWeight: 500
                             },
                             children: "The loan against property EMI calculator is a utility tool that shows the loan against property EMIs you must pay the lender every month. If you enter the loan amount, the rate of interest, and the tenure of the loan, the loan against property EMI calculator will show the monthly EMI in seconds. The loan against property EMI calculator consists of a formula box and three sliders showing the loan amount, duration, and the rate of interest. After you fill in the details, the calculator will display the EMI amount that you must pay the lender every month, to repay the loan against the property."
                         }, void 0, false, {
                             fileName: "[project]/src/components/Mortgage-cal/components/LoanInformation.js",
-                            lineNumber: 70,
+                            lineNumber: 72,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Mortgage-cal/components/LoanInformation.js",
-                    lineNumber: 57,
+                    lineNumber: 59,
                     columnNumber: 9
                 }, this)
             ]
@@ -1363,43 +1368,42 @@ function Mortgage() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
             backgroundColor: "#F7F7F7",
-            minHeight: "100vh",
             minWidth: "51px"
         },
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Container$2f$Container$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Container$3e$__["Container"], {
             maxWidth: "xl",
             sx: {
-                padding: {
-                    xs: "24px 16px",
-                    sm: "32px 24px",
-                    md: "48px 32px"
+                px: {
+                    xs: 2,
+                    // sm: "32px 24px", 
+                    lg: 6
                 },
                 minWidth: "51px",
-                paddingLeft: {
-                    md: "24px",
-                    lg: "50px"
-                }
+                // paddingLeft: { md: "24px", lg: "50px" },
+                py: 3
             },
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                     sx: {
                         marginBottom: {
                             xs: 3,
-                            md: 4
+                            lg: 2
                         },
-                        paddingLeft: {
+                        // paddingLeft: { xs: 0, lg: "-10px" },
+                        px: {
                             xs: 0,
-                            md: "-20px"
+                            sm: 2,
+                            md: 2
                         }
                     },
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Mortgage$2d$cal$2f$components$2f$Heading$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/src/components/Mortgage-cal/mortgage-cal.js",
-                        lineNumber: 31,
+                        lineNumber: 34,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/Mortgage-cal/mortgage-cal.js",
-                    lineNumber: 27,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1407,12 +1411,13 @@ function Mortgage() {
                         display: "grid",
                         gridTemplateColumns: {
                             xs: "1fr",
+                            md: "minmax(500px, 2fr) minmax(400px, 1fr)",
                             lg: "minmax(680px, 2fr) minmax(300px, 1fr)"
                         },
                         gap: {
                             xs: 3,
                             sm: 4,
-                            md: 5,
+                            md: 1,
                             lg: 6
                         },
                         marginBottom: {
@@ -1431,16 +1436,21 @@ function Mortgage() {
                                 justifyContent: {
                                     xs: 'center',
                                     lg: 'flex-start'
+                                },
+                                px: {
+                                    xs: 1,
+                                    sm: 3,
+                                    md: 0
                                 }
                             },
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Mortgage$2d$cal$2f$components$2f$LoanAmount$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/src/components/Mortgage-cal/mortgage-cal.js",
-                                lineNumber: 52,
+                                lineNumber: 57,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/Mortgage-cal/mortgage-cal.js",
-                            lineNumber: 47,
+                            lineNumber: 51,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1451,15 +1461,20 @@ function Mortgage() {
                                 alignItems: "center",
                                 width: {
                                     xs: "100%",
-                                    lg: "auto"
+                                    md: "auto"
                                 },
                                 maxWidth: {
-                                    xs: "680px",
-                                    lg: "none"
+                                    xs: "100%",
+                                    md: "none"
                                 },
                                 margin: {
                                     xs: "0 auto",
-                                    lg: 0
+                                    md: 0
+                                },
+                                px: {
+                                    xs: 1,
+                                    sm: 3,
+                                    md: 2
                                 }
                             },
                             children: [
@@ -1469,12 +1484,12 @@ function Mortgage() {
                                     },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Mortgage$2d$cal$2f$components$2f$LoanCalculator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                         fileName: "[project]/src/components/Mortgage-cal/mortgage-cal.js",
-                                        lineNumber: 68,
+                                        lineNumber: 74,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Mortgage-cal/mortgage-cal.js",
-                                    lineNumber: 67,
+                                    lineNumber: 73,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1483,31 +1498,32 @@ function Mortgage() {
                                     },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Mortgage$2d$cal$2f$components$2f$AdvanceSearch$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                         fileName: "[project]/src/components/Mortgage-cal/mortgage-cal.js",
-                                        lineNumber: 71,
+                                        lineNumber: 77,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Mortgage-cal/mortgage-cal.js",
-                                    lineNumber: 70,
+                                    lineNumber: 76,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Mortgage-cal/mortgage-cal.js",
-                            lineNumber: 56,
+                            lineNumber: 61,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Mortgage-cal/mortgage-cal.js",
-                    lineNumber: 35,
+                    lineNumber: 38,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                     sx: {
                         width: "100%",
                         maxWidth: {
-                            lg: "calc(100% - 130px)"
+                            lg: "calc(100% - 130px)",
+                            md: "100%"
                         },
                         marginTop: {
                             xs: 4,
@@ -1518,17 +1534,18 @@ function Mortgage() {
                             lg: "70px"
                         },
                         paddingRight: {
-                            lg: "45px"
+                            lg: "45px",
+                            md: 0
                         }
                     },
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Mortgage$2d$cal$2f$components$2f$LoanInformation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/src/components/Mortgage-cal/mortgage-cal.js",
-                        lineNumber: 86,
+                        lineNumber: 92,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/Mortgage-cal/mortgage-cal.js",
-                    lineNumber: 77,
+                    lineNumber: 83,
                     columnNumber: 9
                 }, this)
             ]
