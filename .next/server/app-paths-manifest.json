@@ -4,5 +4,7 @@
   "/property-compare/page": "app/property-compare/page.js",
   "/reviews/page": "app/reviews/page.js",
   "/insights/page": "app/insights/page.js",
-  "/FAQ/page": "app/FAQ/page.js"
+  "/FAQ/page": "app/FAQ/page.js",
+  "/properties-image-viewer/page": "app/properties-image-viewer/page.js",
+  "/_not-found/page": "app/_not-found/page.js"
 }
