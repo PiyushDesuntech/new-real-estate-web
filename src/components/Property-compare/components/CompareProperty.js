@@ -1,34 +1,28 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Box, Typography, Button, useTheme, useMediaQuery } from '@mui/material';
 import Image from 'next/image';
 import CloseIcon from '@mui/icons-material/Close';
 
-const CompareProperty = () => {
+const CompareProperty = ({ projects, handleRemoveProject, handleAddProject }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const isTablet = useMediaQuery(theme.breakpoints.down('md'));
 
-  const [projects, setProjects] = useState([
-    { name: 'ATS Pristine City', location: 'Sector 1, Any Street, Canada' },
-    { name: 'Mahagun Mantra', location: 'Sector 3, ABC, Canada' },
-  ]);
-
-  const handleRemoveProject = (index) => {
-    const newProjects = [...projects];
-    newProjects.splice(index, 1);
-    setProjects(newProjects);
-  };
+  // Define features to compare
+  const features = [
+    { label: 'Price', key: 'price' },
+    { label: 'BHK', key: 'bhk' },
+  ];
 
   return (
     <Box
       sx={{
         width: '100%',
-        maxWidth: '1250px',
-        height: { xs: 'auto', md: '350px' },
+        height: { xs: 'auto', md: 'auto' },
         display: 'flex',
         flexDirection: { xs: 'column', md: 'row' },
         bgcolor: 'white',
-        boxShadow: '0 1px 3px rgba(0,0,0,0.12)',
+        boxShadow: '0 10px 10px rgba(0,0,0,0.12)',
         overflow: 'hidden',
         mb: 3,
         border: '1px solid #000000',
@@ -56,7 +50,7 @@ const CompareProperty = () => {
         </Typography>
       </Box>
 
-      {/* Project Cards */}
+      {/* Project Cards and Comparison Table */}
       <Box
         sx={{
           display: 'flex',
@@ -127,7 +121,7 @@ const CompareProperty = () => {
               }}
             >
               <Image
-                src="/Images/Propertycompare2.png"
+                src={project.image}
                 alt={project.name}
                 layout="fill"
                 objectFit="cover"
@@ -135,25 +129,37 @@ const CompareProperty = () => {
               />
             </Box>
 
-            {/* Project Details */}
-            <Box sx={{ mt: 'auto', pt: 2 }}>
-              <Typography
-                sx={{
-                  fontSize: '14px',
-                  color: '#606060',
-                  mb: 1,
-                }}
-              >
-                2,3 BHK
-              </Typography>
-              <Typography
-                sx={{
-                  fontSize: '14px',
-                  color: '#333',
-                }}
-              >
-                $84.0 Lac - 1.54 Cr
-              </Typography>
+            {/* Feature Comparison Table */}
+            <Box sx={{ mt: 2 }}>
+              {features.map((feature) => (
+                <Box
+                  key={feature.key}
+                  sx={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    mb: 1,
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      fontSize: '14px',
+                      color: '#606060',
+                    }}
+                  >
+                    {feature.label}
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontSize: '14px',
+                      color: '#333',
+                      fontWeight: 500,
+                    }}
+                  >
+                    {project[feature.key]}
+                  </Typography>
+                </Box>
+              ))}
             </Box>
 
             {/* VS Badge */}
@@ -213,6 +219,7 @@ const CompareProperty = () => {
           <Button
             variant="outlined"
             startIcon={<span>+</span>}
+            onClick={handleAddProject}
             sx={{
               height: '32px',
               borderRadius: '16px',

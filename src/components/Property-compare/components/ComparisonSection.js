@@ -157,7 +157,7 @@ const TableRow = ({ label, value1, value2, isHeader = false, showDash = false, n
   );
 };
 
-const ComparisonSection = () => {
+const ComparisonSection = ({ projects }) => {
   const [expandedPanels, setExpandedPanels] = useState({
     propertyDetails: true,
     masterPlan: true,
@@ -192,68 +192,68 @@ const ComparisonSection = () => {
       id: 'propertyDetails',
       title: 'Property Details',
       content: [
-        { label: 'Developer Name', value1: 'ATS Infrastructure', value2: 'Mahagun Group' },
-        { label: 'Price/Sqft', value1: '$3566', value2: '$3566' },
-        { label: 'Maintenance/Sqft', value1: '$566', value2: '$366' },
-        { label: 'Possession Date & Status', value1: '20 Jan 2022', value2: '17 Jan 2024' },
-        { label: 'Project Land Area', value1: 'Ready to Move', value2: 'Under construction', noBorder: true },
+        { label: 'Developer Name', value1: projects[0]?.developerName, value2: projects[1]?.developerName },
+        { label: 'Price/Sqft', value1: projects[0]?.pricePerSqft, value2: projects[1]?.pricePerSqft },
+        { label: 'Maintenance/Sqft', value1: projects[0]?.maintenancePerSqft, value2: projects[1]?.maintenancePerSqft },
+        { label: 'Possession Date & Status', value1: projects[0]?.possessionDate, value2: projects[1]?.possessionDate },
+        { label: 'Project Land Area', value1: projects[0]?.landArea, value2: projects[1]?.landArea, noBorder: true },
       ],
     },
     {
       id: 'masterPlan',
       title: 'Master Plan',
       content: [
-        { label: "Fuss'e justo libero", value1: 'Pellentesque quis', value2: 'Pellentesque quis' },
-        { label: 'Land Area', value1: '50 Acres', value2: '30 Acres' },
-        { label: 'Open Area', value1: '6 Acres', value2: '5 Acres' },
-        { label: 'Total Number of Flats', value1: '355', value2: '5545' },
-        { label: 'Density Factor - Units/Acre', value1: '35/Acre', value2: '25/Acre', noBorder: true },
+        { label: "Fuss'e justo libero", value1: projects[0]?.fusseJustoLibero, value2: projects[1]?.fusseJustoLibero },
+        { label: 'Land Area', value1: projects[0]?.landArea, value2: projects[1]?.landArea },
+        { label: 'Open Area', value1: projects[0]?.openArea, value2: projects[1]?.openArea },
+        { label: 'Total Number of Flats', value1: projects[0]?.totalFlats, value2: projects[1]?.totalFlats },
+        { label: 'Density Factor - Units/Acre', value1: projects[0]?.densityFactor, value2: projects[1]?.densityFactor, noBorder: true },
       ],
     },
     {
       id: 'amenities',
       title: 'Amenities',
       content: [
-        { label: 'Power Backup', value1: true, value2: false, showDash: true },
-        { label: 'Piped Gas', value1: true, value2: false, showDash: true },
-        { label: 'Clubhouse', value1: true, value2: false, showDash: true },
-        { label: "Children's / toddler's Play Area", value1: true, value2: false, showDash: true, isLastAmenity: true, noBorder: true },
+        { label: 'Power Backup', value1: projects[0]?.powerBackup, value2: projects[1]?.powerBackup, showDash: true },
+        { label: 'Piped Gas', value1: projects[0]?.pipedGas, value2: projects[1]?.pipedGas, showDash: true },
+        { label: 'Clubhouse', value1: projects[0]?.clubhouse, value2: projects[1]?.clubhouse, showDash: true },
+        { label: "Children's / toddler's Play Area", value1: projects[0]?.childrensPlayArea, value2: projects[1]?.childrensPlayArea, showDash: true, isLastAmenity: true, noBorder: true },
       ],
     },
     {
       id: 'floorPlan',
       title: 'Floor Plan',
       content: [
-        { label: 'Sed et mollis leo', value1: true, value2: false, showDash: true },
-        { label: 'Curabitur lacinia nisi', value1: true, value2: false, showDash: true },
-        { label: 'Lorem ipsum dolor', value1: true, value2: false, showDash: true, noBorder: true },
+        { label: 'Sed et mollis leo', value1: projects[0]?.sedEtMollisLeo, value2: projects[1]?.sedEtMollisLeo, showDash: true },
+        { label: 'Curabitur lacinia nisi', value1: projects[0]?.curabiturLaciniaNisi, value2: projects[1]?.curabiturLaciniaNisi, showDash: true },
+        { label: 'Lorem ipsum dolor', value1: projects[0]?.loremIpsumDolor, value2: projects[1]?.loremIpsumDolor, showDash: true, noBorder: true },
       ],
     },
     {
       id: 'unitPlan',
       title: 'Unit Plan',
       content: [
-        { label: 'Sed et mollis leo', value1: true, value2: false, showDash: true },
-        { label: 'Curabitur lacinia nisi', value1: true, value2: false, showDash: true },
-        { label: 'Lorem ipsum dolor', value1: true, value2: false, showDash: true, noBorder: true },
+        { label: 'Sed et mollis leo', value1: projects[0]?.sedEtMollisLeo, value2: projects[1]?.sedEtMollisLeo, showDash: true },
+        { label: 'Curabitur lacinia nisi', value1: projects[0]?.curabiturLaciniaNisi, value2: projects[1]?.curabiturLaciniaNisi, showDash: true },
+        { label: 'Lorem ipsum dolor', value1: projects[0]?.loremIpsumDolor, value2: projects[1]?.loremIpsumDolor, showDash: true, noBorder: true },
       ],
     },
     {
       id: 'localityComparison',
       title: 'Locality Comparison',
       content: [
-        { label: 'Sed et mollis leo', value1: true, value2: false, showDash: true },
-        { label: 'Curabitur lacinia nisi', value1: true, value2: false, showDash: true },
-        { label: 'Lorem ipsum dolor', value1: true, value2: false, showDash: true, noBorder: true },
+        { label: 'Sed et mollis leo', value1: projects[0]?.sedEtMollisLeo, value2: projects[1]?.sedEtMollisLeo, showDash: true },
+        { label: 'Curabitur lacinia nisi', value1: projects[0]?.curabiturLaciniaNisi, value2: projects[1]?.curabiturLaciniaNisi, showDash: true },
+        { label: 'Lorem ipsum dolor', value1: projects[0]?.loremIpsumDolor, value2: projects[1]?.loremIpsumDolor, showDash: true, noBorder: true },
       ],
     },
     {
       id: 'builderRepute',
       title: 'Builder Repute',
       content: [
-        { label: 'Sed et mollis leo', value1: true, value2: false, showDash: true },
-        { label: 'Curabitur lacinia nisi', value1: true, value2: false, showDash: true },
-        { label: 'Lorem ipsum dolor', value1: true, value2: false, showDash: true, noBorder: true },
+        { label: 'Sed et mollis leo', value1: projects[0]?.sedEtMollisLeo, value2: projects[1]?.sedEtMollisLeo, showDash: true },
+        { label: 'Curabitur lacinia nisi', value1: projects[0]?.curabiturLaciniaNisi, value2: projects[1]?.curabiturLaciniaNisi, showDash: true },
+        { label: 'Lorem ipsum dolor', value1: projects[0]?.loremIpsumDolor, value2: projects[1]?.loremIpsumDolor, showDash: true, noBorder: true },
       ],
     },
   ];

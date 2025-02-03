@@ -212,34 +212,27 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 ;
 ;
 ;
-const CompareProperty = ()=>{
+const CompareProperty = ({ projects, handleRemoveProject, handleAddProject })=>{
     const theme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$useTheme$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__useTheme$3e$__["useTheme"])();
     const isMobile = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$useMediaQuery$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__useMediaQuery$3e$__["useMediaQuery"])(theme.breakpoints.down('sm'));
     const isTablet = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$useMediaQuery$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__useMediaQuery$3e$__["useMediaQuery"])(theme.breakpoints.down('md'));
-    const [projects, setProjects] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([
+    // Define features to compare
+    const features = [
         {
-            name: 'ATS Pristine City',
-            location: 'Sector 1, Any Street, Canada'
+            label: 'Price',
+            key: 'price'
         },
         {
-            name: 'Mahagun Mantra',
-            location: 'Sector 3, ABC, Canada'
+            label: 'BHK',
+            key: 'bhk'
         }
-    ]);
-    const handleRemoveProject = (index)=>{
-        const newProjects = [
-            ...projects
-        ];
-        newProjects.splice(index, 1);
-        setProjects(newProjects);
-    };
+    ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
             width: '100%',
-            maxWidth: '1250px',
             height: {
                 xs: 'auto',
-                md: '350px'
+                md: 'auto'
             },
             display: 'flex',
             flexDirection: {
@@ -247,7 +240,7 @@ const CompareProperty = ()=>{
                 md: 'row'
             },
             bgcolor: 'white',
-            boxShadow: '0 1px 3px rgba(0,0,0,0.12)',
+            boxShadow: '0 10px 10px rgba(0,0,0,0.12)',
             overflow: 'hidden',
             mb: 3,
             border: '1px solid #000000'
@@ -283,12 +276,12 @@ const CompareProperty = ()=>{
                     children: "Features"
                 }, void 0, false, {
                     fileName: "[project]/src/components/Property-compare/components/CompareProperty.js",
-                    lineNumber: 48,
+                    lineNumber: 42,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Property-compare/components/CompareProperty.js",
-                lineNumber: 38,
+                lineNumber: 32,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -341,7 +334,7 @@ const CompareProperty = ()=>{
                                             children: project.name
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Property-compare/components/CompareProperty.js",
-                                            lineNumber: 89,
+                                            lineNumber: 83,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Close$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -356,13 +349,13 @@ const CompareProperty = ()=>{
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Property-compare/components/CompareProperty.js",
-                                            lineNumber: 98,
+                                            lineNumber: 92,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Property-compare/components/CompareProperty.js",
-                                    lineNumber: 81,
+                                    lineNumber: 75,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -374,7 +367,7 @@ const CompareProperty = ()=>{
                                     children: project.location
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Property-compare/components/CompareProperty.js",
-                                    lineNumber: 109,
+                                    lineNumber: 103,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -389,54 +382,65 @@ const CompareProperty = ()=>{
                                         borderRadius: '6px'
                                     },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                        src: "/Images/Propertycompare2.png",
+                                        src: project.image,
                                         alt: project.name,
                                         layout: "fill",
                                         objectFit: "cover",
                                         priority: true
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Property-compare/components/CompareProperty.js",
-                                        lineNumber: 129,
+                                        lineNumber: 123,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Property-compare/components/CompareProperty.js",
-                                    lineNumber: 120,
+                                    lineNumber: 114,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                                     sx: {
-                                        mt: 'auto',
-                                        pt: 2
+                                        mt: 2
                                     },
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
+                                    children: features.map((feature)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                                             sx: {
-                                                fontSize: '14px',
-                                                color: '#606060',
+                                                display: 'flex',
+                                                justifyContent: 'space-between',
+                                                alignItems: 'center',
                                                 mb: 1
                                             },
-                                            children: "2,3 BHK"
-                                        }, void 0, false, {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
+                                                    sx: {
+                                                        fontSize: '14px',
+                                                        color: '#606060'
+                                                    },
+                                                    children: feature.label
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Property-compare/components/CompareProperty.js",
+                                                    lineNumber: 144,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
+                                                    sx: {
+                                                        fontSize: '14px',
+                                                        color: '#333',
+                                                        fontWeight: 500
+                                                    },
+                                                    children: project[feature.key]
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Property-compare/components/CompareProperty.js",
+                                                    lineNumber: 152,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, feature.key, true, {
                                             fileName: "[project]/src/components/Property-compare/components/CompareProperty.js",
-                                            lineNumber: 140,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                                            sx: {
-                                                fontSize: '14px',
-                                                color: '#333'
-                                            },
-                                            children: "$84.0 Lac - 1.54 Cr"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/Property-compare/components/CompareProperty.js",
-                                            lineNumber: 149,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
+                                            lineNumber: 135,
+                                            columnNumber: 17
+                                        }, this))
+                                }, void 0, false, {
                                     fileName: "[project]/src/components/Property-compare/components/CompareProperty.js",
-                                    lineNumber: 139,
+                                    lineNumber: 133,
                                     columnNumber: 13
                                 }, this),
                                 index === 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -473,13 +477,13 @@ const CompareProperty = ()=>{
                                     children: "VS"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Property-compare/components/CompareProperty.js",
-                                    lineNumber: 161,
+                                    lineNumber: 167,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, project.name, true, {
                             fileName: "[project]/src/components/Property-compare/components/CompareProperty.js",
-                            lineNumber: 68,
+                            lineNumber: 62,
                             columnNumber: 11
                         }, this)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -510,7 +514,7 @@ const CompareProperty = ()=>{
                                 children: "Add Project to Compare"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Property-compare/components/CompareProperty.js",
-                                lineNumber: 203,
+                                lineNumber: 209,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
@@ -519,9 +523,10 @@ const CompareProperty = ()=>{
                                     children: "+"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Property-compare/components/CompareProperty.js",
-                                    lineNumber: 215,
+                                    lineNumber: 221,
                                     columnNumber: 24
                                 }, void 0),
+                                onClick: handleAddProject,
                                 sx: {
                                     height: '32px',
                                     borderRadius: '16px',
@@ -539,25 +544,25 @@ const CompareProperty = ()=>{
                                 children: "Add Project"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Property-compare/components/CompareProperty.js",
-                                lineNumber: 213,
+                                lineNumber: 219,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Property-compare/components/CompareProperty.js",
-                        lineNumber: 191,
+                        lineNumber: 197,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Property-compare/components/CompareProperty.js",
-                lineNumber: 60,
+                lineNumber: 54,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Property-compare/components/CompareProperty.js",
-        lineNumber: 23,
+        lineNumber: 18,
         columnNumber: 5
     }, this);
 };
@@ -823,7 +828,7 @@ const TableRow = ({ label, value1, value2, isHeader = false, showDash = false, n
         columnNumber: 5
     }, this);
 };
-const ComparisonSection = ()=>{
+const ComparisonSection = ({ projects })=>{
     const [expandedPanels, setExpandedPanels] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
         propertyDetails: true,
         masterPlan: true,
@@ -871,28 +876,28 @@ const ComparisonSection = ()=>{
             content: [
                 {
                     label: 'Developer Name',
-                    value1: 'ATS Infrastructure',
-                    value2: 'Mahagun Group'
+                    value1: projects[0]?.developerName,
+                    value2: projects[1]?.developerName
                 },
                 {
                     label: 'Price/Sqft',
-                    value1: '$3566',
-                    value2: '$3566'
+                    value1: projects[0]?.pricePerSqft,
+                    value2: projects[1]?.pricePerSqft
                 },
                 {
                     label: 'Maintenance/Sqft',
-                    value1: '$566',
-                    value2: '$366'
+                    value1: projects[0]?.maintenancePerSqft,
+                    value2: projects[1]?.maintenancePerSqft
                 },
                 {
                     label: 'Possession Date & Status',
-                    value1: '20 Jan 2022',
-                    value2: '17 Jan 2024'
+                    value1: projects[0]?.possessionDate,
+                    value2: projects[1]?.possessionDate
                 },
                 {
                     label: 'Project Land Area',
-                    value1: 'Ready to Move',
-                    value2: 'Under construction',
+                    value1: projects[0]?.landArea,
+                    value2: projects[1]?.landArea,
                     noBorder: true
                 }
             ]
@@ -903,28 +908,28 @@ const ComparisonSection = ()=>{
             content: [
                 {
                     label: "Fuss'e justo libero",
-                    value1: 'Pellentesque quis',
-                    value2: 'Pellentesque quis'
+                    value1: projects[0]?.fusseJustoLibero,
+                    value2: projects[1]?.fusseJustoLibero
                 },
                 {
                     label: 'Land Area',
-                    value1: '50 Acres',
-                    value2: '30 Acres'
+                    value1: projects[0]?.landArea,
+                    value2: projects[1]?.landArea
                 },
                 {
                     label: 'Open Area',
-                    value1: '6 Acres',
-                    value2: '5 Acres'
+                    value1: projects[0]?.openArea,
+                    value2: projects[1]?.openArea
                 },
                 {
                     label: 'Total Number of Flats',
-                    value1: '355',
-                    value2: '5545'
+                    value1: projects[0]?.totalFlats,
+                    value2: projects[1]?.totalFlats
                 },
                 {
                     label: 'Density Factor - Units/Acre',
-                    value1: '35/Acre',
-                    value2: '25/Acre',
+                    value1: projects[0]?.densityFactor,
+                    value2: projects[1]?.densityFactor,
                     noBorder: true
                 }
             ]
@@ -935,26 +940,26 @@ const ComparisonSection = ()=>{
             content: [
                 {
                     label: 'Power Backup',
-                    value1: true,
-                    value2: false,
+                    value1: projects[0]?.powerBackup,
+                    value2: projects[1]?.powerBackup,
                     showDash: true
                 },
                 {
                     label: 'Piped Gas',
-                    value1: true,
-                    value2: false,
+                    value1: projects[0]?.pipedGas,
+                    value2: projects[1]?.pipedGas,
                     showDash: true
                 },
                 {
                     label: 'Clubhouse',
-                    value1: true,
-                    value2: false,
+                    value1: projects[0]?.clubhouse,
+                    value2: projects[1]?.clubhouse,
                     showDash: true
                 },
                 {
                     label: "Children's / toddler's Play Area",
-                    value1: true,
-                    value2: false,
+                    value1: projects[0]?.childrensPlayArea,
+                    value2: projects[1]?.childrensPlayArea,
                     showDash: true,
                     isLastAmenity: true,
                     noBorder: true
@@ -967,20 +972,20 @@ const ComparisonSection = ()=>{
             content: [
                 {
                     label: 'Sed et mollis leo',
-                    value1: true,
-                    value2: false,
+                    value1: projects[0]?.sedEtMollisLeo,
+                    value2: projects[1]?.sedEtMollisLeo,
                     showDash: true
                 },
                 {
                     label: 'Curabitur lacinia nisi',
-                    value1: true,
-                    value2: false,
+                    value1: projects[0]?.curabiturLaciniaNisi,
+                    value2: projects[1]?.curabiturLaciniaNisi,
                     showDash: true
                 },
                 {
                     label: 'Lorem ipsum dolor',
-                    value1: true,
-                    value2: false,
+                    value1: projects[0]?.loremIpsumDolor,
+                    value2: projects[1]?.loremIpsumDolor,
                     showDash: true,
                     noBorder: true
                 }
@@ -992,20 +997,20 @@ const ComparisonSection = ()=>{
             content: [
                 {
                     label: 'Sed et mollis leo',
-                    value1: true,
-                    value2: false,
+                    value1: projects[0]?.sedEtMollisLeo,
+                    value2: projects[1]?.sedEtMollisLeo,
                     showDash: true
                 },
                 {
                     label: 'Curabitur lacinia nisi',
-                    value1: true,
-                    value2: false,
+                    value1: projects[0]?.curabiturLaciniaNisi,
+                    value2: projects[1]?.curabiturLaciniaNisi,
                     showDash: true
                 },
                 {
                     label: 'Lorem ipsum dolor',
-                    value1: true,
-                    value2: false,
+                    value1: projects[0]?.loremIpsumDolor,
+                    value2: projects[1]?.loremIpsumDolor,
                     showDash: true,
                     noBorder: true
                 }
@@ -1017,20 +1022,20 @@ const ComparisonSection = ()=>{
             content: [
                 {
                     label: 'Sed et mollis leo',
-                    value1: true,
-                    value2: false,
+                    value1: projects[0]?.sedEtMollisLeo,
+                    value2: projects[1]?.sedEtMollisLeo,
                     showDash: true
                 },
                 {
                     label: 'Curabitur lacinia nisi',
-                    value1: true,
-                    value2: false,
+                    value1: projects[0]?.curabiturLaciniaNisi,
+                    value2: projects[1]?.curabiturLaciniaNisi,
                     showDash: true
                 },
                 {
                     label: 'Lorem ipsum dolor',
-                    value1: true,
-                    value2: false,
+                    value1: projects[0]?.loremIpsumDolor,
+                    value2: projects[1]?.loremIpsumDolor,
                     showDash: true,
                     noBorder: true
                 }
@@ -1042,20 +1047,20 @@ const ComparisonSection = ()=>{
             content: [
                 {
                     label: 'Sed et mollis leo',
-                    value1: true,
-                    value2: false,
+                    value1: projects[0]?.sedEtMollisLeo,
+                    value2: projects[1]?.sedEtMollisLeo,
                     showDash: true
                 },
                 {
                     label: 'Curabitur lacinia nisi',
-                    value1: true,
-                    value2: false,
+                    value1: projects[0]?.curabiturLaciniaNisi,
+                    value2: projects[1]?.curabiturLaciniaNisi,
                     showDash: true
                 },
                 {
                     label: 'Lorem ipsum dolor',
-                    value1: true,
-                    value2: false,
+                    value1: projects[0]?.loremIpsumDolor,
+                    value2: projects[1]?.loremIpsumDolor,
                     showDash: true,
                     noBorder: true
                 }
@@ -1177,6 +1182,62 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 ;
 ;
 function PropertyCompare() {
+    const [projects, setProjects] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([
+        {
+            name: 'ATS Pristine City',
+            location: 'Sector 1, Any Street, Canada',
+            image: '/Images/Propertycompare2.png',
+            price: '$84.0 Lac - 1.54 Cr',
+            bhk: '2, 3 BHK',
+            developerName: 'ATS Infrastructure',
+            pricePerSqft: '$3566',
+            maintenancePerSqft: '$566',
+            possessionDate: '20 Jan 2022',
+            landArea: '50 Acres',
+            openArea: '6 Acres',
+            totalFlats: '355',
+            densityFactor: '35/Acre',
+            powerBackup: true,
+            pipedGas: true,
+            clubhouse: true,
+            childrensPlayArea: true,
+            sedEtMollisLeo: true,
+            curabiturLaciniaNisi: true,
+            loremIpsumDolor: true
+        },
+        {
+            name: 'Mahagun Mantra',
+            location: 'Sector 3, ABC, Canada',
+            image: '/Images/Propertycompare2.png',
+            price: '$75.0 Lac - 1.45 Cr',
+            bhk: '2, 3, 4 BHK',
+            developerName: 'Mahagun Group',
+            pricePerSqft: '$3566',
+            maintenancePerSqft: '$366',
+            possessionDate: '17 Jan 2024',
+            landArea: '30 Acres',
+            openArea: '5 Acres',
+            totalFlats: '5545',
+            densityFactor: '25/Acre',
+            powerBackup: false,
+            pipedGas: false,
+            clubhouse: false,
+            childrensPlayArea: false,
+            sedEtMollisLeo: false,
+            curabiturLaciniaNisi: false,
+            loremIpsumDolor: false
+        }
+    ]);
+    const handleRemoveProject = (index)=>{
+        const newProjects = [
+            ...projects
+        ];
+        newProjects.splice(index, 1);
+        setProjects(newProjects);
+    };
+    const handleAddProject = ()=>{
+        alert('Add Project functionality to be implemented.');
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
             backgroundColor: '#F7F7F7',
@@ -1226,12 +1287,12 @@ function PropertyCompare() {
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Property$2d$compare$2f$components$2f$Heading$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/components/Property-compare/property-compare.js",
-                    lineNumber: 34,
+                    lineNumber: 91,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Property-compare/property-compare.js",
-                lineNumber: 23,
+                lineNumber: 80,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1239,7 +1300,7 @@ function PropertyCompare() {
                     maxWidth: {
                         xs: '90%',
                         sm: '95%',
-                        lg: '1250px'
+                        lg: '1350px'
                     },
                     width: '100%',
                     margin: '0',
@@ -1267,32 +1328,37 @@ function PropertyCompare() {
                         }
                     },
                     children: [
-                        " ",
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Property$2d$compare$2f$components$2f$CompareProperty$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Property$2d$compare$2f$components$2f$CompareProperty$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            projects: projects,
+                            handleRemoveProject: handleRemoveProject,
+                            handleAddProject: handleAddProject
+                        }, void 0, false, {
                             fileName: "[project]/src/components/Property-compare/property-compare.js",
-                            lineNumber: 52,
+                            lineNumber: 109,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Property$2d$compare$2f$components$2f$ComparisonSection$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Property$2d$compare$2f$components$2f$ComparisonSection$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            projects: projects
+                        }, void 0, false, {
                             fileName: "[project]/src/components/Property-compare/property-compare.js",
-                            lineNumber: 53,
+                            lineNumber: 114,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Property-compare/property-compare.js",
-                    lineNumber: 51,
+                    lineNumber: 108,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Property-compare/property-compare.js",
-                lineNumber: 36,
+                lineNumber: 93,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Property-compare/property-compare.js",
-        lineNumber: 10,
+        lineNumber: 67,
         columnNumber: 5
     }, this);
 }
