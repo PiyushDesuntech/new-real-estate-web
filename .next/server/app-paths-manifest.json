@@ -1,1 +1,7 @@
-{}
+{
+  "/page": "app/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/property-compare/page": "app/property-compare/page.js",
+  "/reviews/page": "app/reviews/page.js",
+  "/insights/page": "app/insights/page.js"
+}
