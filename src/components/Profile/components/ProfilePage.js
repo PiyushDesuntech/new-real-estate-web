@@ -110,10 +110,11 @@ const detailsToShow = isClient && window.innerWidth < 900 ? mobileDetails : desk
 
   return (
     <Box sx={{ 
-      minHeight: { xs: 'auto', md: '100vh' }, 
-      bgcolor: '#F7F7F7', 
-      py: { xs: 2, sm: 3, md: 4 },
-      px: { xs: 2, sm: 3, md: 0 }
+      // minHeight: { xs: 'auto', md: '100vh' }, 
+      // bgcolor: '#F7F7F7', 
+      // py: { xs: 2, sm: 3, md: 4 },
+      px: { xs: 1, sm: 1, md: 1 },
+      pb: 8
     }}>
       <Box sx={{ maxWidth: '100%', margin: '0' }}>
         <Paper
@@ -123,7 +124,7 @@ const detailsToShow = isClient && window.innerWidth < 900 ? mobileDetails : desk
             height: { xs: 'auto', md: '380px' },
             minHeight: { xs: '500px', sm: '450px', md: '380px' },
             width: '100%',
-            maxWidth: { xs: '100%', md: '1250px' },
+            // maxWidth: { xs: '100%', md: '1250px' },
             overflow: 'hidden'
           }}
         >

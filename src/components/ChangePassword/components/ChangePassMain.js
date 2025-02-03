@@ -86,7 +86,8 @@ export default function ChangePassMain() {
     <Box sx={{ 
       maxWidth: '100%',
       margin: '0 auto',
-      px: { xs: 0, sm: 2, md: 4 }
+      px: { xs: 1, sm: 2, md: 4 },
+      pb: 4
     }}>
       <Paper
         elevation={0}
@@ -104,7 +105,7 @@ export default function ChangePassMain() {
           sx={{
             display: 'flex',
             flexDirection: 'column',
-            gap: { xs: 3, sm: 4 },
+            gap: { xs: 2, sm: 4 },
           }}
         >
           <Box sx={{ mb: { xs: 1, sm: 2 } }}>
