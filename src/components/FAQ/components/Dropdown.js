@@ -6,7 +6,7 @@ import { Box, Typography, Menu, MenuItem, Button , Accordion,
 
   import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-export default function Dropdowns() {
+export default function Dropdown() {
 
   const [expanded, setExpanded] = useState(false);
 
