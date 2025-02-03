@@ -6,7 +6,7 @@
   "path": "static/chunks/src_app_FAQ_page_b90af3.js",
   "chunks": [
     "static/chunks/node_modules_ed2ac1._.js",
-    "static/chunks/src_7e7520._.js"
+    "static/chunks/src_246fc3._.js"
   ],
   "source": "dynamic"
 });

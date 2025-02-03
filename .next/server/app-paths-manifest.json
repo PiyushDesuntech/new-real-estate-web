@@ -3,11 +3,6 @@
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/property-compare/page": "app/property-compare/page.js",
   "/reviews/page": "app/reviews/page.js",
-  "/insights/page": "app/insights/page.js"
-  "/FAQ/page": "app/FAQ/page.js",
-  "/profile/page": "app/profile/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/changepassword/page": "app/changepassword/page.js",
-  "/agents/page": "app/agents/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/insights/page": "app/insights/page.js",
+  "/FAQ/page": "app/FAQ/page.js"
 }

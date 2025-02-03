@@ -10,8 +10,8 @@ const CompareProperty = ({ projects, handleRemoveProject, handleAddProject }) =>
 
   // Define features to compare
   const features = [
-    { label: 'Price', key: 'price' },
     { label: 'BHK', key: 'bhk' },
+    { label: 'Price', key: 'price' },
   ];
 
   return (
