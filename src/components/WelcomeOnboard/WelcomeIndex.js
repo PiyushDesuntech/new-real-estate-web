@@ -13,7 +13,7 @@ export default function WelcomeIndex() {
   return (
     <Box>
       <Box sx={{background: "#FCFCFC"}}>
-      <Container maxWidth="xl" sx={{ px: { lg: 8, xs: 3 }, mt: 3 }}>
+      <Container maxWidth="xl" sx={{ px: { lg: 7, sm: 2,xs: 1 }, mt: 3 }}>
         <WelcomeOnboard />
       </Container>
       </Box>

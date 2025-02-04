@@ -62,12 +62,17 @@ export default function WelcomeOnboard() {
         >
           <Box>
             <Typography
-              sx={{ fontSize: "37px", fontWeight: 600, color: "#484848" }}
+              sx={{ fontSize: { 
+                xs: '24px',
+                sm: '28px',
+                md: '32px',
+                lg: '37px' 
+              }, fontWeight: 700, color: "#484848" }}
             >
               Property Onboard!
             </Typography>
             <Typography
-              sx={{ fontSize: "18px", fontWeight: 500, color: "#616161" }}
+              sx={{ fontSize: {xs: "12px", sm: "14px", md: "16px", lg: "18px"}, fontWeight: 500, color: "#616161" }}
             >
               {" "}
               50K Owners & 12 Lac Buyers are Waiting for You!
