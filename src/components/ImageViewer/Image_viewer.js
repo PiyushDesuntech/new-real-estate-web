@@ -19,7 +19,7 @@ export default function Image_viewer() {
         {/* Box around Main_image with margin top */}
         <Box sx={{ 
           marginTop: 2,
-          ml:-2,
+          // ml:-2,
            }}>
           <Main_image />
         </Box>

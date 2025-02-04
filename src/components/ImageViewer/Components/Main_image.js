@@ -94,12 +94,13 @@ export default function MainImage() {
       {/* Main Image Slider */}
       <Box
         sx={{
-          width: { xs: "100%", sm: "100%", lg: "1530px" },
+          width: { xs: "100%", sm: "100%", lg: "100%" },
           display: "flex",
           gap: "1px",
           position: "relative",
           justifyContent: "center",
           alignItems: "center",
+          // p: 1,
         }}
       >
         <Box

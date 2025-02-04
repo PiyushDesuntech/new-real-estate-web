@@ -23,7 +23,7 @@
       "static/chunks/_e69f0d._.js",
       "static/chunks/_d95469._.js"
     ],
-    "/property-compare1/page": [
+    "/properties-image-viewer/page": [
       "static/chunks/_a91c21._.js",
       "static/chunks/src_app_favicon_ico_mjs_ddfdf0._.js",
       "static/chunks/src_0e828a._.js",
@@ -33,9 +33,8 @@
       "static/chunks/node_modules_793171._.js",
       "static/chunks/src_app_globals_b80590.css",
       "static/chunks/src_app_layout_61af54.js",
-      "static/chunks/src_ec5f31._.js",
-      "static/chunks/node_modules_@mui_f83474._.js",
-      "static/chunks/src_app_property-compare1_page_b90af3.js",
+      "static/chunks/_1086fd._.js",
+      "static/chunks/src_app_properties-image-viewer_page_b90af3.js",
       "static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js",
       "static/chunks/node_modules_next_dist_compiled_107ce8._.js",
       "static/chunks/node_modules_next_dist_client_523921._.js",
