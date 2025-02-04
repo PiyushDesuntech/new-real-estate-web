@@ -22,7 +22,6 @@ export default function Frequently_asked_ques() {
         fontFamily: "Lato",
         fontSize: { xs: "25px",md: "30px", lg: "40px" },
         fontWeight: 700,
-        lineHeight: "61.2px",
         textAlign: "center", 
         color: "#484848"
       }}

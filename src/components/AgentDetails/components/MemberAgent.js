@@ -4,7 +4,7 @@ import React from "react";
 
 export default function MemberAgent() {
   return (
-    <Box >
+    <Box px={1}>
       <Grid container spacing={1}>
         <Grid item xs={12} sm={6} md={4.7}>
           <Box

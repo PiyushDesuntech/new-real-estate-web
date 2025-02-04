@@ -10,5 +10,16 @@
   "/edit-profile/page": "app/edit-profile/page.js",
   "/contact-us/page": "app/contact-us/page.js",
   "/properties-image-viewer/page": "app/properties-image-viewer/page.js",
-  "/property-onboard/page": "app/property-onboard/page.js"
+  "/property-onboard/page": "app/property-onboard/page.js",
+  "/agents/page": "app/agents/page.js",
+  "/agents/agent-details/page": "app/agents/agent-details/page.js",
+  "/buy/page": "app/buy/page.js",
+  "/rent/page": "app/rent/page.js",
+  "/about-us/page": "app/about-us/page.js",
+  "/FAQ/page": "app/FAQ/page.js",
+  "/insight-inner/page": "app/insight-inner/page.js",
+  "/property-list/property-details/[id]/page": "app/property-list/property-details/[id]/page.js",
+  "/property-list/page": "app/property-list/page.js",
+  "/property-search/page": "app/property-search/page.js",
+  "/sell/page": "app/sell/page.js"
 }

@@ -81,7 +81,6 @@ function Frequently_asked_ques() {
                     lg: "40px"
                 },
                 fontWeight: 700,
-                lineHeight: "61.2px",
                 textAlign: "center",
                 color: "#484848"
             },

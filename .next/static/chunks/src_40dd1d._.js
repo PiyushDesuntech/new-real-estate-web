@@ -1517,7 +1517,8 @@ function Heading() {
             py: 4,
             px: {
                 xs: 1,
-                sm: 3
+                sm: 2.5,
+                lg: 5
             }
         },
         children: [
@@ -1656,30 +1657,22 @@ function Insights() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
             backgroundColor: "#F7F7F7",
-            minHeight: "100vh",
             minWidth: "51px"
         },
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Container$2f$Container$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Container$3e$__["Container"], {
             maxWidth: "xl",
             sx: {
                 px: {
-                    xs: 1,
+                    xs: 3,
                     sm: 2,
-                    md: 4
+                    lg: 4
                 },
                 pb: {
                     xs: 6,
                     sm: 8,
                     md: 10
                 },
-                minWidth: "51px",
-                maxWidth: "100% !important",
-                overflowX: "hidden",
-                ml: {
-                    xs: 0,
-                    sm: 1,
-                    md: 2
-                }
+                minWidth: "51px"
             },
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Insights$2f$components$2f$Heading$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
@@ -1705,7 +1698,7 @@ function Insights() {
                             px: {
                                 xs: 1,
                                 sm: 2,
-                                md: 3
+                                lg: 5
                             },
                             minWidth: "51px"
                         },
