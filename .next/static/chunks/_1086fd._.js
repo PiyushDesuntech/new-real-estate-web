@@ -524,7 +524,11 @@ function MainImage() {
                                         xs: "30px",
                                         md: "40px"
                                     },
-                                    fontWeight: "500"
+                                    fontWeight: "500",
+                                    textAlign: {
+                                        xs: "center",
+                                        lg: "left"
+                                    }
                                 },
                                 children: "$5500"
                             }, void 0, false, {
@@ -536,12 +540,14 @@ function MainImage() {
                                 sx: {
                                     display: "flex",
                                     alignItems: {
-                                        xs: "flex-start",
-                                        sm: "center"
+                                        xs: "center",
+                                        sm: "center",
+                                        lg: "flex-start"
                                     },
                                     flexDirection: {
                                         xs: "column",
-                                        sm: "row"
+                                        sm: "row",
+                                        lg: "column"
                                     },
                                     gap: 1
                                 },
