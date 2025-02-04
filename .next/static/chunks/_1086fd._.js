@@ -79,8 +79,10 @@ function Heading() {
         sx: {
             px: {
                 xs: 3,
-                lg: 8
-            }
+                sm: 2,
+                lg: 6
+            },
+            py: 3
         },
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
             sx: {
@@ -454,18 +456,17 @@ function MainImage() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
-                    width: "90%",
+                    // width: "90%",
                     margin: "auto",
                     display: "flex",
                     flexDirection: {
                         xs: "column",
-                        sm: "column",
-                        md: "row"
+                        lg: "row"
                     },
                     mt: {
                         md: "30px",
                         sm: "0px",
-                        xs: "0px"
+                        xs: "10px"
                     },
                     position: "relative",
                     bottom: {
@@ -473,12 +474,12 @@ function MainImage() {
                         sm: "2px"
                     },
                     alignItems: "center",
-                    gap: {
-                        md: "90px",
-                        sm: "2px",
-                        xs: "2px"
+                    // gap: { lg: "90px", sm: "2px", xs: "2px" },
+                    px: {
+                        xs: "20px",
+                        lg: "40px"
                     },
-                    px: "20px"
+                    justifyContent: "space-between"
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -496,9 +497,9 @@ function MainImage() {
                             },
                             display: "flex",
                             flexDirection: {
-                                md: "column",
+                                lg: "column",
                                 sm: "row",
-                                xs: "row"
+                                xs: "column"
                             },
                             alignItems: {
                                 xs: "center",
@@ -508,6 +509,11 @@ function MainImage() {
                                 md: "10px",
                                 sm: "2px",
                                 xs: "2px"
+                            },
+                            alignItems: {
+                                xs: "unset",
+                                md: "center",
+                                lg: "unset"
                             }
                         },
                         children: [
@@ -515,7 +521,7 @@ function MainImage() {
                                 sx: {
                                     fontSize: {
                                         sm: "30px",
-                                        sx: "30px",
+                                        xs: "30px",
                                         md: "40px"
                                     },
                                     fontWeight: "500"
@@ -523,94 +529,117 @@ function MainImage() {
                                 children: "$5500"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                lineNumber: 200,
+                                lineNumber: 202,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                                 sx: {
                                     display: "flex",
-                                    alignItems: "center",
-                                    gap: "5px"
+                                    alignItems: {
+                                        xs: "flex-start",
+                                        sm: "center"
+                                    },
+                                    flexDirection: {
+                                        xs: "column",
+                                        sm: "row"
+                                    },
+                                    gap: 1
                                 },
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$LocationOnOutlined$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                                         sx: {
-                                            fontSize: {
-                                                xs: 20,
-                                                md: 35
-                                            }
-                                        }
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                        lineNumber: 204,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                                        sx: {
-                                            fontSize: {
-                                                xs: "10px",
-                                                md: "18px"
-                                            },
-                                            color: "#484848",
-                                            lineHeight: "1.2"
+                                            display: "flex",
+                                            alignItems: "center",
+                                            gap: "5px"
                                         },
-                                        children: "22-05 Astoria Blvd, Astoria"
-                                    }, void 0, false, {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$LocationOnOutlined$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                sx: {
+                                                    fontSize: {
+                                                        xs: 20,
+                                                        md: 35
+                                                    }
+                                                }
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
+                                                lineNumber: 207,
+                                                columnNumber: 13
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
+                                                sx: {
+                                                    fontSize: {
+                                                        xs: "10px",
+                                                        sm: "16px",
+                                                        md: "18px"
+                                                    },
+                                                    color: "#484848",
+                                                    lineHeight: "1.2"
+                                                },
+                                                children: "22-05 Astoria Blvd, Astoria"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
+                                                lineNumber: 208,
+                                                columnNumber: 13
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                        lineNumber: 205,
-                                        columnNumber: 13
+                                        lineNumber: 206,
+                                        columnNumber: 11
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
+                                        sx: {
+                                            display: "flex",
+                                            alignItems: "center",
+                                            gap: "15px"
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
+                                                sx: {
+                                                    fontSize: {
+                                                        xs: "10px",
+                                                        sm: "16px",
+                                                        md: "18px"
+                                                    },
+                                                    color: "#484848"
+                                                },
+                                                children: "Beds: 4"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
+                                                lineNumber: 213,
+                                                columnNumber: 13
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
+                                                sx: {
+                                                    fontSize: {
+                                                        xs: "10px",
+                                                        sm: "16px",
+                                                        md: "18px"
+                                                    },
+                                                    color: "#484848"
+                                                },
+                                                children: "Baths: 2"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
+                                                lineNumber: 214,
+                                                columnNumber: 13
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
+                                        lineNumber: 212,
+                                        columnNumber: 11
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                lineNumber: 203,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
-                                sx: {
-                                    display: "flex",
-                                    alignItems: "center",
-                                    gap: "15px"
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                                        sx: {
-                                            fontSize: {
-                                                xs: "10px",
-                                                md: "18px"
-                                            },
-                                            color: "#484848"
-                                        },
-                                        children: "Beds: 4"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                        lineNumber: 210,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                                        sx: {
-                                            fontSize: {
-                                                xs: "10px",
-                                                md: "18px"
-                                            },
-                                            color: "#484848"
-                                        },
-                                        children: "Baths: 2"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                        lineNumber: 211,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                lineNumber: 209,
+                                lineNumber: 205,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                        lineNumber: 187,
+                        lineNumber: 188,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -675,12 +704,12 @@ function MainImage() {
                                             height: 14
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                            lineNumber: 252,
+                                            lineNumber: 256,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                        lineNumber: 238,
+                                        lineNumber: 242,
                                         columnNumber: 13
                                     }, this),
                                     imageSets[currentImageSetIndex].map((image, index)=>{
@@ -689,12 +718,13 @@ function MainImage() {
                                             sx: {
                                                 width: {
                                                     xs: "50px",
-                                                    sm: "60px",
-                                                    md: "167px"
+                                                    sm: "120px",
+                                                    md: "140px",
+                                                    lg: "167px"
                                                 },
                                                 height: {
                                                     xs: "40px",
-                                                    sm: "50px",
+                                                    sm: "100px",
                                                     md: "127px"
                                                 },
                                                 border: currentImageIndex === absoluteIndex ? "2px solid #E8E1C4" : "1px solid",
@@ -712,12 +742,12 @@ function MainImage() {
                                                 objectFit: "cover"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                                lineNumber: 271,
+                                                lineNumber: 275,
                                                 columnNumber: 19
                                             }, this)
                                         }, absoluteIndex, false, {
                                             fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                            lineNumber: 257,
+                                            lineNumber: 261,
                                             columnNumber: 17
                                         }, this);
                                     }),
@@ -747,18 +777,18 @@ function MainImage() {
                                             height: 14
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                            lineNumber: 289,
+                                            lineNumber: 293,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                        lineNumber: 275,
+                                        lineNumber: 279,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                lineNumber: 227,
+                                lineNumber: 231,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -781,13 +811,13 @@ function MainImage() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                                lineNumber: 292,
+                                lineNumber: 296,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ImageViewer/Components/Main_image.js",
-                        lineNumber: 215,
+                        lineNumber: 219,
                         columnNumber: 9
                     }, this)
                 ]

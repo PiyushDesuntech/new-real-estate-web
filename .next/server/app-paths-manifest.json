@@ -8,5 +8,6 @@
   "/my-profile/page": "app/my-profile/page.js",
   "/change-password/page": "app/change-password/page.js",
   "/edit-profile/page": "app/edit-profile/page.js",
-  "/contact-us/page": "app/contact-us/page.js"
+  "/contact-us/page": "app/contact-us/page.js",
+  "/properties-image-viewer/page": "app/properties-image-viewer/page.js"
 }
