@@ -9,5 +9,6 @@
   "/change-password/page": "app/change-password/page.js",
   "/edit-profile/page": "app/edit-profile/page.js",
   "/contact-us/page": "app/contact-us/page.js",
-  "/properties-image-viewer/page": "app/properties-image-viewer/page.js"
+  "/properties-image-viewer/page": "app/properties-image-viewer/page.js",
+  "/property-onboard/page": "app/property-onboard/page.js"
 }
