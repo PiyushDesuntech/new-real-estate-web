@@ -2,5 +2,6 @@
   "/page": "app/page.js",
   "/property-compare1/page": "app/property-compare1/page.js",
   "/terms-&-conditions/page": "app/terms-&-conditions/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/FAQ/page": "app/FAQ/page.js"
 }
