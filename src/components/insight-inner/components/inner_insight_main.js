@@ -28,7 +28,7 @@ import Image from "next/image";
 
 const Main = () => {
   const theme = useTheme();
-    const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Box
       sx={{
@@ -71,30 +71,36 @@ const Main = () => {
         <Stack
           direction={{ xs: "column", sm: "row" }}
           spacing={2}
-          alignItems={isMobile? "unset": "center"}
+          alignItems={isMobile ? "unset" : "center"}
         >
           <Box display="flex" alignItems="center" gap={2}>
-            <Avatar src="/Images/insightAdmin.svg" sx={{ width: {xs: 40, sm: 49.23}, height: {xs: 40, sm: 49.23} }} />
+            <Avatar
+              src="/Images/insightAdmin.svg"
+              sx={{
+                width: { xs: 40, sm: 49.23 },
+                height: { xs: 40, sm: 49.23 },
+              }}
+            />
             <Typography>Admin</Typography>
           </Box>
 
-          <Box display="flex" >
+          <Box display="flex">
             <Image
               src="/Images/calendar.svg"
               alt="Admin Icon"
-              width={isMobile? 20: 25.21}
-              height={isMobile? 20: 25.21}
+              width={isMobile ? 20 : 25.21}
+              height={isMobile ? 20 : 25.21}
               style={{ marginRight: "8px" }}
             />
             <Typography>Jan 20, 2025</Typography>
           </Box>
 
-          <Box display="flex" >
+          <Box display="flex">
             <Image
               src="/Images/comment.svg"
               alt="Admin Icon"
-              width={isMobile? 20: 25.21}
-              height={isMobile? 20: 25.21}
+              width={isMobile ? 20 : 25.21}
+              height={isMobile ? 20 : 25.21}
               style={{ marginRight: "8px" }}
             />
             <Typography>Comment</Typography>
@@ -118,10 +124,9 @@ const Main = () => {
       <Box sx={{ width: "100%", height: "auto", mt: 2 }}>
         <Typography
           sx={{
-            font: "Nunito",
             fontSize: { xs: "14px", sm: "17.23px" },
             fontWeight: 400,
-            lineHeight: {xs: "20px", sm: "30.15px"},
+            lineHeight: { xs: "20px", sm: "30.15px" },
             color: "#484848",
           }}
         >
@@ -140,10 +145,9 @@ const Main = () => {
       <Box sx={{ width: "100%", height: "auto", mt: 2, marginBottom: 4 }}>
         <Typography
           sx={{
-            font: "Nunito",
             fontSize: { xs: "14px", sm: "17.23px" },
             fontWeight: 400,
-            lineHeight: {xs: "20px", sm: "30.15px"},
+            lineHeight: { xs: "20px", sm: "30.15px" },
             color: "#484848",
           }}
         >
@@ -158,13 +162,26 @@ const Main = () => {
         </Typography>
         <Typography
           sx={{
-            fontWeight: 500,
+            fontWeight: 700,
             fontSize: { xs: "18px", sm: "22.15px" },
             my: 2,
             color: "#484848",
           }}
         >
           Housing Markets That Changed the Most This Decade
+        </Typography>
+        <Typography sx={{
+            fontSize: { xs: "14px", sm: "17.23px" },
+            fontWeight: 400,
+            lineHeight: { xs: "20px", sm: "30.15px" },
+            color: "#484848",
+          }}>
+          Nullam tempus sollicitudin cursus. Nulla elit mauris, volutpat eu
+          varius malesuada, pulvinar eu ligula. Ut et adipiscing erat. Curabitur
+          adipiscing erat vel libero tempus congue. Nam pharetra interdum
+          vestibulum. Aenean gravida mi non aliquet porttitor. Praesent dapibus,
+          nisi a faucibus tincidunt, quam dolor condimentum metus, in convallis
+          libero ligula ut eros.
         </Typography>
       </Box>
 
@@ -205,14 +222,13 @@ const Main = () => {
             fontSize: { xs: "16px", sm: "18px" },
             fontStyle: "italic",
             color: "#333333",
-            lineHeight: {xs: "20px", sm: "30.15px"},
+            lineHeight: { xs: "20px", sm: "30.15px" },
             maxWidth: "80%",
             textAlign: "left",
           }}
         >
-          "This is a sample quote. The text should be styled appropriately and
-          aligned in the box. The quote box can accommodate multiple lines of
-          text, and you can adjust the styling as needed to match the design."
+          "Duis mollis et sem sed sollicitudin. Donec non odio neque. Aliquam hendrerit sollicitudin purus, quis
+          rutrum mi accumsan nec."
         </Typography>
       </Box>
 
@@ -220,10 +236,22 @@ const Main = () => {
       <Box sx={{ width: "100%", height: "auto", mt: 2 }}>
         <Typography
           sx={{
-            font: "Nunito",
             fontSize: { xs: "14px", sm: "17.23px" },
             fontWeight: 400,
-            lineHeight: {xs: "20px", sm: "30.15px"},
+            lineHeight: { xs: "20px", sm: "30.15px" },
+            color: "#484848",
+            mb: 2,
+          }}
+        >
+          Curabitur massa magna, tempor in blandit id, porta in ligula. Aliquam laoreet nisl massa, at interdum mauris sollicitudin
+          et. Mauris risus lectus, tristique at nisl at, pharetra tristique enim.
+        </Typography>
+        <Typography
+          sx={{
+            fontSize: { xs: "14px", sm: "17.23px" },
+            fontWeight: 400,
+            lineHeight: { xs: "20px", sm: "30.15px" },
+            color: "#484848"
           }}
         >
           Duis mattis laoreet neque, et ornare neque sollicitudin at. Proin
@@ -238,10 +266,9 @@ const Main = () => {
       <Box sx={{ width: "100%", height: "auto", mt: 2 }}>
         <Typography
           sx={{
-            font: "Nunito",
             fontSize: { xs: "14px", sm: "17.23px" },
             fontWeight: 400,
-            lineHeight: {xs: "20px", sm: "30.15px"},
+            lineHeight: { xs: "20px", sm: "30.15px" },
           }}
         >
           Duis mattis laoreet neque, et ornare neque sollicitudin at. Proin
@@ -268,13 +295,18 @@ const Main = () => {
         }}
       >
         {/* Share Link Section */}
-        <Box display="flex" alignItems="center" gap={2} sx={{flexWrap: "wrap"}}>
+        <Box
+          display="flex"
+          alignItems="center"
+          gap={2}
+          sx={{ flexWrap: "wrap" }}
+        >
           <Typography
             sx={{ fontWeight: "700", color: "#484848", fontSize: "17.23px" }}
           >
             Share Link
           </Typography>
-          <Box display="flex" gap={3}>
+          {/* <Box display="flex" gap={3}>
             <IconButton sx={{ borderRadius: 2 }}>
               <FontAwesomeIcon icon={faFacebookF} />
             </IconButton>
@@ -290,7 +322,7 @@ const Main = () => {
             <IconButton sx={{ borderRadius: 2 }}>
               <FontAwesomeIcon icon={faEllipsisH} />
             </IconButton>
-          </Box>
+          </Box> */}
         </Box>
         {/* Tags Section */}
         <Box display="flex" alignItems="center" gap={1}>
@@ -321,8 +353,8 @@ const Main = () => {
         <Box display="flex" alignItems="center" gap={2}>
           <Box
             sx={{
-              width: {xs: "30px", sm: "50px"},
-              height: {xs: "30px", sm: "50px"},
+              width: { xs: "30px", sm: "50px" },
+              height: { xs: "30px", sm: "50px" },
               backgroundColor: "#E0E0E0",
               borderRadius: "50%",
               display: "flex",
@@ -330,10 +362,19 @@ const Main = () => {
               justifyContent: "center",
             }}
           >
-            <ArrowBack fontSize={isMobile? "small": "medium"} sx={{ color: "#333" }} />
+            <ArrowBack
+              fontSize={isMobile ? "small" : "medium"}
+              sx={{ color: "#333" }}
+            />
           </Box>
           <Box>
-            <Typography sx={{ fontWeight: 700, color: "#484848", fontSize: {xs: "14px", sm: "19px"} }}>
+            <Typography
+              sx={{
+                fontWeight: 700,
+                color: "#484848",
+                fontSize: { xs: "14px", sm: "19px" },
+              }}
+            >
               Prev
             </Typography>
             <Typography
@@ -342,9 +383,9 @@ const Main = () => {
                 whiteSpace: "nowrap",
                 overflow: "hidden",
                 textOverflow: "ellipsis",
-                maxWidth: {xs: "70px", sm: "200px"},
+                maxWidth: { xs: "70px", sm: "200px" },
                 fontWeight: 400,
-                fontSize: {xs: "12px", sm: "17px"}
+                fontSize: { xs: "12px", sm: "17px" },
               }}
             >
               Redfin Unveils the Best Canadian Cities for...
@@ -355,7 +396,13 @@ const Main = () => {
         {/* Next Section */}
         <Box display="flex" alignItems="center" gap={2}>
           <Box textAlign="right">
-            <Typography sx={{ fontWeight: 700, color: "#484848", fontSize: {xs: "14px", sm: "19px"} }}>
+            <Typography
+              sx={{
+                fontWeight: 700,
+                color: "#484848",
+                fontSize: { xs: "14px", sm: "19px" },
+              }}
+            >
               Next
             </Typography>
             <Typography
@@ -364,9 +411,9 @@ const Main = () => {
                 whiteSpace: "nowrap",
                 overflow: "hidden",
                 textOverflow: "ellipsis",
-                maxWidth: {xs: "70px", sm: "200px"},
+                maxWidth: { xs: "70px", sm: "200px" },
                 fontWeight: 400,
-                fontSize: {xs: "12px", sm: "17px"}
+                fontSize: { xs: "12px", sm: "17px" },
               }}
             >
               Redfin Ranks the Most Competitive
@@ -374,8 +421,8 @@ const Main = () => {
           </Box>
           <Box
             sx={{
-              width: {xs: "30px", sm: "50px"},
-              height: {xs: "30px", sm: "50px"},
+              width: { xs: "30px", sm: "50px" },
+              height: { xs: "30px", sm: "50px" },
               backgroundColor: "#E0E0E0",
               borderRadius: "50%",
               display: "flex",
@@ -383,7 +430,10 @@ const Main = () => {
               justifyContent: "center",
             }}
           >
-            <ArrowForward fontSize={isMobile? "small": "medium"} sx={{ color: "#333" }} />
+            <ArrowForward
+              fontSize={isMobile ? "small" : "medium"}
+              sx={{ color: "#333" }}
+            />
           </Box>
         </Box>
       </Box>
@@ -455,8 +505,7 @@ const Main = () => {
             <Typography
               sx={{
                 color: "#484848",
-                font: "Nunito",
-                fontWeight: "400",
+                    fontWeight: "400",
                 fontSize: "14px",
                 display: "inline-flex",
                 alignItems: "center",
@@ -511,12 +560,13 @@ const Main = () => {
 
       <Typography
         sx={{
-          fontWeight: 500,
+          fontWeight: 700,
           fontSize: { xs: "18px", sm: "22.15px" },
-          marginBottom: 2,
+          // marginBottom: 0,
+          color: "##484848"
         }}
       >
-        related properties
+        Related properties
       </Typography>
       <BlogCard />
     </Box>

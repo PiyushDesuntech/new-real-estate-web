@@ -15,11 +15,16 @@ function Heading() {
       <MuiLink component={Link} href="/" underline="hover" color="inherit">
         Home
       </MuiLink>
-      <MuiLink component={Link} href="/profile" underline="hover" color="inherit">
+      <MuiLink component={Link} href="/my-profile" underline="hover" color="inherit">
          My Profile
       </MuiLink>
     </Breadcrumbs>
-    <Typography sx={{ fontSize: "37px", fontWeight: 600, color: "#484848" }}>My Profile</Typography>
+    <Typography sx={{ fontSize: { 
+            xs: '26px',
+            sm: '28px',
+            md: '32px',
+            lg: '37px' 
+          }, fontWeight: 600, color: "#484848" }}>My Profile</Typography>
    </Box>
   );
 }

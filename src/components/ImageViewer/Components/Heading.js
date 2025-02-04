@@ -61,7 +61,7 @@ function Heading() {
   });
 
   return (
-    <Container maxWidth="xl" sx={{px: {xs: 3, lg: 8}}}>
+    <Container maxWidth="xl" sx={{px: {xs: 3,sm: 2, lg: 6}, py: 3}}>
       <Box 
       sx={{ 
         minWidth: '51px',

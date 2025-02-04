@@ -43,7 +43,13 @@ function Heading() {
       </MuiLink>
       {breadcrumbLinks}
     </Breadcrumbs>
-    <Typography sx={{ fontSize: "37px", fontWeight: 600, color: "#484848" }}>Properties - list</Typography>
+    <Typography sx={{ fontSize: { 
+            xs: '26px',
+            sm: '28px',
+            md: '32px',
+            lg: '37px' 
+          },
+           fontWeight: 600, color: "#484848" }}>Properties - list</Typography>
    </Box>
   );
 }

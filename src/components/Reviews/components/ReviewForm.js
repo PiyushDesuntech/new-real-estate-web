@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Box, Typography, TextField, Checkbox, FormControlLabel, Button, Grid, useTheme, useMediaQuery } from "@mui/material";
+import { useRouter } from "next/navigation";
 
 const StarRating = ({ label, value, onChange }) => {
   const theme = useTheme();
@@ -50,6 +51,7 @@ const StarRating = ({ label, value, onChange }) => {
 };
 
 const ReviewForm = () => {
+  const router = useRouter();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const isTablet = useMediaQuery(theme.breakpoints.between('sm', 'md'));
@@ -66,8 +68,9 @@ const ReviewForm = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   const handleClick = () => {
-    alert("Link clicked!");
+    window.open("/terms-&-conditions", "_blank");
   };
+  
 
   // Add submit handler
   const handleSubmit = async () => {
@@ -106,6 +109,8 @@ const ReviewForm = () => {
       }
 
       alert('Review submitted successfully!');
+
+      router.push("/agents/agent-details");
       
       // Reset form
       setOverallRating(5);
@@ -276,12 +281,24 @@ const ReviewForm = () => {
               borderRadius: "10px",
               height: { xs: '250px', sm: '280px', md: '310px' },
               marginBottom: { xs: '8px', sm: '12px' },
-              '& .MuiOutlinedInput-root': {
-                borderRadius: '10px',
-              },
-              '& .MuiOutlinedInput-notchedOutline': {
-                borderRadius: '10px',
-              },
+              "& .MuiOutlinedInput-root": {
+                    borderRadius: "8.63px",
+                    "&:hover fieldset": {
+                      borderColor: "#C0C0C0",
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: "#C0C0C0",
+                    },
+                  },
+                  "& .MuiOutlinedInput-notchedOutline": {
+                    borderColor: "#C0C0C0",
+                  },
+                  "& .MuiInputLabel-root": {
+                    color: "#A0A0A0",
+                  },
+                  "& .MuiInputLabel-root.Mui-focused": {
+                    color: "#A0A0A0",
+                  },
             }}
           />
         </Grid>
@@ -309,12 +326,24 @@ const ReviewForm = () => {
               backgroundColor: "#fff",
               borderRadius: "10px",
               marginBottom: { xs: '8px', sm: '12px' },
-              '& .MuiOutlinedInput-root': {
-                borderRadius: '10px',
-              },
-              '& .MuiOutlinedInput-notchedOutline': {
-                borderRadius: '10px',
-              },
+             "& .MuiOutlinedInput-root": {
+                    borderRadius: "8.63px",
+                    "&:hover fieldset": {
+                      borderColor: "#C0C0C0",
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: "#C0C0C0",
+                    },
+                  },
+                  "& .MuiOutlinedInput-notchedOutline": {
+                    borderColor: "#C0C0C0",
+                  },
+                  "& .MuiInputLabel-root": {
+                    color: "#A0A0A0",
+                  },
+                  "& .MuiInputLabel-root.Mui-focused": {
+                    color: "#A0A0A0",
+                  },
             }}
           />
         </Grid>
@@ -371,14 +400,16 @@ const ReviewForm = () => {
               height: { xs: '45px', sm: '46px', md: '48px' },
               borderRadius: "4px",
               backgroundColor: "#E8E1C4",
-              color: "#777777",
+              // color: "#777777",
               fontWeight: "400",
               fontSize: { xs: '14px', sm: '14px', md: '15px' },
               boxShadow: "none",
               textTransform: "none",
               "&:hover": {
-                backgroundColor: "#E8E1C4",
+                backgroundColor: "#4D4D4D",
+                color: "#fff",
               },
+              color: "#4D4D4D",
             }}
           >
             Submit Review

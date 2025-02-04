@@ -59,34 +59,46 @@ const FooterIndex = () => {
               <Box
                 sx={{
                   px: { lg: 7, md: 0 },
-                  mt: {xs: 1, md: 5},
+                  mt: { xs: 1, md: 5 },
                 }}
               >
-                <Typography sx={{ fontWeight: 700, mb: {xs: 2, md: 4}, fontSize: "22px" }}>
+                <Typography
+                  sx={{
+                    fontWeight: 700,
+                    mb: { xs: 2, md: 4 },
+                    fontSize: "22px",
+                  }}
+                >
                   Quick Links
                 </Typography>
                 <Typography
+                  component="a"
+                  href="/about-us"
                   sx={{
                     display: "block",
                     color: "inherit",
-                   mb: {xs: 1, md: 2},
+                    mb: { xs: 1, md: 2 },
                     fontSize: "16px",
                     fontWeight: 500,
                     "&:hover": { color: "#E8E1C4" },
                     cursor: "pointer",
+                    textDecoration: "none",
                   }}
                 >
                   About Us
                 </Typography>
                 <Typography
+                  component="a"
+                  href="/terms-&-conditions"
                   sx={{
                     display: "block",
                     color: "inherit",
-                   mb: {xs: 1, md: 2},
+                    mb: { xs: 1, md: 2 },
                     fontSize: "16px",
                     fontWeight: 500,
                     "&:hover": { color: "#E8E1C4" },
                     cursor: "pointer",
+                    textDecoration: "none",
                   }}
                 >
                   Terms & Conditions
@@ -95,7 +107,7 @@ const FooterIndex = () => {
                   sx={{
                     display: "block",
                     color: "inherit",
-                   mb: {xs: 1, md: 2},
+                    mb: { xs: 1, md: 2 },
                     fontSize: "16px",
                     fontWeight: 500,
                     "&:hover": { color: "#E8E1C4" },
@@ -108,7 +120,7 @@ const FooterIndex = () => {
                   sx={{
                     display: "block",
                     color: "inherit",
-                   mb: {xs: 1, md: 2},
+                    mb: { xs: 1, md: 2 },
                     fontSize: "16px",
                     fontWeight: 500,
                     "&:hover": { color: "#E8E1C4" },
@@ -121,7 +133,7 @@ const FooterIndex = () => {
                   sx={{
                     display: "block",
                     color: "inherit",
-                   mb: {xs: 1, md: 2},
+                    mb: { xs: 1, md: 2 },
                     fontSize: "16px",
                     fontWeight: 500,
                     "&:hover": { color: "#E8E1C4" },
@@ -138,19 +150,30 @@ const FooterIndex = () => {
               <Box
                 sx={{
                   //  px: {md: 7},
-                  mt: {xs: 1, md: 5},
+                  mt: { xs: 1, md: 5 },
                 }}
               >
-                <Typography sx={{ fontWeight: 700, mb: {xs: 2, md: 4}, fontSize: "22px" }}>
+                <Typography
+                  sx={{
+                    fontWeight: 700,
+                    mb: { xs: 2, md: 4 },
+                    fontSize: "22px",
+                  }}
+                >
                   Contact Us
                 </Typography>
                 <Typography
+                  component="a"
+                  href="mailto:info@examplemail.com"
                   sx={{
+                    display: "block",
+                    color: "inherit",
+                    mb: { xs: 1, md: 2 },
                     fontSize: "16px",
-                    mb: {xs: 1, md: 2},
-                    fontWeight: "500",
+                    fontWeight: 500,
                     "&:hover": { color: "#E8E1C4" },
                     cursor: "pointer",
+                    textDecoration: "none",
                   }}
                 >
                   info@examplemail.com
@@ -158,7 +181,7 @@ const FooterIndex = () => {
                 <Typography
                   sx={{
                     fontSize: "16px",
-                    mb: {xs: 1, md: 2},
+                    mb: { xs: 1, md: 2 },
                     fontWeight: "500",
                     "&:hover": { color: "#E8E1C4" },
                     cursor: "pointer",
@@ -167,12 +190,17 @@ const FooterIndex = () => {
                   Collins Street West, Victoria 9007, Australia
                 </Typography>
                 <Typography
+                component="a"
+                  href="callto:+123 456 789"
                   sx={{
+                    display: "block",
+                    color: "inherit",
+                    mb: { xs: 1, md: 2 },
                     fontSize: "16px",
-                    mb: {xs: 1, md: 2},
-                    fontWeight: "500",
+                    fontWeight: 500,
                     "&:hover": { color: "#E8E1C4" },
                     cursor: "pointer",
+                    textDecoration: "none",
                   }}
                 >
                   +123 456 789
@@ -185,44 +213,56 @@ const FooterIndex = () => {
               <Box
                 sx={{
                   px: { lg: 3, md: 0 },
-                  mt: {xs: 1, md: 5},
+                  mt: { xs: 1, md: 5 },
                 }}
               >
-                <Typography sx={{ fontWeight: 700, mb: {xs: 1, md: 2}, fontSize: "22px" }}>
+                <Typography
+                  sx={{
+                    fontWeight: 700,
+                    mb: { xs: 1, md: 2 },
+                    fontSize: "22px",
+                  }}
+                >
                   Follow Us
                 </Typography>
-                <Box
-                  sx={{ display: "flex", gap:0, mb: 3, flexWrap: "wrap" }}
-                >
+                <Box sx={{ display: "flex", gap: 0, mb: 3, flexWrap: "wrap" }}>
                   <IconButton
                     sx={{ color: "white", "&:hover": { color: "#E8E1C4" } }}
                   >
-                    <FacebookIcon sx={{ fontSize: {md: "26px", lg: "32px"} }} />
+                    <FacebookIcon
+                      sx={{ fontSize: { md: "26px", lg: "32px" } }}
+                    />
                   </IconButton>
                   <IconButton
                     sx={{ color: "white", "&:hover": { color: "#E8E1C4" } }}
                   >
-                    <XIcon sx={{ fontSize: {md: "26px", lg: "32px"} }} />
+                    <XIcon sx={{ fontSize: { md: "26px", lg: "32px" } }} />
                   </IconButton>
                   <IconButton
                     sx={{ color: "white", "&:hover": { color: "#E8E1C4" } }}
                   >
-                    <TwitterIcon sx={{ fontSize: {md: "26px", lg: "32px"} }} />
+                    <TwitterIcon
+                      sx={{ fontSize: { md: "26px", lg: "32px" } }}
+                    />
                   </IconButton>
                   <IconButton
                     sx={{ color: "white", "&:hover": { color: "#E8E1C4" } }}
                   >
-                    <InstagramIcon sx={{ fontSize: {md: "26px", lg: "32px"} }} />
+                    <InstagramIcon
+                      sx={{ fontSize: { md: "26px", lg: "32px" } }}
+                    />
                   </IconButton>
                   <IconButton
                     sx={{ color: "white", "&:hover": { color: "#E8E1C4" } }}
                   >
-                    <PinterestIcon sx={{ fontSize: {md: "26px", lg: "32px"} }} />
+                    <PinterestIcon
+                      sx={{ fontSize: { md: "26px", lg: "32px" } }}
+                    />
                   </IconButton>
                   <IconButton
                     sx={{ color: "white", "&:hover": { color: "#E8E1C4" } }}
                   >
-                    <GoogleIcon sx={{ fontSize: {md: "26px", lg: "32px"} }} />
+                    <GoogleIcon sx={{ fontSize: { md: "26px", lg: "32px" } }} />
                   </IconButton>
                 </Box>
                 <Typography
@@ -294,10 +334,10 @@ const FooterIndex = () => {
             <Box
               sx={{
                 display: { xs: "grid", sm: "flex" },
-                gap: { xs: 1,sm: "30px", md: "30px" },
+                gap: { xs: 1, sm: "30px", md: "30px" },
                 flexWrap: "wrap,",
                 gridTemplateColumns: { xs: "repeat(4, 1fr)", sm: "none" },
-                textAlign: "center"
+                textAlign: "center",
               }}
             >
               <Typography
@@ -419,10 +459,10 @@ const FooterIndex = () => {
                 flexWrap: "wrap",
                 gap: 2,
                 alignItems: "center",
-                mt: { xs: 1, sm: 0, md:-2 },
+                mt: { xs: 1, sm: 0, md: -2 },
                 justifyContent: "space-between",
-                width: {xs: "fit-content", md: "100%", lg: "fit-content"},
-                textAlign: "center"
+                width: { xs: "fit-content", md: "100%", lg: "fit-content" },
+                textAlign: "center",
               }}
             >
               <Typography variant="body2">
@@ -431,9 +471,9 @@ const FooterIndex = () => {
               <IconButton
                 variant="contained"
                 sx={{
-                  position: { xs: "fixed", md: "static" }, 
-                  bottom: { xs: "20px", md: "auto" }, 
-                  right: { xs: "20px", md: "auto" }, 
+                  position: { xs: "fixed", md: "static" },
+                  bottom: { xs: "20px", md: "auto" },
+                  right: { xs: "20px", md: "auto" },
                   zIndex: { xs: 1000, md: "auto" },
                   backgroundColor: "#fff",
                   "&:hover": {
@@ -443,7 +483,10 @@ const FooterIndex = () => {
                   color: "#2C3E50",
                   minWidth: "50px",
                   height: "50px",
-                  boxShadow: { xs: "0px 4px 10px rgba(0, 0, 0, 0.2)", md: "none" }, 
+                  boxShadow: {
+                    xs: "0px 4px 10px rgba(0, 0, 0, 0.2)",
+                    md: "none",
+                  },
                 }}
                 onClick={() => {
                   window.scrollTo({ top: 0, behavior: "smooth" });

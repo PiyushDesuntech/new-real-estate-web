@@ -179,6 +179,7 @@ export default function RecentBlog() {
                   },
                 }}
                 sx={{
+                  border: "none",
                   "& .MuiOutlinedInput-root": {
                     borderRadius: "8px",
                     border: "none",

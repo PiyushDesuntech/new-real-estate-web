@@ -19,7 +19,7 @@ export default function ProfileIndex() {
         // paddingBottom: { xs: '32px', sm: '100px', md: '200px' },
       }}
     >
-      <Container maxWidth="xl" sx={{px: {xs: 2, lg: 8}}}>
+      <Container maxWidth="xl" sx={{px: {xs: 2, lg: 7}}}>
       <Box
         // sx={{
         //   paddingLeft: { xs: '16px', sm: '24px', md: '50px' },

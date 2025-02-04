@@ -54,15 +54,18 @@ const HomeCards = ({ property, onCardClick }) => {
             />
           </Box>
         </Box>
-        <CardContent
+        <Box
           sx={{
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
             height: "100%",
+            px: 2,
+            pb: 2,
+            pt: 1
           }}
         >
-          <Box sx={{display: "flex", justifyContent: "space-between"}}>
+          <Box sx={{display: "flex", justifyContent: "space-between", alignItems: "center"}}>
             <Typography
               variant="subtitle2"
               sx={{ color: "#B3A87A", fontSize: "11px" }}
@@ -78,7 +81,7 @@ const HomeCards = ({ property, onCardClick }) => {
                   background: "#E0D8C3",
                   color: "#4D4D4D",
                 },
-                height: "20px",
+                height: "30px",
               }}
               >
                 <ReplyOutlinedIcon sx={{ transform: "scaleX(-1)", fontSize: "20px" }} />
@@ -91,7 +94,7 @@ const HomeCards = ({ property, onCardClick }) => {
                       background: "#E0D8C3",
                       color: "#4D4D4D",
                     },
-                    height: "20px",
+                    height: "30px",
                   }}
                 >
                   <FavoriteBorderIcon sx={{fontSize: "20px"}} />
@@ -137,7 +140,7 @@ const HomeCards = ({ property, onCardClick }) => {
               </Typography>
             )}
           </Box>
-        </CardContent>
+        </Box>
       </Card>
     </Box>
   );

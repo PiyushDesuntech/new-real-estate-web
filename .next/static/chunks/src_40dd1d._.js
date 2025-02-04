@@ -895,37 +895,48 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Box/Box.js [app-client] (ecmascript) <export default as Box>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Typography/Typography.js [app-client] (ecmascript) <export default as Typography>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Grid/Grid.js [app-client] (ecmascript) <export default as Grid>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Card$2f$Card$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Card$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Card/Card.js [app-client] (ecmascript) <export default as Card>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$CardContent$2f$CardContent$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CardContent$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/CardContent/CardContent.js [app-client] (ecmascript) <export default as CardContent>");
+;
+var _s = __turbopack_refresh__.signature();
 "use client";
 ;
 ;
 ;
 ;
 function LatestProperties() {
+    _s();
     const properties = [
         {
+            id: 1,
             image: "./Images/Figure1.webp",
             title: "Diamond Manor Luxury Estate with amazing views",
             price: "$6500",
             details: "Beds: 4 Baths: 2 150 sqft"
         },
         {
+            id: 2,
             image: "./Images/Figure1.webp",
             title: "Eaton Garth Penthouse",
             price: "$7500",
             details: "Beds: 4 Baths: 1 220 sqft"
         },
         {
+            id: 3,
             image: "./Images/Figure1.webp",
             title: "Skyper Pool Apartment in downtown area",
             price: "$1200/mo",
             details: "Beds: 3 Baths: 2 110 sqft"
         }
     ];
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
+    const handleCardClick = (id)=>{
+        router.push(`/property-list/property-details/${id}`);
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
             width: "100%",
@@ -966,7 +977,7 @@ function LatestProperties() {
                 children: "Latest Properties"
             }, void 0, false, {
                 fileName: "[project]/src/components/Insights/components/LatestProperties.js",
-                lineNumber: 50,
+                lineNumber: 60,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
@@ -980,6 +991,7 @@ function LatestProperties() {
                         item: true,
                         xs: 12,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Card$2f$Card$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Card$3e$__["Card"], {
+                            onClick: ()=>handleCardClick(property.id),
                             sx: {
                                 display: "flex",
                                 alignItems: "center",
@@ -1051,17 +1063,17 @@ function LatestProperties() {
                                             unoptimized: true
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Insights/components/LatestProperties.js",
-                                            lineNumber: 135,
+                                            lineNumber: 146,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Insights/components/LatestProperties.js",
-                                        lineNumber: 126,
+                                        lineNumber: 137,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Insights/components/LatestProperties.js",
-                                    lineNumber: 97,
+                                    lineNumber: 108,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$CardContent$2f$CardContent$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CardContent$3e$__["CardContent"], {
@@ -1116,12 +1128,15 @@ function LatestProperties() {
                                                 WebkitBoxOrient: "vertical",
                                                 overflow: "hidden",
                                                 textOverflow: "ellipsis",
-                                                lineHeight: 1.2
+                                                lineHeight: 1.2,
+                                                "&:hover": {
+                                                    color: "#E8E1C4"
+                                                }
                                             },
                                             children: property.title
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Insights/components/LatestProperties.js",
-                                            lineNumber: 170,
+                                            lineNumber: 181,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -1143,7 +1158,7 @@ function LatestProperties() {
                                             children: property.price
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Insights/components/LatestProperties.js",
-                                            lineNumber: 203,
+                                            lineNumber: 215,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -1161,38 +1176,43 @@ function LatestProperties() {
                                             children: property.details
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Insights/components/LatestProperties.js",
-                                            lineNumber: 222,
+                                            lineNumber: 234,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Insights/components/LatestProperties.js",
-                                    lineNumber: 148,
+                                    lineNumber: 159,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Insights/components/LatestProperties.js",
-                            lineNumber: 73,
+                            lineNumber: 83,
                             columnNumber: 13
                         }, this)
-                    }, index, false, {
+                    }, property.id, false, {
                         fileName: "[project]/src/components/Insights/components/LatestProperties.js",
-                        lineNumber: 72,
+                        lineNumber: 82,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/components/Insights/components/LatestProperties.js",
-                lineNumber: 70,
+                lineNumber: 80,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Insights/components/LatestProperties.js",
-        lineNumber: 30,
+        lineNumber: 40,
         columnNumber: 5
     }, this);
 }
+_s(LatestProperties, "fN7XvhJ+p5oE6+Xlo0NJmXpxjC8=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
+    ];
+});
 _c = LatestProperties;
 var _c;
 __turbopack_refresh__.register(_c, "LatestProperties");
@@ -1429,7 +1449,7 @@ function CategoriesSidebar() {
         columnNumber: 5
     }, this);
 }
-_s(CategoriesSidebar, "7TK00tQm+GyplakPtNAA/clyOyQ=");
+_s(CategoriesSidebar, "yYr7uwuSHvGxtFubfI3SlElPoVw=");
 _c = CategoriesSidebar;
 var _c;
 __turbopack_refresh__.register(_c, "CategoriesSidebar");
@@ -1478,7 +1498,7 @@ function Heading() {
             children: displayName
         }, routePath, false, {
             fileName: "[project]/src/components/Insights/components/Heading.js",
-            lineNumber: 22,
+            lineNumber: 28,
             columnNumber: 7
         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Link$2f$Link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Link$3e$__["Link"], {
             component: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"],
@@ -1488,7 +1508,7 @@ function Heading() {
             children: displayName
         }, routePath, false, {
             fileName: "[project]/src/components/Insights/components/Heading.js",
-            lineNumber: 26,
+            lineNumber: 35,
             columnNumber: 7
         }, this);
     });
@@ -1509,8 +1529,8 @@ function Heading() {
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/Insights/components/Heading.js",
-                    lineNumber: 40,
-                    columnNumber: 54
+                    lineNumber: 51,
+                    columnNumber: 20
                 }, void 0),
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Link$2f$Link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Link$3e$__["Link"], {
@@ -1525,33 +1545,38 @@ function Heading() {
                         children: "Home"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Insights/components/Heading.js",
-                        lineNumber: 41,
-                        columnNumber: 7
+                        lineNumber: 53,
+                        columnNumber: 9
                     }, this),
                     breadcrumbLinks
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Insights/components/Heading.js",
-                lineNumber: 40,
-                columnNumber: 6
+                lineNumber: 49,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                 sx: {
-                    fontSize: "37px",
+                    fontSize: {
+                        xs: "26px",
+                        sm: "28px",
+                        md: "32px",
+                        lg: "37px"
+                    },
                     fontWeight: 600,
                     color: "#484848"
                 },
                 children: "Insight"
             }, void 0, false, {
                 fileName: "[project]/src/components/Insights/components/Heading.js",
-                lineNumber: 46,
-                columnNumber: 5
+                lineNumber: 64,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Insights/components/Heading.js",
-        lineNumber: 39,
-        columnNumber: 4
+        lineNumber: 48,
+        columnNumber: 5
     }, this);
 }
 _s(Heading, "xbyQPtUVMO7MNj7WjJlpdWqRcTo=", false, function() {

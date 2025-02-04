@@ -19,6 +19,7 @@ import {
   Chip,
 } from "@mui/material";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const agents = [
   {
@@ -27,7 +28,7 @@ const agents = [
     role: "Marketing",
     phone: "91 456 9354",
     email: "infoagent@example.com",
-    image: "/Images/agentList1.svg", 
+    image: "/Images/agentList1.svg",
   },
   {
     id: 2,
@@ -35,7 +36,7 @@ const agents = [
     role: "Sales",
     phone: "981 123 354",
     email: "infoagent@example.com",
-    image: "/Images/agentList2.svg", 
+    image: "/Images/agentList2.svg",
   },
   {
     id: 3,
@@ -43,7 +44,7 @@ const agents = [
     role: "Marketing",
     phone: "91 456 9354",
     email: "infoagent@example.com",
-    image: "/Images/agentList3.svg", 
+    image: "/Images/agentList3.svg",
   },
   {
     id: 4,
@@ -51,7 +52,7 @@ const agents = [
     role: "Sales",
     phone: "981 123 354",
     email: "infoagent@example.com",
-    image: "/Images/agentList4.svg", 
+    image: "/Images/agentList4.svg",
   },
   {
     id: 5,
@@ -59,7 +60,7 @@ const agents = [
     role: "Marketing",
     phone: "91 456 9354",
     email: "infoagent@example.com",
-    image: "/Images/agentList5.svg", 
+    image: "/Images/agentList5.svg",
   },
   {
     id: 6,
@@ -67,7 +68,7 @@ const agents = [
     role: "Sales",
     phone: "981 123 354",
     email: "infoagent@example.com",
-    image: "/Images/agentList6.svg", 
+    image: "/Images/agentList6.svg",
   },
 ];
 
@@ -79,6 +80,7 @@ export default function AgentsGridView() {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   const [visiblePhones, setVisiblePhones] = useState({});
+  const router = useRouter();
 
   const handleShowPhone = (id, phone) => {
     setVisiblePhones((prev) => ({
@@ -108,8 +110,18 @@ export default function AgentsGridView() {
     page * ITEMS_PER_PAGE
   );
 
+  const handleCardClick = () => {
+    router.push("/agents/agent-details");
+  };
+
   return (
-    <Box sx={{ paddingTop: "20px", px: {xs: 1,sm: 2, lg: 2}, pb: {xs:4, md: 10} }}>
+    <Box
+      sx={{
+        paddingTop: "20px",
+        px: { xs: 1, sm: 2, lg: 2 },
+        pb: { xs: 4, md: 10 },
+      }}
+    >
       {/* Filter and Result Display */}
       {/* <Box
         sx={{
@@ -186,7 +198,11 @@ export default function AgentsGridView() {
       </Box> */}
 
       {/* Grid Display */}
-      <Grid container spacing={isSmallScreen? 2 : 4} sx={{mt: {xs: 0, md: 0}}}>
+      <Grid
+        container
+        spacing={isSmallScreen ? 2 : 4}
+        sx={{ mt: { xs: 0, md: 0 } }}
+      >
         {paginatedAgents.map((agent) => (
           <Grid item xs={12} sm={6} md={4} key={agent.id}>
             <Card
@@ -194,6 +210,10 @@ export default function AgentsGridView() {
                 borderRadius: "12px",
                 boxShadow: "none",
                 border: "2px solid #EBEBEB",
+                // cursor: "pointer",
+                "&:hover": {
+                  boxShadow: "0px 0px 10px 5px rgba(113, 113, 113, 0.2)",
+                },
               }}
             >
               <Box>
@@ -217,41 +237,100 @@ export default function AgentsGridView() {
                   </Box>
                   <Typography
                     sx={{
-                      fontSize: {xs: "20px", sm: "22px", md: "24px"},
+                      fontSize: { xs: "20px", sm: "22px", md: "24px" },
                       fontWeight: 700,
                       color: "#484848",
                       mt: 3,
+                      "&:hover": { color: "#E0D8C3" },
                     }}
                   >
                     {agent.name}
                   </Typography>
                   <Typography
-                    sx={{ fontSize: {xs: "14px", sm: "16px", md: "18px"}, fontWeight: 400, color: "#6F6F6F" }}
+                    sx={{
+                      fontSize: { xs: "14px", sm: "16px", md: "18px" },
+                      fontWeight: 400,
+                      color: "#6F6F6F",
+                    }}
                   >
                     {agent.role}
                   </Typography>
                   <Box sx={{ display: "flex", alignItems: "center", mt: 2 }}>
-                  <Typography sx={{ fontSize: "16px", fontWeight: 400, color: "#484848" }}>
-                    Phone: {visiblePhones[agent.id] || agent.phone.replace(/\d{3}$/, "***")}
-                  </Typography>
-                  {!visiblePhones[agent.id] && (
-                    <Chip
-                      label="Show"
-                      clickable
-                      sx={{ ml: 1, backgroundColor: "#878787", cursor: "pointer", borderRadius: "2px", color: "#FFFFFF" }}
-                      onClick={() => handleShowPhone(agent.id, agent.phone)}
-                    />
-                  )}
-                </Box>
+                    <Typography
+                      sx={{
+                        fontSize: "16px",
+                        fontWeight: 400,
+                        color: "#484848",
+                        textDecoration: "none",
+                      }}
+                    >
+                      Phone:{" "}
+                      {visiblePhones[agent.id] ? (
+                        <a
+                          href={`tel:${visiblePhones[agent.id]}`}
+                          style={{ textDecoration: "none", color: "#484848" }}
+                        >
+                          {visiblePhones[agent.id]}
+                        </a>
+                      ) : (
+                        agent.phone.replace(/\d{3}$/, "***")
+                      )}
+                    </Typography>
+                    {visiblePhones[agent.id] ? (
+                      <Chip
+                        label="Hide"
+                        clickable
+                        sx={{
+                          ml: 1,
+                          backgroundColor: "#878787",
+                          cursor: "pointer",
+                          borderRadius: "2px",
+                          color: "#FFFFFF",
+                          "&:hover": {
+                            backgroundColor: "#878787",
+                          },
+                        }}
+                        onClick={() =>
+                          setVisiblePhones((prev) => {
+                            const updatedPhones = { ...prev };
+                            delete updatedPhones[agent.id];
+                            return updatedPhones;
+                          })
+                        }
+                      />
+                    ) : (
+                      <Chip
+                        label="Show"
+                        clickable
+                        sx={{
+                          ml: 1,
+                          backgroundColor: "#878787",
+                          cursor: "pointer",
+                          borderRadius: "2px",
+                          color: "#FFFFFF",
+                          "&:hover": {
+                            backgroundColor: "#878787",
+                          },
+                        }}
+                        onClick={() => handleShowPhone(agent.id, agent.phone)}
+                      />
+                    )}
+                  </Box>
                   <Typography
                     sx={{
-                      fontSize: {xs: "14px", sm: "16px", md: "18px"},
+                      fontSize: { xs: "14px", sm: "16px", md: "18px" },
                       fontWeight: 400,
                       color: "#484848",
                       mt: 1,
                     }}
                   >
-                    Email: {agent.email}
+                    Email:{" "}
+                    <a
+                      href={`mailto:${agent.email}`}
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      {agent.email}
+                    </a>
                   </Typography>
                 </Box>
                 <Divider />
@@ -260,18 +339,19 @@ export default function AgentsGridView() {
                     display: " flex",
                     justifyContent: "flex-end",
                     alignItems: "center",
-                    py: {xs: 1, md: 1},
+                    py: { xs: 1, md: 1 },
                     px: 2,
-                    mt: -1
+                    mt: -1,
                   }}
                 >
                   <Button
+                   onClick={handleCardClick}
                     size="large"
                     sx={{
                       marginTop: "10px",
                       border: "none",
                       textTransform: "none",
-                      fontSize: {xs: "12px", sm: "14px", md: "16px"},
+                      fontSize: { xs: "12px", sm: "14px", md: "16px" },
                       fontWeight: 400,
                       color: "#5D5D5D",
                     }}

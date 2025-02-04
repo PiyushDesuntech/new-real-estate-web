@@ -1,7 +1,12 @@
 "use client"
-import { Box, Typography, Button, Container } from "@mui/material";
+import { Box, Typography, Button, Container, keyframes } from "@mui/material";
 import React, { useState } from "react";
 import PropertySearch from "./PropertySearch";
+
+const scrollAnimation = keyframes`
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(20px); opacity: 0; }
+`;
 
 export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -70,7 +75,7 @@ export default function Hero() {
           pt: {xs: 15, sm: 20,md: 20, lg: 33},
         }}
       >
-        <Box sx={{ display: "flex", flexDirection: "column", gap: {xs:"10px", lg: "100px"}, pb: 3}}>
+        <Box sx={{ display: "flex", flexDirection: "column", gap: {xs:"10px", lg: "100px"}, pb: 3, width: "100%", justifyContent: "center", alignItems: "center"}}>
           <Box>
           <Typography
             sx={{
@@ -101,7 +106,39 @@ export default function Hero() {
           </Typography>
           </Box>
           <PropertySearch />
+          <Box sx={{display: "flex", justifyContent: "flex-end", width: "100%", mt:{md: 1, lg:  -10 }, gap: 1, mr: {xs: 0, lg: -2}, }}>
+          <Box>
+          <Typography sx={{fontSize: "16px", fontWeight: 700}}>Scroll Down</Typography>
+          <Typography sx={{fontSize: "13px", fontWeight: 400}}>to discover more</Typography>
+          </Box>
+          <Box
+        sx={{
+          border: "3px solid #ffffff",
+          height: "40px",
+          width: "25px",
+          borderRadius: "20px",
+          position: "relative",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          overflow: "hidden",
+        }}
+      >
+        <Box
+          sx={{
+            width: "6px",
+            height: "10px",
+            backgroundColor: "#ffffff",
+            borderRadius: "3px",
+            position: "absolute",
+            top: "5px",
+            animation: `${scrollAnimation} 1.5s ease-in-out infinite`,
+          }}
+        />
+      </Box>
         </Box>
+        </Box>
+        
       </Box>
 
       <Box

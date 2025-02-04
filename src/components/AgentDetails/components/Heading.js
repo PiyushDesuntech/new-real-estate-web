@@ -3,7 +3,7 @@
 import { Breadcrumbs, Typography, Link as MuiLink, Box } from "@mui/material";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 function Heading() {
   const pathname = usePathname(); // Get the current path
@@ -19,7 +19,10 @@ function Heading() {
       .replace(/\b\w/g, (char) => char.toUpperCase()); // Capitalize each word
 
     return isLast ? (
-      <Typography key={routePath} sx={{ color: "#B3A87A", fontWeight: 400, fontSize: "17.23px" }}>
+      <Typography
+        key={routePath}
+        sx={{ color: "#B3A87A", fontWeight: 400, fontSize: "17.23px" }}
+      >
         {displayName}
       </Typography>
     ) : (
@@ -43,13 +46,33 @@ function Heading() {
 
   return (
     <Box sx={{ my: 4, px: 1 }}>
-      <Breadcrumbs aria-label="breadcrumb" separator={<ArrowForwardIosIcon sx={{ fontSize: "10px" }} />}>
-        <MuiLink component={Link} href="/" underline="hover" color="inherit" sx={{ fontWeight: 400, fontSize: "17.23px" }}>
+      <Breadcrumbs
+        aria-label="breadcrumb"
+        separator={<ArrowForwardIosIcon sx={{ fontSize: "10px" }} />}
+      >
+        <MuiLink
+          component={Link}
+          href="/"
+          underline="hover"
+          color="inherit"
+          sx={{ fontWeight: 400, fontSize: "17.23px" }}
+        >
           Home
         </MuiLink>
         {breadcrumbLinks}
       </Breadcrumbs>
-      <Typography sx={{ fontWeight: 700, fontSize: "36px", color: "#484848" }}>
+      <Typography
+        sx={{
+          fontWeight: 700,
+          fontSize: {
+            xs: "26px",
+            sm: "28px",
+            md: "32px",
+            lg: "37px",
+          },
+          color: "#484848",
+        }}
+      >
         {lastSegmentDisplay}
       </Typography>
     </Box>

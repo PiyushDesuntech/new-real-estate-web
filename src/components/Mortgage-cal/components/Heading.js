@@ -1,9 +1,15 @@
 "use client";
 
-import { Breadcrumbs, Typography, Link as MuiLink, Container, Box } from "@mui/material";
+import {
+  Breadcrumbs,
+  Typography,
+  Link as MuiLink,
+  Container,
+  Box,
+} from "@mui/material";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 function Heading() {
   const pathname = usePathname();
@@ -14,8 +20,8 @@ function Heading() {
     const routePath = "/" + pathSegments.slice(0, index + 1).join("/");
 
     const displayName = segment
-      .replace(/-/g, " ") 
-      .replace(/\b\w/g, (char) => char.toUpperCase()); 
+      .replace(/-/g, " ")
+      .replace(/\b\w/g, (char) => char.toUpperCase());
 
     return isLast ? (
       <Typography key={routePath} color="text.primary">
@@ -35,15 +41,31 @@ function Heading() {
   });
 
   return (
-   <Box sx={{ py: 3, px: {xs: 1, lg: 2}}}>
-     <Breadcrumbs aria-label="breadcrumb" separator={<ArrowForwardIosIcon sx={{fontSize: "10px"}}/>}>
-      <MuiLink component={Link} href="/" underline="hover" color="inherit">
-        Home
-      </MuiLink>
-      {breadcrumbLinks}
-    </Breadcrumbs>
-    <Typography sx={{ fontSize: "37px", fontWeight: 600, color: "#484848" }}>Mortgage Calculator</Typography>
-   </Box>
+    <Box sx={{ py: 3, px: { xs: 1, lg: 1 } }}>
+      <Breadcrumbs
+        aria-label="breadcrumb"
+        separator={<ArrowForwardIosIcon sx={{ fontSize: "10px" }} />}
+      >
+        <MuiLink component={Link} href="/" underline="hover" color="inherit">
+          Home
+        </MuiLink>
+        {breadcrumbLinks}
+      </Breadcrumbs>
+      <Typography
+        sx={{
+          fontSize: {
+            xs: "26px",
+            sm: "28px",
+            md: "32px",
+            lg: "37px",
+          },
+          fontWeight: 600,
+          color: "#484848",
+        }}
+      >
+        Mortgage Calculator
+      </Typography>
+    </Box>
   );
 }
 

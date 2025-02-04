@@ -1,65 +1,66 @@
 "use client";
 
 import Image from "next/image";
-import { useRouter } from 'next/navigation';
-import { Box, Paper, Typography, Button, IconButton } from '@mui/material';
-import { styled } from '@mui/material/styles';
-import { useState, useRef } from 'react';
+import { useRouter } from "next/navigation";
+import { Box, Paper, Typography, Button, IconButton } from "@mui/material";
+import { styled } from "@mui/material/styles";
+import { useState, useRef } from "react";
 
 const StyledButton = styled(Button)({
-  backgroundColor: '#E8E1C4',
-  color: '#777777',
-  '&:hover': {
-    backgroundColor: '#d8d0c0',
+  backgroundColor: "#E0D8C3",
+  "&:hover": {
+    backgroundColor: "#4D4D4D",
+    color: "#fff",
   },
-  textTransform: 'none',
+  color: "#4D4D4D",
+  textTransform: "none",
 
-  padding: '8px 16px',
-  borderRadius: '6px',
+  padding: "8px 16px",
+  borderRadius: "6px",
   fontWeight: 500,
-  fontSize: '14px',
-  minWidth: 'auto'
+  fontSize: "14px",
+  minWidth: "auto",
 });
 
 const ImageContainer = styled(Box)(({ theme }) => ({
   width: 220,
   height: 220,
-  borderRadius: '50%',
-  overflow: 'hidden',
-  position: 'relative',
-  backgroundColor: '#F3F4F6',
-  border: '4px solid #fff',
-  [theme.breakpoints.down('md')]: {
+  borderRadius: "50%",
+  overflow: "hidden",
+  position: "relative",
+  backgroundColor: "#F3F4F6",
+  border: "4px solid #fff",
+  [theme.breakpoints.down("md")]: {
     width: 180,
     height: 180,
   },
-  [theme.breakpoints.down('sm')]: {
+  [theme.breakpoints.down("sm")]: {
     width: 140,
     height: 140,
   },
 }));
 
 const CameraButton = styled(IconButton)({
-  position: 'absolute',
+  position: "absolute",
   bottom: 10,
   right: 10,
-  backgroundColor: '#E8E1C4',
-  padding: '12px',
+  backgroundColor: "#E8E1C4",
+  padding: "12px",
   width: 50,
   height: 50,
   zIndex: 2,
-  '&:hover': {
-    backgroundColor: '#d8d0c0',
+  "&:hover": {
+    backgroundColor: "#d8d0c0",
   },
 });
 
 const EditProfileButton = styled(IconButton)({
   padding: 0,
-  '&:hover': {
-    backgroundColor: 'transparent',
+  "&:hover": {
+    backgroundColor: "transparent",
   },
-  width: '55px',
-  height: '55px',
+  width: "55px",
+  height: "55px",
 });
 
 // Desktop order
@@ -83,17 +84,17 @@ const mobileDetails = [
 export default function ProfilePage() {
   const router = useRouter();
   const fileInputRef = useRef(null);
-  const [profileImage, setProfileImage] = useState("/api/placeholder/220/220");
+  const [profileImage, setProfileImage] = useState("/Images/agent1.svg");
   const isClient = typeof window !== "undefined";
-const detailsToShow = isClient && window.innerWidth < 900 ? mobileDetails : desktopDetails;
-
+  const detailsToShow =
+    isClient && window.innerWidth < 900 ? mobileDetails : desktopDetails;
 
   const handleEditProfile = () => {
-    router.push('/edit-profile');
+    router.push("/edit-profile");
   };
 
   const handleChangePassword = () => {
-    router.push('/changepassword');
+    router.push("/change-password");
   };
 
   const handleImageClick = () => {
@@ -109,46 +110,52 @@ const detailsToShow = isClient && window.innerWidth < 900 ? mobileDetails : desk
   };
 
   return (
-    <Box sx={{ 
-      // minHeight: { xs: 'auto', md: '100vh' }, 
-      // bgcolor: '#F7F7F7', 
-      // py: { xs: 2, sm: 3, md: 4 },
-      px: { xs: 1, sm: 1, md: 1 },
-      pb: 8
-    }}>
-      <Box sx={{ maxWidth: '100%', margin: '0' }}>
+    <Box
+      sx={{
+        // minHeight: { xs: 'auto', md: '100vh' },
+        // bgcolor: '#F7F7F7',
+        // py: { xs: 2, sm: 3, md: 4 },
+        px: { xs: 1, sm: 1, md: 1 },
+        pb: 8,
+      }}
+    >
+      <Box sx={{ maxWidth: "100%", margin: "0" }}>
         <Paper
           elevation={0}
           sx={{
-            borderRadius: '12px',
-            height: { xs: 'auto', md: '380px' },
-            minHeight: { xs: '500px', sm: '450px', md: '380px' },
-            width: '100%',
+            borderRadius: "12px",
+            height: { xs: "auto", md: "380px" },
+            minHeight: { xs: "500px", sm: "450px", md: "380px" },
+            width: "100%",
             // maxWidth: { xs: '100%', md: '1250px' },
-            overflow: 'hidden'
+            overflow: "hidden",
           }}
         >
           <Box sx={{ p: { xs: 3, sm: 4, md: 6 } }}>
-            <Box sx={{
-              display: 'flex',
-              flexDirection: { xs: 'column', md: 'row' },
-              justifyContent: 'space-between',
-              alignItems: { xs: 'center', md: 'flex-start' },
-              mb: { xs: 4, md: -5 },
-              gap: { xs: 3, md: 0 }
-            }}>
-              <Box sx={{
-                display: 'flex',
-                flexDirection: { xs: 'column', md: 'row' },
-                alignItems: 'center',
-                gap: { xs: 3, md: 4 }
-              }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: { xs: "column", md: "row" },
+                justifyContent: "space-between",
+                alignItems: { xs: "center", md: "flex-start" },
+                mb: { xs: 4, md: -5 },
+                gap: { xs: 3, md: 0 },
+              }}
+            >
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: { xs: "column", md: "row" },
+                  alignItems: "center",
+                  gap: { xs: 3, md: 4 },
+                }}
+              >
                 <Box
                   position="relative"
                   sx={{
                     mt: { xs: 0, md: -3 },
-                    position: 'relative',
-                    top: { xs: 0, md: '65px' },
+                    position: "relative",
+                    top: { xs: 0, md: "65px" },
                     ml: { xs: 0, md: 5 },
                   }}
                 >
@@ -157,7 +164,7 @@ const detailsToShow = isClient && window.innerWidth < 900 ? mobileDetails : desk
                       src={profileImage}
                       alt="Profile"
                       fill
-                      style={{ objectFit: 'cover' }}
+                      style={{ objectFit: "cover" }}
                       priority
                     />
                   </ImageContainer>
@@ -173,31 +180,33 @@ const detailsToShow = isClient && window.innerWidth < 900 ? mobileDetails : desk
                     type="file"
                     ref={fileInputRef}
                     accept="image/*"
-                    style={{ display: 'none' }}
+                    style={{ display: "none" }}
                     onChange={handleImageChange}
                   />
                 </Box>
                 <Typography
                   variant="h1"
                   sx={{
-                    fontSize: { xs: '1.5rem', sm: '1.75rem', md: '2rem' },
+                    fontSize: { xs: "1.5rem", sm: "1.75rem", md: "2rem" },
                     fontWeight: 600,
-                    color: '#484848',
+                    color: "#484848",
                     lineHeight: 1.2,
-                    ml: { xs: 0, md: '48px' },
+                    ml: { xs: 0, md: "48px" },
                     mt: { xs: 0, md: -5 },
-                    textAlign: { xs: 'center', md: 'left' }
+                    textAlign: { xs: "center", md: "left" },
                   }}
                 >
                   John Doe
                 </Typography>
               </Box>
-              <Box sx={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: 1.5,
-                mt: { xs: 2, md: 0 }
-              }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 1.5,
+                  mt: { xs: 2, md: 0 },
+                }}
+              >
                 <EditProfileButton onClick={handleEditProfile}>
                   <Image
                     src="/Images/Edit-Profile-icon.svg"
@@ -212,39 +221,41 @@ const detailsToShow = isClient && window.innerWidth < 900 ? mobileDetails : desk
               </Box>
             </Box>
 
-            <Box sx={{
-              display: 'grid',
-              gridTemplateColumns: { xs: '1fr', md: 'repeat(2, 1fr)' },
-              gap: { xs: 4, sm: 3, md: 2.5 },
-              pl: { xs: 0, md: '346px' },
-              mt: { xs: 6, md: -7 },
-              mb: { xs: 4, md: 9 }
-            }}>
+            <Box
+              sx={{
+                display: "grid",
+                gridTemplateColumns: { xs: "1fr", md: "repeat(2, 1fr)" },
+                gap: { xs: 4, sm: 3, md: 2.5 },
+                pl: { xs: 0, md: "346px" },
+                mt: { xs: 6, md: -7 },
+                mb: { xs: 4, md: 9 },
+              }}
+            >
               {detailsToShow.map((detail, index) => (
                 <Box
                   key={index}
                   sx={{
-                    display: 'flex',
-                    flexDirection: { xs: 'column', md: 'row' },
-                    alignItems: { xs: 'flex-start', md: 'center' },
-                    gap: { xs: 1, md: 6 }
+                    display: "flex",
+                    flexDirection: { xs: "column", md: "row" },
+                    alignItems: { xs: "flex-start", md: "center" },
+                    gap: { xs: 1, md: 6 },
                   }}
                 >
                   <Typography
                     sx={{
-                      color: '#777777',
-                      fontSize: { xs: '0.875rem', md: '0.875rem' },
+                      color: "#777777",
+                      fontSize: { xs: "0.875rem", md: "0.875rem" },
                       fontWeight: 500,
-                      width: { xs: 'auto', md: '180px' },
-                      flexShrink: 0
+                      width: { xs: "auto", md: "180px" },
+                      flexShrink: 0,
                     }}
                   >
                     {detail.label}
                   </Typography>
                   <Typography
                     sx={{
-                      color: '#777777',
-                      fontSize: { xs: '0.875rem', md: '0.875rem' },
+                      color: "#777777",
+                      fontSize: { xs: "0.875rem", md: "0.875rem" },
                       fontWeight: 500,
                       opacity: 0.7,
                     }}
