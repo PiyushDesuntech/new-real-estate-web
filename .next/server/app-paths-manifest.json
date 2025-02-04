@@ -1,10 +1,5 @@
 {
-  "/page": "app/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/properties-image-viewer/page": "app/properties-image-viewer/page.js"
-  "/property-compare1/page": "app/property-compare1/page.js"
   "/property-compare1/page": "app/property-compare1/page.js",
-  "/terms-&-conditions/page": "app/terms-&-conditions/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/FAQ/page": "app/FAQ/page.js"
+  "/terms-&-conditions/page": "app/terms-&-conditions/page.js"
 }
