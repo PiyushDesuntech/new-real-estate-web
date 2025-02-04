@@ -1,5 +1,9 @@
 {
   "/page": "app/page.js",
+<<<<<<< HEAD
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/properties-image-viewer/page": "app/properties-image-viewer/page.js"
+=======
+  "/property-compare1/page": "app/property-compare1/page.js"
+>>>>>>> 8222268ece4dafc2310486dff7b22d595181fc47
 }
