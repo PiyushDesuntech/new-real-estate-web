@@ -45,7 +45,7 @@ function Heading() {
   });
 
   return (
-    <Box sx={{ py: 4, px: { xs: 1, sm: 3 } }}>
+    <Box sx={{ py: 4, px: { xs: 1,sm: 2.5, lg: 5 } }}>
       <Breadcrumbs
         aria-label="breadcrumb"
         separator={<ArrowForwardIosIcon sx={{ fontSize: "10px" }} />}

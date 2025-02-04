@@ -98,7 +98,12 @@ function Heading() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                 sx: {
-                    fontSize: "37px",
+                    fontSize: {
+                        xs: '26px',
+                        sm: '28px',
+                        md: '32px',
+                        lg: '37px'
+                    },
                     fontWeight: 600,
                     color: "#484848"
                 },
@@ -686,7 +691,10 @@ const PropertyGridView = ({ properties })=>{
                             "& .MuiPaginationItem-root": {
                                 color: "#484848",
                                 border: "2px solid #E6E6E6",
-                                fontSize: "17px"
+                                fontSize: "17.68px",
+                                width: "56.84px",
+                                height: "56.84px",
+                                borderRadius: "50%"
                             },
                             "& .MuiPaginationItem-page.Mui-selected": {
                                 backgroundColor: "#E8E1C4",
@@ -696,7 +704,10 @@ const PropertyGridView = ({ properties })=>{
                             "& .MuiPaginationItem-previousNext": {
                                 color: "#484848",
                                 border: "2px solid #E6E6E6",
-                                fontSize: "17px"
+                                fontSize: "17.68px",
+                                width: "56.84px",
+                                height: "56.84px",
+                                borderRadius: "50%"
                             },
                             "& .MuiPaginationItem-root:hover": {
                                 backgroundColor: "#E8E1C4",
@@ -1355,7 +1366,10 @@ const PropertyListView = ({ properties })=>{
                             "& .MuiPaginationItem-root": {
                                 color: "#484848",
                                 border: "2px solid #E6E6E6",
-                                fontSize: "17px"
+                                fontSize: "17.68px",
+                                width: "56.84px",
+                                height: "56.84px",
+                                borderRadius: "50%"
                             },
                             "& .MuiPaginationItem-page.Mui-selected": {
                                 backgroundColor: "#E8E1C4",
@@ -1365,7 +1379,10 @@ const PropertyListView = ({ properties })=>{
                             "& .MuiPaginationItem-previousNext": {
                                 color: "#484848",
                                 border: "2px solid #E6E6E6",
-                                fontSize: "17px"
+                                fontSize: "17.68px",
+                                width: "56.84px",
+                                height: "56.84px",
+                                borderRadius: "50%"
                             },
                             "& .MuiPaginationItem-root:hover": {
                                 backgroundColor: "#E8E1C4",

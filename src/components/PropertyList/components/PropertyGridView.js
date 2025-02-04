@@ -305,7 +305,10 @@ const PropertyGridView = ({properties}) => {
             "& .MuiPaginationItem-root": {
               color: "#484848",
               border: "2px solid #E6E6E6",
-              fontSize: "17px",
+              fontSize: "17.68px",
+              width: "56.84px", 
+              height: "56.84px", 
+               borderRadius: "50%"
             },
             "& .MuiPaginationItem-page.Mui-selected": {
               backgroundColor: "#E8E1C4",
@@ -315,7 +318,10 @@ const PropertyGridView = ({properties}) => {
             "& .MuiPaginationItem-previousNext": {
               color: "#484848",
               border: "2px solid #E6E6E6",
-              fontSize: "17px",
+              fontSize: "17.68px",
+              width: "56.84px",
+              height: "56.84px",
+              borderRadius: "50%"
             },
             "& .MuiPaginationItem-root:hover": {
               backgroundColor: "#E8E1C4",

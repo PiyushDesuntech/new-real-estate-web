@@ -122,6 +122,7 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/navigation.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$useTheme$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__useTheme$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/styles/useTheme.js [app-ssr] (ecmascript) <export default as useTheme>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$useMediaQuery$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__useMediaQuery$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/useMediaQuery/index.js [app-ssr] (ecmascript) <export default as useMediaQuery>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Box/Box.js [app-ssr] (ecmascript) <export default as Box>");
@@ -132,6 +133,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Divider$2f$Divider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Divider$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Divider/Divider.js [app-ssr] (ecmascript) <export default as Divider>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Button/Button.js [app-ssr] (ecmascript) <export default as Button>");
 "use client";
+;
 ;
 ;
 ;
@@ -193,6 +195,7 @@ function AgentsGridView() {
     const theme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$useTheme$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__useTheme$3e$__["useTheme"])();
     const isSmallScreen = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$useMediaQuery$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__useMediaQuery$3e$__["useMediaQuery"])(theme.breakpoints.down("sm"));
     const [visiblePhones, setVisiblePhones] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({});
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
     const handleShowPhone = (id, phone)=>{
         setVisiblePhones((prev)=>({
                 ...prev,
@@ -215,6 +218,9 @@ function AgentsGridView() {
         return 0;
     });
     const paginatedAgents = sortedAgents.slice((page - 1) * ITEMS_PER_PAGE, page * ITEMS_PER_PAGE);
+    const handleCardClick = ()=>{
+        router.push("/agents/agent-details");
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
             paddingTop: "20px",
@@ -246,7 +252,11 @@ function AgentsGridView() {
                         sx: {
                             borderRadius: "12px",
                             boxShadow: "none",
-                            border: "2px solid #EBEBEB"
+                            border: "2px solid #EBEBEB",
+                            // cursor: "pointer",
+                            "&:hover": {
+                                boxShadow: "0px 0px 10px 5px rgba(113, 113, 113, 0.2)"
+                            }
                         },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                             children: [
@@ -271,12 +281,12 @@ function AgentsGridView() {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Agents/components/AgenttsGridView.js",
-                                                lineNumber: 209,
+                                                lineNumber: 229,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Agents/components/AgenttsGridView.js",
-                                            lineNumber: 201,
+                                            lineNumber: 221,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -288,12 +298,15 @@ function AgentsGridView() {
                                                 },
                                                 fontWeight: 700,
                                                 color: "#484848",
-                                                mt: 3
+                                                mt: 3,
+                                                "&:hover": {
+                                                    color: "#E0D8C3"
+                                                }
                                             },
                                             children: agent.name
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Agents/components/AgenttsGridView.js",
-                                            lineNumber: 218,
+                                            lineNumber: 238,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -309,7 +322,7 @@ function AgentsGridView() {
                                             children: agent.role
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Agents/components/AgenttsGridView.js",
-                                            lineNumber: 228,
+                                            lineNumber: 249,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -323,18 +336,55 @@ function AgentsGridView() {
                                                     sx: {
                                                         fontSize: "16px",
                                                         fontWeight: 400,
-                                                        color: "#484848"
+                                                        color: "#484848",
+                                                        textDecoration: "none"
                                                     },
                                                     children: [
-                                                        "Phone: ",
-                                                        visiblePhones[agent.id] || agent.phone.replace(/\d{3}$/, "***")
+                                                        "Phone:",
+                                                        " ",
+                                                        visiblePhones[agent.id] ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                            href: `tel:${visiblePhones[agent.id]}`,
+                                                            style: {
+                                                                textDecoration: "none",
+                                                                color: "#484848"
+                                                            },
+                                                            children: visiblePhones[agent.id]
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/Agents/components/AgenttsGridView.js",
+                                                            lineNumber: 269,
+                                                            columnNumber: 25
+                                                        }, this) : agent.phone.replace(/\d{3}$/, "***")
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Agents/components/AgenttsGridView.js",
-                                                    lineNumber: 234,
-                                                    columnNumber: 19
+                                                    lineNumber: 259,
+                                                    columnNumber: 21
                                                 }, this),
-                                                !visiblePhones[agent.id] && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Chip$2f$Chip$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Chip$3e$__["Chip"], {
+                                                visiblePhones[agent.id] ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Chip$2f$Chip$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Chip$3e$__["Chip"], {
+                                                    label: "Hide",
+                                                    clickable: true,
+                                                    sx: {
+                                                        ml: 1,
+                                                        backgroundColor: "#878787",
+                                                        cursor: "pointer",
+                                                        borderRadius: "2px",
+                                                        color: "#FFFFFF",
+                                                        "&:hover": {
+                                                            backgroundColor: "#878787"
+                                                        }
+                                                    },
+                                                    onClick: ()=>setVisiblePhones((prev)=>{
+                                                            const updatedPhones = {
+                                                                ...prev
+                                                            };
+                                                            delete updatedPhones[agent.id];
+                                                            return updatedPhones;
+                                                        })
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Agents/components/AgenttsGridView.js",
+                                                    lineNumber: 280,
+                                                    columnNumber: 23
+                                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Chip$2f$Chip$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Chip$3e$__["Chip"], {
                                                     label: "Show",
                                                     clickable: true,
                                                     sx: {
@@ -342,18 +392,21 @@ function AgentsGridView() {
                                                         backgroundColor: "#878787",
                                                         cursor: "pointer",
                                                         borderRadius: "2px",
-                                                        color: "#FFFFFF"
+                                                        color: "#FFFFFF",
+                                                        "&:hover": {
+                                                            backgroundColor: "#878787"
+                                                        }
                                                     },
                                                     onClick: ()=>handleShowPhone(agent.id, agent.phone)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Agents/components/AgenttsGridView.js",
-                                                    lineNumber: 238,
-                                                    columnNumber: 21
+                                                    lineNumber: 302,
+                                                    columnNumber: 23
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Agents/components/AgenttsGridView.js",
-                                            lineNumber: 233,
+                                            lineNumber: 258,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -368,23 +421,35 @@ function AgentsGridView() {
                                                 mt: 1
                                             },
                                             children: [
-                                                "Email: ",
-                                                agent.email
+                                                "Email:",
+                                                " ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: `mailto:${agent.email}`,
+                                                    style: {
+                                                        textDecoration: "none",
+                                                        color: "inherit"
+                                                    },
+                                                    children: agent.email
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Agents/components/AgenttsGridView.js",
+                                                    lineNumber: 328,
+                                                    columnNumber: 21
+                                                }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Agents/components/AgenttsGridView.js",
-                                            lineNumber: 246,
+                                            lineNumber: 319,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Agents/components/AgenttsGridView.js",
-                                    lineNumber: 200,
+                                    lineNumber: 220,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Divider$2f$Divider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Divider$3e$__["Divider"], {}, void 0, false, {
                                     fileName: "[project]/src/components/Agents/components/AgenttsGridView.js",
-                                    lineNumber: 257,
+                                    lineNumber: 336,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -400,6 +465,7 @@ function AgentsGridView() {
                                         mt: -1
                                     },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
+                                        onClick: handleCardClick,
                                         size: "large",
                                         sx: {
                                             marginTop: "10px",
@@ -416,38 +482,38 @@ function AgentsGridView() {
                                         children: "View My Listings"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Agents/components/AgenttsGridView.js",
-                                        lineNumber: 268,
+                                        lineNumber: 347,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Agents/components/AgenttsGridView.js",
-                                    lineNumber: 258,
+                                    lineNumber: 337,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Agents/components/AgenttsGridView.js",
-                            lineNumber: 199,
+                            lineNumber: 219,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Agents/components/AgenttsGridView.js",
-                        lineNumber: 192,
+                        lineNumber: 208,
                         columnNumber: 13
                     }, this)
                 }, agent.id, false, {
                     fileName: "[project]/src/components/Agents/components/AgenttsGridView.js",
-                    lineNumber: 191,
+                    lineNumber: 207,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/src/components/Agents/components/AgenttsGridView.js",
-            lineNumber: 189,
+            lineNumber: 201,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/Agents/components/AgenttsGridView.js",
-        lineNumber: 112,
+        lineNumber: 118,
         columnNumber: 5
     }, this);
 }
@@ -929,7 +995,7 @@ function AgentsIndex() {
         maxWidth: "xl",
         sx: {
             px: {
-                lg: 7,
+                lg: 6,
                 xs: 2
             }
         },

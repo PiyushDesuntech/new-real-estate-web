@@ -37,16 +37,16 @@ export default function Insights() {
   }, []);
   
   return (
-    <Box sx={{ backgroundColor: "#F7F7F7", minHeight: "100vh", minWidth: "51px" }}>
+    <Box sx={{ backgroundColor: "#F7F7F7",  minWidth: "51px" }}>
       <Container
         maxWidth="xl"
         sx={{
-          px: { xs: 1, sm: 2, md: 4 },
+          px: { xs: 3, sm: 2, lg: 4 },
           pb: { xs: 6, sm: 8, md: 10 }, // Added bottom padding
           minWidth: "51px",
-          maxWidth: "100% !important",
-          overflowX: "hidden",
-          ml: { xs: 0, sm: 1, md: 2 },
+          // maxWidth: "100% !important",
+          // overflowX: "hidden",
+          // ml: { xs: 0, sm: 1, md: 2 },
         }}
       >
         <Heading />
@@ -57,7 +57,7 @@ export default function Insights() {
               gridTemplateColumns: { xs: "1fr", md: "2fr 1fr" },
               gap: { xs: 2, sm: 3, md: 4 },
               mt: -1,
-              px: { xs: 1, sm: 2, md: 3 },
+              px: { xs: 1, sm: 2, lg: 5 },
               minWidth: "51px",
             }}
           >

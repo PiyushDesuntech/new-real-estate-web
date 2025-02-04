@@ -33,12 +33,12 @@ export default function SellIndex() {
               variant="contained"
               sx={{
                 display: "flex",
-                backgroundColor: "#E8E1C4",
+                backgroundColor: "#E0D8C3",
                 "&:hover": {
-                  backgroundColor: "#4D4D4D",
+                  backgroundColor: "#3E4C66",
                   color: "#fff",
                 },
-                color: "#717171",
+                color: "#000",
                 borderRadius: "8px",
                 textTransform: "none",
                 px: { xs: 2, sm: 2, md: 5, lg: "40px" },
@@ -86,12 +86,12 @@ export default function SellIndex() {
                 onClick={handleScheduleClick}
                 sx={{
                   display: "flex",
-                  backgroundColor: "#E8E1C4",
+                  backgroundColor: "#E0D8C3",
                   "&:hover": {
-                    backgroundColor: "#4D4D4D",
+                    backgroundColor: "#3E4C66",
                     color: "#fff",
                   },
-                  color: "#333333",
+                  color: "#000",
                   borderRadius: "8px",
                   textTransform: "none",
                   px: { xs: 2, sm: 2, md: 5, lg: "40px" },

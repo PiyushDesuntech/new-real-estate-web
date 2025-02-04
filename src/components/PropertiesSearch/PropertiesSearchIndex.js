@@ -22,7 +22,7 @@ export default function PropertiesSearchIndex() {
   const [viewMode, setViewMode] = useState("grid"); // State to manage view mode
 
   return (
-    <Container maxWidth="xl" sx={{ px: { lg: 7, xs: 1 } }}>
+    <Container maxWidth="xl" sx={{ px: { lg: 6, xs: 1 } }}>
       <Heading />
       <Box
         sx={{

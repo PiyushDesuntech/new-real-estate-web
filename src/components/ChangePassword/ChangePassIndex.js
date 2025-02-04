@@ -19,7 +19,7 @@ export default function ChangePassIndex() {
         // paddingBottom: { xs: '16px', sm: '32px', md: '200px' },
       }}
     >
-      <Container maxWidth="xl" sx={{px: {xs: 2, lg:6}}}>
+      <Container maxWidth="xl" sx={{px: {xs: 2, lg:5}}}>
       <Box
         // sx={{
         //   paddingLeft: { xs: '0px', sm: '16px', md: '50px' },

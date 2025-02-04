@@ -353,9 +353,12 @@ const SellPropertyForm = () => {
               sx={{
                 px: 4,
                 boxShadow: "none",
-                background: "#E8E1C4",
                 color: "#484848",
-                "&:hover": { boxShadow: "none" },
+                backgroundColor: "#E0D8C3",
+                    "&:hover": {
+                      backgroundColor: "#3E4C66",
+                      color: "#fff",
+                    },
                 textTransform: "none",
                 fontSize: {xs: "16px", md: "20px"},
                 fontWeight: 500,

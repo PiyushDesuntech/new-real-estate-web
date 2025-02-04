@@ -13,10 +13,10 @@ import ServiceAreas from './components/ServiceAreas'
 
 export default function AgentDetailsIndex() {
   return (
-    <Container maxWidth="xl" sx={{px: {xs: 3, lg: 9}, pb: 3}}>
+    <Container maxWidth="xl" sx={{px: {xs: 3, lg: 8}, pb: 3}}>
       <Heading/>
       <MemberAgent/>
-      <Grid container spacing={2} sx={{mt: 3}}>
+      <Grid container spacing={2} sx={{mt: 3}} px={1}>
         <Grid item xs={12} md={8.2}>
             <AgentDetailsProfile/>
             {/* <TransactionHistory/> */}
