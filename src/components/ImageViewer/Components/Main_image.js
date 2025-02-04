@@ -199,10 +199,10 @@ export default function MainImage() {
             alignItems: {xs: "unset", md: "center", lg: "unset"}
           }}
         >
-          <Typography sx={{ fontSize: { sm: "30px", xs: "30px", md: "40px" }, fontWeight: "500" }}>
+          <Typography sx={{ fontSize: { sm: "30px", xs: "30px", md: "40px" }, fontWeight: "500", textAlign: {xs: "center", lg: "left"} }}>
             $5500
           </Typography>
-          <Box sx={{ display: "flex", alignItems: {xs: "flex-start", sm: "center"},flexDirection: {xs: "column", sm: "row"}, gap: 1 }}>
+          <Box sx={{ display: "flex", alignItems: {xs: "center", sm: "center", lg: "flex-start"},flexDirection: {xs: "column", sm: "row", lg: "column"}, gap: 1 }}>
           <Box sx={{ display: "flex", alignItems: "center", gap: "5px", }}>
             <LocationOnOutlinedIcon sx={{ fontSize: { xs: 20, md: 35 } }} />
             <Typography sx={{ fontSize: { xs: "10px", sm: "16px", md: "18px" }, color: "#484848", lineHeight: "1.2" }}>
