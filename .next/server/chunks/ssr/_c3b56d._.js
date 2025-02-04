@@ -58,9 +58,8 @@ function TermsAndconditions() {
         sx: {
             px: {
                 xs: 2,
-                md: 3
-            },
-            pb: 5
+                md: 0
+            }
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -84,12 +83,13 @@ function TermsAndconditions() {
                     sx: {
                         fontFamily: "Lato",
                         fontSize: {
-                            xs: "32px",
+                            xs: "18px",
                             sm: "36px"
                         },
                         fontWeight: 700,
                         lineHeight: "64.2px",
-                        textAlign: "center"
+                        textAlign: "center",
+                        mt: "40px"
                     },
                     children: "Terms & Conditions"
                 }, void 0, false, {
@@ -103,145 +103,105 @@ function TermsAndconditions() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
-                        sx: {
-                            width: {
-                                xs: "100%",
-                                sm: "100%"
-                            },
-                            margin: "40px auto 10px auto",
-                            textAlign: "center"
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
+                    sx: {
+                        width: {
+                            xs: "100%",
+                            sm: "90%"
                         },
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                            sx: {
-                                fontFamily: "Lato, Montserrat",
-                                fontSize: "15.7px",
-                                fontWeight: "400",
-                                lineHeight: "36.22px",
-                                textAlign: "justify !important",
-                                textUnderlinePosition: "from-font",
-                                textDecorationSkipInk: "none"
-                            },
-                            children: [
-                                "Curabitur et erat",
-                                " ",
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    style: {
-                                        color: "#0D6192",
-                                        fontWeight: "bold"
-                                    },
-                                    children: "venenatis, bibendum lectus vel,"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                    lineNumber: 54,
-                                    columnNumber: 13
-                                }, this),
-                                " ",
-                                "iaculis tortor.",
-                                " ",
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    style: {
-                                        color: "#0D6192",
-                                        fontWeight: "bold"
-                                    },
-                                    children: "Nulla tempus diam sed,"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                    lineNumber: 58,
-                                    columnNumber: 13
-                                }, this),
-                                " ",
-                                "convallis elementum. Nunc faciis ac lorem ut rutrum. Quisque luctus turpis id ullamcorper venenatis.",
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    style: {
-                                        color: "#0D6192",
-                                        fontWeight: "bold"
-                                    },
-                                    children: "Aenean dolor nisi,"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                    lineNumber: 63,
-                                    columnNumber: 13
-                                }, this),
-                                "tincidunt at quam scelerisque,ibs hendrerit ante. Phasellus eget tempus ligula, ut viverra felis. In ornare ante",
-                                " ",
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    style: {
-                                        color: "#0D6192",
-                                        fontWeight: "bold"
-                                    },
-                                    children: "nibh conalvis conswquat,"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                    lineNumber: 68,
-                                    columnNumber: 13
-                                }, this),
-                                "leo condimentsuDonec commodo odio id dui suscipit, etsque orci fermentum. Fusce pellentesque pretium nisi at interdum. Proin fal tempor ex quis felis iaculis pulvinar. Maecenas metus magndhicula ut ex eget, blandit mollis libero. Ut eget mi mauris. Praesent sed tincidunt elit."
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                            lineNumber: 42,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                        lineNumber: 35,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
+                        margin: "40px auto 10px auto",
+                        textAlign: "center"
+                    },
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                         sx: {
-                            width: {
-                                xs: "100%",
-                                sm: "100%"
+                            fontFamily: "Lato, Montserrat",
+                            fontSize: {
+                                sm: "13px",
+                                xs: "13px",
+                                md: "15.7px"
                             },
-                            margin: "40px auto 10px auto",
-                            textAlign: "center"
+                            fontWeight: "400",
+                            lineHeight: "36.22px",
+                            textAlign: "justify !important",
+                            textUnderlinePosition: "from-font",
+                            textDecorationSkipInk: "none"
                         },
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                            sx: {
-                                fontFamily: "Lato, Montserrat",
-                                fontSize: "15.7px",
-                                fontWeight: "400",
-                                lineHeight: "36.22px",
-                                textUnderlinePosition: "from-font",
-                                textDecorationSkipInk: "none"
-                            },
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    style: {
-                                        color: "#0D6192",
-                                        fontWeight: "bold"
-                                    },
-                                    children: "Ut nunc erat, mollis ut vehicula varius,"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                    lineNumber: 98,
-                                    columnNumber: 13
-                                }, this),
-                                "aliquam a lectus ed dapibus."
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                            lineNumber: 87,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
+                        children: [
+                            "Curabitur et erat",
+                            " ",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                style: {
+                                    color: "#0D6192",
+                                    fontWeight: "bold"
+                                },
+                                children: "venenatis, bibendum lectus vel,"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
+                                lineNumber: 55,
+                                columnNumber: 13
+                            }, this),
+                            " ",
+                            "iaculis tortor.",
+                            " ",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                style: {
+                                    color: "#0D6192",
+                                    fontWeight: "bold"
+                                },
+                                children: "Nulla tempus diam sed,"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
+                                lineNumber: 59,
+                                columnNumber: 13
+                            }, this),
+                            " ",
+                            "convallis elementum. Nunc faciis ac lorem ut rutrum. Quisque luctus turpis id ullamcorper venenatis.",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                style: {
+                                    color: "#0D6192",
+                                    fontWeight: "bold"
+                                },
+                                children: "Aenean dolor nisi,"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
+                                lineNumber: 64,
+                                columnNumber: 13
+                            }, this),
+                            "tincidunt at quam scelerisque,ibs hendrerit ante. Phasellus eget tempus ligula, ut viverra felis. In ornare ante",
+                            " ",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                style: {
+                                    color: "#0D6192",
+                                    fontWeight: "bold"
+                                },
+                                children: "nibh conalvis conswquat,"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
+                                lineNumber: 69,
+                                columnNumber: 13
+                            }, this),
+                            "leo condimentsuDonec commodo odio id dui suscipit, etsque orci fermentum. Fusce pellentesque pretium nisi at interdum. Proin fal tempor ex quis felis iaculis pulvinar. Maecenas metus magndhicula ut ex eget, blandit mollis libero. Ut eget mi mauris. Praesent sed tincidunt elit."
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                        lineNumber: 80,
-                        columnNumber: 9
+                        lineNumber: 43,
+                        columnNumber: 11
                     }, this)
-                ]
-            }, void 0, true, {
+                }, void 0, false, {
+                    fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
+                    lineNumber: 36,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 33,
+                lineNumber: 34,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -249,7 +209,11 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
                         lineHeight: "36.22px",
                         textAlign: "justify !important",
@@ -258,19 +222,19 @@ function TermsAndconditions() {
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 113,
+                    lineNumber: 91,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 106,
+                lineNumber: 84,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -278,9 +242,12 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
-                        lineHeight: "36.22px",
                         textAlign: "justify !important",
                         textUnderlinePosition: "from-font",
                         textDecorationSkipInk: "none"
@@ -288,127 +255,128 @@ function TermsAndconditions() {
                     children: "Nam non luctus turpis. Praesent tempor massa rhoncus, bibendum arcu sed, semper libero. Suspendisse eu lectus sed urna maximus sagittis rhoncus vel quam. Vivamus et tristique magna. Praesent scelerisque orci a turpis consequat, ut sfeer lorem dignissimliquam stique lacinia turpis.Sed non condimentum sapien."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 133,
+                    lineNumber: 111,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 126,
+                lineNumber: 104,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "401.53px"
+                        sm: "90%"
                     },
-                    // height: "61.2px",
-                    // top: "120.6px",
-                    // left: { xs: "0", sm: "570.05px" }, // Full width on small screens, specific left value on larger screens
-                    margin: "3px auto",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center"
+                    top: "120.6px",
+                    left: {
+                        xs: "0",
+                        sm: "570.05px"
+                    },
+                    // border: "1px solid red",
+                    margin: "3px auto"
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato",
                         fontSize: {
-                            xs: "32px",
-                            sm: "36px"
+                            xs: "18px",
+                            sm: "23px",
+                            sm: "23px"
                         },
                         fontWeight: 700,
-                        lineHeight: "64.2px",
-                        textAlign: "center"
+                        textAlign: "left",
+                        mt: 5
                     },
                     children: "General"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 165,
+                    lineNumber: 138,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 152,
+                lineNumber: 129,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "40px auto 10px auto",
-                    textAlign: "center"
+                    // border: "1px solid red",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start"
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
-                        lineHeight: "36.22px",
-                        textAlign: "justify !important",
-                        textUnderlinePosition: "from-font",
-                        textDecorationSkipInk: "none"
+                        textAlign: "left",
+                        mt: -2
                     },
-                    children: [
-                        "Mauris auctor tristique fermentum. Donec et diam quam. Proin suscipit efficitur eros sit amet convallis. Nunc sit amet elitf diam. Aliquam nisi purus, pellentesque sit amet magna u.",
-                        " "
-                    ]
-                }, void 0, true, {
+                    children: "Mauris auctor tristique fermentum. Donec et diam quam. Proin suscipit efficitur eros sit amet convallis. Nunc sit amet elit diam. Aliquam nisi purus, pellentesque sit amet magna u."
+                }, void 0, false, {
+                    fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
+                    lineNumber: 161,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
+                lineNumber: 151,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
+                sx: {
+                    width: {
+                        xs: "100%",
+                        sm: "90%"
+                    },
+                    top: "120.6px",
+                    left: {
+                        xs: "0",
+                        sm: "570.05px"
+                    },
+                    // border: "1px solid red",
+                    margin: "3px auto"
+                },
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
+                    sx: {
+                        fontFamily: "Lato",
+                        fontSize: {
+                            xs: "18px",
+                            sm: "23px",
+                            sm: "23px"
+                        },
+                        fontWeight: 700,
+                        textAlign: "left",
+                        mt: 5
+                    },
+                    children: "Our corporate privacy"
+                }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
                     lineNumber: 185,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 178,
+                lineNumber: 176,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "401.53px"
-                    },
-                    // height: "61.2px",
-                    top: "120.6px",
-                    left: {
-                        xs: "0",
-                        sm: "570.05px"
-                    },
-                    margin: "3px auto",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center"
-                },
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                    sx: {
-                        fontFamily: "Lato",
-                        fontSize: {
-                            xs: "32px",
-                            sm: "36px"
-                        },
-                        fontWeight: 700,
-                        lineHeight: "64.2px",
-                        textAlign: "center"
-                    },
-                    children: "Our Corporate Privacy"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 215,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 202,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
-                sx: {
-                    width: {
-                        xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -416,12 +384,16 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
-                        lineHeight: "36.22px",
                         textAlign: "justify !important",
                         textUnderlinePosition: "from-font",
-                        textDecorationSkipInk: "none"
+                        textDecorationSkipInk: "none",
+                        mt: -2
                     },
                     children: [
                         "Suspendisse ut",
@@ -434,7 +406,7 @@ function TermsAndconditions() {
                             children: "dictum erat, non vehicula neque."
                         }, void 0, false, {
                             fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                            lineNumber: 247,
+                            lineNumber: 218,
                             columnNumber: 11
                         }, this),
                         " ",
@@ -442,61 +414,57 @@ function TermsAndconditions() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 235,
+                    lineNumber: 205,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 228,
+                lineNumber: 198,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "401.53px"
+                        sm: "90%"
                     },
-                    // height: "61.2px",
                     top: "120.6px",
                     left: {
                         xs: "0",
                         sm: "570.05px"
                     },
-                    margin: "3px auto",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center"
+                    // border: "1px solid red",
+                    margin: "3px auto"
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato",
                         fontSize: {
-                            xs: "32px",
-                            sm: "36px"
+                            xs: "18px",
+                            sm: "23px",
+                            sm: "23px"
                         },
                         fontWeight: 700,
                         lineHeight: "64.2px",
-                        textAlign: "center"
+                        textAlign: "left",
+                        mt: 5
                     },
-                    children: [
-                        "Statement of Practices",
-                        " "
-                    ]
-                }, void 0, true, {
+                    children: "Statement of practices"
+                }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 271,
+                    lineNumber: 238,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 258,
+                lineNumber: 229,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -504,29 +472,33 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
-                        lineHeight: "36.22px",
                         textAlign: "justify !important",
                         textUnderlinePosition: "from-font",
-                        textDecorationSkipInk: "none"
+                        textDecorationSkipInk: "none",
+                        mt: -2
                     },
                     children: "Phasellus dapibus tristique sem, nec ultrices risus viverra a. Ut venenatis, dui quis congue facilisis, ligula lacus tempors imperdiet massa purus in tortor. Pellentesque hendrerit iaculis suscipit. Duis velit risus, faucibus quis nisl ac, porttitorum tortor. Aliquam cursus non lacus et consequat. Quisque enim urna, iaculis in viverra ornare, dictum a diam. Vestibulumddor purus urna. Donec egestas luctusgenatis.Vivamus posuere quam tristique, sodales sapien vitae, ullamcorper risus. Fusce sem nulla, tincidunt a nisl vitae, hendrerit semper diam. Nullam eleifend egestas hendrerit. Aenean urna dui, dapibus ornare magna vel, accumsan vehicula erat."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 291,
+                    lineNumber: 260,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 284,
+                lineNumber: 253,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -534,68 +506,70 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
-                        lineHeight: "36.22px",
                         textAlign: "justify !important",
                         textUnderlinePosition: "from-font",
-                        textDecorationSkipInk: "none"
+                        textDecorationSkipInk: "none",
+                        mt: -2
                     },
                     children: "Donec egestas luctusgenatis.Vivamus posuere quam tristique, sodales sapien vitae, ullamcorper risus. Fusce sem nulla, tincidunt a nisl vitae, hendrerit semper diam. Nullam eleifend egestas hendrerit. Aenean urna dui, dapibus ornare magna vel, accumsan vehicula erat."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 322,
+                    lineNumber: 292,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 315,
+                lineNumber: 285,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "401.53px"
+                        sm: "90%"
                     },
-                    // height: "61.2px",
                     top: "120.6px",
                     left: {
                         xs: "0",
                         sm: "570.05px"
                     },
-                    margin: "3px auto",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center"
+                    // border: "1px solid red",
+                    margin: "3px auto"
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato",
                         fontSize: {
-                            xs: "32px",
-                            sm: "32px"
+                            xs: "18px",
+                            sm: "23px",
+                            sm: "23px"
                         },
                         fontWeight: 700,
-                        lineHeight: "64.2px",
-                        textAlign: "center"
+                        textAlign: "left",
+                        mt: 5
                     },
-                    children: "Accuracy of Personal Data"
+                    children: "Accuracy of personal data"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 353,
+                    lineNumber: 320,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 340,
+                lineNumber: 311,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -603,68 +577,70 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
-                        lineHeight: "36.22px",
                         textAlign: "justify !important",
                         textUnderlinePosition: "from-font",
-                        textDecorationSkipInk: "none"
+                        textDecorationSkipInk: "none",
+                        mt: -2
                     },
                     children: "Quisque auctor dignissim eros, vel dignissim nunc tempor vitae. Aliquam placerat ornare lectus sed sollicitudin. Morbidbus augue eget fus placerat faucibus. Cras pulvinar eros vitae nibh cursus vehicula. Suspendisse ultrices feugiat tortor a drices. Aenean nec orci justo. Fuscesrit diam eget ex posuere porttitor. In sodales purus quis mi egestas venenatis."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 373,
+                    lineNumber: 341,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 366,
+                lineNumber: 334,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "401.53px"
+                        sm: "90%"
                     },
-                    // height: "61.2px",
                     top: "120.6px",
                     left: {
                         xs: "0",
                         sm: "570.05px"
                     },
-                    margin: "3px auto",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center"
+                    // border: "1px solid red",
+                    margin: "3px auto"
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato",
                         fontSize: {
-                            xs: "32px",
-                            sm: "32px"
+                            xs: "18px",
+                            sm: "23px",
+                            sm: "23px"
                         },
                         fontWeight: 700,
-                        lineHeight: "64.2px",
-                        textAlign: "center"
+                        textAlign: "left",
+                        mt: 5
                     },
                     children: "Interpretation"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 406,
+                    lineNumber: 370,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 393,
+                lineNumber: 361,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -672,68 +648,70 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
-                        lineHeight: "36.22px",
                         textAlign: "justify !important",
                         textUnderlinePosition: "from-font",
-                        textDecorationSkipInk: "none"
+                        textDecorationSkipInk: "none",
+                        mt: -2
                     },
                     children: "In at neque risus. Maecenas eros dolor, tempor nec bibendum sed, fermentum at ex. Suspendisse euismod, arcu rutrumfm hendrerit, elitfg ex posuere nisi, vel commodo libero diam in tellus. Sed vitae vulputate purus, vitae tincidunt eros."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 426,
+                    lineNumber: 391,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 419,
+                lineNumber: 384,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "401.53px"
+                        sm: "90%"
                     },
-                    // height: "61.2px",
                     top: "120.6px",
                     left: {
                         xs: "0",
                         sm: "570.05px"
                     },
-                    margin: "3px auto",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center"
+                    // border: "1px solid red",
+                    margin: "3px auto"
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato",
                         fontSize: {
-                            xs: "32px",
-                            sm: "32px"
+                            xs: "18px",
+                            sm: "23px",
+                            sm: "23px"
                         },
                         fontWeight: 700,
-                        lineHeight: "64.2px",
-                        textAlign: "center"
+                        textAlign: "left",
+                        mt: 5
                     },
-                    children: "Law enforcement"
+                    children: "Law Enforcement"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 457,
-                    columnNumber: 9
+                    lineNumber: 418,
+                    columnNumber: 3
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 444,
+                lineNumber: 409,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -741,12 +719,16 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
-                        lineHeight: "36.22px",
                         textAlign: "justify !important",
                         textUnderlinePosition: "from-font",
-                        textDecorationSkipInk: "none"
+                        textDecorationSkipInk: "none",
+                        mt: -2
                     },
                     children: [
                         "Donec consequat, Donec pharetra id mi vitae tristique.",
@@ -759,7 +741,7 @@ function TermsAndconditions() {
                             children: "Donec consequat,"
                         }, void 0, false, {
                             fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                            lineNumber: 489,
+                            lineNumber: 451,
                             columnNumber: 11
                         }, this),
                         " ",
@@ -767,19 +749,19 @@ function TermsAndconditions() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 477,
+                    lineNumber: 439,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 470,
+                lineNumber: 432,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -787,68 +769,70 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
-                        lineHeight: "36.22px",
                         textAlign: "justify !important",
                         textUnderlinePosition: "from-font",
-                        textDecorationSkipInk: "none"
+                        textDecorationSkipInk: "none",
+                        mt: -2
                     },
                     children: "Sed non condimentum sapien. Aenean urna dui, dapibus ornare magna vel, accumsan vehicula erat. Proin et miconsequat, convallis leodt bibendum nisi. In sodales purus quis mi egestas venenatis. Sed vitae vulputate purus, vitate tincidunt eros. Curabitur ac dolor nec sapien tempus consequat quis sed ipsum. Morbi suscipit maximus libero non blandit. Maurisus libero ut tempor fringilla. Aliquam ornare umNam vestibulum urna quis elit coo libero.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 509,
+                    lineNumber: 471,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 502,
+                lineNumber: 464,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "401.53px"
+                        sm: "90%"
                     },
-                    // height: "61.2px",
                     top: "120.6px",
                     left: {
                         xs: "0",
                         sm: "570.05px"
                     },
-                    margin: "3px auto",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center"
+                    // border: "1px solid red",
+                    margin: "3px auto"
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato",
                         fontSize: {
-                            xs: "32px",
-                            sm: "32px"
+                            xs: "18px",
+                            sm: "36px",
+                            sm: "23px"
                         },
                         fontWeight: 700,
-                        lineHeight: "64.2px",
-                        textAlign: "center"
+                        textAlign: "left",
+                        mt: 5
                     },
                     children: "Payments"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 544,
-                    columnNumber: 9
+                    lineNumber: 502,
+                    columnNumber: 3
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 531,
+                lineNumber: 493,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -856,12 +840,16 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
-                        lineHeight: "36.22px",
                         textAlign: "justify !important",
                         textUnderlinePosition: "from-font",
-                        textDecorationSkipInk: "none"
+                        textDecorationSkipInk: "none",
+                        mt: -2
                     },
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -872,7 +860,7 @@ function TermsAndconditions() {
                             children: "Phasellus luctus maximus accumsan."
                         }, void 0, false, {
                             fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                            lineNumber: 575,
+                            lineNumber: 535,
                             columnNumber: 11
                         }, this),
                         " ",
@@ -880,19 +868,19 @@ function TermsAndconditions() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 564,
+                    lineNumber: 524,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 557,
+                lineNumber: 517,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -900,12 +888,16 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
-                        lineHeight: "36.22px",
                         textAlign: "justify !important",
                         textUnderlinePosition: "from-font",
-                        textDecorationSkipInk: "none"
+                        textDecorationSkipInk: "none",
+                        mt: -2
                     },
                     children: [
                         "Vivamus posuere quam tristique, sodales",
@@ -918,7 +910,7 @@ function TermsAndconditions() {
                             children: "sapien vitae, ullamcorper risus."
                         }, void 0, false, {
                             fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                            lineNumber: 610,
+                            lineNumber: 570,
                             columnNumber: 11
                         }, this),
                         " ",
@@ -932,7 +924,7 @@ function TermsAndconditions() {
                             children: "massa posuere ultrices quis"
                         }, void 0, false, {
                             fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                            lineNumber: 615,
+                            lineNumber: 575,
                             columnNumber: 11
                         }, this),
                         " ",
@@ -940,19 +932,19 @@ function TermsAndconditions() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 598,
+                    lineNumber: 558,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 591,
+                lineNumber: 551,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -960,68 +952,70 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
-                        lineHeight: "36.22px",
                         textAlign: "justify !important",
                         textUnderlinePosition: "from-font",
-                        textDecorationSkipInk: "none"
+                        textDecorationSkipInk: "none",
+                        mt: -2
                     },
                     children: "In at neque risus. Maecenas eros dolor, tempor nec bibendum sed, fermentum at ex. Suspendisse euismod, arcu rutrujkjm dictum ddreriti elit ex posuere nisi, vel commodo libero diam in tellus. Pellentesque dignissim gravida odio kvulputate. Pellentesque nunc mi, tincidunit amet imperdiet maximus, vestibulum at urna. Etiam auctor neque ut magnajlamcorper dapibus. Suspendisse aliquam quis massa eudan. Sed euismod, neque at varius fringilla, metus arcu ultricies ngisl, a luctus neque velit ac mi. Nunc blandit, mi quis congue fringilla, dolorfna laoreet tellus, sed posuere lacus justo nec dauris.Etiam ut magna vestibulum, feugiat enim eget, rhoncus turpis. Aenean id est enimnteger egestas tortor quis ex pharetra suscipit. In justo sapien, pretium a metus vel.Phasellus dapibus tristique sem, nec ultrices risus viverra a. Ut venenatisrf, dui quis congue facilisis."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 633,
+                    lineNumber: 593,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 626,
+                lineNumber: 586,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "401.53px"
+                        sm: "90%"
                     },
-                    // height: "61.2px",
                     top: "120.6px",
                     left: {
                         xs: "0",
                         sm: "570.05px"
                     },
-                    margin: "3px auto",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center"
+                    // border: "1px solid red",
+                    margin: "3px auto"
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato",
                         fontSize: {
-                            xs: "32px",
-                            sm: "32px"
+                            xs: "18px",
+                            sm: "36px",
+                            sm: "23px"
                         },
                         fontWeight: 700,
-                        lineHeight: "64.2px",
-                        textAlign: "center"
+                        textAlign: "left",
+                        mt: 5
                     },
-                    children: "Security of Personal Data"
+                    children: "Security of personal data"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 673,
-                    columnNumber: 9
+                    lineNumber: 629,
+                    columnNumber: 3
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 660,
+                lineNumber: 620,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -1029,12 +1023,16 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
-                        lineHeight: "36.22px",
                         textAlign: "justify !important",
                         textUnderlinePosition: "from-font",
-                        textDecorationSkipInk: "none"
+                        textDecorationSkipInk: "none",
+                        mt: -2
                     },
                     children: [
                         "Phasellus luctus maximus accumsan. Mauris ante eros, efficitur nec ligula in,",
@@ -1046,7 +1044,7 @@ function TermsAndconditions() {
                             children: "maximus ullamcorper diam."
                         }, void 0, false, {
                             fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                            lineNumber: 706,
+                            lineNumber: 664,
                             columnNumber: 11
                         }, this),
                         " ",
@@ -1054,55 +1052,56 @@ function TermsAndconditions() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 693,
+                    lineNumber: 651,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 686,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
-                sx: {
-                    // width: { xs: "100%", sm: "401.53px" }, // 100% width on small screens, fixed width on larger screens
-                    // height: "61.2px",
-                    top: "120.6px",
-                    left: {
-                        xs: "0",
-                        sm: "570.05px"
-                    },
-                    margin: "3px auto",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center"
-                },
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                    sx: {
-                        fontFamily: "Lato",
-                        fontSize: {
-                            xs: "32px",
-                            sm: "32px"
-                        },
-                        fontWeight: 700,
-                        lineHeight: "64.2px",
-                        textAlign: "center"
-                    },
-                    children: "Access and Correction of Personal Data"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 732,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 719,
+                lineNumber: 644,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
+                    },
+                    top: "120.6px",
+                    left: {
+                        xs: "0",
+                        sm: "570.05px"
+                    },
+                    // border: "1px solid red",
+                    margin: "3px auto"
+                },
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
+                    sx: {
+                        fontFamily: "Lato",
+                        fontSize: {
+                            xs: "18px",
+                            sm: "23px",
+                            sm: "23px"
+                        },
+                        fontWeight: 700,
+                        textAlign: "left",
+                        mt: 5
+                    },
+                    children: "Access and correction of personal data"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
+                    lineNumber: 686,
+                    columnNumber: 3
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
+                lineNumber: 677,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
+                sx: {
+                    width: {
+                        xs: "100%",
+                        sm: "90%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -1110,29 +1109,33 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
-                        lineHeight: "36.22px",
                         textAlign: "justify !important",
                         textUnderlinePosition: "from-font",
-                        textDecorationSkipInk: "none"
+                        textDecorationSkipInk: "none",
+                        mt: -2
                     },
                     children: "Phasellus luctus maximus accumsan. Mauris ante eros, efficitur nec ligula in, maximus ullamcorper diam. Aliquamdentum arcueget amet ultricies risus fringilla. Praesent odio erat, consectetur a magna non, mollis ds nisi. Nullam pretium ex sit amet velit dictum feus giat. Phasellus dapibus tristique sem, nec ultrices risus viverra a. Ut venenatisrf, dui quis congue facilisis, ligula lacus tempor sem, atderdiet massa purus in tortor. Pellentesque hendrerit iagculis suscipit:"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 752,
+                    lineNumber: 708,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 745,
+                lineNumber: 701,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "20px auto 10px auto",
                     textAlign: "left"
@@ -1142,7 +1145,11 @@ function TermsAndconditions() {
                     ,
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
                         lineHeight: "36.22px",
                         textAlign: "left",
@@ -1154,79 +1161,79 @@ function TermsAndconditions() {
                                 children: "Phasellus luctus maximus accumsan."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 793,
+                                lineNumber: 749,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Mauris ante eros, efficitur nec ligula in, maximus ullamcorper diam."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 794,
+                                lineNumber: 750,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Aliquamdentum arcueget amet ultricies risus fringilla."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 798,
+                                lineNumber: 754,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Praesent odio erat, consectetur a magna non, mollis ds nisi."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 799,
+                                lineNumber: 755,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Nullam pretium ex sit amet velit dictum feus giat."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 802,
+                                lineNumber: 758,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Phasellus dapibus tristique sem, nec ultrices risus viverra a."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 803,
+                                lineNumber: 759,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Ut venenatisrf, dui quis congue facilisis, ligula lacus tempor sem, atderdiet massa purus in tortor."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 806,
+                                lineNumber: 762,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Pellentesque hendrerit iagculis suscipit."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 810,
+                                lineNumber: 766,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                        lineNumber: 792,
+                        lineNumber: 748,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 781,
+                    lineNumber: 737,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 774,
+                lineNumber: 730,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "auto",
                     textAlign: "center"
@@ -1234,7 +1241,11 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
                         lineHeight: "36.22px",
                         textAlign: "justify !important",
@@ -1244,58 +1255,57 @@ function TermsAndconditions() {
                     children: "Morbi vehicula porta risus, vel feugiat dolor accumsan in. Mauris vitae nunc sit amet turpis pulvinar laoreet. Proin nec dui quis lacusfntum sollicitudin at ut nibh. Nam vestibulum urna quis elit commodo porttitor. Orci varius natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. "
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 821,
+                    lineNumber: 777,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 814,
+                lineNumber: 770,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "401.53px"
+                        sm: "90%"
                     },
-                    // height: "61.2px",
                     top: "120.6px",
                     left: {
                         xs: "0",
                         sm: "570.05px"
                     },
-                    margin: "3px auto",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center"
+                    // border: "1px solid red",
+                    margin: "3px auto"
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato",
                         fontSize: {
-                            xs: "32px",
-                            sm: "36px"
+                            xs: "18px",
+                            sm: "23px",
+                            sm: "23px"
                         },
-                        fontWeight: 600,
+                        fontWeight: 700,
                         lineHeight: "64.2px",
-                        textAlign: "center"
+                        textAlign: "left",
+                        mt: 5
                     },
-                    children: "Direct Marketings"
+                    children: "Direct marketings"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 853,
-                    columnNumber: 9
+                    lineNumber: 805,
+                    columnNumber: 3
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 840,
+                lineNumber: 796,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "auto",
                     textAlign: "center"
@@ -1303,7 +1313,11 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
                         lineHeight: "36.22px",
                         textAlign: "justify !important",
@@ -1324,65 +1338,64 @@ function TermsAndconditions() {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                            lineNumber: 891,
+                            lineNumber: 846,
                             columnNumber: 11
                         }, this),
                         "In interdum orci velit, id vulputate tellus blandit eu. Aenean tristique tortor velit, tempor aliquam massa blandit sit amet."
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 873,
+                    lineNumber: 828,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 866,
+                lineNumber: 821,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "401.53px"
+                        sm: "90%"
                     },
-                    // height: "61.2px",
                     top: "120.6px",
                     left: {
                         xs: "0",
                         sm: "570.05px"
                     },
-                    margin: "3px auto",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center"
+                    // border: "1px solid red",
+                    margin: "3px auto"
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato",
                         fontSize: {
-                            xs: "32px",
-                            sm: "36px"
+                            xs: "18px",
+                            sm: "36px",
+                            sm: "23px"
                         },
-                        fontWeight: 600,
+                        fontWeight: 700,
                         lineHeight: "64.2px",
-                        textAlign: "center"
+                        textAlign: "left",
+                        mt: 5
                     },
                     children: "Change Policy"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 913,
-                    columnNumber: 9
+                    lineNumber: 864,
+                    columnNumber: 3
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 900,
+                lineNumber: 855,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "auto",
                     textAlign: "center"
@@ -1390,7 +1403,11 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
                         lineHeight: "36.22px",
                         textAlign: "justify !important",
@@ -1400,19 +1417,19 @@ function TermsAndconditions() {
                     children: "Nunc ac congue nisi. Donec at ex interdum, laoreet ligula et, interdum lacus. Praesent ac dui ullamcorper, auctor sem id, porta orci. In hac habitasse platea dictumst. Morbi nec diam vitae est sagittis faucibus. Nulla aliquet aliquam sem at faucibus. Maecenas laoreet lectus elit, tincidunt consequat ex pellentesque id. Nam feugiat commodo justo eu volutpat. Cras vulputate aliquam nunc sit amet viverra. Curabitur a ligula hendrerit, vehicula libero vel, tempus nisl."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 932,
+                    lineNumber: 886,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 925,
+                lineNumber: 879,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "auto",
                     textAlign: "center"
@@ -1420,7 +1437,11 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
                         lineHeight: "36.22px",
                         textAlign: "justify !important",
@@ -1430,19 +1451,19 @@ function TermsAndconditions() {
                     children: "Maecenas consectetur tellus a dolor iaculis pellentesque. Curabitur a ex arcu. Nunc aliquet viverra eros, commodo ultricies ante egestas vel. Proin tincidunt purus libero, sit amet dignissim est aliquet hendrerit. Donec commodo odio id dui suscipit, et scelerisque orcientumxd. Fusce pellentesque pretium nisi at interdum. Proin tempor ex quis felis iaculis pulvinar. Maecenas metus magna, vehicula ut ex egetandit mollis libero. Nam purus ligula, ultricies vel sapien maximus, vehicula hendrerit arcu. Nam et mi nisi. Quisque imperdiet lorem at diam vulputate, at gravida velit vehicula. Nulla tempus diam sed convallis elementum. Nunc facilisis ac lorem ut rutrum. Quisque luctuspis idper venenatis. Aenean dolor nisi, tincidunt at quam scelerisque, finibus hendrerit ante. Phasellus eget tempus ligula, ut viverra felis. In ornare ante ac nibh convallis, a consequat leo condimentum."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 960,
+                    lineNumber: 914,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 953,
+                lineNumber: 907,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "20px auto 10px auto",
                     textAlign: "left"
@@ -1452,7 +1473,11 @@ function TermsAndconditions() {
                     ,
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
                         lineHeight: "36.22px",
                         textAlign: "left"
@@ -1468,14 +1493,14 @@ function TermsAndconditions() {
                                 children: "Phasellus luctus maximus accumsan Mauris ante eros, efficitur nec"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 1012,
+                                lineNumber: 966,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Aliquamdentum arcueget amet ultricies risus fringilla."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 1016,
+                                lineNumber: 970,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1485,122 +1510,82 @@ function TermsAndconditions() {
                                 children: "Praesent odio erat, consectetur a magna non, mollis ds nisi."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 1017,
+                                lineNumber: 971,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Nullam pretium ex sit amet velit dictum feus giat."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 1024,
+                                lineNumber: 978,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Pellentesque hendrerit iagculis suscipit."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 1026,
+                                lineNumber: 980,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                        lineNumber: 1005,
+                        lineNumber: 959,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 995,
+                    lineNumber: 949,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 988,
+                lineNumber: 942,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
-                    margin: "auto",
-                    textAlign: "center"
-                },
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                    sx: {
-                        fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
-                        fontWeight: "400",
-                        lineHeight: "36.22px",
-                        textUnderlinePosition: "from-font",
-                        textDecorationSkipInk: "none"
-                    },
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        style: {
-                            color: "#0D6192",
-                            fontWeight: "400"
-                        },
-                        children: "Proin tempor ex quis felis iaculis pulvinar."
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                        lineNumber: 1049,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 1038,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 1031,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
-                sx: {
-                    width: {
-                        xs: "100%",
-                        sm: "401.53px"
-                    },
-                    // height: "61.2px",
                     top: "120.6px",
                     left: {
                         xs: "0",
                         sm: "570.05px"
                     },
-                    margin: "3px auto",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center"
+                    // border: "1px solid red",
+                    margin: "3px auto"
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato",
                         fontSize: {
-                            xs: "32px",
-                            sm: "32px"
+                            xs: "18px",
+                            sm: "23px",
+                            sm: "23px"
                         },
-                        fontWeight: 600,
+                        fontWeight: 700,
                         lineHeight: "64.2px",
-                        textAlign: "center"
+                        textAlign: "left",
+                        mt: 5
                     },
                     children: "Behavioral Remarketing"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 1068,
-                    columnNumber: 9
+                    lineNumber: 996,
+                    columnNumber: 3
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 1055,
+                lineNumber: 987,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "auto",
                     textAlign: "center"
@@ -1608,7 +1593,11 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
                         lineHeight: "36.22px",
                         textAlign: "justify !important",
@@ -1618,58 +1607,57 @@ function TermsAndconditions() {
                     children: "In at neque risus. Maecenas eros dolor, tempor nec bibendum sed, fermentum at ex. Suspendisse euismod, arcu rutrujkjm dictum ddreriti elit ex posuere nisi, vel commodo libero diam in tellus. Pellentesque dignissim gravida odio kvulputate. Pellentesque nunc mi, tincidunit amet imperdiet maximus, vestibulum at urna. Etiam auctor neque ut magnajlamcorper dapibus. Suspendisse aliquam quis massa eudan. Sed euismod, neque at varius fringilla, metus arcu ultricies ngisl, a luctus neque velit ac mi. Nunc blandit, mi quis congue fringilla, dolorfna laoreet tellus, sed posuere lacus justo nec dauris.Etiam ut magna vestibulum, feugiat enim eget, rhoncus turpis. Aenean id est enimnteger egestas tortor quis ex pharetra suscipit. In justo sapien, pretium a metus vel.Phasellus dapibus tristique sem, nec ultrices risus viverra a. Ut venenatisrf, dui quis congue facilisis."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 1088,
+                    lineNumber: 1019,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 1081,
+                lineNumber: 1012,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "401.53px"
+                        sm: "90%"
                     },
-                    // height: "61.2px",
                     top: "120.6px",
                     left: {
                         xs: "0",
                         sm: "570.05px"
                     },
-                    margin: "3px auto",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center"
+                    // border: "1px solid red",
+                    margin: "3px auto"
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato",
                         fontSize: {
-                            xs: "32px",
-                            sm: "32px"
+                            xs: "18px",
+                            sm: "23px",
+                            sm: "23px"
                         },
-                        fontWeight: 600,
+                        fontWeight: 700,
                         lineHeight: "64.2px",
-                        textAlign: "center"
+                        textAlign: "left",
+                        mt: 5
                     },
-                    children: "Liability Disclamer"
+                    children: "Liability disclaimer"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 1128,
-                    columnNumber: 9
+                    lineNumber: 1055,
+                    columnNumber: 3
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 1115,
+                lineNumber: 1046,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "auto",
                     textAlign: "center"
@@ -1677,7 +1665,11 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
                         lineHeight: "36.22px",
                         textAlign: "justify !important",
@@ -1687,19 +1679,19 @@ function TermsAndconditions() {
                     children: "Cras vitae diam mattis, porttitor justo ac, scelerisque orci. Aliquam ut nunc tortor. Suspendisse scelerisque nisl aliquam risus dapibus ftate. Praesent auctor tincidunt nulla nec blandit. Fusce volutpat est sit amet lorem mollis, id tempor velit fringilla. Integer in viverra nunc, vel porta libero. Vivamus ac augue magna. Etiam viverra faucibus orci sit amet sodales. Fusce pharetra nibh ac mauris volutpat, eu mattis sapien volutpat. Donec venenatis sed mi on faucibus. Pellentesque pellentesque quam ut urna vehicula consectetur. Vestibulum tellus mi, facilisis ut fermentum a, pulvinar ut diam. Quisque enim lectus, rhoncus quis aliquet sed, aliquam et turpis. Maecenas sagittis tristique nunc id congue. Maecenas luctus bibendum erat ac rutrum. Nunc massa velit, euismod et ante eget, bibendum porttitor ligula."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 1148,
+                    lineNumber: 1078,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 1141,
+                lineNumber: 1071,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "auto",
                     textAlign: "center"
@@ -1707,7 +1699,11 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
                         lineHeight: "36.22px",
                         textAlign: "justify !important",
@@ -1717,69 +1713,57 @@ function TermsAndconditions() {
                     children: "Nullam ultricies, ante vitae rhoncus congue, leo nibh eleifend quam, ut luctus turpis elit commodo nunc. Ut varius ante a neque consectetur, non ullamcorper leo vestibulum. Sed dapibus, ex a tincidunt varius, metus purus oncus tellus, sit amet egestas felis magna eu erat. Sed velit diam, placerat ut nunc vitae, hendrerit egestas augue. Nulla elementum turpis non turpis consequat, in sagittis lectus vestibulum. Ut vehicula urna nec ipsum pellentesqued Praesent in interdum neque. Mauris egestas pharetra facilisis. Nam commodo tempor sodales. Vestibuslum putatep pulvinar tortor, id efficitur erat tempus ut. Mauris eget commodo sapien. Donec ac felis id ligula molestie retra. Nunc vel lorem turpis. Donec urna odio, fringilla et viverra eget, suscipit vel leo. Praesent mollis ac mi eu lacerat. Suspendisse potenti. In hac habitasse platea dictumst. Proin porttitor ligula eu erat fermentum tincidunt. Quisq vel ex consequat nisi pharetra mollis non sit amet ante. In erat lectus, lobortis quis commodo in, dictum quis ante."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 1182,
+                    lineNumber: 1112,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 1175,
+                lineNumber: 1105,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "401.53px"
+                        sm: "90%"
                     },
-                    // height: "61.2px",
                     top: "120.6px",
                     left: {
                         xs: "0",
                         sm: "570.05px"
                     },
-                    margin: "3px auto",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center"
+                    // border: "1px solid red",
+                    margin: "3px auto"
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato",
                         fontSize: {
-                            xs: "24px",
-                            sm: "32px"
+                            xs: "18px",
+                            sm: "36px",
+                            sm: "23px"
                         },
-                        fontWeight: 600,
-                        lineHeight: {
-                            xs: "40px",
-                            sm: "64.2px"
-                        },
-                        textAlign: "center",
-                        whiteSpace: {
-                            xs: "normal",
-                            sm: "nowrap"
-                        },
-                        paddingX: {
-                            xs: 2,
-                            sm: 0
-                        }
+                        fontWeight: 700,
+                        lineHeight: "64.2px",
+                        textAlign: "left",
+                        mt: 5
                     },
-                    children: "Termination/Access Restriction"
+                    children: "Termination/Access restriction"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 1225,
-                    columnNumber: 9
+                    lineNumber: 1151,
+                    columnNumber: 3
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 1212,
+                lineNumber: 1142,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "auto",
                     textAlign: "center"
@@ -1787,7 +1771,11 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
                         lineHeight: "36.22px",
                         textAlign: "justify !important",
@@ -1797,19 +1785,19 @@ function TermsAndconditions() {
                     children: "Pellentesque metus dolor, placerat id sollicitudin pellentesque, tempor et magna. Nunc sed dui ut dui volutpat vulputate vitae commodo orci. Fusce dapibus nulla ut risus vulputate, vel maximus lacus vehicula. Sed rhoncus, ligula vel dignissim pretium, mi erat aliquam nisl, eget egestas enim purus sed nisl. Morbi faucibus erat enim, quis dignissim enim eleifend non. Ut a malesuada nisl, at tristique mi. Aenean eu sollicitudin urna. Nulla sit amet gravida enim, at fringilla dolor. Vivamus eget consectetur nunc, non bibendum nibh. Aliquam quis diam massa. Sed rhoncus risus eu elit porttitor, id tristique eros pharetra. Nulla sit amet sagittis leo. Nunc lectus arcu, consectetur sit amet elit eu, fermentum sollicitudin risus. Suspendisse ultricies nunc ac nibh egestas sagittis. Praesent id turpis finibus, sollicitudin nibh non, hendrerit ante. Nunc ullamcorper nisl non lectus volutpat facilisis."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 1247,
+                    lineNumber: 1174,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 1240,
+                lineNumber: 1167,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "auto",
                     textAlign: "center"
@@ -1817,7 +1805,11 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
                         lineHeight: "36.22px",
                         textAlign: "justify !important",
@@ -1827,69 +1819,57 @@ function TermsAndconditions() {
                     children: "Vestibulum suscipit arcu nec felis mattis sollicitudin. Ut at justo in erat malesuada hendrerit. Pellentesque id mauris ornare, consequatdio non, dictum velit. In in ante mauris. Nam vel est lorem. Duis bibendum nulla sed lectus viverra, porttitor sodales metus vetis. Integer volutpat, arcu eu condimentum dictum, augue ipsum finibus quam, nec congue purus justo at sapien. Curabitur ut consectetur felis, nec volutpat turpis. Donec blandit leo sed arcu placerat, malesuada mattis velit pulvinar. Pellentesque facilisis vehicula ligula, ut malesuada ipsum convallis pharetra. Maecenas eget lacus in magna hendrerit viverra. Praesent ultrices dapibus est nec mollis. Etiam placerat intum sapien, sed facilisis sem porttitor eu. Etiam turpis quam, ornare id commodo at, vehicula non dolor. In in arcu tortor. Sed commodo dmsan varius. Curabitur semper, justo ut porta auctor, enim quam venenatis justo, eu auctor ligula nisi at quam. Morbi sagittis congue faucibus. Etiam posuere a quam sit amet tempus. Nullam iaculis rhoncus tellus, et sodales arcu facilisis quis. Ut pretium suscierat id sagittis. Donec vestibulum mi non tempus imperdiet. Donec vitae faucibus leo, in finibus est. Cras pharetra lobortis tellus nec elementum."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 1282,
+                    lineNumber: 1209,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 1275,
+                lineNumber: 1202,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "401.53px"
+                        sm: "90%"
                     },
-                    // height: "61.2px",
                     top: "120.6px",
                     left: {
                         xs: "0",
                         sm: "570.05px"
                     },
-                    margin: "3px auto",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center"
+                    // border: "1px solid red",
+                    margin: "3px auto"
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato",
                         fontSize: {
-                            xs: "24px",
-                            sm: "32px"
+                            xs: "18px",
+                            sm: "36px",
+                            sm: "23px"
                         },
-                        fontWeight: 600,
-                        lineHeight: {
-                            xs: "40px",
-                            sm: "64.2px"
-                        },
-                        textAlign: "center",
-                        whiteSpace: {
-                            xs: "normal",
-                            sm: "nowrap"
-                        },
-                        paddingX: {
-                            xs: 2,
-                            sm: 0
-                        }
+                        fontWeight: 700,
+                        lineHeight: "64.2px",
+                        textAlign: "left",
+                        mt: 5
                     },
                     children: "Termination/Access Restriction"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 1328,
-                    columnNumber: 8
+                    lineNumber: 1251,
+                    columnNumber: 3
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 1315,
+                lineNumber: 1242,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "100%"
+                        sm: "90%"
                     },
                     margin: "auto",
                     textAlign: "center"
@@ -1897,7 +1877,11 @@ function TermsAndconditions() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontFamily: "Lato, Montserrat",
-                        fontSize: "15.7px",
+                        fontSize: {
+                            sm: "13px",
+                            xs: "13px",
+                            md: "15.7px"
+                        },
                         fontWeight: "400",
                         lineHeight: "36.22px",
                         textAlign: "justify !important",
@@ -1907,12 +1891,12 @@ function TermsAndconditions() {
                     children: "Fusce ut molestie tellus, eu lacinia est. Praesent ut blandit arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, perptos himenaeos. Morbi id erat vel nibh feugiat vehicula eget ut risus. Morbi at nisl magna. Proin vel ante in ipsum faucibus ultricies a sed dui. Cras tempor gravida posuere. Cras commodo risus turpis, id cursus urna pellentesque a. Cras aliquam urna et turpis hendrerit, eu placerat elit viverra. In vulputate commodo massa eu fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend, ligula id consequat dignissim, turpis sapien aliquam enim, vitae hendrerit purus libero sed erat"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 1350,
+                    lineNumber: 1274,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 1343,
+                lineNumber: 1267,
                 columnNumber: 7
             }, this)
         ]
@@ -2174,20 +2158,56 @@ function Terms_conditions() {
                 maxWidth: "xl",
                 sx: {
                     px: {
-                        xs: 2,
-                        lg: 6
+                        xs: 1,
+                        sm: 1,
+                        lg: 1
                     }
                 },
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$TermsAndConditions$2f$components$2f$Heading$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
+                        sx: {
+                            paddingLeft: {
+                                xs: '0px',
+                                sm: '0px',
+                                lg: '0px'
+                            },
+                            paddingTop: {
+                                xs: '24px',
+                                sm: '32px'
+                            },
+                            marginBottom: {
+                                xs: '10px',
+                                sm: '5px',
+                                lg: '5px'
+                            }
+                        },
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$TermsAndConditions$2f$components$2f$Heading$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                            fileName: "[project]/src/components/TermsAndConditions/Terms_conditions.js",
+                            lineNumber: 16,
+                            columnNumber: 9
+                        }, this)
+                    }, void 0, false, {
                         fileName: "[project]/src/components/TermsAndConditions/Terms_conditions.js",
                         lineNumber: 9,
-                        columnNumber: 9
+                        columnNumber: 7
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$TermsAndConditions$2f$components$2f$TermsAndconditions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
+                        sx: {
+                            marginBottom: {
+                                xs: '100px',
+                                sm: '100px',
+                                lg: '150px'
+                            }
+                        },
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$TermsAndConditions$2f$components$2f$TermsAndconditions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                            fileName: "[project]/src/components/TermsAndConditions/Terms_conditions.js",
+                            lineNumber: 23,
+                            columnNumber: 9
+                        }, this)
+                    }, void 0, false, {
                         fileName: "[project]/src/components/TermsAndConditions/Terms_conditions.js",
-                        lineNumber: 10,
-                        columnNumber: 9
+                        lineNumber: 18,
+                        columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
@@ -2197,7 +2217,7 @@ function Terms_conditions() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Home$2f$compoments$2f$JoinUs$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/Terms_conditions.js",
-                lineNumber: 12,
+                lineNumber: 26,
                 columnNumber: 7
             }, this)
         ]
