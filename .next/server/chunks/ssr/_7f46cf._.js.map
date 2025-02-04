@@ -8,7 +8,7 @@
     {"offset": {"line": 29, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
     {"offset": {"line": 35, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}},
     {"offset": {"line": 39, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
-    {"offset": {"line": 45, "column": 0}, "map": {"version":3,"sources":["file://E%3A/My%20Projects/Desun/Real%20state/New%20Patrick/new-real-estate-web/src/app/property-compare1/page.js"],"sourcesContent":["import MapViewIndex from '@/components/MapView/MapViewIndex'\r\nimport { Box } from '@mui/material'\r\n\r\nexport default function Home() {\r\n  return (\r\n    <Box>\r\n      <MapViewIndex/>\r\n    </Box>\r\n  )\r\n}\r\n"],"names":[],"mappings":";;;;AAAA;AACA;;;;AAEe,SAAS;IACtB,qBACE,8OAAC,iLAAA,CAAA,MAAG;kBACF,cAAA,8OAAC,4IAAA,CAAA,UAAY;;;;;;;;;;AAGnB"}},
+    {"offset": {"line": 45, "column": 0}, "map": {"version":3,"sources":["file://E%3A/My%20Projects/Desun/Real%20state/New%20Patrick/new-real-estate-web/src/app/property-compare1/page.js"],"sourcesContent":["import MapViewIndex from '@/components/MapView/MapViewIndex'\r\nimport { Box } from '@mui/material'\r\n\r\nexport default function Home() {\r\n  return (\r\n    <Box>\r\n      <PropertyComaprisionIndex/>\r\n    </Box>\r\n  )\r\n}\r\n"],"names":[],"mappings":";;;;AAAA;AACA;;;;AAEe,SAAS;IACtB,qBACE,8OAAC,iLAAA,CAAA,MAAG;kBACF,cAAA,8OAAC;;;;;;;;;;AAGP"}},
     {"offset": {"line": 67, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
     {"offset": {"line": 78, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}},
     {"offset": {"line": 78, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},

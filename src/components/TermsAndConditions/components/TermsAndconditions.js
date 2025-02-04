@@ -3,12 +3,12 @@ import { Box, Typography } from "@mui/material";
 
 export default function TermsAndconditions() {
   return (
-    <Box sx={{ px: { xs: 2, md: 0 } }}>
+    <Box sx={{ px: { xs: 3, lg: 8 } }}>
       <Box
         sx={{
           width: { xs: "100%", sm: "401.53px" }, // 100% width on small screens, fixed width on larger screens
           // height: "61.2px",
-          top: "120.6px",
+          // top: "120.6px",
           left: { xs: "0", sm: "570.05px" }, // Full width on small screens, specific left value on larger screens
 
           margin: "2px auto",
@@ -20,11 +20,11 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato",
-            fontSize: { xs: "18px", sm: "36px" }, // Smaller font size on small screens
+            fontSize: { xs: "26px", sm: "36px" }, // Smaller font size on small screens
             fontWeight: 700,
-            lineHeight: "64.2px",
+            // lineHeight: "64.2px",
             textAlign: "center", // Align text center
-            mt:"40px",
+            mt: "40px",
           }}
         >
           Terms & Conditions
@@ -35,7 +35,7 @@ export default function TermsAndconditions() {
         {/* First Paragraph */}
         <Box
           sx={{
-            width: { xs: "100%", sm: "90%" }, // Responsive width
+            width: { xs: "100%", sm: "100%" }, // Responsive width
             margin: "40px auto 10px auto", // Center horizontally with specific margins
             textAlign: "center", // Center the text inside the box
           }}
@@ -43,9 +43,9 @@ export default function TermsAndconditions() {
           <Typography
             sx={{
               fontFamily: "Lato, Montserrat",
-              fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+              fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
               fontWeight: "400",
-              lineHeight: "36.22px",
+              // lineHeight: "36.22px",
               textAlign: "justify !important",
               textUnderlinePosition: "from-font",
               textDecorationSkipInk: "none",
@@ -53,21 +53,21 @@ export default function TermsAndconditions() {
           >
             Curabitur et erat{" "}
             <span style={{ color: "#0D6192", fontWeight: "bold" }}>
-              venenatis, bibendum lectus vel,
-            </span>{" "}
+              venenatis, bibendum lectus vel,{" "}
+            </span>
             iaculis tortor.{" "}
             <span style={{ color: "#0D6192", fontWeight: "bold" }}>
               Nulla tempus diam sed,
             </span>{" "}
             convallis elementum. Nunc faciis ac lorem ut rutrum. Quisque luctus
-            turpis id ullamcorper venenatis.
+            turpis id ullamcorper venenatis.{" "}
             <span style={{ color: "#0D6192", fontWeight: "bold" }}>
               Aenean dolor nisi,
-            </span>
-            tincidunt at quam scelerisque,ibs hendrerit ante. Phasellus eget
+            </span>{" "}
+            tincidunt at quam scelerisque, ibs hendrerit ante. Phasellus eget
             tempus ligula, ut viverra felis. In ornare ante{" "}
             <span style={{ color: "#0D6192", fontWeight: "bold" }}>
-              nibh conalvis conswquat,
+              nibh conalvis conswquat, {""}
             </span>
             leo condimentsuDonec commodo odio id dui suscipit, etsque orci
             fermentum. Fusce pellentesque pretium nisi at interdum. Proin fal
@@ -78,12 +78,11 @@ export default function TermsAndconditions() {
         </Box>
 
         {/* Second Paragraph */}
-       
       </Box>
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -91,7 +90,7 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             lineHeight: "36.22px",
             textAlign: "justify !important",
@@ -103,7 +102,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -111,7 +110,7 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"} ,
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             textAlign: "justify !important",
             textUnderlinePosition: "from-font",
@@ -128,7 +127,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Full width on small screens, fixed width on larger screens
+          width: { xs: "100%", sm: "100%" }, // Full width on small screens, fixed width on larger screens
           top: "120.6px",
           left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
           // border: "1px solid red",
@@ -138,10 +137,10 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato",
-            fontSize: { xs: "18px", sm: "23px",  sm: "23px",  }, // Responsive font size
+            fontSize: { xs: "18px", sm: "23px", sm: "23px" }, // Responsive font size
             fontWeight: 700,
             textAlign: "left", // Align text to left
-            mt:5,
+            mt: 5,
           }}
         >
           General
@@ -150,7 +149,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           // border: "1px solid red",
           display: "flex",
@@ -161,10 +160,10 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             textAlign: "left", // Align text to the left
-            mt:-2,
+            mt: -2,
           }}
         >
           Mauris auctor tristique fermentum. Donec et diam quam. Proin suscipit
@@ -175,7 +174,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Full width on small screens, fixed width on larger screens
+          width: { xs: "100%", sm: "100%" }, // Full width on small screens, fixed width on larger screens
           top: "120.6px",
           left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
           // border: "1px solid red",
@@ -185,11 +184,10 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato",
-            fontSize: { xs: "18px", sm: "23px",  sm: "23px",  }, // Responsive font size
+            fontSize: { xs: "18px", sm: "23px", sm: "23px" }, // Responsive font size
             fontWeight: 700,
             textAlign: "left", // Align text to left
-            mt:5,
-
+            mt: 5,
           }}
         >
           Our corporate privacy
@@ -197,7 +195,7 @@ export default function TermsAndconditions() {
       </Box>
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -205,13 +203,12 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             textAlign: "justify !important",
             textUnderlinePosition: "from-font",
             textDecorationSkipInk: "none",
-            mt:-2,
-
+            mt: -2,
           }}
         >
           Suspendisse ut{" "}
@@ -228,7 +225,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Full width on small screens, fixed width on larger screens
+          width: { xs: "100%", sm: "100%" }, // Full width on small screens, fixed width on larger screens
           top: "120.6px",
           left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
           // border: "1px solid red",
@@ -238,12 +235,11 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato",
-            fontSize: { xs: "18px", sm: "23px",  sm: "23px",  }, // Responsive font size
+            fontSize: { xs: "18px", sm: "23px", sm: "23px" }, // Responsive font size
             fontWeight: 700,
             lineHeight: "64.2px",
             textAlign: "left", // Align text to left
-            mt:5,
-
+            mt: 5,
           }}
         >
           Statement of practices
@@ -252,7 +248,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -260,13 +256,12 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             textAlign: "justify !important",
             textUnderlinePosition: "from-font",
             textDecorationSkipInk: "none",
-            mt:-2,
-
+            mt: -2,
           }}
         >
           Phasellus dapibus tristique sem, nec ultrices risus viverra a. Ut
@@ -284,7 +279,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -292,13 +287,12 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             textAlign: "justify !important",
             textUnderlinePosition: "from-font",
             textDecorationSkipInk: "none",
-            mt:-2,
-
+            mt: -2,
           }}
         >
           Donec egestas luctusgenatis.Vivamus posuere quam tristique, sodales
@@ -310,7 +304,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Full width on small screens, fixed width on larger screens
+          width: { xs: "100%", sm: "100%" }, // Full width on small screens, fixed width on larger screens
           top: "120.6px",
           left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
           // border: "1px solid red",
@@ -320,11 +314,10 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato",
-            fontSize: { xs: "18px", sm: "23px",  sm: "23px",  }, // Responsive font size
+            fontSize: { xs: "18px", sm: "23px", sm: "23px" }, // Responsive font size
             fontWeight: 700,
             textAlign: "left", // Align text to left
-            mt:5,
-
+            mt: 5,
           }}
         >
           Accuracy of personal data
@@ -333,7 +326,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -341,12 +334,12 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             textAlign: "justify !important",
             textUnderlinePosition: "from-font",
             textDecorationSkipInk: "none",
-            mt:-2,
+            mt: -2,
           }}
         >
           Quisque auctor dignissim eros, vel dignissim nunc tempor vitae.
@@ -360,7 +353,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Full width on small screens, fixed width on larger screens
+          width: { xs: "100%", sm: "100%" }, // Full width on small screens, fixed width on larger screens
           top: "120.6px",
           left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
           // border: "1px solid red",
@@ -370,11 +363,10 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato",
-            fontSize: { xs: "18px", sm: "23px", sm: "23px",  }, // Responsive font size
+            fontSize: { xs: "18px", sm: "23px", sm: "23px" }, // Responsive font size
             fontWeight: 700,
             textAlign: "left", // Align text to left
-            mt:5,
-
+            mt: 5,
           }}
         >
           Interpretation
@@ -383,7 +375,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -391,12 +383,12 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             textAlign: "justify !important",
             textUnderlinePosition: "from-font",
             textDecorationSkipInk: "none",
-            mt:-2,
+            mt: -2,
           }}
         >
           In at neque risus. Maecenas eros dolor, tempor nec bibendum sed,
@@ -407,31 +399,30 @@ export default function TermsAndconditions() {
       </Box>
 
       <Box
-  sx={{
-    width: { xs: "100%", sm: "90%" }, // Full width on small screens, fixed width on larger screens
-    top: "120.6px",
-    left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
-    // border: "1px solid red",
-    margin: "3px auto",
-  }}
->
-  <Typography
-    sx={{
-      fontFamily: "Lato",
-      fontSize: { xs: "18px", sm: "23px",  sm: "23px",  }, // Responsive font size
-      fontWeight: 700,
-      textAlign: "left", // Align text to left
-      mt:5,
-
-    }}
-  >
- Law Enforcement
-  </Typography>
-</Box>
+        sx={{
+          width: { xs: "100%", sm: "100%" }, // Full width on small screens, fixed width on larger screens
+          top: "120.6px",
+          left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
+          // border: "1px solid red",
+          margin: "3px auto",
+        }}
+      >
+        <Typography
+          sx={{
+            fontFamily: "Lato",
+            fontSize: { xs: "18px", sm: "23px", sm: "23px" }, // Responsive font size
+            fontWeight: 700,
+            textAlign: "left", // Align text to left
+            mt: 5,
+          }}
+        >
+          Law Enforcement
+        </Typography>
+      </Box>
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -439,12 +430,12 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             textAlign: "justify !important",
             textUnderlinePosition: "from-font",
             textDecorationSkipInk: "none",
-            mt:-2,
+            mt: -2,
           }}
         >
           Donec consequat, Donec pharetra id mi vitae tristique.{" "}
@@ -463,7 +454,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -471,12 +462,12 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             textAlign: "justify !important",
             textUnderlinePosition: "from-font",
             textDecorationSkipInk: "none",
-            mt:-2,
+            mt: -2,
           }}
         >
           Sed non condimentum sapien. Aenean urna dui, dapibus ornare magna vel,
@@ -491,32 +482,30 @@ export default function TermsAndconditions() {
       </Box>
 
       <Box
-  sx={{
-    width: { xs: "100%", sm: "90%" }, // Full width on small screens, fixed width on larger screens
-    top: "120.6px",
-    left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
-    // border: "1px solid red",
-    margin: "3px auto",
-  }}
->
-  <Typography
-    sx={{
-      fontFamily: "Lato",
-      fontSize: { xs: "18px", sm: "36px" , sm: "23px", }, // Responsive font size
-      fontWeight: 700,
-      textAlign: "left", // Align text to left
-      mt:5,
-
-    }}
-  >
-    Payments
-  </Typography>
-</Box>
-
+        sx={{
+          width: { xs: "100%", sm: "100%" }, // Full width on small screens, fixed width on larger screens
+          top: "120.6px",
+          left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
+          // border: "1px solid red",
+          margin: "3px auto",
+        }}
+      >
+        <Typography
+          sx={{
+            fontFamily: "Lato",
+            fontSize: { xs: "18px", sm: "36px", sm: "23px" }, // Responsive font size
+            fontWeight: 700,
+            textAlign: "left", // Align text to left
+            mt: 5,
+          }}
+        >
+          Payments
+        </Typography>
+      </Box>
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -524,12 +513,12 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             textAlign: "justify !important",
             textUnderlinePosition: "from-font",
             textDecorationSkipInk: "none",
-            mt:-2,
+            mt: -2,
           }}
         >
           <span style={{ color: "#0D6192", fontWeight: "bold" }}>
@@ -550,7 +539,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -558,12 +547,12 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             textAlign: "justify !important",
             textUnderlinePosition: "from-font",
             textDecorationSkipInk: "none",
-            mt:-2,
+            mt: -2,
           }}
         >
           Vivamus posuere quam tristique, sodales{" "}
@@ -585,7 +574,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -593,12 +582,12 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             textAlign: "justify !important",
             textUnderlinePosition: "from-font",
             textDecorationSkipInk: "none",
-            mt:-2,
+            mt: -2,
           }}
         >
           In at neque risus. Maecenas eros dolor, tempor nec bibendum sed,
@@ -618,32 +607,30 @@ export default function TermsAndconditions() {
       </Box>
 
       <Box
-  sx={{
-    width: { xs: "100%", sm: "90%" }, // Full width on small screens, fixed width on larger screens
-    top: "120.6px",
-    left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
-    // border: "1px solid red",
-    margin: "3px auto",
-  }}
->
-  <Typography
-    sx={{
-      fontFamily: "Lato",
-      fontSize: { xs: "18px", sm: "36px" , sm: "23px", }, // Responsive font size
-      fontWeight: 700,
-      textAlign: "left", // Align text to left
-      mt:5,
-
-    }}
-  >
-   Security of personal data
-  </Typography>
-</Box>
-
+        sx={{
+          width: { xs: "100%", sm: "100%" }, // Full width on small screens, fixed width on larger screens
+          top: "120.6px",
+          left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
+          // border: "1px solid red",
+          margin: "3px auto",
+        }}
+      >
+        <Typography
+          sx={{
+            fontFamily: "Lato",
+            fontSize: { xs: "18px", sm: "36px", sm: "23px" }, // Responsive font size
+            fontWeight: 700,
+            textAlign: "left", // Align text to left
+            mt: 5,
+          }}
+        >
+          Security of personal data
+        </Typography>
+      </Box>
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -651,12 +638,12 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             textAlign: "justify !important",
             textUnderlinePosition: "from-font",
             textDecorationSkipInk: "none",
-            mt:-2,
+            mt: -2,
           }}
         >
           Phasellus luctus maximus accumsan. Mauris ante eros, efficitur nec
@@ -675,32 +662,30 @@ export default function TermsAndconditions() {
       </Box>
 
       <Box
-  sx={{
-    width: { xs: "100%", sm: "90%" }, // Full width on small screens, fixed width on larger screens
-    top: "120.6px",
-    left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
-    // border: "1px solid red",
-    margin: "3px auto",
-  }}
->
-  <Typography
-    sx={{
-      fontFamily: "Lato",
-      fontSize: { xs: "18px", sm: "23px",  sm: "23px",  }, // Responsive font size
-      fontWeight: 700,
-      textAlign: "left", // Align text to left
-      mt:5,
-
-    }}
-  >
-   Access and correction of personal data
-  </Typography>
-</Box>
-
+        sx={{
+          width: { xs: "100%", sm: "100%" }, // Full width on small screens, fixed width on larger screens
+          top: "120.6px",
+          left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
+          // border: "1px solid red",
+          margin: "3px auto",
+        }}
+      >
+        <Typography
+          sx={{
+            fontFamily: "Lato",
+            fontSize: { xs: "18px", sm: "23px", sm: "23px" }, // Responsive font size
+            fontWeight: 700,
+            textAlign: "left", // Align text to left
+            mt: 5,
+          }}
+        >
+          Access and correction of personal data
+        </Typography>
+      </Box>
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "40px auto 10px auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -708,12 +693,12 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             textAlign: "justify !important",
             textUnderlinePosition: "from-font",
             textDecorationSkipInk: "none",
-            mt:-2,
+            mt: -2,
           }}
         >
           Phasellus luctus maximus accumsan. Mauris ante eros, efficitur nec
@@ -729,7 +714,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "20px auto 10px auto", // Center horizontally with specific margins
           textAlign: "left", // Align the text to the left (use justify for full width)
         }}
@@ -738,7 +723,7 @@ export default function TermsAndconditions() {
           component="div" // Change the wrapper element to a <div> instead of <p>
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             lineHeight: "36.22px",
             textAlign: "left", // Align text to the left to keep numbering neat
@@ -769,7 +754,7 @@ export default function TermsAndconditions() {
       </Box>
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -777,7 +762,7 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             lineHeight: "36.22px",
             textAlign: "justify !important",
@@ -794,33 +779,31 @@ export default function TermsAndconditions() {
       </Box>
 
       <Box
-  sx={{
-    width: { xs: "100%", sm: "90%" }, // Full width on small screens, fixed width on larger screens
-    top: "120.6px",
-    left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
-    // border: "1px solid red",
-    margin: "3px auto",
-  }}
->
-  <Typography
-    sx={{
-      fontFamily: "Lato",
-      fontSize: { xs: "18px", sm: "23px",  sm: "23px",  }, // Responsive font size
-      fontWeight: 700,
-      lineHeight: "64.2px",
-      textAlign: "left", // Align text to left
-      mt:5,
-
-    }}
-  >
-  Direct marketings
-  </Typography>
-</Box>
-
+        sx={{
+          width: { xs: "100%", sm: "100%" }, // Full width on small screens, fixed width on larger screens
+          top: "120.6px",
+          left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
+          // border: "1px solid red",
+          margin: "3px auto",
+        }}
+      >
+        <Typography
+          sx={{
+            fontFamily: "Lato",
+            fontSize: { xs: "18px", sm: "23px", sm: "23px" }, // Responsive font size
+            fontWeight: 700,
+            lineHeight: "64.2px",
+            textAlign: "left", // Align text to left
+            mt: 5,
+          }}
+        >
+          Direct marketings
+        </Typography>
+      </Box>
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -828,7 +811,7 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             lineHeight: "36.22px",
             textAlign: "justify !important",
@@ -853,32 +836,31 @@ export default function TermsAndconditions() {
       </Box>
 
       <Box
-  sx={{
-    width: { xs: "100%", sm: "90%" }, // Full width on small screens, fixed width on larger screens
-    top: "120.6px",
-    left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
-    // border: "1px solid red",
-    margin: "3px auto",
-  }}
->
-  <Typography
-    sx={{
-      fontFamily: "Lato",
-      fontSize: { xs: "18px", sm: "36px" , sm: "23px", }, // Responsive font size
-      fontWeight: 700,
-      lineHeight: "64.2px",
-      textAlign: "left", // Align text to left
-      mt:5,
-
-    }}
-  >
-  Change Policy
-  </Typography>
-</Box>
+        sx={{
+          width: { xs: "100%", sm: "100%" }, // Full width on small screens, fixed width on larger screens
+          top: "120.6px",
+          left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
+          // border: "1px solid red",
+          margin: "3px auto",
+        }}
+      >
+        <Typography
+          sx={{
+            fontFamily: "Lato",
+            fontSize: { xs: "18px", sm: "36px", sm: "23px" }, // Responsive font size
+            fontWeight: 700,
+            lineHeight: "64.2px",
+            textAlign: "left", // Align text to left
+            mt: 5,
+          }}
+        >
+          Change Policy
+        </Typography>
+      </Box>
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -886,7 +868,7 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             lineHeight: "36.22px",
             textAlign: "justify !important",
@@ -906,7 +888,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -914,7 +896,7 @@ export default function TermsAndconditions() {
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             lineHeight: "36.22px",
             textAlign: "justify !important",
@@ -941,7 +923,7 @@ export default function TermsAndconditions() {
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "20px auto 10px auto", // Center horizontally with specific margins
           textAlign: "left", // Align the text to the left (use justify for full width)
         }}
@@ -950,7 +932,7 @@ export default function TermsAndconditions() {
           component="div" // Change the wrapper element to a <div> instead of <p>
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             lineHeight: "36.22px",
             textAlign: "left", // Align text to the left to keep numbering neat
@@ -982,36 +964,32 @@ export default function TermsAndconditions() {
         </Typography>
       </Box>
 
-     
-
       <Box
-  sx={{
-    width: { xs: "100%", sm: "90%" }, // Full width on small screens, fixed width on larger screens
-    top: "120.6px",
-    left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
-    // border: "1px solid red",
-    margin: "3px auto",
-  }}
->
-  <Typography
-    sx={{
-      fontFamily: "Lato",
-      fontSize: { xs: "18px", sm: "23px", sm: "23px", }, // Responsive font size
-      fontWeight: 700,
-      lineHeight: "64.2px",
-      textAlign: "left", // Align text to left
-      mt:5,
-
-    }}
-  >
-Behavioral Remarketing
-  </Typography>
-</Box>
-
+        sx={{
+          width: { xs: "100%", sm: "100%" }, // Full width on small screens, fixed width on larger screens
+          top: "120.6px",
+          left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
+          // border: "1px solid red",
+          margin: "3px auto",
+        }}
+      >
+        <Typography
+          sx={{
+            fontFamily: "Lato",
+            fontSize: { xs: "18px", sm: "23px", sm: "23px" }, // Responsive font size
+            fontWeight: 700,
+            lineHeight: "64.2px",
+            textAlign: "left", // Align text to left
+            mt: 5,
+          }}
+        >
+          Behavioral Remarketing
+        </Typography>
+      </Box>
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -1019,7 +997,7 @@ Behavioral Remarketing
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             lineHeight: "36.22px",
             textAlign: "justify !important",
@@ -1044,33 +1022,31 @@ Behavioral Remarketing
       </Box>
 
       <Box
-  sx={{
-    width: { xs: "100%", sm: "90%" }, // Full width on small screens, fixed width on larger screens
-    top: "120.6px",
-    left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
-    // border: "1px solid red",
-    margin: "3px auto",
-  }}
->
-  <Typography
-    sx={{
-      fontFamily: "Lato",
-      fontSize: { xs: "18px", sm: "23px",  sm: "23px", }, // Responsive font size
-      fontWeight: 700,
-      lineHeight: "64.2px",
-      textAlign: "left", // Align text to left
-      mt:5,
-
-    }}
-  >
-   Liability disclaimer
-  </Typography>
-</Box>
-
+        sx={{
+          width: { xs: "100%", sm: "100%" }, // Full width on small screens, fixed width on larger screens
+          top: "120.6px",
+          left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
+          // border: "1px solid red",
+          margin: "3px auto",
+        }}
+      >
+        <Typography
+          sx={{
+            fontFamily: "Lato",
+            fontSize: { xs: "18px", sm: "23px", sm: "23px" }, // Responsive font size
+            fontWeight: 700,
+            lineHeight: "64.2px",
+            textAlign: "left", // Align text to left
+            mt: 5,
+          }}
+        >
+          Liability disclaimer
+        </Typography>
+      </Box>
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -1078,7 +1054,7 @@ Behavioral Remarketing
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             lineHeight: "36.22px",
             textAlign: "justify !important",
@@ -1104,7 +1080,7 @@ Behavioral Remarketing
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -1112,7 +1088,7 @@ Behavioral Remarketing
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             lineHeight: "36.22px",
             textAlign: "justify !important",
@@ -1140,33 +1116,31 @@ Behavioral Remarketing
       </Box>
 
       <Box
-  sx={{
-    width: { xs: "100%", sm: "90%" }, // Full width on small screens, fixed width on larger screens
-    top: "120.6px",
-    left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
-    // border: "1px solid red",
-    margin: "3px auto",
-  }}
->
-  <Typography
-    sx={{
-      fontFamily: "Lato",
-      fontSize: { xs: "18px", sm: "36px" , sm: "23px", }, // Responsive font size
-      fontWeight: 700,
-      lineHeight: "64.2px",
-      textAlign: "left", // Align text to left
-      mt:5,
-
-    }}
-  >
-Termination/Access restriction
-  </Typography>
-</Box>
-
+        sx={{
+          width: { xs: "100%", sm: "100%" }, // Full width on small screens, fixed width on larger screens
+          top: "120.6px",
+          left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
+          // border: "1px solid red",
+          margin: "3px auto",
+        }}
+      >
+        <Typography
+          sx={{
+            fontFamily: "Lato",
+            fontSize: { xs: "18px", sm: "36px", sm: "23px" }, // Responsive font size
+            fontWeight: 700,
+            lineHeight: "64.2px",
+            textAlign: "left", // Align text to left
+            mt: 5,
+          }}
+        >
+          Termination/Access restriction
+        </Typography>
+      </Box>
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -1174,7 +1148,7 @@ Termination/Access restriction
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             lineHeight: "36.22px",
             textAlign: "justify !important",
@@ -1201,7 +1175,7 @@ Termination/Access restriction
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -1209,7 +1183,7 @@ Termination/Access restriction
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             lineHeight: "36.22px",
             textAlign: "justify !important",
@@ -1240,33 +1214,31 @@ Termination/Access restriction
       </Box>
 
       <Box
-  sx={{
-    width: { xs: "100%", sm: "90%" }, // Full width on small screens, fixed width on larger screens
-    top: "120.6px",
-    left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
-    // border: "1px solid red",
-    margin: "3px auto",
-  }}
->
-  <Typography
-    sx={{
-      fontFamily: "Lato",
-      fontSize: { xs: "18px", sm: "36px" , sm: "23px", }, // Responsive font size
-      fontWeight: 700,
-      lineHeight: "64.2px",
-      textAlign: "left", // Align text to left
-      mt:5,
-
-    }}
-  >
-Termination/Access Restriction
-  </Typography>
-</Box>
-
+        sx={{
+          width: { xs: "100%", sm: "100%" }, // Full width on small screens, fixed width on larger screens
+          top: "120.6px",
+          left: { xs: "0", sm: "570.05px" }, // Responsive left positioning
+          // border: "1px solid red",
+          margin: "3px auto",
+        }}
+      >
+        <Typography
+          sx={{
+            fontFamily: "Lato",
+            fontSize: { xs: "18px", sm: "36px", sm: "23px" }, // Responsive font size
+            fontWeight: 700,
+            lineHeight: "64.2px",
+            textAlign: "left", // Align text to left
+            mt: 5,
+          }}
+        >
+          Termination/Access Restriction
+        </Typography>
+      </Box>
 
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" }, // Responsive width
+          width: { xs: "100%", sm: "100%" }, // Responsive width
           margin: "auto", // Center horizontally with specific margins
           textAlign: "center", // Center the text inside the box
         }}
@@ -1274,7 +1246,7 @@ Termination/Access Restriction
         <Typography
           sx={{
             fontFamily: "Lato, Montserrat",
-            fontSize:{sm:"13px",xs:"13px",md:"15.7px"},
+            fontSize: { sm: "13px", xs: "13px", md: "15.7px" },
             fontWeight: "400",
             lineHeight: "36.22px",
             textAlign: "justify !important",

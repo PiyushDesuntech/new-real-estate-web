@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from "react";
 import {
   Box,
@@ -32,16 +32,43 @@ const AgentDetailsProfile = () => {
       <Typography sx={{ fontSize: "20px", fontWeight: 500 }}>
         Tom Willson
       </Typography>
-      <Box sx={{ display: "flex", alignItems: "center"}}>
-      <Typography
-      sx={{ fontSize: "12.52px", fontWeight: 400, color: "#484848", display: "flex", alignItems: "center" }}
-    >
-      Phone: {show ? phone : hiddenPhone}
-    </Typography>
+      <Box sx={{ display: "flex", alignItems: "center" }}>
+        <Typography
+          sx={{
+            fontSize: "12.52px",
+            fontWeight: 400,
+            color: "#484848",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          Phone:{" "}
+          {show ? (
+            <a
+              href={`tel:${phone}`}
+              style={{ color: "#484848", textDecoration: "none" }}
+            >
+              {phone}
+            </a>
+          ) : (
+            hiddenPhone
+          )}
+        </Typography>
         <Chip
           label={show ? "Hide" : "Show"}
           onClick={() => setShow(!show)}
-          sx={{ ml: 1, backgroundColor: "#878787", cursor: "pointer", borderRadius: "2px", color: "#FFFFFF", fontSize: "10px", height: "20px" }}
+          sx={{
+            ml: 1,
+            backgroundColor: "#878787",
+            cursor: "pointer",
+            borderRadius: "2px",
+            color: "#FFFFFF",
+            fontSize: "10px",
+            height: "20px",
+            "&:hover": {
+              backgroundColor: "#878787",
+            },
+          }}
         />
       </Box>
       <Typography
@@ -66,7 +93,7 @@ const AgentDetailsProfile = () => {
         sx={{
           borderWidth: "0.71px",
           borderColor: "rgba(0, 0, 0, 0.12)",
-          mt: 1
+          mt: 1,
         }}
       />
       <Box
@@ -137,20 +164,31 @@ const AgentDetailsProfile = () => {
       </Box>
 
       <Divider
-        sx={{ my: 2, borderWidth: "0.71px", borderColor: "rgba(0, 0, 0, 0.12)" }}
+        sx={{
+          my: 2,
+          borderWidth: "0.71px",
+          borderColor: "rgba(0, 0, 0, 0.12)",
+        }}
       />
 
       {/* About Section */}
-      <Typography sx={{ fontSize: {xs: "14.29px", sm: "20.31px"}, fontWeight: 700 }}>
-       About Tom Willson
+      <Typography
+        sx={{ fontSize: { xs: "14.29px", sm: "20.31px" }, fontWeight: 700 }}
+      >
+        About Tom Willson
       </Typography>
-      <Typography sx={{ fontSize: {xs:"12.86px", sm: "18px"}, fontWeight: 500 }}>
+      <Typography
+        sx={{ fontSize: { xs: "12.86px", sm: "18px" }, fontWeight: 500 }}
+      >
         Home Types:{" "}
         <span style={{ fontWeight: 300 }}>
           House, MultiFamily, Lot/Land, Condo, For Rent
         </span>
       </Typography>
-      <Typography sx={{ fontSize: {xs:"12.86px", sm: "18px"}, fontWeight: 500 }} mt={1}>
+      <Typography
+        sx={{ fontSize: { xs: "12.86px", sm: "18px" }, fontWeight: 500 }}
+        mt={1}
+      >
         Years of Experience: <span style={{ fontWeight: 300 }}> 25</span>
       </Typography>
 

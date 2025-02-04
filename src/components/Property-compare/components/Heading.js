@@ -61,7 +61,7 @@ function Heading() {
   });
 
   return (
-    <Container maxWidth="xl" sx={{px: {xs: 3, lg: 8}}}>
+    <Container maxWidth="xl" sx={{px: {xs: 3,md: 4, lg: 8}, py: 4}}>
       <Box 
       sx={{ 
         minWidth: '51px',
@@ -125,7 +125,7 @@ function Heading() {
       <Typography 
         sx={{ 
           fontSize: { 
-            xs: '24px',
+            xs: '26px',
             sm: '28px',
             md: '32px',
             lg: '37px' 

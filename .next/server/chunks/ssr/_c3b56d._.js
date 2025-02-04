@@ -57,8 +57,8 @@ function TermsAndconditions() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
             px: {
-                xs: 2,
-                md: 0
+                xs: 3,
+                lg: 8
             }
         },
         children: [
@@ -69,7 +69,7 @@ function TermsAndconditions() {
                         sm: "401.53px"
                     },
                     // height: "61.2px",
-                    top: "120.6px",
+                    // top: "120.6px",
                     left: {
                         xs: "0",
                         sm: "570.05px"
@@ -83,11 +83,11 @@ function TermsAndconditions() {
                     sx: {
                         fontFamily: "Lato",
                         fontSize: {
-                            xs: "18px",
+                            xs: "26px",
                             sm: "36px"
                         },
                         fontWeight: 700,
-                        lineHeight: "64.2px",
+                        // lineHeight: "64.2px",
                         textAlign: "center",
                         mt: "40px"
                     },
@@ -107,7 +107,7 @@ function TermsAndconditions() {
                     sx: {
                         width: {
                             xs: "100%",
-                            sm: "90%"
+                            sm: "100%"
                         },
                         margin: "40px auto 10px auto",
                         textAlign: "center"
@@ -121,7 +121,7 @@ function TermsAndconditions() {
                                 md: "15.7px"
                             },
                             fontWeight: "400",
-                            lineHeight: "36.22px",
+                            // lineHeight: "36.22px",
                             textAlign: "justify !important",
                             textUnderlinePosition: "from-font",
                             textDecorationSkipInk: "none"
@@ -134,13 +134,15 @@ function TermsAndconditions() {
                                     color: "#0D6192",
                                     fontWeight: "bold"
                                 },
-                                children: "venenatis, bibendum lectus vel,"
-                            }, void 0, false, {
+                                children: [
+                                    "venenatis, bibendum lectus vel,",
+                                    " "
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
                                 lineNumber: 55,
                                 columnNumber: 13
                             }, this),
-                            " ",
                             "iaculis tortor.",
                             " ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -156,6 +158,7 @@ function TermsAndconditions() {
                             }, this),
                             " ",
                             "convallis elementum. Nunc faciis ac lorem ut rutrum. Quisque luctus turpis id ullamcorper venenatis.",
+                            " ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 style: {
                                     color: "#0D6192",
@@ -167,15 +170,19 @@ function TermsAndconditions() {
                                 lineNumber: 64,
                                 columnNumber: 13
                             }, this),
-                            "tincidunt at quam scelerisque,ibs hendrerit ante. Phasellus eget tempus ligula, ut viverra felis. In ornare ante",
+                            " ",
+                            "tincidunt at quam scelerisque, ibs hendrerit ante. Phasellus eget tempus ligula, ut viverra felis. In ornare ante",
                             " ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 style: {
                                     color: "#0D6192",
                                     fontWeight: "bold"
                                 },
-                                children: "nibh conalvis conswquat,"
-                            }, void 0, false, {
+                                children: [
+                                    "nibh conalvis conswquat, ",
+                                    ""
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
                                 lineNumber: 69,
                                 columnNumber: 13
@@ -201,7 +208,7 @@ function TermsAndconditions() {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -222,19 +229,19 @@ function TermsAndconditions() {
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 91,
+                    lineNumber: 90,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 84,
+                lineNumber: 83,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -255,19 +262,19 @@ function TermsAndconditions() {
                     children: "Nam non luctus turpis. Praesent tempor massa rhoncus, bibendum arcu sed, semper libero. Suspendisse eu lectus sed urna maximus sagittis rhoncus vel quam. Vivamus et tristique magna. Praesent scelerisque orci a turpis consequat, ut sfeer lorem dignissimliquam stique lacinia turpis.Sed non condimentum sapien."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 111,
+                    lineNumber: 110,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 104,
+                lineNumber: 103,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     top: "120.6px",
                     left: {
@@ -292,19 +299,19 @@ function TermsAndconditions() {
                     children: "General"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 138,
+                    lineNumber: 137,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 129,
+                lineNumber: 128,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "40px auto 10px auto",
                     // border: "1px solid red",
@@ -327,19 +334,19 @@ function TermsAndconditions() {
                     children: "Mauris auctor tristique fermentum. Donec et diam quam. Proin suscipit efficitur eros sit amet convallis. Nunc sit amet elit diam. Aliquam nisi purus, pellentesque sit amet magna u."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 161,
+                    lineNumber: 160,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 151,
+                lineNumber: 150,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     top: "120.6px",
                     left: {
@@ -364,19 +371,19 @@ function TermsAndconditions() {
                     children: "Our corporate privacy"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 185,
+                    lineNumber: 184,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 176,
+                lineNumber: 175,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -406,7 +413,7 @@ function TermsAndconditions() {
                             children: "dictum erat, non vehicula neque."
                         }, void 0, false, {
                             fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                            lineNumber: 218,
+                            lineNumber: 215,
                             columnNumber: 11
                         }, this),
                         " ",
@@ -414,19 +421,19 @@ function TermsAndconditions() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 205,
+                    lineNumber: 203,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 198,
+                lineNumber: 196,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     top: "120.6px",
                     left: {
@@ -452,19 +459,19 @@ function TermsAndconditions() {
                     children: "Statement of practices"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 238,
+                    lineNumber: 235,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 229,
+                lineNumber: 226,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -486,19 +493,19 @@ function TermsAndconditions() {
                     children: "Phasellus dapibus tristique sem, nec ultrices risus viverra a. Ut venenatis, dui quis congue facilisis, ligula lacus tempors imperdiet massa purus in tortor. Pellentesque hendrerit iaculis suscipit. Duis velit risus, faucibus quis nisl ac, porttitorum tortor. Aliquam cursus non lacus et consequat. Quisque enim urna, iaculis in viverra ornare, dictum a diam. Vestibulumddor purus urna. Donec egestas luctusgenatis.Vivamus posuere quam tristique, sodales sapien vitae, ullamcorper risus. Fusce sem nulla, tincidunt a nisl vitae, hendrerit semper diam. Nullam eleifend egestas hendrerit. Aenean urna dui, dapibus ornare magna vel, accumsan vehicula erat."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 260,
+                    lineNumber: 256,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 253,
+                lineNumber: 249,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -520,19 +527,19 @@ function TermsAndconditions() {
                     children: "Donec egestas luctusgenatis.Vivamus posuere quam tristique, sodales sapien vitae, ullamcorper risus. Fusce sem nulla, tincidunt a nisl vitae, hendrerit semper diam. Nullam eleifend egestas hendrerit. Aenean urna dui, dapibus ornare magna vel, accumsan vehicula erat."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 292,
+                    lineNumber: 287,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 285,
+                lineNumber: 280,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     top: "120.6px",
                     left: {
@@ -557,19 +564,19 @@ function TermsAndconditions() {
                     children: "Accuracy of personal data"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 320,
+                    lineNumber: 314,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 311,
+                lineNumber: 305,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -591,19 +598,19 @@ function TermsAndconditions() {
                     children: "Quisque auctor dignissim eros, vel dignissim nunc tempor vitae. Aliquam placerat ornare lectus sed sollicitudin. Morbidbus augue eget fus placerat faucibus. Cras pulvinar eros vitae nibh cursus vehicula. Suspendisse ultrices feugiat tortor a drices. Aenean nec orci justo. Fuscesrit diam eget ex posuere porttitor. In sodales purus quis mi egestas venenatis."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 341,
+                    lineNumber: 334,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 334,
+                lineNumber: 327,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     top: "120.6px",
                     left: {
@@ -628,19 +635,19 @@ function TermsAndconditions() {
                     children: "Interpretation"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 370,
+                    lineNumber: 363,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 361,
+                lineNumber: 354,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -662,19 +669,19 @@ function TermsAndconditions() {
                     children: "In at neque risus. Maecenas eros dolor, tempor nec bibendum sed, fermentum at ex. Suspendisse euismod, arcu rutrumfm hendrerit, elitfg ex posuere nisi, vel commodo libero diam in tellus. Sed vitae vulputate purus, vitae tincidunt eros."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 391,
+                    lineNumber: 383,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 384,
+                lineNumber: 376,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     top: "120.6px",
                     left: {
@@ -699,19 +706,19 @@ function TermsAndconditions() {
                     children: "Law Enforcement"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 418,
-                    columnNumber: 3
+                    lineNumber: 410,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 409,
+                lineNumber: 401,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -741,7 +748,7 @@ function TermsAndconditions() {
                             children: "Donec consequat,"
                         }, void 0, false, {
                             fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                            lineNumber: 451,
+                            lineNumber: 442,
                             columnNumber: 11
                         }, this),
                         " ",
@@ -749,19 +756,19 @@ function TermsAndconditions() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 439,
+                    lineNumber: 430,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 432,
+                lineNumber: 423,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -783,19 +790,19 @@ function TermsAndconditions() {
                     children: "Sed non condimentum sapien. Aenean urna dui, dapibus ornare magna vel, accumsan vehicula erat. Proin et miconsequat, convallis leodt bibendum nisi. In sodales purus quis mi egestas venenatis. Sed vitae vulputate purus, vitate tincidunt eros. Curabitur ac dolor nec sapien tempus consequat quis sed ipsum. Morbi suscipit maximus libero non blandit. Maurisus libero ut tempor fringilla. Aliquam ornare umNam vestibulum urna quis elit coo libero.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 471,
+                    lineNumber: 462,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 464,
+                lineNumber: 455,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     top: "120.6px",
                     left: {
@@ -820,19 +827,19 @@ function TermsAndconditions() {
                     children: "Payments"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 502,
-                    columnNumber: 3
+                    lineNumber: 493,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 493,
+                lineNumber: 484,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -860,7 +867,7 @@ function TermsAndconditions() {
                             children: "Phasellus luctus maximus accumsan."
                         }, void 0, false, {
                             fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                            lineNumber: 535,
+                            lineNumber: 524,
                             columnNumber: 11
                         }, this),
                         " ",
@@ -868,19 +875,19 @@ function TermsAndconditions() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 524,
+                    lineNumber: 513,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 517,
+                lineNumber: 506,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -910,7 +917,7 @@ function TermsAndconditions() {
                             children: "sapien vitae, ullamcorper risus."
                         }, void 0, false, {
                             fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                            lineNumber: 570,
+                            lineNumber: 559,
                             columnNumber: 11
                         }, this),
                         " ",
@@ -924,7 +931,7 @@ function TermsAndconditions() {
                             children: "massa posuere ultrices quis"
                         }, void 0, false, {
                             fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                            lineNumber: 575,
+                            lineNumber: 564,
                             columnNumber: 11
                         }, this),
                         " ",
@@ -932,19 +939,19 @@ function TermsAndconditions() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 558,
+                    lineNumber: 547,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 551,
+                lineNumber: 540,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -966,19 +973,19 @@ function TermsAndconditions() {
                     children: "In at neque risus. Maecenas eros dolor, tempor nec bibendum sed, fermentum at ex. Suspendisse euismod, arcu rutrujkjm dictum ddreriti elit ex posuere nisi, vel commodo libero diam in tellus. Pellentesque dignissim gravida odio kvulputate. Pellentesque nunc mi, tincidunit amet imperdiet maximus, vestibulum at urna. Etiam auctor neque ut magnajlamcorper dapibus. Suspendisse aliquam quis massa eudan. Sed euismod, neque at varius fringilla, metus arcu ultricies ngisl, a luctus neque velit ac mi. Nunc blandit, mi quis congue fringilla, dolorfna laoreet tellus, sed posuere lacus justo nec dauris.Etiam ut magna vestibulum, feugiat enim eget, rhoncus turpis. Aenean id est enimnteger egestas tortor quis ex pharetra suscipit. In justo sapien, pretium a metus vel.Phasellus dapibus tristique sem, nec ultrices risus viverra a. Ut venenatisrf, dui quis congue facilisis."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 593,
+                    lineNumber: 582,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 586,
+                lineNumber: 575,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     top: "120.6px",
                     left: {
@@ -1003,19 +1010,19 @@ function TermsAndconditions() {
                     children: "Security of personal data"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 629,
-                    columnNumber: 3
+                    lineNumber: 618,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 620,
+                lineNumber: 609,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -1044,7 +1051,7 @@ function TermsAndconditions() {
                             children: "maximus ullamcorper diam."
                         }, void 0, false, {
                             fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                            lineNumber: 664,
+                            lineNumber: 651,
                             columnNumber: 11
                         }, this),
                         " ",
@@ -1052,19 +1059,19 @@ function TermsAndconditions() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 651,
+                    lineNumber: 638,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 644,
+                lineNumber: 631,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     top: "120.6px",
                     left: {
@@ -1089,19 +1096,19 @@ function TermsAndconditions() {
                     children: "Access and correction of personal data"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 686,
-                    columnNumber: 3
+                    lineNumber: 673,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 677,
+                lineNumber: 664,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "40px auto 10px auto",
                     textAlign: "center"
@@ -1123,19 +1130,19 @@ function TermsAndconditions() {
                     children: "Phasellus luctus maximus accumsan. Mauris ante eros, efficitur nec ligula in, maximus ullamcorper diam. Aliquamdentum arcueget amet ultricies risus fringilla. Praesent odio erat, consectetur a magna non, mollis ds nisi. Nullam pretium ex sit amet velit dictum feus giat. Phasellus dapibus tristique sem, nec ultrices risus viverra a. Ut venenatisrf, dui quis congue facilisis, ligula lacus tempor sem, atderdiet massa purus in tortor. Pellentesque hendrerit iagculis suscipit:"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 708,
+                    lineNumber: 693,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 701,
+                lineNumber: 686,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "20px auto 10px auto",
                     textAlign: "left"
@@ -1161,79 +1168,79 @@ function TermsAndconditions() {
                                 children: "Phasellus luctus maximus accumsan."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 749,
+                                lineNumber: 734,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Mauris ante eros, efficitur nec ligula in, maximus ullamcorper diam."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 750,
+                                lineNumber: 735,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Aliquamdentum arcueget amet ultricies risus fringilla."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 754,
+                                lineNumber: 739,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Praesent odio erat, consectetur a magna non, mollis ds nisi."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 755,
+                                lineNumber: 740,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Nullam pretium ex sit amet velit dictum feus giat."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 758,
+                                lineNumber: 743,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Phasellus dapibus tristique sem, nec ultrices risus viverra a."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 759,
+                                lineNumber: 744,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Ut venenatisrf, dui quis congue facilisis, ligula lacus tempor sem, atderdiet massa purus in tortor."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 762,
+                                lineNumber: 747,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Pellentesque hendrerit iagculis suscipit."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 766,
+                                lineNumber: 751,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                        lineNumber: 748,
+                        lineNumber: 733,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 737,
+                    lineNumber: 722,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 730,
+                lineNumber: 715,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "auto",
                     textAlign: "center"
@@ -1255,19 +1262,19 @@ function TermsAndconditions() {
                     children: "Morbi vehicula porta risus, vel feugiat dolor accumsan in. Mauris vitae nunc sit amet turpis pulvinar laoreet. Proin nec dui quis lacusfntum sollicitudin at ut nibh. Nam vestibulum urna quis elit commodo porttitor. Orci varius natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. "
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 777,
+                    lineNumber: 762,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 770,
+                lineNumber: 755,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     top: "120.6px",
                     left: {
@@ -1293,19 +1300,19 @@ function TermsAndconditions() {
                     children: "Direct marketings"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 805,
-                    columnNumber: 3
+                    lineNumber: 790,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 796,
+                lineNumber: 781,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "auto",
                     textAlign: "center"
@@ -1338,26 +1345,26 @@ function TermsAndconditions() {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                            lineNumber: 846,
+                            lineNumber: 829,
                             columnNumber: 11
                         }, this),
                         "In interdum orci velit, id vulputate tellus blandit eu. Aenean tristique tortor velit, tempor aliquam massa blandit sit amet."
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 828,
+                    lineNumber: 811,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 821,
+                lineNumber: 804,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     top: "120.6px",
                     left: {
@@ -1383,19 +1390,19 @@ function TermsAndconditions() {
                     children: "Change Policy"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 864,
-                    columnNumber: 3
+                    lineNumber: 847,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 855,
+                lineNumber: 838,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "auto",
                     textAlign: "center"
@@ -1417,19 +1424,19 @@ function TermsAndconditions() {
                     children: "Nunc ac congue nisi. Donec at ex interdum, laoreet ligula et, interdum lacus. Praesent ac dui ullamcorper, auctor sem id, porta orci. In hac habitasse platea dictumst. Morbi nec diam vitae est sagittis faucibus. Nulla aliquet aliquam sem at faucibus. Maecenas laoreet lectus elit, tincidunt consequat ex pellentesque id. Nam feugiat commodo justo eu volutpat. Cras vulputate aliquam nunc sit amet viverra. Curabitur a ligula hendrerit, vehicula libero vel, tempus nisl."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 886,
+                    lineNumber: 868,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 879,
+                lineNumber: 861,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "auto",
                     textAlign: "center"
@@ -1451,19 +1458,19 @@ function TermsAndconditions() {
                     children: "Maecenas consectetur tellus a dolor iaculis pellentesque. Curabitur a ex arcu. Nunc aliquet viverra eros, commodo ultricies ante egestas vel. Proin tincidunt purus libero, sit amet dignissim est aliquet hendrerit. Donec commodo odio id dui suscipit, et scelerisque orcientumxd. Fusce pellentesque pretium nisi at interdum. Proin tempor ex quis felis iaculis pulvinar. Maecenas metus magna, vehicula ut ex egetandit mollis libero. Nam purus ligula, ultricies vel sapien maximus, vehicula hendrerit arcu. Nam et mi nisi. Quisque imperdiet lorem at diam vulputate, at gravida velit vehicula. Nulla tempus diam sed convallis elementum. Nunc facilisis ac lorem ut rutrum. Quisque luctuspis idper venenatis. Aenean dolor nisi, tincidunt at quam scelerisque, finibus hendrerit ante. Phasellus eget tempus ligula, ut viverra felis. In ornare ante ac nibh convallis, a consequat leo condimentum."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 914,
+                    lineNumber: 896,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 907,
+                lineNumber: 889,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "20px auto 10px auto",
                     textAlign: "left"
@@ -1493,14 +1500,14 @@ function TermsAndconditions() {
                                 children: "Phasellus luctus maximus accumsan Mauris ante eros, efficitur nec"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 966,
+                                lineNumber: 948,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Aliquamdentum arcueget amet ultricies risus fringilla."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 970,
+                                lineNumber: 952,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1510,44 +1517,44 @@ function TermsAndconditions() {
                                 children: "Praesent odio erat, consectetur a magna non, mollis ds nisi."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 971,
+                                lineNumber: 953,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Nullam pretium ex sit amet velit dictum feus giat."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 978,
+                                lineNumber: 960,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Pellentesque hendrerit iagculis suscipit."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                                lineNumber: 980,
+                                lineNumber: 962,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                        lineNumber: 959,
+                        lineNumber: 941,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 949,
+                    lineNumber: 931,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 942,
+                lineNumber: 924,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     top: "120.6px",
                     left: {
@@ -1573,19 +1580,19 @@ function TermsAndconditions() {
                     children: "Behavioral Remarketing"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 996,
-                    columnNumber: 3
+                    lineNumber: 976,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 987,
+                lineNumber: 967,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "auto",
                     textAlign: "center"
@@ -1607,19 +1614,19 @@ function TermsAndconditions() {
                     children: "In at neque risus. Maecenas eros dolor, tempor nec bibendum sed, fermentum at ex. Suspendisse euismod, arcu rutrujkjm dictum ddreriti elit ex posuere nisi, vel commodo libero diam in tellus. Pellentesque dignissim gravida odio kvulputate. Pellentesque nunc mi, tincidunit amet imperdiet maximus, vestibulum at urna. Etiam auctor neque ut magnajlamcorper dapibus. Suspendisse aliquam quis massa eudan. Sed euismod, neque at varius fringilla, metus arcu ultricies ngisl, a luctus neque velit ac mi. Nunc blandit, mi quis congue fringilla, dolorfna laoreet tellus, sed posuere lacus justo nec dauris.Etiam ut magna vestibulum, feugiat enim eget, rhoncus turpis. Aenean id est enimnteger egestas tortor quis ex pharetra suscipit. In justo sapien, pretium a metus vel.Phasellus dapibus tristique sem, nec ultrices risus viverra a. Ut venenatisrf, dui quis congue facilisis."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 1019,
+                    lineNumber: 997,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 1012,
+                lineNumber: 990,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     top: "120.6px",
                     left: {
@@ -1645,19 +1652,19 @@ function TermsAndconditions() {
                     children: "Liability disclaimer"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 1055,
-                    columnNumber: 3
+                    lineNumber: 1033,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 1046,
+                lineNumber: 1024,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "auto",
                     textAlign: "center"
@@ -1679,19 +1686,19 @@ function TermsAndconditions() {
                     children: "Cras vitae diam mattis, porttitor justo ac, scelerisque orci. Aliquam ut nunc tortor. Suspendisse scelerisque nisl aliquam risus dapibus ftate. Praesent auctor tincidunt nulla nec blandit. Fusce volutpat est sit amet lorem mollis, id tempor velit fringilla. Integer in viverra nunc, vel porta libero. Vivamus ac augue magna. Etiam viverra faucibus orci sit amet sodales. Fusce pharetra nibh ac mauris volutpat, eu mattis sapien volutpat. Donec venenatis sed mi on faucibus. Pellentesque pellentesque quam ut urna vehicula consectetur. Vestibulum tellus mi, facilisis ut fermentum a, pulvinar ut diam. Quisque enim lectus, rhoncus quis aliquet sed, aliquam et turpis. Maecenas sagittis tristique nunc id congue. Maecenas luctus bibendum erat ac rutrum. Nunc massa velit, euismod et ante eget, bibendum porttitor ligula."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 1078,
+                    lineNumber: 1054,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 1071,
+                lineNumber: 1047,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "auto",
                     textAlign: "center"
@@ -1713,19 +1720,19 @@ function TermsAndconditions() {
                     children: "Nullam ultricies, ante vitae rhoncus congue, leo nibh eleifend quam, ut luctus turpis elit commodo nunc. Ut varius ante a neque consectetur, non ullamcorper leo vestibulum. Sed dapibus, ex a tincidunt varius, metus purus oncus tellus, sit amet egestas felis magna eu erat. Sed velit diam, placerat ut nunc vitae, hendrerit egestas augue. Nulla elementum turpis non turpis consequat, in sagittis lectus vestibulum. Ut vehicula urna nec ipsum pellentesqued Praesent in interdum neque. Mauris egestas pharetra facilisis. Nam commodo tempor sodales. Vestibuslum putatep pulvinar tortor, id efficitur erat tempus ut. Mauris eget commodo sapien. Donec ac felis id ligula molestie retra. Nunc vel lorem turpis. Donec urna odio, fringilla et viverra eget, suscipit vel leo. Praesent mollis ac mi eu lacerat. Suspendisse potenti. In hac habitasse platea dictumst. Proin porttitor ligula eu erat fermentum tincidunt. Quisq vel ex consequat nisi pharetra mollis non sit amet ante. In erat lectus, lobortis quis commodo in, dictum quis ante."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 1112,
+                    lineNumber: 1088,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 1105,
+                lineNumber: 1081,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     top: "120.6px",
                     left: {
@@ -1751,19 +1758,19 @@ function TermsAndconditions() {
                     children: "Termination/Access restriction"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 1151,
-                    columnNumber: 3
+                    lineNumber: 1127,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 1142,
+                lineNumber: 1118,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "auto",
                     textAlign: "center"
@@ -1785,19 +1792,19 @@ function TermsAndconditions() {
                     children: "Pellentesque metus dolor, placerat id sollicitudin pellentesque, tempor et magna. Nunc sed dui ut dui volutpat vulputate vitae commodo orci. Fusce dapibus nulla ut risus vulputate, vel maximus lacus vehicula. Sed rhoncus, ligula vel dignissim pretium, mi erat aliquam nisl, eget egestas enim purus sed nisl. Morbi faucibus erat enim, quis dignissim enim eleifend non. Ut a malesuada nisl, at tristique mi. Aenean eu sollicitudin urna. Nulla sit amet gravida enim, at fringilla dolor. Vivamus eget consectetur nunc, non bibendum nibh. Aliquam quis diam massa. Sed rhoncus risus eu elit porttitor, id tristique eros pharetra. Nulla sit amet sagittis leo. Nunc lectus arcu, consectetur sit amet elit eu, fermentum sollicitudin risus. Suspendisse ultricies nunc ac nibh egestas sagittis. Praesent id turpis finibus, sollicitudin nibh non, hendrerit ante. Nunc ullamcorper nisl non lectus volutpat facilisis."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 1174,
+                    lineNumber: 1148,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 1167,
+                lineNumber: 1141,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "auto",
                     textAlign: "center"
@@ -1819,19 +1826,19 @@ function TermsAndconditions() {
                     children: "Vestibulum suscipit arcu nec felis mattis sollicitudin. Ut at justo in erat malesuada hendrerit. Pellentesque id mauris ornare, consequatdio non, dictum velit. In in ante mauris. Nam vel est lorem. Duis bibendum nulla sed lectus viverra, porttitor sodales metus vetis. Integer volutpat, arcu eu condimentum dictum, augue ipsum finibus quam, nec congue purus justo at sapien. Curabitur ut consectetur felis, nec volutpat turpis. Donec blandit leo sed arcu placerat, malesuada mattis velit pulvinar. Pellentesque facilisis vehicula ligula, ut malesuada ipsum convallis pharetra. Maecenas eget lacus in magna hendrerit viverra. Praesent ultrices dapibus est nec mollis. Etiam placerat intum sapien, sed facilisis sem porttitor eu. Etiam turpis quam, ornare id commodo at, vehicula non dolor. In in arcu tortor. Sed commodo dmsan varius. Curabitur semper, justo ut porta auctor, enim quam venenatis justo, eu auctor ligula nisi at quam. Morbi sagittis congue faucibus. Etiam posuere a quam sit amet tempus. Nullam iaculis rhoncus tellus, et sodales arcu facilisis quis. Ut pretium suscierat id sagittis. Donec vestibulum mi non tempus imperdiet. Donec vitae faucibus leo, in finibus est. Cras pharetra lobortis tellus nec elementum."
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 1209,
+                    lineNumber: 1183,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 1202,
+                lineNumber: 1176,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     top: "120.6px",
                     left: {
@@ -1857,19 +1864,19 @@ function TermsAndconditions() {
                     children: "Termination/Access Restriction"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 1251,
-                    columnNumber: 3
+                    lineNumber: 1225,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 1242,
+                lineNumber: 1216,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     width: {
                         xs: "100%",
-                        sm: "90%"
+                        sm: "100%"
                     },
                     margin: "auto",
                     textAlign: "center"
@@ -1891,12 +1898,12 @@ function TermsAndconditions() {
                     children: "Fusce ut molestie tellus, eu lacinia est. Praesent ut blandit arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, perptos himenaeos. Morbi id erat vel nibh feugiat vehicula eget ut risus. Morbi at nisl magna. Proin vel ante in ipsum faucibus ultricies a sed dui. Cras tempor gravida posuere. Cras commodo risus turpis, id cursus urna pellentesque a. Cras aliquam urna et turpis hendrerit, eu placerat elit viverra. In vulputate commodo massa eu fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend, ligula id consequat dignissim, turpis sapien aliquam enim, vitae hendrerit purus libero sed erat"
                 }, void 0, false, {
                     fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                    lineNumber: 1274,
+                    lineNumber: 1246,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TermsAndConditions/components/TermsAndconditions.js",
-                lineNumber: 1267,
+                lineNumber: 1239,
                 columnNumber: 7
             }, this)
         ]

@@ -15,6 +15,7 @@ import {
   Button,
 } from "@mui/material";
 import StarIcon from "@mui/icons-material/Star";
+import { useRouter } from "next/navigation";
 
 // Sample reviews data
 const reviewsData = [
@@ -44,6 +45,12 @@ const AgentReviews = () => {
   const [sortBy, setSortBy] = useState("newest");
   const [page, setPage] = useState(1);
   const reviewsPerPage = 2;
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push("/write-a-review");
+  };
+
 
   
   const handleSortChange = (event) => {
@@ -70,7 +77,7 @@ const AgentReviews = () => {
           color: "#2A2A33",}}  gutterBottom>
         Tom Willson's reviews ({reviewsData.length})
       </Typography>
-      <Button sx={{border: "1.13px solid #A7A6AB", fontSize: "15.87px", fontWeight: 700, color: "#2A2A33", textTransform:"none", width: {xs: "100%", sm: "263px"}}}>
+      <Button onClick={handleClick} sx={{border: "1.13px solid #A7A6AB", fontSize: "15.87px", fontWeight: 700, color: "#2A2A33", textTransform:"none", width: {xs: "100%", sm: "263px"}}}>
         Write a Review
       </Button>
       </Box>

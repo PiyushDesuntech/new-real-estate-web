@@ -1,5 +1,12 @@
 {
   "/property-compare1/page": "app/property-compare1/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/terms-&-conditions/page": "app/terms-&-conditions/page.js"
+  "/terms-&-conditions/page": "app/terms-&-conditions/page.js",
+  "/page": "app/page.js",
+  "/insights/page": "app/insights/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/my-profile/page": "app/my-profile/page.js",
+  "/change-password/page": "app/change-password/page.js",
+  "/edit-profile/page": "app/edit-profile/page.js",
+  "/contact-us/page": "app/contact-us/page.js"
 }

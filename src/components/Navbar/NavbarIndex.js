@@ -22,6 +22,8 @@ import {
   useTheme,
   InputAdornment,
   Container,
+  Avatar,
+  Backdrop,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
@@ -44,6 +46,7 @@ const NavbarIndex = () => {
   const [inputUsername, setInputUsername] = useState("");
   const [inputPassword, setInputPassword] = useState("");
   const [anchorEl, setAnchorEl] = useState(null);
+  const [anchorElProfile, setAnchorElProfile] = useState(null);
   const router = useRouter();
   const pathname = usePathname();
 
@@ -93,6 +96,15 @@ const NavbarIndex = () => {
   const handleMenuClose = () => {
     setAnchorEl(null);
   };
+  const handleMenuOpenProfile = (event) => {
+    setAnchorElProfile(event.currentTarget);
+  };
+
+  const handleMenuCloseProfile = () => {
+    setAnchorElProfile(null);
+  };
+
+  const isMenuProfileOpen = Boolean(anchorElProfile);
 
   const isMenuOpen = Boolean(anchorEl);
 
@@ -117,18 +129,17 @@ const NavbarIndex = () => {
 
   return (
     <>
-      
-        <AppBar
-          position="static"
-          sx={{
-            background: showTransparent ? "transparent" : "#fff",
-            boxShadow: showTransparent
-              ? "none"
-              : "0px 6px 6px -3px rgba(0, 0, 0, 0.2)",
-            color: showTransparent ? "#fff" : "#000",
-          }}
-        >
-          <Container maxWidth="xl">
+      <AppBar
+        position="static"
+        sx={{
+          background: showTransparent ? "transparent" : "#fff",
+          boxShadow: showTransparent
+            ? "none"
+            : "0px 6px 6px -3px rgba(0, 0, 0, 0.2)",
+          color: showTransparent ? "#fff" : "#000",
+        }}
+      >
+        <Container maxWidth="xl">
           <Toolbar
             sx={{
               display: "flex",
@@ -161,7 +172,7 @@ const NavbarIndex = () => {
               >
                 {navItems.map((item, index) => (
                   <Button
-                  size="small"
+                    size="small"
                     key={index}
                     color="inherit"
                     onClick={() => handleNavigation(item.path)} // Navigate on click
@@ -185,68 +196,191 @@ const NavbarIndex = () => {
                     height: "27px",
                   }}
                 />
-                <Button
-                  // endIcon={<KeyboardArrowDownIcon/>}
-                  size="small"
-                  color="inherit"
-                  sx={{
-                    textTransform: "none",
-                    fontSize: { xs: "12px", lg: "16px" },
-                    display: "flex",
-                    alignItems: "flex-end",
-                    fontWeight: 500,
-                  }}
-                  onClick={handleMenuOpen}
-                >
-                  <PersonOutlineOutlinedIcon sx={{ mx: 1 }} />
-                  Landlords
-                  <KeyboardArrowDownIcon fontSize="small" />
-                </Button>
-                <Menu
-                  anchorEl={anchorEl}
-                  open={isMenuOpen}
-                  onClose={handleMenuClose}
-                  PaperProps={{
-                    style: {
-                      marginTop: "8px",
-                      boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-                    },
-                  }}
-                >
-                  <MenuItem onClick={handleMenuClose}>
-                    Landlord Resources
-                  </MenuItem>
-                  <MenuItem onClick={handleMenuClose}>Landlord Login</MenuItem>
-                </Menu>
+                {["/", "/rent", "/buy"].includes(pathname) ? (
+                  <Box>
+                    <Button
+                      // endIcon={<KeyboardArrowDownIcon/>}
+                      size="small"
+                      color="inherit"
+                      sx={{
+                        textTransform: "none",
+                        fontSize: { xs: "12px", lg: "16px" },
+                        display: "flex",
+                        alignItems: "flex-end",
+                        fontWeight: 500,
+                      }}
+                      onClick={handleMenuOpen}
+                    >
+                      <PersonOutlineOutlinedIcon sx={{ mx: 1 }} />
+                      Landlords
+                      <KeyboardArrowDownIcon fontSize="small" />
+                    </Button>
+                    <Menu
+                      anchorEl={anchorEl}
+                      open={isMenuOpen}
+                      onClose={handleMenuClose}
+                      PaperProps={{
+                        style: {
+                          marginTop: "8px",
+                          boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                        },
+                      }}
+                    >
+                      <MenuItem onClick={handleMenuClose}>
+                        Landlord Resources
+                      </MenuItem>
+                      <MenuItem onClick={handleMenuClose}>
+                        Landlord Login
+                      </MenuItem>
+                    </Menu>
+                  </Box>
+                ) : (
+                  <Typography
+                    sx={{
+                      mr: 2,
+                      fontSize: { xs: "12px", lg: "16px" },
+                      fontWeight: 500,
+                      pl: 2,
+                    }}
+                  >
+                    John Doe
+                  </Typography>
+                )}
               </Box>
 
-              <Button
-              size="small"
-                variant="contained"
-                onClick={handleDialogToggle}
-                color="secondary"
-                sx={{
-                  display: { xs: "none", md: "flex" },
-                  backgroundColor: "#E0D8C3",
-                  "&:hover": {
-                    backgroundColor: "#3E4C66",
-                    color: "#fff",
-                  },
-                  color: "#000",
-                  borderRadius: "30px",
-                  textTransform: "none",
-                  px: { xs: 2, sm: 2, md: 2, lg: "25px" },
-                  py: {xs: "5px",lg: "10px"},
-                  // mr: 3,
-                  width: "fit-content",
-                  whiteSpace: "nowrap",
-                  fontSize: { xs: "12px", lg: "16px" },
-                  fontWeight: 500,
-                  height: {xs: "30px", lg: "50px"},
-                }}
-              >
-                Login/Register
-              </Button>
+              {["/", "/rent", "/buy"].includes(pathname) ? (
+                <Button
+                  size="small"
+                  variant="contained"
+                  onClick={handleDialogToggle}
+                  color="secondary"
+                  sx={{
+                    display: { xs: "none", md: "flex" },
+                    backgroundColor: "#E0D8C3",
+                    "&:hover": {
+                      backgroundColor: "#3E4C66",
+                      color: "#fff",
+                    },
+                    color: "#000",
+                    borderRadius: "30px",
+                    textTransform: "none",
+                    px: { xs: 2, sm: 2, md: 2, lg: "25px" },
+                    py: { xs: "5px", lg: "10px" },
+                    width: "fit-content",
+                    whiteSpace: "nowrap",
+                    fontSize: { xs: "12px", lg: "16px" },
+                    fontWeight: 500,
+                    height: { xs: "30px", lg: "50px" },
+                  }}
+                >
+                  Login/Register
+                </Button>
+              ) : (
+                <Box >
+
+                  <Backdrop
+                    open={isMenuProfileOpen}
+                    sx={{
+                      backgroundColor: "rgba(0, 0, 0, 0.5)",
+                      zIndex: (theme) => theme.zIndex.drawer + 1,
+                    }}
+                  />
+                  {/* Avatar and Menu */}
+                 <Box sx={{ display: { xs: "none", md: "block" } }}>
+                 <Avatar
+                    onClick={handleMenuOpenProfile}
+                    sx={{ bgcolor: "#3E4C66", cursor: "pointer" }}
+                  >
+                    {username.charAt(0).toUpperCase()}
+                  </Avatar>
+                 </Box>
+
+                  <Menu
+                    anchorEl={anchorElProfile}
+                    open={isMenuProfileOpen}
+                    onClose={handleMenuCloseProfile}
+                    PaperProps={{
+                      style: {
+                        marginTop: {xs: "30px", md: "8px"},
+                        boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                        width: "272px",
+                      },
+                    }}
+                  >
+                    {/* Menu Content */}
+                    <Box
+                      sx={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 2,
+                        p: 2,
+                      }}
+                    >
+                      <Avatar sx={{ bgcolor: "#3E4C66", cursor: "pointer" }}>
+                        J
+                      </Avatar>
+                      <Box>
+                        <Typography sx={{ fontWeight: 700, fontSize: "20px" }}>
+                          John Doe
+                        </Typography>
+                        <Typography sx={{ fontWeight: 400, fontSize: "12px" }}>
+                          User
+                        </Typography>
+                      </Box>
+                    </Box>
+                    <MenuItem
+                      onClick={() => {
+                        handleMenuCloseProfile();
+                        router.push("/my-profile");
+                      }}
+                    >
+                      My Profile
+                    </MenuItem>
+                    <MenuItem
+                      onClick={() => {
+                        handleMenuCloseProfile();
+                        router.push("/contact-us");
+                      }}
+                    >
+                      Contact Us
+                    </MenuItem>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        justifyContent: "center",
+                        width: "100%",
+                        p: 1,
+                      }}
+                    >
+                      <Button
+                        onClick={handleLogoClick}
+                        size="small"
+                        variant="contained"
+                        sx={{
+                          display: { xs: "none", md: "flex" },
+                          backgroundColor: "#E0D8C3",
+                          "&:hover": {
+                            backgroundColor: "#3E4C66",
+                            color: "#fff",
+                          },
+                          color: "#000",
+                          textTransform: "none",
+                          py: { xs: "5px", lg: "10px" },
+                          width: "fit-content",
+                          whiteSpace: "nowrap",
+                          fontSize: { xs: "12px", lg: "16px" },
+                          fontWeight: 500,
+                          height: { xs: "30px", lg: "43px" },
+                          width: "236px",
+                          borderRadius: "4.6px",
+                        }}
+                      >
+                        Log Out
+                      </Button>
+                    </Box>
+                  </Menu>
+                </Box>
+              )}
 
               {/* Mobile Menu Icon */}
               <IconButton
@@ -260,29 +394,61 @@ const NavbarIndex = () => {
               </IconButton>
             </Box>
           </Toolbar>
-          </Container>
-        </AppBar>
-    
+        </Container>
+      </AppBar>
 
       {/* Drawer */}
       <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
+      <Backdrop
+    open={isMenuProfileOpen}
+    sx={{
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+      zIndex: 99, // Ensure it's below the Menu but above other elements
+    }}
+    onClick={handleMenuCloseProfile} // Clicking outside should close the menu
+  />
         <Box
           sx={{ width: 250 }}
           role="presentation"
           onClick={toggleDrawer(false)}
           onKeyDown={toggleDrawer(false)}
         >
-          <Box >
-              <Image
-                onClick={handleLogoClick}
-                src="/Images/logo2.svg"
-                alt="Colonial Realty Associates"
-                layout="responsive"
-                width={269}
-                height={76}
-                style={{ cursor: "pointer", objectFit: "contain" }}
-              />
+          <Box>
+            <Image
+              onClick={handleLogoClick}
+              src="/Images/logo2.svg"
+              alt="Colonial Realty Associates"
+              layout="responsive"
+              width={269}
+              height={76}
+              style={{ cursor: "pointer", objectFit: "contain" }}
+            />
+          </Box>
+          {["/", "/rent", "/buy"].includes(pathname) ? (
+            <></>
+          ) : (
+            <Box
+              px={2}
+              sx={{ display: "flex", gap: 1, alignItems: "center", mt: 1 }}
+            >
+              <Avatar
+                onClick={handleMenuOpenProfile}
+                sx={{ bgcolor: "#3E4C66", cursor: "pointer" }}
+              >
+                {username.charAt(0).toUpperCase()}
+              </Avatar>
+              <Typography
+                sx={{
+                  mr: 2,
+                  fontSize: { xs: "16px" },
+                  fontWeight: 500,
+                  pl: 2,
+                }}
+              >
+                John Doe
+              </Typography>
             </Box>
+          )}
           <List>
             {navItems.map((item, index) => (
               <ListItem
@@ -297,27 +463,31 @@ const NavbarIndex = () => {
               <ListItemText primary="Landlord" />
             </ListItem>
           </List>
-          <Button
-            variant="contained"
-            // color="secondary"
-            onClick={handleDialogToggle}
-            sx={{
-              display: "flex",
-              backgroundColor: "#E0D8C3",
-              "&:hover": {
-                backgroundColor: "#4D4D4D",
-                color: "#fff",
-              },
-              color: "#4D4D4D",
-              borderRadius: "30px",
-              textTransform: "none",
-              px: { xs: 2, sm: 2, md: 5, lg: "40px" },
-              py: "10px",
-              m: 2,
-            }}
-          >
-            Login/Register
-          </Button>
+          {["/", "/rent", "/buy"].includes(pathname) ? (
+            <Button
+              variant="contained"
+              // color="secondary"
+              onClick={handleDialogToggle}
+              sx={{
+                display: "flex",
+                backgroundColor: "#E0D8C3",
+                "&:hover": {
+                  backgroundColor: "#4D4D4D",
+                  color: "#fff",
+                },
+                color: "#4D4D4D",
+                borderRadius: "30px",
+                textTransform: "none",
+                px: { xs: 2, sm: 2, md: 5, lg: "40px" },
+                py: "10px",
+                m: 2,
+              }}
+            >
+              Login/Register
+            </Button>
+          ) : (
+            <></>
+          )}
         </Box>
       </Drawer>
 

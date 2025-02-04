@@ -3,28 +3,38 @@
 import React from "react";
 import { Box, Typography, Grid, Card, CardContent } from "@mui/material";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+
 
 export default function LatestProperties() {
   const properties = [
     {
+      id: 1,
       image: "./Images/Figure1.webp",
       title: "Diamond Manor Luxury Estate with amazing views",
       price: "$6500",
       details: "Beds: 4 Baths: 2 150 sqft",
     },
     {
+      id: 2,
       image: "./Images/Figure1.webp",
       title: "Eaton Garth Penthouse",
       price: "$7500",
       details: "Beds: 4 Baths: 1 220 sqft",
     },
     {
+      id: 3,
       image: "./Images/Figure1.webp",
       title: "Skyper Pool Apartment in downtown area",
       price: "$1200/mo",
       details: "Beds: 3 Baths: 2 110 sqft",
     },
   ];
+
+  const router = useRouter();
+  const handleCardClick = (id) => {
+    router.push(`/property-list/property-details/${id}`);
+  };
 
   return (
     <Box
@@ -69,8 +79,9 @@ export default function LatestProperties() {
       </Typography>
       <Grid container spacing={{ xs: 1, sm: 1.5, md: 2 }}>
         {properties.map((property, index) => (
-          <Grid item xs={12} key={index}>
+          <Grid item xs={12} key={property.id}>
             <Card
+             onClick={() => handleCardClick(property.id)}
               sx={{
                 display: "flex",
                 alignItems: "center",
@@ -196,6 +207,7 @@ export default function LatestProperties() {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     lineHeight: 1.2,
+                    "&:hover": {color: "#E8E1C4"}
                   }}
                 >
                   {property.title}

@@ -27,26 +27,29 @@ var _s = __turbopack_refresh__.signature();
 ;
 ;
 const AgentButton = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"])(({ theme })=>({
-        backgroundColor: '#E8E1C4',
-        color: '#777777',
-        textTransform: 'none',
-        padding: '8px 16px',
-        fontSize: '14px',
+        // backgroundColor: '#E8E1C4',
+        // color: '#777777',
+        textTransform: "none",
+        padding: "8px 16px",
+        fontSize: "14px",
         fontWeight: 500,
-        minWidth: '120px',
-        height: 'fit-content',
-        '&:hover': {
-            backgroundColor: '#d8d0c0'
+        minWidth: "120px",
+        height: "fit-content",
+        backgroundColor: "#E0D8C3",
+        "&:hover": {
+            backgroundColor: "#4D4D4D",
+            color: "#fff"
         },
-        [theme.breakpoints.down('md')]: {
-            padding: '6px 14px',
-            fontSize: '14px',
-            minWidth: '90px'
+        color: "#4D4D4D",
+        [theme.breakpoints.down("md")]: {
+            padding: "6px 14px",
+            fontSize: "14px",
+            minWidth: "90px"
         },
-        [theme.breakpoints.down('sm')]: {
-            padding: '6px 12px',
-            fontSize: '13px',
-            minWidth: '80px'
+        [theme.breakpoints.down("sm")]: {
+            padding: "6px 12px",
+            fontSize: "13px",
+            minWidth: "80px"
         }
     }));
 _c = AgentButton;
@@ -56,7 +59,7 @@ function Heading() {
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const pathSegments = pathname.split("/").filter(Boolean);
     const handleAgentClick = ()=>{
-        router.push('/agents');
+        router.push("/agents");
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
@@ -66,14 +69,14 @@ function Heading() {
                 md: 4
             },
             px: {
-                xs: 2,
-                sm: 3,
-                md: 4
+                xs: 1,
+                sm: 2,
+                md: 2
             },
-            display: 'flex',
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            alignItems: 'center',
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
             gap: 2
         },
         children: [
@@ -85,27 +88,27 @@ function Heading() {
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/Edit-Profile/components/Heading.js",
-                    lineNumber: 56,
+                    lineNumber: 65,
                     columnNumber: 20
                 }, void 0),
                 sx: {
-                    '& .MuiBreadcrumbs-li': {
+                    "& .MuiBreadcrumbs-li": {
                         fontSize: {
-                            xs: '14px',
-                            sm: '16px'
+                            xs: "14px",
+                            sm: "16px"
                         }
                     }
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Link$2f$Link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Link$3e$__["Link"], {
                         component: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"],
-                        href: "/profile",
+                        href: "/my-profile",
                         underline: "hover",
                         color: "inherit",
                         children: "My Profile"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Edit-Profile/components/Heading.js",
-                        lineNumber: 63,
+                        lineNumber: 72,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -113,13 +116,13 @@ function Heading() {
                         children: "Edit Profile"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Edit-Profile/components/Heading.js",
-                        lineNumber: 66,
+                        lineNumber: 80,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Edit-Profile/components/Heading.js",
-                lineNumber: 54,
+                lineNumber: 63,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AgentButton, {
@@ -127,13 +130,13 @@ function Heading() {
                 children: "My Agent"
             }, void 0, false, {
                 fileName: "[project]/src/components/Edit-Profile/components/Heading.js",
-                lineNumber: 70,
+                lineNumber: 82,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Edit-Profile/components/Heading.js",
-        lineNumber: 43,
+        lineNumber: 52,
         columnNumber: 5
     }, this);
 }
@@ -183,173 +186,174 @@ var _s = __turbopack_refresh__.signature();
 ;
 ;
 const StyledButton = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"])({
-    textTransform: 'none',
-    borderRadius: '6px',
-    padding: '12px 32px',
-    fontSize: '15px',
+    textTransform: "none",
+    borderRadius: "6px",
+    padding: "12px 32px",
+    fontSize: "15px",
     fontWeight: 500,
-    boxShadow: 'none',
-    minWidth: '140px',
-    '&:hover': {
-        boxShadow: 'none'
+    boxShadow: "none",
+    minWidth: "140px",
+    "&:hover": {
+        boxShadow: "none"
     }
 });
 const SaveButton = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(StyledButton)({
-    backgroundColor: '#E8E1C4',
-    color: '#777777',
-    '&:hover': {
-        backgroundColor: '#d8d0c0'
-    }
+    backgroundColor: "#E0D8C3",
+    "&:hover": {
+        backgroundColor: "#4D4D4D",
+        color: "#fff"
+    },
+    color: "#4D4D4D"
 });
 _c = SaveButton;
 const CancelButton = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(StyledButton)({
-    backgroundColor: '#fff',
-    color: '#777777',
-    border: '1px solid #E0E0E0',
-    '&:hover': {
-        backgroundColor: '#f5f5f5'
+    backgroundColor: "#fff",
+    color: "#777777",
+    border: "1px solid #E0E0E0",
+    "&:hover": {
+        backgroundColor: "#f5f5f5"
     }
 });
 _c1 = CancelButton;
 const StyledTextField = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$TextField$2f$TextField$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TextField$3e$__["TextField"])({
-    '& .MuiOutlinedInput-root': {
-        borderRadius: '4px',
-        backgroundColor: '#fff',
-        height: '48px',
-        '& fieldset': {
-            borderColor: '#E0E0E0'
+    "& .MuiOutlinedInput-root": {
+        borderRadius: "4px",
+        backgroundColor: "#fff",
+        height: "48px",
+        "& fieldset": {
+            borderColor: "#E0E0E0"
         },
-        '&:hover fieldset': {
-            borderColor: '#B0B0B0'
+        "&:hover fieldset": {
+            borderColor: "#B0B0B0"
         },
-        '&.Mui-focused fieldset': {
-            borderColor: '#777777'
+        "&.Mui-focused fieldset": {
+            borderColor: "#777777"
         }
     },
-    '& .MuiInputBase-input': {
-        height: '48px',
-        padding: '0 16px',
-        color: '#484848',
-        fontSize: '15px',
-        boxSizing: 'border-box'
+    "& .MuiInputBase-input": {
+        height: "48px",
+        padding: "0 16px",
+        color: "#484848",
+        fontSize: "15px",
+        boxSizing: "border-box"
     }
 });
 _c2 = StyledTextField;
 const StyledCheckbox = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Checkbox$2f$Checkbox$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Checkbox$3e$__["Checkbox"])({
-    '& .MuiSvgIcon-root': {
-        display: 'none'
+    "& .MuiSvgIcon-root": {
+        display: "none"
     },
-    width: '26px',
-    height: '26px',
-    padding: '4px',
-    position: 'relative',
-    '&::before': {
+    width: "26px",
+    height: "26px",
+    padding: "4px",
+    position: "relative",
+    "&::before": {
         content: '""',
-        position: 'absolute',
-        width: '18px',
-        height: '18px',
-        border: '1px solid #C0C0C0',
-        borderRadius: '2px',
-        backgroundColor: 'white',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)'
+        position: "absolute",
+        width: "18px",
+        height: "18px",
+        border: "1px solid #C0C0C0",
+        borderRadius: "2px",
+        backgroundColor: "white",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)"
     },
-    '&.Mui-checked': {
-        '&::before': {
-            backgroundColor: '#E8E1C4'
+    "&.Mui-checked": {
+        "&::before": {
+            backgroundColor: "#E8E1C4"
         },
-        '& .custom-tick': {
-            display: 'block'
+        "& .custom-tick": {
+            display: "block"
         }
     },
-    '& .custom-tick': {
-        display: 'none',
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        width: '12px',
-        height: '12px',
+    "& .custom-tick": {
+        display: "none",
+        position: "absolute",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)",
+        width: "12px",
+        height: "12px",
         zIndex: 1
     }
 });
 _c3 = StyledCheckbox;
 const StyledFormControlLabel = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$FormControlLabel$2f$FormControlLabel$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FormControlLabel$3e$__["FormControlLabel"])({
-    marginRight: '32px',
-    '& .MuiFormControlLabel-label': {
-        fontSize: '15px',
-        color: '#484848',
-        marginLeft: '12px'
+    marginRight: "32px",
+    "& .MuiFormControlLabel-label": {
+        fontSize: "15px",
+        color: "#484848",
+        marginLeft: "12px"
     }
 });
 _c4 = StyledFormControlLabel;
 const StyledRadio = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Radio$2f$Radio$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Radio$3e$__["Radio"])({
-    padding: '4px',
-    '& .MuiSvgIcon-root': {
-        display: 'none'
+    padding: "4px",
+    "& .MuiSvgIcon-root": {
+        display: "none"
     },
-    width: '22px',
-    height: '22px',
-    position: 'relative',
-    '&::before': {
+    width: "22px",
+    height: "22px",
+    position: "relative",
+    "&::before": {
         content: '""',
-        position: 'absolute',
-        width: '16px',
-        height: '16px',
-        border: '1px solid #C0C0C0',
-        borderRadius: '50%',
-        backgroundColor: 'white',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)'
+        position: "absolute",
+        width: "16px",
+        height: "16px",
+        border: "1px solid #C0C0C0",
+        borderRadius: "50%",
+        backgroundColor: "white",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)"
     },
-    '&.Mui-checked': {
-        '&::before': {
-            backgroundColor: '#E8E1C4',
-            border: '2px solid white'
+    "&.Mui-checked": {
+        "&::before": {
+            backgroundColor: "#E8E1C4",
+            border: "2px solid white"
         },
-        '&::after': {
+        "&::after": {
             content: '""',
-            position: 'absolute',
-            width: '20px',
-            height: '20px',
-            border: '1px solid #C0C0C0',
-            borderRadius: '50%',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)'
+            position: "absolute",
+            width: "20px",
+            height: "20px",
+            border: "1px solid #C0C0C0",
+            borderRadius: "50%",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)"
         }
     }
 });
-const RequiredAsterisk = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('span')({
-    color: '#FF0000',
-    marginLeft: '2px',
-    fontSize: '16px'
+const RequiredAsterisk = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])("span")({
+    color: "#FF0000",
+    marginLeft: "2px",
+    fontSize: "16px"
 });
 _c5 = RequiredAsterisk;
 const FormLabel = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"])({
-    color: '#484848',
-    fontSize: '15px',
+    color: "#484848",
+    fontSize: "15px",
     fontWeight: 400,
-    marginBottom: '8px'
+    marginBottom: "8px"
 });
 _c6 = FormLabel;
 function EditProfileMain() {
     _s();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const [formData, setFormData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
-        firstName: 'John',
-        lastName: 'Doe',
-        email: 'doejohn@examplemail.com',
-        location: 'Pleasant Hill',
-        phone: 'Pleasant Hill',
+        firstName: "John",
+        lastName: "Doe",
+        email: "doejohn@examplemail.com",
+        location: "Pleasant Hill",
+        phone: "Pleasant Hill",
         communication: {
             call: true,
             email: true,
             text: true
         },
-        listingFrequency: 'Daily'
+        listingFrequency: "Daily"
     });
     const handleChange = (e)=>{
         const { name, value } = e.target;
@@ -369,17 +373,17 @@ function EditProfileMain() {
         };
     const handleSubmit = (e)=>{
         e.preventDefault();
-        router.push('/profile');
+        router.push("/my-profile");
     };
     const handleCancel = ()=>{
-        router.push('/profile');
+        router.push("/my-profile");
     };
     const CustomCheckbox = ({ checked, onChange })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StyledCheckbox, {
             checked: checked,
             onChange: onChange,
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {}, void 0, false, {
                 fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                lineNumber: 211,
+                lineNumber: 222,
                 columnNumber: 13
             }, void 0),
             checkedIcon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -391,69 +395,70 @@ function EditProfileMain() {
                     className: "custom-tick"
                 }, void 0, false, {
                     fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                    lineNumber: 214,
+                    lineNumber: 225,
                     columnNumber: 11
                 }, void 0)
             }, void 0, false, {
                 fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                lineNumber: 213,
+                lineNumber: 224,
                 columnNumber: 9
             }, void 0)
         }, void 0, false, {
             fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-            lineNumber: 208,
+            lineNumber: 219,
             columnNumber: 5
         }, this);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
-            maxWidth: '100%',
-            margin: '0 auto',
+            // maxWidth: '100%',
+            // margin: '0 auto',
             px: {
-                xs: 0,
+                xs: 1,
                 sm: 2,
-                md: 4
-            }
+                md: 2
+            },
+            pb: 8
         },
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Paper$2f$Paper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Paper$3e$__["Paper"], {
             elevation: 0,
             sx: {
                 borderRadius: {
                     xs: 0,
-                    sm: '12px'
+                    sm: "12px"
                 },
                 p: {
                     xs: 3,
                     sm: 4,
                     md: 5
                 },
-                maxWidth: '1290px',
-                margin: '0 auto',
-                backgroundColor: '#fff'
+                // maxWidth: '1290px',
+                margin: "0 auto",
+                backgroundColor: "#fff"
             },
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 component: "form",
                 onSubmit: handleSubmit,
                 sx: {
-                    display: 'flex',
-                    flexDirection: 'column',
+                    display: "flex",
+                    flexDirection: "column",
                     gap: {
-                        xs: '24px',
-                        sm: '28px',
-                        md: '32px'
+                        xs: "24px",
+                        sm: "28px",
+                        md: "32px"
                     }
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                         sx: {
-                            display: 'grid',
+                            display: "grid",
                             gridTemplateColumns: {
-                                xs: '1fr',
-                                sm: 'repeat(2, 1fr)',
-                                md: 'repeat(3, 1fr)'
+                                xs: "1fr",
+                                sm: "repeat(2, 1fr)",
+                                md: "repeat(3, 1fr)"
                             },
                             gap: {
-                                xs: '20px',
-                                sm: '24px'
+                                xs: "20px",
+                                sm: "24px"
                             }
                         },
                         children: [
@@ -466,13 +471,13 @@ function EditProfileMain() {
                                                 children: "*"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                                lineNumber: 259,
+                                                lineNumber: 279,
                                                 columnNumber: 27
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                        lineNumber: 258,
+                                        lineNumber: 278,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StyledTextField, {
@@ -483,13 +488,13 @@ function EditProfileMain() {
                                         variant: "outlined"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                        lineNumber: 261,
+                                        lineNumber: 281,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                lineNumber: 257,
+                                lineNumber: 277,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -498,7 +503,7 @@ function EditProfileMain() {
                                         children: "Last Name"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                        lineNumber: 270,
+                                        lineNumber: 290,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StyledTextField, {
@@ -509,21 +514,21 @@ function EditProfileMain() {
                                         variant: "outlined"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                        lineNumber: 273,
+                                        lineNumber: 291,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                lineNumber: 269,
+                                lineNumber: 289,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                                 sx: {
                                     gridColumn: {
-                                        xs: '1',
-                                        sm: '1 / -1',
-                                        md: 'auto'
+                                        xs: "1",
+                                        sm: "1 / -1",
+                                        md: "auto"
                                     }
                                 },
                                 children: [
@@ -534,13 +539,13 @@ function EditProfileMain() {
                                                 children: "*"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                                lineNumber: 283,
+                                                lineNumber: 301,
                                                 columnNumber: 30
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                        lineNumber: 282,
+                                        lineNumber: 300,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StyledTextField, {
@@ -551,32 +556,32 @@ function EditProfileMain() {
                                         variant: "outlined"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                        lineNumber: 285,
+                                        lineNumber: 303,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                lineNumber: 281,
+                                lineNumber: 299,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                        lineNumber: 252,
+                        lineNumber: 266,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                         sx: {
-                            display: 'grid',
+                            display: "grid",
                             gridTemplateColumns: {
-                                xs: '1fr',
-                                sm: 'repeat(2, 1fr)',
-                                md: 'repeat(3, 1fr)'
+                                xs: "1fr",
+                                sm: "repeat(2, 1fr)",
+                                md: "repeat(3, 1fr)"
                             },
                             gap: {
-                                xs: '20px',
-                                sm: '24px'
+                                xs: "20px",
+                                sm: "24px"
                             }
                         },
                         children: [
@@ -589,13 +594,13 @@ function EditProfileMain() {
                                                 children: "*"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                                lineNumber: 303,
+                                                lineNumber: 327,
                                                 columnNumber: 25
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                        lineNumber: 302,
+                                        lineNumber: 326,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StyledTextField, {
@@ -606,13 +611,13 @@ function EditProfileMain() {
                                         variant: "outlined"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                        lineNumber: 305,
+                                        lineNumber: 329,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                lineNumber: 301,
+                                lineNumber: 325,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -624,13 +629,13 @@ function EditProfileMain() {
                                                 children: "*"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                                lineNumber: 315,
+                                                lineNumber: 339,
                                                 columnNumber: 26
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                        lineNumber: 314,
+                                        lineNumber: 338,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StyledTextField, {
@@ -641,21 +646,21 @@ function EditProfileMain() {
                                         variant: "outlined"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                        lineNumber: 317,
+                                        lineNumber: 341,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                lineNumber: 313,
+                                lineNumber: 337,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                                 sx: {
                                     gridColumn: {
-                                        xs: '1',
-                                        sm: '1 / -1',
-                                        md: 'auto'
+                                        xs: "1",
+                                        sm: "1 / -1",
+                                        md: "auto"
                                     },
                                     mt: {
                                         xs: 1,
@@ -667,104 +672,104 @@ function EditProfileMain() {
                                         children: "Communication Preferences"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                        lineNumber: 330,
+                                        lineNumber: 356,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                                         sx: {
-                                            display: 'flex',
+                                            display: "flex",
                                             flexDirection: {
-                                                xs: 'column',
-                                                sm: 'row'
+                                                xs: "column",
+                                                sm: "row"
                                             },
                                             gap: {
-                                                xs: '16px',
-                                                sm: '24px'
+                                                xs: "16px",
+                                                sm: "24px"
                                             },
                                             mt: {
-                                                xs: '16px',
-                                                sm: '32px'
+                                                xs: "16px",
+                                                sm: "32px"
                                             }
                                         },
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StyledFormControlLabel, {
                                                 control: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CustomCheckbox, {
                                                     checked: formData.communication.call,
-                                                    onChange: handleCommunicationChange('call')
+                                                    onChange: handleCommunicationChange("call")
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                                    lineNumber: 341,
+                                                    lineNumber: 367,
                                                     columnNumber: 21
                                                 }, void 0),
                                                 label: "Call"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                                lineNumber: 339,
+                                                lineNumber: 365,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StyledFormControlLabel, {
                                                 control: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CustomCheckbox, {
                                                     checked: formData.communication.email,
-                                                    onChange: handleCommunicationChange('email')
+                                                    onChange: handleCommunicationChange("email")
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                                    lineNumber: 350,
+                                                    lineNumber: 376,
                                                     columnNumber: 21
                                                 }, void 0),
                                                 label: "Email"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                                lineNumber: 348,
+                                                lineNumber: 374,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StyledFormControlLabel, {
                                                 control: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CustomCheckbox, {
                                                     checked: formData.communication.text,
-                                                    onChange: handleCommunicationChange('text')
+                                                    onChange: handleCommunicationChange("text")
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                                    lineNumber: 359,
+                                                    lineNumber: 385,
                                                     columnNumber: 21
                                                 }, void 0),
                                                 label: "Text"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                                lineNumber: 357,
+                                                lineNumber: 383,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                        lineNumber: 333,
+                                        lineNumber: 357,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                lineNumber: 326,
+                                lineNumber: 350,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                        lineNumber: 296,
+                        lineNumber: 314,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                         sx: {
-                            display: 'grid',
+                            display: "grid",
                             gridTemplateColumns: {
-                                xs: '1fr',
-                                md: '1fr 2fr'
+                                xs: "1fr",
+                                md: "1fr 2fr"
                             },
                             gap: {
-                                xs: '32px',
-                                md: '24px'
+                                xs: "32px",
+                                md: "24px"
                             },
-                            alignItems: 'flex-start',
+                            alignItems: "flex-start",
                             mt: {
-                                xs: '8px',
-                                md: '16px'
+                                xs: "8px",
+                                md: "16px"
                             }
                         },
                         children: [
@@ -774,7 +779,7 @@ function EditProfileMain() {
                                         children: "New Listing Frequency"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                        lineNumber: 380,
+                                        lineNumber: 408,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$RadioGroup$2f$RadioGroup$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__RadioGroup$3e$__["RadioGroup"], {
@@ -787,10 +792,10 @@ function EditProfileMain() {
                                                 xs: 4,
                                                 sm: 3
                                             },
-                                            mt: '12px',
+                                            mt: "12px",
                                             justifyContent: {
-                                                xs: 'space-between',
-                                                sm: 'flex-start'
+                                                xs: "space-between",
+                                                sm: "flex-start"
                                             }
                                         },
                                         children: [
@@ -798,65 +803,65 @@ function EditProfileMain() {
                                                 value: "Instant",
                                                 control: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StyledRadio, {}, void 0, false, {
                                                     fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                                    lineNumber: 396,
+                                                    lineNumber: 422,
                                                     columnNumber: 28
                                                 }, void 0),
                                                 label: "Instant"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                                lineNumber: 394,
+                                                lineNumber: 420,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StyledFormControlLabel, {
                                                 value: "Daily",
                                                 control: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StyledRadio, {}, void 0, false, {
                                                     fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                                    lineNumber: 401,
+                                                    lineNumber: 427,
                                                     columnNumber: 28
                                                 }, void 0),
                                                 label: "Daily"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                                lineNumber: 399,
+                                                lineNumber: 425,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                        lineNumber: 383,
+                                        lineNumber: 409,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                lineNumber: 379,
+                                lineNumber: 407,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                                 sx: {
-                                    display: 'flex',
+                                    display: "flex",
                                     flexDirection: {
-                                        xs: 'column',
-                                        sm: 'row'
+                                        xs: "column",
+                                        sm: "row"
                                     },
                                     gap: {
-                                        xs: '12px',
-                                        sm: '16px'
+                                        xs: "12px",
+                                        sm: "16px"
                                     },
                                     justifyContent: {
-                                        xs: 'stretch',
-                                        sm: 'flex-start',
-                                        md: 'flex-end'
+                                        xs: "stretch",
+                                        sm: "flex-start",
+                                        md: "flex-end"
                                     },
-                                    alignItems: 'stretch',
+                                    alignItems: "stretch",
                                     mt: {
-                                        xs: '8px',
-                                        sm: '24px'
+                                        xs: "8px",
+                                        sm: "24px"
                                     },
-                                    '& > button': {
+                                    "& > button": {
                                         width: {
-                                            xs: '100%',
-                                            sm: 'auto'
+                                            xs: "100%",
+                                            sm: "auto"
                                         }
                                     }
                                 },
@@ -866,7 +871,7 @@ function EditProfileMain() {
                                         children: "Save Changes"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                        lineNumber: 419,
+                                        lineNumber: 451,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CancelButton, {
@@ -874,39 +879,39 @@ function EditProfileMain() {
                                         children: "Cancel"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                        lineNumber: 422,
+                                        lineNumber: 452,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                                lineNumber: 408,
+                                lineNumber: 434,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                        lineNumber: 371,
+                        lineNumber: 397,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-                lineNumber: 242,
+                lineNumber: 256,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-            lineNumber: 232,
+            lineNumber: 246,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/Edit-Profile/components/EditProfileMain.js",
-        lineNumber: 227,
+        lineNumber: 238,
         columnNumber: 5
     }, this);
 }
-_s(EditProfileMain, "xjqRH4mHPsckWtLFYHsoA7HMq8g=", false, function() {
+_s(EditProfileMain, "kdmrLekOG6Zz/1VXJIxoMC86ruw=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];
@@ -938,6 +943,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Edit$2d$Profile$2f$components$2f$Heading$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/Edit-Profile/components/Heading.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Edit$2d$Profile$2f$components$2f$EditProfileMain$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/Edit-Profile/components/EditProfileMain.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Box/Box.js [app-client] (ecmascript) <export default as Box>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Container$2f$Container$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Container$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Container/Container.js [app-client] (ecmascript) <export default as Container>");
 "use client";
 ;
 ;
@@ -947,57 +953,35 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 function EditProfileIndex() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
-            backgroundColor: '#F7F7F7',
-            minHeight: '100vh',
-            width: '100%',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: {
-                xs: '8px',
-                sm: '16px',
-                md: '48px'
-            },
-            overflow: 'hidden',
-            position: 'relative',
-            paddingBottom: {
-                xs: '16px',
-                sm: '32px',
-                md: '200px'
-            }
+            backgroundColor: '#F7F7F7'
         },
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Container$2f$Container$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Container$3e$__["Container"], {
+            maxWidth: "xl",
             sx: {
-                paddingLeft: {
-                    xs: '0px',
-                    sm: '16px',
-                    md: '50px'
-                },
-                paddingRight: {
-                    xs: '0px',
-                    sm: '16px',
-                    md: '32px'
-                },
-                paddingTop: {
-                    xs: '8px',
-                    sm: '16px',
-                    md: '32px'
-                },
-                width: '100%',
-                boxSizing: 'border-box'
+                px: {
+                    xs: 2,
+                    lg: 7
+                }
             },
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Edit$2d$Profile$2f$components$2f$Heading$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                    fileName: "[project]/src/components/Edit-Profile/EditProfileIndex.js",
-                    lineNumber: 31,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Edit$2d$Profile$2f$components$2f$EditProfileMain$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                    fileName: "[project]/src/components/Edit-Profile/EditProfileIndex.js",
-                    lineNumber: 32,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Edit$2d$Profile$2f$components$2f$Heading$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                        fileName: "[project]/src/components/Edit-Profile/EditProfileIndex.js",
+                        lineNumber: 32,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Edit$2d$Profile$2f$components$2f$EditProfileMain$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                        fileName: "[project]/src/components/Edit-Profile/EditProfileIndex.js",
+                        lineNumber: 33,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/Edit-Profile/EditProfileIndex.js",
+                lineNumber: 23,
+                columnNumber: 7
+            }, this)
+        }, void 0, false, {
             fileName: "[project]/src/components/Edit-Profile/EditProfileIndex.js",
             lineNumber: 22,
             columnNumber: 7

@@ -172,16 +172,17 @@ export default function MainImage() {
       {/* Lower Image Navigator */}
       <Box
         sx={{
-          width: "90%",
+          // width: "90%",
           margin: "auto",
           display: "flex",
-          flexDirection: { xs: "column", sm: "column", md: "row" },
-          mt: { md: "30px", sm: "0px", xs: "0px" },
+          flexDirection: { xs: "column",  lg: "row" },
+          mt: { md: "30px", sm: "0px", xs: "10px" },
           position: "relative",
           bottom: { xs: "2px", sm: "2px" },
           alignItems: "center",
-          gap: { md: "90px", sm: "2px", xs: "2px" },
-          px: "20px",
+          // gap: { lg: "90px", sm: "2px", xs: "2px" },
+          px: {xs: "20px", lg: "40px"},
+          justifyContent: "space-between",
         }}
       >
         <Box
@@ -192,15 +193,17 @@ export default function MainImage() {
             bottom: { md: "17px", sm: "1px", xs: "1px" },
             left: { md: "20px" },
             display: "flex",
-            flexDirection: { md: "column", sm: "row", xs: "row" },
+            flexDirection: { lg: "column", sm: "row", xs: "column" },
             alignItems: { xs: "center", md: "flex-start" },
             gap: { md: "10px", sm: "2px", xs: "2px" },
+            alignItems: {xs: "unset", md: "center", lg: "unset"}
           }}
         >
-          <Typography sx={{ fontSize: { sm: "30px", sx: "30px", md: "40px" }, fontWeight: "500" }}>
+          <Typography sx={{ fontSize: { sm: "30px", xs: "30px", md: "40px" }, fontWeight: "500" }}>
             $5500
           </Typography>
-          <Box sx={{ display: "flex", alignItems: "center", gap: "5px" }}>
+          <Box sx={{ display: "flex", alignItems: "center",flexDirection: {xs: "row", sm: "row"} }}>
+          <Box sx={{ display: "flex", alignItems: "center", gap: "5px", }}>
             <LocationOnOutlinedIcon sx={{ fontSize: { xs: 20, md: 35 } }} />
             <Typography sx={{ fontSize: { xs: "10px", md: "18px" }, color: "#484848", lineHeight: "1.2" }}>
               22-05 Astoria Blvd, Astoria
@@ -209,6 +212,7 @@ export default function MainImage() {
           <Box sx={{ display: "flex", alignItems: "center", gap: "15px" }}>
             <Typography sx={{ fontSize: { xs: "10px", md: "18px" }, color: "#484848" }}>Beds: 4</Typography>
             <Typography sx={{ fontSize: { xs: "10px", md: "18px" }, color: "#484848" }}>Baths: 2</Typography>
+          </Box>
           </Box>
         </Box>
         {/* Lower Slider Images */}
@@ -257,8 +261,8 @@ export default function MainImage() {
                 <Box
                   key={absoluteIndex}
                   sx={{
-                    width: { xs: "50px", sm: "60px", md: "167px" },
-                    height: { xs: "40px", sm: "50px", md: "127px" },
+                    width: { xs: "50px", sm: "120px",md: "140px", lg: "167px" },
+                    height: { xs: "40px", sm: "100px", md: "127px" },
                     border: currentImageIndex === absoluteIndex ? "2px solid #E8E1C4" : "1px solid",
                     position: "relative",
                     borderRadius: "4px",

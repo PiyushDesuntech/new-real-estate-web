@@ -34,7 +34,13 @@ export default function PropertiesSearchIndex() {
       >
         <Box>
           <Typography
-            sx={{ fontSize: {xs:"26px", sm: "30px",md: "37px"}, fontWeight: 600, color: "#484848" }}
+            sx={{ fontSize: { 
+              xs: '26px',
+              sm: '28px',
+              md: '32px',
+              lg: '37px' 
+            },
+             fontWeight: 600, color: "#484848" }}
           >
             Properties Search
           </Typography>
