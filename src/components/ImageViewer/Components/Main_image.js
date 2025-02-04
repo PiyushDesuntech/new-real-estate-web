@@ -202,16 +202,16 @@ export default function MainImage() {
           <Typography sx={{ fontSize: { sm: "30px", xs: "30px", md: "40px" }, fontWeight: "500" }}>
             $5500
           </Typography>
-          <Box sx={{ display: "flex", alignItems: "center",flexDirection: {xs: "row", sm: "row"} }}>
+          <Box sx={{ display: "flex", alignItems: {xs: "flex-start", sm: "center"},flexDirection: {xs: "column", sm: "row"}, gap: 1 }}>
           <Box sx={{ display: "flex", alignItems: "center", gap: "5px", }}>
             <LocationOnOutlinedIcon sx={{ fontSize: { xs: 20, md: 35 } }} />
-            <Typography sx={{ fontSize: { xs: "10px", md: "18px" }, color: "#484848", lineHeight: "1.2" }}>
+            <Typography sx={{ fontSize: { xs: "10px", sm: "16px", md: "18px" }, color: "#484848", lineHeight: "1.2" }}>
               22-05 Astoria Blvd, Astoria
             </Typography>
           </Box>
           <Box sx={{ display: "flex", alignItems: "center", gap: "15px" }}>
-            <Typography sx={{ fontSize: { xs: "10px", md: "18px" }, color: "#484848" }}>Beds: 4</Typography>
-            <Typography sx={{ fontSize: { xs: "10px", md: "18px" }, color: "#484848" }}>Baths: 2</Typography>
+            <Typography sx={{ fontSize: { xs: "10px", sm: "16px", md: "18px" }, color: "#484848" }}>Beds: 4</Typography>
+            <Typography sx={{ fontSize: { xs: "10px", sm: "16px", md: "18px" }, color: "#484848" }}>Baths: 2</Typography>
           </Box>
           </Box>
         </Box>
